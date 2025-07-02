@@ -19,17 +19,25 @@ final class CountriesFlagsTests: XCTestCase {
     }
 
     func testRussianFederation() throws {
-        let image = UIImage.flag(for: .RussianFederation, with: imageSize)
+        guard let image = UIImage.flag(for: .RussianFederation, with: imageSize) else {
+            XCTFail("image is nil")
+            return
+        }
         XCTAssertNotNil(image)
-        XCTAssertTrue(CGSizeEqualToSize(image!.size, imageSize))
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         // TODO: Compare image data with standard image
+        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
     }
     
     func testUkraine() throws {
-        let image = UIImage.flag(for: .Ukraine, with: imageSize)
+        guard let image = UIImage.flag(for: .Ukraine, with: imageSize) else {
+            XCTFail("image is nil")
+            return
+        }
         XCTAssertNotNil(image)
-        XCTAssertTrue(CGSizeEqualToSize(image!.size, imageSize))
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         // TODO: Compare image data with standard image
+        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
     }
 
 }
