@@ -13,6 +13,7 @@
 		68B3577B2E15D25D00B8BC0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B357792E15D25D00B8BC0D /* Main.storyboard */; };
 		68B3577D2E15D26100B8BC0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B3577C2E15D26100B8BC0D /* Assets.xcassets */; };
 		68B357802E15D26100B8BC0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B3577E2E15D26100B8BC0D /* LaunchScreen.storyboard */; };
+		68B357992E15DD9D00B8BC0D /* CountriesFlags in Frameworks */ = {isa = PBXBuildFile; productRef = 68B357982E15DD9D00B8BC0D /* CountriesFlags */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B357992E15DD9D00B8BC0D /* CountriesFlags in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = CountriesFlagsExample;
+			packageProductDependencies = (
+				68B357982E15DD9D00B8BC0D /* CountriesFlags */,
+			);
 			productName = CountriesFlagsExample;
 			productReference = 68B357702E15D25D00B8BC0D /* CountriesFlagsExample.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 68B357672E15D25D00B8BC0D;
+			packageReferences = (
+				68B357972E15DD9D00B8BC0D /* XCRemoteSwiftPackageReference "CountriesFlags" */,
+			);
 			productRefGroup = 68B357712E15D25D00B8BC0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -368,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68B357972E15DD9D00B8BC0D /* XCRemoteSwiftPackageReference "CountriesFlags" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DVGnatuk/CountriesFlags.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68B357982E15DD9D00B8BC0D /* CountriesFlags */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68B357972E15DD9D00B8BC0D /* XCRemoteSwiftPackageReference "CountriesFlags" */;
+			productName = CountriesFlags;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68B357682E15D25D00B8BC0D /* Project object */;
 }

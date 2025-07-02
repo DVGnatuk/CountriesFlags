@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //imageView.image
+        imageView.image = UIImage.flag(for: .Ukraine, with: imageView.frame.size)
     }
 
 }
