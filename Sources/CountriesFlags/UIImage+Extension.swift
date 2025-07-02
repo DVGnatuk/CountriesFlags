@@ -23,9 +23,10 @@
 import UIKit
 
 extension UIImage {
-    static public func flag(for country: CountriesFlags, with size: CGSize) -> UIImage? {
+    public static func flag(for country: CountriesFlags, with size: CGSize) -> UIImage? {
         switch country {
         case .Germany: return flagGermany(with: size)
+        case .Hungary: return flagHungary(with: size)
         case .RussianFederation: return flagRussianFederation(with: size)
         case .Ukraine: return flagUkraine(with: size)
         }

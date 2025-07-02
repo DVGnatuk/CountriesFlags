@@ -8,7 +8,7 @@ import XCTest
 
 final class CountriesFlagsTests: XCTestCase {
 
-    private let imageSize = CGSize(width: 200, height: 50)
+    private let imageSize = CGSize(width: 100, height: 50)
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -23,7 +23,16 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("image is nil")
             return
         }
-        XCTAssertNotNil(image)
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        // TODO: Compare image data with standard image
+        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+    }
+    
+    func testHungary() throws {
+        guard let image = UIImage.flag(for: .Hungary, with: imageSize) else {
+            XCTFail("image is nil")
+            return
+        }
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         // TODO: Compare image data with standard image
         //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
@@ -34,7 +43,6 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("image is nil")
             return
         }
-        XCTAssertNotNil(image)
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         // TODO: Compare image data with standard image
         //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
@@ -45,10 +53,11 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("image is nil")
             return
         }
-        XCTAssertNotNil(image)
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        
+//        let path = Bundle(for: type(of: self)).path(forResource: "Ukraine", ofType: "png")
+//        let testImage = UIImage(contentsOfFile: path!)
+//        XCTAssertEqual(image.pngData(), testImage!.pngData())
     }
 
 }
