@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		680C4E9F2E15E4BB0070E4F9 /* CountriesFlags */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CountriesFlags; path = ..; sourceTree = "<group>"; };
 		68B357702E15D25D00B8BC0D /* CountriesFlagsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountriesFlagsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B357732E15D25D00B8BC0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68B357752E15D25D00B8BC0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		68B357672E15D25D00B8BC0D = {
 			isa = PBXGroup;
 			children = (
+				680C4E9F2E15E4BB0070E4F9 /* CountriesFlags */,
 				68B357722E15D25D00B8BC0D /* CountriesFlagsExample */,
 				68B357712E15D25D00B8BC0D /* Products */,
 			);

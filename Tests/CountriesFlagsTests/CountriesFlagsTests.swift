@@ -18,6 +18,17 @@ final class CountriesFlagsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    func testGermany() throws {
+        guard let image = UIImage.flag(for: .Germany, with: imageSize) else {
+            XCTFail("image is nil")
+            return
+        }
+        XCTAssertNotNil(image)
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        // TODO: Compare image data with standard image
+        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+    }
+    
     func testRussianFederation() throws {
         guard let image = UIImage.flag(for: .RussianFederation, with: imageSize) else {
             XCTFail("image is nil")

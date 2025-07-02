@@ -6,8 +6,8 @@ CountriesFlags generate flags for ~~every~~ country (in progress now).
 
 UIKit:  
 ~~SwiftUI: iOS 13.0+~~  
-Xcode:  
-iOS:  
+Xcode: 14.2+  
+iOS: 13.0+  
 macOS:
 
 ## Installation
