@@ -35,7 +35,7 @@ public enum CountriesFlags {
 //        case Brazil
 //        case BritishIndianOceanTerritory
 //        case BruneiDarussalam
-//        case Bulgaria
+    case Bulgaria
 //        case BurkinaFaso
 //        case Burundi
 //        case CaboVerde

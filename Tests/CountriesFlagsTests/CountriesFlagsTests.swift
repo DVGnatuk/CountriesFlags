@@ -28,6 +28,16 @@ final class CountriesFlagsTests: XCTestCase {
         //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
     }
     
+    func testBulgaria() throws {
+        guard let image = UIImage.flag(for: .Bulgaria, with: imageSize) else {
+            XCTFail("image is nil")
+            return
+        }
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        // TODO: Compare image data with standard image
+        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+    }
+    
     func testGermany() throws {
         guard let image = UIImage.flag(for: .Germany, with: imageSize) else {
             XCTFail("image is nil")

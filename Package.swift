@@ -20,8 +20,14 @@ let package = Package(
         .target(
             name: "CountriesFlags",
             dependencies: []),
+//        .target(
+//            name: "CountriesFlagsObjC",
+//            dependencies: []),
         .testTarget(
             name: "CountriesFlagsTests",
             dependencies: ["CountriesFlags"]),
+//        .testTarget(
+//            name: "CountriesFlagsObjCTests",
+//            dependencies: ["CountriesFlagsObjC"]),
     ]
 )

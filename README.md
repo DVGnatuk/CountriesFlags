@@ -27,5 +27,9 @@ If you want to install CountriesFlags manually, <TBD>
 ## Usage
 
 ### Swift
+```
+import CountriesFlags
 
+let image = UIImage.flag(for: .Austria, with: imageSize)
+```
 ### Objective-C

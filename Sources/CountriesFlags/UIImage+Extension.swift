@@ -26,6 +26,7 @@ extension UIImage {
     public static func flag(for country: CountriesFlags, with size: CGSize) -> UIImage? {
         switch country {
         case .Austria: return flagAustria(with: size)
+        case .Bulgaria: return flagBulgaria(with: size)
         case .Germany: return flagGermany(with: size)
         case .Hungary: return flagHungary(with: size)
         case .Indonesia: return flagIndonesia(with: size)
