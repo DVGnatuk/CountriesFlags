@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  UIIMage+Hungary.swift
 //  CountriesFlags
 //
 
