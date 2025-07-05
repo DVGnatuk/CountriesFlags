@@ -7,15 +7,15 @@ import UIKit
 
 extension UIImage {
     /**
-     [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Ukraine "wikipedia"
+     [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Indonesia "wikipedia"
      
-     Generates the flag of Ukraine.
+     Generates the flag of Indonesia.
      For more information see [wikipedia].
      
      - Parameters:
         - size: image size.
      
-     - Returns: Returns the flag of Ukraine.
+     - Returns: Returns the flag of Indonesia.
      */
     internal static func flagIndonesia(with size: CGSize) -> UIImage? {
         let colorRed = UIColor.red
