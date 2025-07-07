@@ -158,7 +158,7 @@ public enum CountriesFlags {
 //        case NewZealand
 //        case Nicaragua
 //        case Niger
-//        case Nigeria
+    case Nigeria
 //        case Niue
 //        case NorfolkIsland
 //        case NorthernMarianaIslands

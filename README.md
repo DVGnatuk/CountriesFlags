@@ -22,7 +22,9 @@ If you want to use the Swift Package Manager as integration method, either use X
 
 ### Manual
 
-If you want to install CountriesFlags manually, <TBD>
+If you want to install the CountriesFlags manually:
+* Download the source code;
+* Drag&Drop the `CountriesFlags` folder for swift, or `CountriesFlagsObjC` folder for Objective-C, to the project.
 
 ## Usage
 
