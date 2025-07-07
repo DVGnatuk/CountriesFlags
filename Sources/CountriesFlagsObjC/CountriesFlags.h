@@ -1,7 +1,10 @@
 //
-//  CountriesFlags.swift
+//  CountriesFlags.h
 //  CountriesFlags
 //
+
+#ifndef CountriesFlags_h
+#define CountriesFlags_h
 
 public enum CountriesFlags {
 //        case Afghanistan
@@ -17,7 +20,7 @@ public enum CountriesFlags {
 //        case Armenia
 //        case Aruba
 //        case Australia
-    case Austria
+//    case Austria
 //        case Azerbaijan
 //        case Bahamas
 //        case Bahrain
@@ -35,7 +38,7 @@ public enum CountriesFlags {
 //        case Brazil
 //        case BritishIndianOceanTerritory
 //        case BruneiDarussalam
-    case Bulgaria
+//    case Bulgaria
 //        case BurkinaFaso
 //        case Burundi
 //        case CaboVerde
@@ -49,7 +52,7 @@ public enum CountriesFlags {
 //        case China
 //        case ChristmasIsland
 //        case CocosIslands
-    case Colombia
+//    case Colombia
 //        case Comoros
 //        case CongoDemocraticRepublic
 //        case CookIslands
@@ -80,7 +83,7 @@ public enum CountriesFlags {
 //        case Gabon
 //        case Gambia
 //        case Georgia
-    case Germany
+//    case Germany
 //        case Ghana
 //        case Gibraltar
 //        case Greece
@@ -96,16 +99,16 @@ public enum CountriesFlags {
 //        case VaticanCityState
 //        case Honduras
 //        case HongKong
-    case Hungary
+//    case Hungary
 //        case Iceland
 //        case India
-    case Indonesia
+//    case Indonesia
 //        case Iran
 //        case Iraq
 //        case Ireland
 //        case IsleOfMan
 //        case Israel
-    case Italy
+//    case Italy
 //        case Jamaica
 //        case Japan
 //        case Jersey
@@ -125,7 +128,7 @@ public enum CountriesFlags {
 //        case LibyanArabJamahiriya
 //        case Liechtenstein
 //        case Lithuania
-    case Luxembourg
+//    case Luxembourg
 //        case Macao
 //        case Macedonia
 //        case Madagascar
@@ -137,7 +140,7 @@ public enum CountriesFlags {
 //        case MarshallIslands
 //        case Martinique
 //        case Mauritania
-    case Mauritius
+//        case Mauritius
 //        case Mayotte
 //        case Mexico
 //        case Micronesia
@@ -152,7 +155,7 @@ public enum CountriesFlags {
 //        case Namibia
 //        case Nauru
 //        case Nepal
-    case Netherlands
+//    case Netherlands
 //        case NetherlandsAntilles
 //        case NewCaledonia
 //        case NewZealand
@@ -178,7 +181,7 @@ public enum CountriesFlags {
 //        case PuertoRico
 //        case Qatar
 //        case Romania
-    case RussianFederation
+//    case RussianFederation
 //        case Rwanda
 //        case Reunion
 //        case SaintBarthelemy
@@ -240,7 +243,9 @@ public enum CountriesFlags {
 //        case VirginIslandsBritish
 //        case VirginIslandsUnitedStates
 //        case WallisAndFutuna
-        case Yemen
+//        case Yemen
 //        case Zambia
 //        case Zimbabwe
 }
+
+#endif /* CountriesFlags_h */

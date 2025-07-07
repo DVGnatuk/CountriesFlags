@@ -7,4 +7,15 @@
 
 @implementation UIImage (CountriesFlags)
 
++ (UIImage * _Nullable)flagForCountry:(CountriesFlags)country {
+    switch (country) {
+        case Ukraine: {
+            return nil;
+        }
+            break;
+            
+        default: return nil;
+    }
+}
+
 @end
