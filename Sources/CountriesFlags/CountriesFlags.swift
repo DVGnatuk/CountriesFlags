@@ -125,7 +125,7 @@ public enum CountriesFlags {
 //        case LibyanArabJamahiriya
 //        case Liechtenstein
 //        case Lithuania
-//        case Luxembourg
+    case Luxembourg
 //        case Macao
 //        case Macedonia
 //        case Madagascar

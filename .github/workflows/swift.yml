@@ -15,7 +15,7 @@ jobs:
 # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#standard-github-hosted-runners-for-public-repositories
     runs-on: macos-latest
     
-    name: Unit Testing on iOS 16.2
+    name: Unit Testing on iOS 18.2
 
     steps:
     - uses: actions/checkout@v4
