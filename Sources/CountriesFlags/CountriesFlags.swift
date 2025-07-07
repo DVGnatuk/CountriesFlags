@@ -49,7 +49,7 @@ public enum CountriesFlags {
 //        case China
 //        case ChristmasIsland
 //        case CocosIslands
-//        case Colombia
+    case Colombia
 //        case Comoros
 //        case CongoDemocraticRepublic
 //        case CookIslands

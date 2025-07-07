@@ -13,10 +13,16 @@ jobs:
   build:
 
     runs-on: macos-latest
+    
+    name: Unit Testing on iOS 16.2
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+#    - name: Build
+#      run: swift build -v
+#    - name: Run tests
+#      run: swift test -v
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode.app && /usr/bin/xcodebuild -version
+    - name: Build and run tests
+      run: xcodebuild test -scheme CountriesFlags -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2' | xcpretty && exit ${PIPESTATUS[0]}
