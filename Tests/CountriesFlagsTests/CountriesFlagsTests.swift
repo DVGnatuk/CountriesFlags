@@ -123,5 +123,17 @@ final class CountriesFlagsTests: XCTestCase {
 //        let testImage = UIImage(contentsOfFile: path!)
 //        XCTAssertEqual(image.pngData(), testImage!.pngData())
     }
+    
+    func testYemen() throws {
+        guard let image = UIImage.flag(for: .Yemen, with: imageSize) else {
+            XCTFail("image is nil")
+            return
+        }
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        
+//        let path = Bundle(for: type(of: self)).path(forResource: "Ukraine", ofType: "png")
+//        let testImage = UIImage(contentsOfFile: path!)
+//        XCTAssertEqual(image.pngData(), testImage!.pngData())
+    }
 
 }

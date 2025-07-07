@@ -3,6 +3,8 @@
 //  CountriesFlags
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 extension UIImage {
@@ -47,3 +49,5 @@ extension UIImage {
         return image
     }
 }
+
+#endif

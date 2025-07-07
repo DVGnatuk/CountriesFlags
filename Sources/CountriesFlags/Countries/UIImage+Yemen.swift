@@ -1,5 +1,5 @@
 //
-//  UIImage+Germany.swift
+//  UIImage+Yemen.swift
 //  CountriesFlags
 //
 
@@ -9,34 +9,34 @@ import UIKit
 
 extension UIImage {
     /**
-     [wikipedia]: https://ru.wikipedia.org/wiki/Флаг_Германии "wikipedia"
+     [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Yemen "wikipedia"
      
-     Generates the flag of Germany.
+     Generates the flag of Yemen.
      For more information see [wikipedia].
 
      - Parameters:
         - size: image size.
      
-     - Returns: Returns the flag of Germany.
+     - Returns: Returns the flag of Yemen.
      */
-    internal static func flagGermany(with size: CGSize) -> UIImage? {
+    internal static func flagYemen(with size: CGSize) -> UIImage? {
+        let colorWhite = UIColor.white
         let colorBlack = UIColor.black
-        let colorRed = UIColor.red
-        let colorGold = UIColor(red: 1.0,
-                                green: 204.0/255.0,
-                                blue: 0.0,
-                                alpha: 1.0)
+        let colorRed = UIColor(red: 206.0/255.0,
+                               green: 17.0/255.0,
+                               blue: 38.0/255.0,
+                               alpha: 1.0)
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         
-        colorBlack.setFill()
+        colorRed.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
-        colorRed.setFill()
+        colorWhite.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0),
                           size: CGSize(width: size.width, height: size.height / 3.0)))
         
-        colorGold.setFill()
+        colorBlack.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0 * 2.0),
                           size: CGSize(width: size.width, height: size.height / 3.0)))
         

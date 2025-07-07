@@ -240,7 +240,7 @@ public enum CountriesFlags {
 //        case VirginIslandsBritish
 //        case VirginIslandsUnitedStates
 //        case WallisAndFutuna
-//        case Yemen
+        case Yemen
 //        case Zambia
 //        case Zimbabwe
 }
