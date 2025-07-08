@@ -24,7 +24,7 @@ public enum CountriesFlags {
 //        case Bangladesh
 //        case Barbados
 //        case Belarus
-//        case Belgium
+    case Belgium
 //        case Belize
 //        case Benin
 //        case Bermuda
