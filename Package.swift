@@ -27,7 +27,7 @@ let package = Package(
             name: "CountriesFlagsTests",
             dependencies: ["CountriesFlags"],
             resources: [
-                .copy("Resources/flagUkraine.png")
+                .copy("Resources/Flags")
             ]),
 //        .testTarget(
 //            name: "CountriesFlagsObjCTests",
