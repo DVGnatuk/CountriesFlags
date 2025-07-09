@@ -44,7 +44,7 @@ public enum CountriesFlags {
 //        case CapeVerde
 //        case CaymanIslands
 //        case CentralAfricanRepublic
-//        case Chad
+    case Chad
 //        case Chile
 //        case China
 //        case ChristmasIsland
