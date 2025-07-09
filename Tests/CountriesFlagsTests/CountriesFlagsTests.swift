@@ -18,14 +18,24 @@ final class CountriesFlagsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    func testArmenia() throws {
+        guard let image = UIImage.flag(for: .Armenia, with: imageSize) else {
+            XCTFail("Generated flag is nil")
+            return
+        }
+        
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagArmenia"))
+    }
+    
     func testAustria() throws {
         guard let image = UIImage.flag(for: .Austria, with: imageSize) else {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagAustria"))
     }
     
     func testBelgium() throws {
@@ -33,9 +43,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagBelgium"))
     }
     
     func testBulgaria() throws {
@@ -43,9 +53,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagBulgaria"))
     }
     
     func testColombia() throws {
@@ -53,9 +63,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagColombia"))
     }
     
     func testGermany() throws {
@@ -63,9 +73,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagGermany"))
     }
     
     func testHungary() throws {
@@ -73,9 +83,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagHungary"))
     }
     
     func testIndonesia() throws {
@@ -83,11 +93,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
-        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         
-//        let path = Bundle(for: type(of: self)).path(forResource: "Ukraine", ofType: "png")
-//        let testImage = UIImage(contentsOfFile: path!)
-//        XCTAssertEqual(image.pngData(), testImage!.pngData())
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagIndonesia"))
     }
     
     func testItaly() throws {
@@ -95,11 +103,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
-        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         
-//        let path = Bundle(for: type(of: self)).path(forResource: "Ukraine", ofType: "png")
-//        let testImage = UIImage(contentsOfFile: path!)
-//        XCTAssertEqual(image.pngData(), testImage!.pngData())
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagItaly"))
     }
     
     func testLuxembourg() throws {
@@ -107,11 +113,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
-        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         
-//        let path = Bundle(for: type(of: self)).path(forResource: "Ukraine", ofType: "png")
-//        let testImage = UIImage(contentsOfFile: path!)
-//        XCTAssertEqual(image.pngData(), testImage!.pngData())
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagLuxembourg"))
     }
     
     func testMauritius() throws {
@@ -119,9 +123,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagMauritius"))
     }
     
     func testMonaco() throws {
@@ -129,9 +133,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagMonaco"))
     }
     
     func testNetherlands() throws {
@@ -139,9 +143,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagNetherlands"))
     }
     
     func testNigeria() throws {
@@ -149,9 +153,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagNigeria"))
     }
     
     func testRussianFederation() throws {
@@ -159,9 +163,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        // TODO: Compare image data with standard image
-        //XCTAssertEqual(image.pngData(), <#T##expression2: Equatable##Equatable#>)
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagRussianFederation"))
     }
     
     func testUkraine() throws {
@@ -169,16 +173,9 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
+        
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
-        
-        guard let path = Bundle.module.path(forResource: "Flags/flagUkraine", ofType: "png"),
-              let testImage = UIImage(contentsOfFile: path) else {
-            XCTFail("Test image is nil")
-            return
-        }
-        
-        let percentageDifference: CGFloat = image.percentageDifference(with: testImage)
-        XCTAssertTrue(percentageDifference == 0.0, "Test Ukraine flag failure. Percentage difference: \(percentageDifference)%")
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagUkraine"))
     }
     
     func testYemen() throws {
@@ -186,18 +183,21 @@ final class CountriesFlagsTests: XCTestCase {
             XCTFail("Generated flag is nil")
             return
         }
-        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         
-        guard let path = Bundle.module.path(forResource: "Flags/flagYemen", ofType: "png"),
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagYemen"))
+    }
+
+    private func compareGenerated(flag image: UIImage, with source: String) -> Bool {
+        guard let path = Bundle.module.path(forResource: source, ofType: "png"),
               let testImage = UIImage(contentsOfFile: path) else {
             XCTFail("Test image is nil")
-            return
+            return false
         }
         
         let percentageDifference: CGFloat = image.percentageDifference(with: testImage)
-        XCTAssertTrue(percentageDifference == 0.0, "Test Yemen flag failure. Percentage difference: \(percentageDifference)%")
+        return percentageDifference == 0.0
     }
-
 }
 
 extension UIImage {
