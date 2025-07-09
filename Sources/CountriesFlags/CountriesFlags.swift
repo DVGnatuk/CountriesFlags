@@ -195,7 +195,7 @@ public enum CountriesFlags {
 //        case Senegal
 //        case Serbia
 //        case Seychelles
-//        case SierraLeone
+    case SierraLeone
 //        case Singapore
 //        case Slovakia
 //        case Slovenia
