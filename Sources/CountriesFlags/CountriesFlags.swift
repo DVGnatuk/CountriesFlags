@@ -173,7 +173,7 @@ public enum CountriesFlags {
 //        case Peru
 //        case Philippines
 //        case Pitcairn
-//        case Poland
+    case Poland
 //        case Portugal
 //        case PuertoRico
 //        case Qatar
