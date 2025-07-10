@@ -19,18 +19,28 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "CountriesFlags",
-            dependencies: []),
-//        .target(
-//            name: "CountriesFlagsObjC",
-//            dependencies: []),
+            dependencies: [],
+            exclude: [
+                "../CountriesFlagsObjC"
+            ]),
+        .target(
+            name: "CountriesFlagsObjC",
+            dependencies: [],
+            exclude: [
+                "../CountriesFlags"
+            ],
+            publicHeadersPath: "include"),
         .testTarget(
             name: "CountriesFlagsTests",
             dependencies: ["CountriesFlags"],
+            exclude: [
+                "../CountriesFlagsObjCTests"
+            ],
             resources: [
                 .copy("Resources/Flags")
             ]),
-//        .testTarget(
-//            name: "CountriesFlagsObjCTests",
-//            dependencies: ["CountriesFlagsObjC"]),
+        .testTarget(
+            name: "CountriesFlagsObjCTests",
+            dependencies: ["CountriesFlagsObjC"]),
     ]
 )

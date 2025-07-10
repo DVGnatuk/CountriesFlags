@@ -1,6 +1,5 @@
 //
 //  CountriesFlagsTests.swift
-//  CountriesFlagsTests
 //
 
 import XCTest
@@ -156,6 +155,16 @@ final class CountriesFlagsTests: XCTestCase {
         
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagJapan"))
+    }
+    
+    func testLatvia() throws {
+        guard let image = UIImage.flag(for: .Latvia, with: imageSize) else {
+            XCTFail("Generated flag is nil")
+            return
+        }
+        
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagLatvia"))
     }
     
     func testLithuania() throws {

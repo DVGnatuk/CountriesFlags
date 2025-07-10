@@ -6,7 +6,7 @@
 #ifndef CountriesFlags_h
 #define CountriesFlags_h
 
-public enum CountriesFlags {
+typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Afghanistan
 //        case AlandIslands
 //        case Albania
@@ -230,7 +230,7 @@ public enum CountriesFlags {
 //        case TurksAndCaicosIslands
 //        case Tuvalu
 //        case Uganda
-    case Ukraine
+    Ukraine
 //        case UnitedArabEmirates
 //        case UnitedKingdom
 //        case UnitedStatesOfAmerica
@@ -246,6 +246,6 @@ public enum CountriesFlags {
 //        case Yemen
 //        case Zambia
 //        case Zimbabwe
-}
+};
 
 #endif /* CountriesFlags_h */

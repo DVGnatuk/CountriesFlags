@@ -5,11 +5,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CountriesFlags.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (CountriesFlags)
 
-+ (UIImage * _Nullable)flagForCountry:(CountriesFlags)country
+//+ (UIImage * _Nullable)flagForCountry:(CountriesFlags)country size:(CGSize)size
 
 @end
 
