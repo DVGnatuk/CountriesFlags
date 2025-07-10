@@ -68,7 +68,7 @@ public enum CountriesFlags {
 //        case ElSalvador
 //        case EquatorialGuinea
 //        case Eritrea
-//        case Estonia
+    case Estonia
 //        case Eswatini
 //        case FalklandIslands
 //        case FaroeIslands
