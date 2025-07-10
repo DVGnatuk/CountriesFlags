@@ -28,6 +28,7 @@ extension UIImage {
         switch country {
         case .Armenia: return flagArmenia(with: size)
         case .Austria: return flagAustria(with: size)
+        case .Bangladesh: return flagBangladesh(with: size)
         case .Belgium: return flagBelgium(with: size)
         case .Bulgaria: return flagBulgaria(with: size)
         case .Chad: return flagChad(with: size)
