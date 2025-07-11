@@ -6,6 +6,8 @@
 #ifndef CountriesFlags_h
 #define CountriesFlags_h
 
+#import <UIKit/UIKit.h>
+
 typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Afghanistan
 //        case AlandIslands

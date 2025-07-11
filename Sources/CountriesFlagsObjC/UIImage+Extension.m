@@ -12,7 +12,7 @@
 + (UIImage * _Nullable)flagForCountry:(CountriesFlags)country size:(CGSize)size {
     switch (country) {
         case Ukraine: {
-            return nil;//[self flagUkraineWithSize: size];
+            return [UIImage flagUkraineWithSize: size];
         }
             break;
             

@@ -4,6 +4,8 @@
 
 #import <XCTest/XCTest.h>
 
+#import "UIImage+Extension.h"
+
 @interface CountriesFlagsObjCTests : XCTestCase
 
 @end
@@ -18,9 +20,12 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testUkraine {
+    CGSize imageSize = CGSizeMake(100, 50);
+    UIImage* image = [UIImage flagForCountry:Ukraine size:imageSize];
+    XCTAssertNotNil(image, @"Generated flag is nil");
+    XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize));
+//    XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagLaos"))
 }
 
 @end

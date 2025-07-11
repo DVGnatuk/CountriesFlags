@@ -9,7 +9,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (Ukraine)
 
--(UIImage * _Nullable) flagUkraineWithSize:(CGSize)size;
++(UIImage * _Nullable) flagUkraineWithSize:(CGSize)size;
 
 @end
 
