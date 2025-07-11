@@ -1,7 +1,6 @@
 //
 //  UIImage+Ukraine.h
 //  
-//
 
 #import <UIKit/UIKit.h>
 

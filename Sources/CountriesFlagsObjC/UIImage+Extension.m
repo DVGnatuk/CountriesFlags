@@ -6,15 +6,14 @@
 #import "UIImage+Extension.h"
 
 #import "UIImage+Ukraine.h"
+#import "UIImage+Poland.h"
 
 @implementation UIImage (CountriesFlags)
 
-+ (UIImage * _Nullable)flagForCountry:(CountriesFlags)country size:(CGSize)size {
++ (UIImage *)flagForCountry:(CountriesFlags)country size:(CGSize)size {
     switch (country) {
-        case Ukraine: {
-            return [UIImage flagUkraineWithSize: size];
-        }
-            break;
+        case Poland: return [UIImage flagPolandWithSize: size];
+        case Ukraine: return [UIImage flagUkraineWithSize: size];
             
         default: return nil;
     }
