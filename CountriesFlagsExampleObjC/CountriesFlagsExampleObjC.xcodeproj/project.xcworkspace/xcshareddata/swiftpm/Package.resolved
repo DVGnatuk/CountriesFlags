@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "countriesflags",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DVGnatuk/CountriesFlags.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6d6450b871aa93b4818db479a251bee38f720e1e"
+      }
+    }
+  ],
+  "version" : 2
+}
