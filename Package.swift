@@ -23,12 +23,14 @@ let package = Package(
         .target(
             name: "CountriesFlags",
             dependencies: [],
+            path: "Sources/CountriesFlags",
             exclude: [
                 "../CountriesFlagsObjC"
             ]),
         .target(
             name: "CountriesFlagsObjC",
             dependencies: [],
+            path: "Sources/CountriesFlagsObjC",
             exclude: [
                 "../CountriesFlags"
             ],

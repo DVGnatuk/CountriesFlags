@@ -14,7 +14,7 @@
 		680C4EB92E21D51F0070E4F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680C4EB82E21D51F0070E4F9 /* Assets.xcassets */; };
 		680C4EBC2E21D51F0070E4F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680C4EBA2E21D51F0070E4F9 /* LaunchScreen.storyboard */; };
 		680C4EBF2E21D51F0070E4F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 680C4EBE2E21D51F0070E4F9 /* main.m */; };
-		680C4EE32E21D5670070E4F9 /* CountriesFlags in Frameworks */ = {isa = PBXBuildFile; productRef = 680C4EE22E21D5670070E4F9 /* CountriesFlags */; };
+		680C4EE62E2314710070E4F9 /* CountriesFlags in Frameworks */ = {isa = PBXBuildFile; productRef = 680C4EE52E2314710070E4F9 /* CountriesFlags */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				680C4EE32E21D5670070E4F9 /* CountriesFlags in Frameworks */,
+				680C4EE62E2314710070E4F9 /* CountriesFlags in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 			);
 			name = CountriesFlagsExampleObjC;
 			packageProductDependencies = (
-				680C4EE22E21D5670070E4F9 /* CountriesFlags */,
+				680C4EE52E2314710070E4F9 /* CountriesFlags */,
 			);
 			productName = CountriesFlagsExampleObjC;
 			productReference = 680C4EA92E21D51C0070E4F9 /* CountriesFlagsExampleObjC.app */;
@@ -125,7 +125,7 @@
 			);
 			mainGroup = 680C4EA02E21D51C0070E4F9;
 			packageReferences = (
-				680C4EE12E21D5670070E4F9 /* XCRemoteSwiftPackageReference "CountriesFlags" */,
+				680C4EE42E2314710070E4F9 /* XCRemoteSwiftPackageReference "CountriesFlags" */,
 			);
 			productRefGroup = 680C4EAA2E21D51C0070E4F9 /* Products */;
 			projectDirPath = "";
@@ -371,7 +371,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		680C4EE12E21D5670070E4F9 /* XCRemoteSwiftPackageReference "CountriesFlags" */ = {
+		680C4EE42E2314710070E4F9 /* XCRemoteSwiftPackageReference "CountriesFlags" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/DVGnatuk/CountriesFlags.git";
 			requirement = {
@@ -382,9 +382,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		680C4EE22E21D5670070E4F9 /* CountriesFlags */ = {
+		680C4EE52E2314710070E4F9 /* CountriesFlags */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 680C4EE12E21D5670070E4F9 /* XCRemoteSwiftPackageReference "CountriesFlags" */;
+			package = 680C4EE42E2314710070E4F9 /* XCRemoteSwiftPackageReference "CountriesFlags" */;
 			productName = CountriesFlags;
 		};
 /* End XCSwiftPackageProductDependency section */

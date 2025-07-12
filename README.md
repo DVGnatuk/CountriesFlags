@@ -39,5 +39,5 @@ let image = UIImage.flag(for: .Austria, with: imageSize)
 ```objectivec
 #import <CountriesFlags/CountriesFlags.h>
 
-UIImage* image = [UIImage flagForCountry:Austria size:imageSize)]
+UIImage* image = [UIImage flagForCountry:CountriesFlagsUkraine size:imageSize)]
 ```

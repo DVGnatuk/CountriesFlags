@@ -132,7 +132,7 @@ public enum CountriesFlags {
 //        case Malawi
 //        case Malaysia
 //        case Maldives
-//        case Mali
+    case Mali
 //        case Malta
 //        case MarshallIslands
 //        case Martinique
