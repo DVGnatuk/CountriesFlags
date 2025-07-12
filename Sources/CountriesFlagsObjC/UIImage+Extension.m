@@ -12,8 +12,8 @@
 
 + (UIImage *)flagForCountry:(CountriesFlags)country size:(CGSize)size {
     switch (country) {
-        case Poland: return [UIImage flagPolandWithSize: size];
-        case Ukraine: return [UIImage flagUkraineWithSize: size];
+        case CountriesFlagsPoland: return [UIImage flagPolandWithSize: size];
+        case CountriesFlagsUkraine: return [UIImage flagUkraineWithSize: size];
             
         default: return nil;
     }

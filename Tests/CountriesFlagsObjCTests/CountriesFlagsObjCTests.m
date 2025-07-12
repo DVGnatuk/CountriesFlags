@@ -29,14 +29,14 @@
 }
 
 - (void)testPoland {
-    UIImage* image = [UIImage flagForCountry:Poland size:self.imageSize];
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsPoland size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");
     XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
 //    XCTAssertTrue([UIImage compareGenerated:image with:@"Flags/flagUkraine"]);
 }
 
 - (void)testUkraine {
-    UIImage* image = [UIImage flagForCountry:Ukraine size:self.imageSize];
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsUkraine size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");
     XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
 //    XCTAssertTrue([UIImage compareGenerated:image with:@"Flags/flagUkraine"]);

@@ -13,6 +13,9 @@ let package = Package(
         .library(
             name: "CountriesFlags",
             targets: ["CountriesFlags"]),
+        .library(
+            name: "CountriesFlagsObjC",
+            targets: ["CountriesFlagsObjC"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -29,7 +32,10 @@ let package = Package(
             exclude: [
                 "../CountriesFlags"
             ],
-            publicHeadersPath: "include"),
+            publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath(".")
+            ]),
         .testTarget(
             name: "CountriesFlagsTests",
             dependencies: ["CountriesFlags"],

@@ -89,7 +89,7 @@ public enum CountriesFlags {
 //        case Guadeloupe
 //        case Guam
 //        case Guatemala
-//        case Guinea
+    case Guinea
 //        case GuineaBissau
 //        case Guyana
 //        case Haiti

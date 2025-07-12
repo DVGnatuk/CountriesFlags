@@ -5,7 +5,8 @@
 
 #import "ViewController.h"
 
-#import <CountriesFlags/CountriesFlags.h>
+#import <CountriesFlagsObjC/CountriesFlags.h>
+//@import CountriesFlags;
 
 @interface ViewController ()
 
@@ -18,7 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.imageView.image =
+    self.imageView.image = [UIImage flagForCountry:CountriesFlagsUkraine
+                                              size:self.imageView.frame.size];
 }
 
 
