@@ -5,8 +5,7 @@
 
 #import "ViewController.h"
 
-#import <CountriesFlagsObjC/CountriesFlags.h>
-//@import CountriesFlags;
+@import CountriesFlagsObjC;
 
 @interface ViewController ()
 

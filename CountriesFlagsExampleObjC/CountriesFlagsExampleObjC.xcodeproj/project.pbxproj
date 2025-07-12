@@ -14,7 +14,7 @@
 		680C4EB92E21D51F0070E4F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680C4EB82E21D51F0070E4F9 /* Assets.xcassets */; };
 		680C4EBC2E21D51F0070E4F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680C4EBA2E21D51F0070E4F9 /* LaunchScreen.storyboard */; };
 		680C4EBF2E21D51F0070E4F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 680C4EBE2E21D51F0070E4F9 /* main.m */; };
-		680C4EE62E2314710070E4F9 /* CountriesFlags in Frameworks */ = {isa = PBXBuildFile; productRef = 680C4EE52E2314710070E4F9 /* CountriesFlags */; };
+		680C4EE92E2317A20070E4F9 /* CountriesFlagsObjC in Frameworks */ = {isa = PBXBuildFile; productRef = 680C4EE82E2317A20070E4F9 /* CountriesFlagsObjC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				680C4EE62E2314710070E4F9 /* CountriesFlags in Frameworks */,
+				680C4EE92E2317A20070E4F9 /* CountriesFlagsObjC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +49,7 @@
 			children = (
 				680C4EAB2E21D51C0070E4F9 /* CountriesFlagsExampleObjC */,
 				680C4EAA2E21D51C0070E4F9 /* Products */,
+				680C4EE72E2317A10070E4F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +79,13 @@
 			path = CountriesFlagsExampleObjC;
 			sourceTree = "<group>";
 		};
+		680C4EE72E2317A10070E4F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,7 +103,7 @@
 			);
 			name = CountriesFlagsExampleObjC;
 			packageProductDependencies = (
-				680C4EE52E2314710070E4F9 /* CountriesFlags */,
+				680C4EE82E2317A20070E4F9 /* CountriesFlagsObjC */,
 			);
 			productName = CountriesFlagsExampleObjC;
 			productReference = 680C4EA92E21D51C0070E4F9 /* CountriesFlagsExampleObjC.app */;
@@ -382,10 +390,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		680C4EE52E2314710070E4F9 /* CountriesFlags */ = {
+		680C4EE82E2317A20070E4F9 /* CountriesFlagsObjC */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 680C4EE42E2314710070E4F9 /* XCRemoteSwiftPackageReference "CountriesFlags" */;
-			productName = CountriesFlags;
+			productName = CountriesFlagsObjC;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

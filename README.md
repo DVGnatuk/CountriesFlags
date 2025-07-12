@@ -21,6 +21,9 @@ If you want to use the Swift Package Manager as integration method, either use X
 .package(url: "https://github.com/DVGnatuk/CountriesFlags.git", from: "1.0.0"),
 ```
 
+> [!IMPORTANT]
+> For Objective-C need to check added library in Project Settings -> My Target -> General -> Frameworks, Libraries, and Embedded Content.
+
 ### Manual
 
 If you want to install the CountriesFlags manually:
@@ -37,7 +40,7 @@ let image = UIImage.flag(for: .Austria, with: imageSize)
 ```
 ### Objective-C
 ```objectivec
-#import <CountriesFlags/CountriesFlags.h>
+@import CountriesFlagsObjC;
 
 UIImage* image = [UIImage flagForCountry:CountriesFlagsUkraine size:imageSize)]
 ```

@@ -165,7 +165,7 @@ public enum CountriesFlags {
 //        case Norway
 //        case Oman
 //        case Pakistan
-//        case Palau
+    case Palau
 //        case PalestinianTerritory
 //        case Panama
 //        case PapuaNewGuinea
