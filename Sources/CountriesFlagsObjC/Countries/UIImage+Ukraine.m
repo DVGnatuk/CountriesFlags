@@ -9,23 +9,21 @@
 
 +(UIImage *) flagUkraineWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
-                                         green:91.0f/255.0f
-                                          blue:187.0f/255.0f
+                                         green:87.0f/255.0f
+                                          blue:184.0f/255.0f
                                          alpha:1.0f];
     UIColor* colorYellow = [UIColor colorWithRed:1.0f
-                                           green:213.0f/255.0f
+                                           green:215.0f/255.0f
                                             blue:0.0f
                                            alpha:1.0f];
     
-    UIGraphicsBeginImageContext(size);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
     
-    CGContextRef context = UIGraphicsGetCurrentContext();
+    [colorBlue setFill];
+    UIRectFill(CGRectMake(0.0, 0, size.width, size.height));
     
-    CGContextSetFillColorWithColor(context, [colorBlue CGColor]);
-    CGContextFillRect(context, CGRectMake(0.0, 0, size.width, size.height));
-    
-    CGContextSetFillColorWithColor(context, [colorYellow CGColor]);
-    CGContextFillRect(context, CGRectMake(0, size.height / 2.0, size.width, size.height / 2.0));
+    [colorYellow setFill];
+    UIRectFill(CGRectMake(0, size.height / 2.0, size.width, size.height / 2.0));
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
