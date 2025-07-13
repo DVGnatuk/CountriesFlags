@@ -54,7 +54,7 @@ let package = Package(
                 "../CountriesFlagsTests"
             ],
             resources: [
-                .copy("../CountriesFlagsTests/Resources/Flags")
+                .copy("Resources/flagUkraine.png"),
             ]),
     ]
 )

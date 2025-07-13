@@ -6,6 +6,8 @@
 
 #import "UIImage+Extension.h"
 
+#import "UIImage+Testing.h"
+
 @interface CountriesFlagsObjCTests : XCTestCase
 
 @property (nonatomic, assign) CGSize imageSize;
@@ -32,14 +34,30 @@
     UIImage* image = [UIImage flagForCountry:CountriesFlagsPoland size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");
     XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
-//    XCTAssertTrue([UIImage compareGenerated:image with:@"Flags/flagUkraine"]);
+    if (@available(iOS 14, *)) {
+//    XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagPoland"]);
+    }
 }
 
 - (void)testUkraine {
     UIImage* image = [UIImage flagForCountry:CountriesFlagsUkraine size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");
     XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
-//    XCTAssertTrue([UIImage compareGenerated:image with:@"Flags/flagUkraine"]);
+    if (@available(iOS 14, *)) {
+        XCTAssertTrue([self compareGeneratedFlag:image with:@"flagUkraine"]);
+    }
+}
+
+- (BOOL)compareGeneratedFlag:(UIImage *)flag with:(NSString *)source API_AVAILABLE(ios(14)) {
+    // SWIFTPM_MODULE_BUNDLE requires ios 14: https://github.com/swiftlang/swift-evolution/blob/main/proposals/0271-package-manager-resources.md
+    NSString* path = [SWIFTPM_MODULE_BUNDLE pathForResource:source ofType:@"png"];
+    XCTAssertTrue([path length] > 0);
+    
+    UIImage* testFlag = [UIImage imageWithContentsOfFile: path];
+    XCTAssertNotNil(testFlag, @"Test flag is nil");
+
+    CGFloat percentageDifference = [flag percentageDifferenceWithImage:testFlag];
+    return percentageDifference == 0.0f;
 }
 
 @end

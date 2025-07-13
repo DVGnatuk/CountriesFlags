@@ -31,7 +31,7 @@ public enum CountriesFlags {
 //        case Bhutan
 //        case Bolivia
 //        case BosniaAndHerzegovina
-//        case Botswana
+    case Botswana
 //        case Brazil
 //        case BritishIndianOceanTerritory
 //        case BruneiDarussalam
