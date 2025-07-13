@@ -4,9 +4,8 @@ CountriesFlags generate flags for ~~every~~ country (in progress now).
 
 ## Requirements
 
-Swift: 5.7+
-UIKit:  
-~~SwiftUI: iOS 13.0+~~  
+SPM: 5.7+  
+UI libraries: UIKit, ~~SwiftUI~~  
 Xcode: 14.2+  
 iOS: 13.0+  
 macOS:
@@ -22,7 +21,7 @@ If you want to use the Swift Package Manager as integration method, either use X
 ```
 
 > [!IMPORTANT]
-> For Objective-C need to check added library in Project Settings -> My Target -> General -> Frameworks, Libraries, and Embedded Content.
+> Select `CountriesFlags` package product for Swift or `CountriesFlagsObjC` for Objective-C.
 
 ### Manual
 

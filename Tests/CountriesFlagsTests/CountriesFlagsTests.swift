@@ -107,6 +107,16 @@ final class CountriesFlagsTests: XCTestCase {
         XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagEstonia"))
     }
     
+    func testFrance() throws {
+        guard let image = UIImage.flag(for: .France, with: imageSize) else {
+            XCTFail("Generated flag is nil")
+            return
+        }
+        
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagFrance"))
+    }
+    
     func testGabon() throws {
         guard let image = UIImage.flag(for: .Gabon, with: imageSize) else {
             XCTFail("Generated flag is nil")
@@ -348,6 +358,8 @@ final class CountriesFlagsTests: XCTestCase {
     }
 
     private func compareGenerated(flag image: UIImage, with source: String) -> Bool {
+        // SPM generates the resource_bundle_accessor only if the corresponding target
+        // contains resources in the Package.swift.
         guard let path = Bundle.module.path(forResource: source, ofType: "png"),
               let testImage = UIImage(contentsOfFile: path) else {
             XCTFail("Test image is nil")

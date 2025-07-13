@@ -49,6 +49,12 @@ let package = Package(
             ]),
         .testTarget(
             name: "CountriesFlagsObjCTests",
-            dependencies: ["CountriesFlagsObjC"]),
+            dependencies: ["CountriesFlagsObjC"],
+            exclude: [
+                "../CountriesFlagsTests"
+            ],
+            resources: [
+                .copy("../CountriesFlagsTests/Resources/Flags")
+            ]),
     ]
 )
