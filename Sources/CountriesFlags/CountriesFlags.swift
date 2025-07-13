@@ -78,7 +78,7 @@ public enum CountriesFlags {
 //        case FrenchGuiana
 //        case FrenchPolynesia
     case Gabon
-//        case Gambia
+    case Gambia
 //        case Georgia
     case Germany
 //        case Ghana

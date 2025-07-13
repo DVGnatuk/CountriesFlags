@@ -25,5 +25,7 @@ jobs:
 #      run: swift test -v
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode.app && /usr/bin/xcodebuild -version
-    - name: Build and run tests
+    - name: Build and run swift tests
       run: xcodebuild test -scheme CountriesFlags -destination 'platform=iOS Simulator,name=iPhone SE (3rd generation),OS=18.2' | xcpretty && exit ${PIPESTATUS[0]}
+    - name: Build and run objective-c tests
+      run: xcodebuild test -scheme CountriesFlagsObjC -destination 'platform=iOS Simulator,name=iPhone SE (3rd generation),OS=18.2' | xcpretty && exit ${PIPESTATUS[0]}
