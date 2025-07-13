@@ -228,7 +228,7 @@ public enum CountriesFlags {
 //        case Tuvalu
 //        case Uganda
     case Ukraine
-//        case UnitedArabEmirates
+    case UnitedArabEmirates
 //        case UnitedKingdom
 //        case UnitedStatesOfAmerica
 //        case UnitedSovietSocialRepublics
