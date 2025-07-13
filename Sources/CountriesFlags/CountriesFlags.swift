@@ -177,7 +177,7 @@ public enum CountriesFlags {
 //        case Portugal
 //        case PuertoRico
 //        case Qatar
-//        case Romania
+    case Romania
     case RussianFederation
 //        case Rwanda
 //        case Reunion
