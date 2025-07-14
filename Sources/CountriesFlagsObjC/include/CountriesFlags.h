@@ -147,7 +147,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Mexico
 //        case Micronesia
 //        case Moldova
-//        case Monaco
+    CountriesFlagsMonaco,
 //        case Mongolia
 //        case Montenegro
 //        case Montserrat

@@ -81,7 +81,7 @@ public enum CountriesFlags {
     case Gambia
 //        case Georgia
     case Germany
-//        case Ghana
+    case Ghana
 //        case Gibraltar
 //        case Greece
 //        case Greenland
