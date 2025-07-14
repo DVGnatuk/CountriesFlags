@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsArmenia,
 //        case Aruba
 //        case Australia
-//    case Austria
+    CountriesFlagsAustria,
 //        case Azerbaijan
 //        case Bahamas
 //        case Bahrain

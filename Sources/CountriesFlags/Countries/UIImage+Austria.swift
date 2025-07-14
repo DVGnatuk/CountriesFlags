@@ -20,7 +20,7 @@ extension UIImage {
      - Returns: Returns the flag of Austria.
      */
     internal static func flagAustria(with size: CGSize) -> UIImage? {
-        let colorWhite = UIColor.white;
+        let colorWhite = UIColor.white
         let colorRed = UIColor.red
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
@@ -30,10 +30,6 @@ extension UIImage {
 
         colorWhite.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0),
-                          size: CGSize(width: size.width, height: size.height / 3.0)))
-        
-        colorRed.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0 * 2.0),
                           size: CGSize(width: size.width, height: size.height / 3.0)))
         
         let image = UIGraphicsGetImageFromCurrentImageContext()

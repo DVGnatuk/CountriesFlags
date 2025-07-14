@@ -6,6 +6,7 @@
 #import "UIImage+Extension.h"
 
 #import "UIImage+Armenia.h"
+#import "UIImage+Austria.h"
 #import "UIImage+Poland.h"
 #import "UIImage+RussianFederation.h"
 #import "UIImage+Ukraine.h"
@@ -15,6 +16,7 @@
 + (UIImage *)flagForCountry:(CountriesFlags)country size:(CGSize)size {
     switch (country) {
         case CountriesFlagsArmenia: return [UIImage flagArmeniaWithSize: size];
+        case CountriesFlagsAustria: return [UIImage flagAustriaWithSize: size];
         case CountriesFlagsPoland: return [UIImage flagPolandWithSize: size];
         case CountriesFlagsRussianFederation: return [UIImage flagRussianFederationWithSize: size];
         case CountriesFlagsUkraine: return [UIImage flagUkraineWithSize: size];
