@@ -236,11 +236,11 @@ public enum CountriesFlags {
 //        case Uzbekistan
 //        case Vanuatu
 //        case Venezuela
-//        case Vietnam
+    case Vietnam
 //        case VirginIslandsBritish
 //        case VirginIslandsUnitedStates
 //        case WallisAndFutuna
-        case Yemen
+    case Yemen
 //        case Zambia
 //        case Zimbabwe
 }
