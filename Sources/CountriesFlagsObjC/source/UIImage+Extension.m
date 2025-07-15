@@ -11,6 +11,7 @@
 #import "UIImage+Poland.h"
 #import "UIImage+RussianFederation.h"
 #import "UIImage+Ukraine.h"
+#import "UIImage+UnitedArabEmirates.h"
 #import "UIImage+Yemen.h"
 
 @implementation UIImage (CountriesFlags)
@@ -23,6 +24,7 @@
         case CountriesFlagsPoland: return [UIImage flagPolandWithSize: size];
         case CountriesFlagsRussianFederation: return [UIImage flagRussianFederationWithSize: size];
         case CountriesFlagsUkraine: return [UIImage flagUkraineWithSize: size];
+        case CountriesFlagsUnitedArabEmirates: return [UIImage flagUnitedArabEmiratesWithSize: size];
         case CountriesFlagsYemen: return [UIImage flagYemenWithSize: size];
             
         default: return nil;
