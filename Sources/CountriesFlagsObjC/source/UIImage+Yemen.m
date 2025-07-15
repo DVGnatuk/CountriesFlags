@@ -1,23 +1,13 @@
 //
-//  UIImage+Monaco.m
+//  UIImage+Yemen.m
 //
 
-#import "UIImage+Monaco.h"
+#import "UIImage+Yemen.h"
 
-@implementation UIImage (Monaco)
+@implementation UIImage (Yemen)
 
-/**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Monaco "wikipedia"
- 
- Generates the flag of Monaco.
- For more information see [wikipedia].
- 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Monaco.
- */
-+(UIImage * _Nullable) flagMonacoWithSize:(CGSize)size {
++(UIImage * _Nullable) flagYemenWithSize:(CGSize)size {
+    UIColor* colorBlack = [UIColor blackColor];
     UIColor* colorRed = [UIColor colorWithRed:206.0f/255.0f
                                         green:17.0f/255.0f
                                          blue:38.0f/255.0f
@@ -30,7 +20,10 @@
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
     [colorWhite setFill];
-    UIRectFill(CGRectMake(0.0f, size.height / 2.0f, size.width, size.height / 2.0f));
+    UIRectFill(CGRectMake(0.0f, size.height / 3.0f, size.width, size.height / 3.0f));
+    
+    [colorBlack setFill];
+    UIRectFill(CGRectMake(0.0f, size.height / 3.0f * 2.0f, size.width, size.height / 3.0f));
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

@@ -192,7 +192,7 @@ public enum CountriesFlags {
 //        case SanMarino
 //        case SaoTomeAndPrincipe
 //        case SaudiArabia
-//        case Senegal
+    case Senegal
 //        case Serbia
 //        case Seychelles
     case SierraLeone

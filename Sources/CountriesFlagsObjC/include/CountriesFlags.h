@@ -232,7 +232,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case TurksAndCaicosIslands
 //        case Tuvalu
 //        case Uganda
-    CountriesFlagsUkraine
+    CountriesFlagsUkraine,
 //        case UnitedArabEmirates
 //        case UnitedKingdom
 //        case UnitedStatesOfAmerica
@@ -245,7 +245,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case VirginIslandsBritish
 //        case VirginIslandsUnitedStates
 //        case WallisAndFutuna
-//        case Yemen
+    CountriesFlagsYemen
 //        case Zambia
 //        case Zimbabwe
 };
