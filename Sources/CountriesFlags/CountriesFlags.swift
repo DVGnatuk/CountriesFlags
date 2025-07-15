@@ -239,7 +239,7 @@ public enum CountriesFlags {
     case Vietnam
 //        case VirginIslandsBritish
 //        case VirginIslandsUnitedStates
-//        case WallisAndFutuna
+    case WallisAndFutuna
     case Yemen
 //        case Zambia
 //        case Zimbabwe

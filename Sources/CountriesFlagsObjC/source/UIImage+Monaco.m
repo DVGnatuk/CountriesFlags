@@ -6,17 +6,6 @@
 
 @implementation UIImage (Monaco)
 
-/**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Monaco "wikipedia"
- 
- Generates the flag of Monaco.
- For more information see [wikipedia].
- 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Monaco.
- */
 +(UIImage * _Nullable) flagMonacoWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:206.0f/255.0f
                                         green:17.0f/255.0f

@@ -69,6 +69,7 @@ extension UIImage {
         case .Ukraine: return flagUkraine(with: size)
         case .UnitedArabEmirates: return flagUnitedArabEmirates(with: size)
         case .Vietnam: return flagVietnam(with: size)
+        case .WallisAndFutuna: return flagFrance(with: size) // The official flag of Wallis and Futuna is the French national flag, as it is a French territory.
         case .Yemen: return flagYemen(with: size)
         }
     }

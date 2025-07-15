@@ -7,6 +7,7 @@
 
 #import "UIImage+Armenia.h"
 #import "UIImage+Austria.h"
+#import "UIImage+France.h"
 #import "UIImage+Monaco.h"
 #import "UIImage+Poland.h"
 #import "UIImage+RussianFederation.h"
@@ -20,11 +21,13 @@
     switch (country) {
         case CountriesFlagsArmenia: return [UIImage flagArmeniaWithSize: size];
         case CountriesFlagsAustria: return [UIImage flagAustriaWithSize: size];
+        case CountriesFlagsFrance: return [UIImage flagFranceWithSize: size];
         case CountriesFlagsMonaco: return [UIImage flagMonacoWithSize: size];
         case CountriesFlagsPoland: return [UIImage flagPolandWithSize: size];
         case CountriesFlagsRussianFederation: return [UIImage flagRussianFederationWithSize: size];
         case CountriesFlagsUkraine: return [UIImage flagUkraineWithSize: size];
         case CountriesFlagsUnitedArabEmirates: return [UIImage flagUnitedArabEmiratesWithSize: size];
+        case CountriesFlagsWallisAndFutuna: return [UIImage flagFranceWithSize: size]; // The official flag of Wallis and Futuna is the French national flag, as it is a French territory.
         case CountriesFlagsYemen: return [UIImage flagYemenWithSize: size];
             
         default: return nil;
