@@ -182,7 +182,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Portugal
 //        case PuertoRico
 //        case Qatar
-//        case Romania
+    CountriesFlagsRomania,
     CountriesFlagsRussianFederation,
 //        case Rwanda
 //        case Reunion

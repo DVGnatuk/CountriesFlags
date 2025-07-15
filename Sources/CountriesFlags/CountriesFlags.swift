@@ -53,7 +53,7 @@ public enum CountriesFlags {
 //        case Comoros
 //        case CongoDemocraticRepublic
 //        case CookIslands
-//        case CostaRica
+    case CostaRica
     case CoteDIvoire
 //        case Croatia
 //        case Cuba
