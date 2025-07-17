@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  UIImage+Austria.swift
 //  CountriesFlags
 //
 

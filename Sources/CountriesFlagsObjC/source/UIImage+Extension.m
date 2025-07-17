@@ -7,6 +7,7 @@
 
 #import "UIImage+Armenia.h"
 #import "UIImage+Austria.h"
+#import "UIImage+Belgium.h"
 #import "UIImage+France.h"
 #import "UIImage+Monaco.h"
 #import "UIImage+Poland.h"
@@ -22,6 +23,7 @@
     switch (country) {
         case CountriesFlagsArmenia: return [UIImage flagArmeniaWithSize: size];
         case CountriesFlagsAustria: return [UIImage flagAustriaWithSize: size];
+        case CountriesFlagsBelgium: return [UIImage flagBelgiumWithSize: size];
         case CountriesFlagsFrance: return [UIImage flagFranceWithSize: size];
         case CountriesFlagsMonaco: return [UIImage flagMonacoWithSize: size];
         case CountriesFlagsPoland: return [UIImage flagPolandWithSize: size];

@@ -26,4 +26,30 @@ extension UIBezierPath {
         polygonPath.close()
         return polygonPath
     }
+    
+    static func triangle(in size: CGSize) -> UIBezierPath {
+        let path = UIBezierPath()
+        let sideLength = size.height
+
+        // Calculate vertex coordinates
+        // x1 y1
+        // |\
+        // | \ x3 y3
+        // | /
+        // |/
+        // x2 y2
+        let x1 = 0.0
+        let y1 = 0.0
+        let x2 = 0.0
+        let y2 = sideLength
+        let x3 = sideLength * sin(.pi / 3) //sin(60 degrees)
+        let y3 = sideLength / 2.0
+
+        path.move(to: CGPoint(x: x1, y: y1))
+        path.addLine(to: CGPoint(x: x2, y: y2))
+        path.addLine(to: CGPoint(x: x3, y: y3))
+        path.close()
+        
+        return path
+    }
 }

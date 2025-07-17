@@ -19,7 +19,7 @@ public enum CountriesFlags {
 //        case Australia
     case Austria
 //        case Azerbaijan
-//        case Bahamas
+    case Bahamas
 //        case Bahrain
     case Bangladesh
 //        case Barbados
