@@ -121,7 +121,7 @@ public enum CountriesFlags {
     case Latvia
 //        case Lebanon
 //        case Lesotho
-//        case Liberia
+    case Liberia
 //        case LibyanArabJamahiriya
 //        case Liechtenstein
     case Lithuania

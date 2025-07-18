@@ -137,7 +137,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Malawi
 //        case Malaysia
 //        case Maldives
-//        case Mali
+    CountriesFlagsMali,
 //        case Malta
 //        case MarshallIslands
 //        case Martinique
