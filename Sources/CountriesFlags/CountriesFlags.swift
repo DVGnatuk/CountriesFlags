@@ -180,6 +180,7 @@ public enum CountriesFlags {
     case Romania
     case RussianFederation
 //        case Rwanda
+    case RepublicCongo
 //        case Reunion
 //        case SaintBarthelemy
 //        case SaintHelena
