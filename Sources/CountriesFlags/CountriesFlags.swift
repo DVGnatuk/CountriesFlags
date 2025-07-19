@@ -75,7 +75,7 @@ public enum CountriesFlags {
 //        case FalklandIslands
 //        case FaroeIslands
 //        case Fiji
-//        case Finland
+    case Finland
     case France
 //        case FrenchGuiana
 //        case FrenchPolynesia

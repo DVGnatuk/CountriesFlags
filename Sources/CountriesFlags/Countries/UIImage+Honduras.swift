@@ -36,7 +36,7 @@ extension UIImage {
                           size: CGSize(width: size.width, height: size.height / 36.0 * 12.0)))
 
         colorBlueTurquoise.setFill()
-        let radius = CGFloat(size.height / 72.0 * 4.0) / 2.0
+        let radius = CGFloat(size.height / 72.0 * 8.0) / 2.0
         // center
         UIBezierPath.star(with: CGSize(width: size.width, height: size.height),
                           radius: radius).fill()
