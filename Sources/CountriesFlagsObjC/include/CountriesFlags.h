@@ -31,7 +31,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Belarus
     CountriesFlagsBelgium,
 //        case Belize
-//        case Benin
+    CountriesFlagsBenin,
 //        case Bermuda
 //        case Bhutan
 //        case Bolivia
