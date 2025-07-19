@@ -36,7 +36,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Bhutan
 //        case Bolivia
 //        case BosniaAndHerzegovina
-//        case Botswana
+    CountriesFlagsBotswana,
 //        case Brazil
 //        case BritishIndianOceanTerritory
 //        case BruneiDarussalam

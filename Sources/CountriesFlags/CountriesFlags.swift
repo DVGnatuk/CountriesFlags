@@ -96,7 +96,7 @@ public enum CountriesFlags {
 //        case Guyana
 //        case Haiti
 //        case VaticanCityState
-//        case Honduras
+    case Honduras
 //        case HongKong
     case Hungary
 //        case Iceland
