@@ -33,28 +33,28 @@ extension UIImage {
                                 blue: 61.0/255.0,
                                 alpha: 1.0)
         let colorBlack = UIColor.black
-        
+
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        
+
         colorRed.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorYellow.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0),
                           size: CGSize(width: size.width, height: size.height / 3.0)))
-        
+
         colorGreen.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0 * 2.0),
                           size: CGSize(width: size.width, height: size.height / 3.0)))
-        
+
         // TODO: fix star position
         colorBlack.setFill()
         let radius = CGFloat(size.height / 3.0) / 2.0
         UIBezierPath.star(with: size, radius: radius).fill()
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
 }

@@ -28,9 +28,9 @@ extension UIImage {
                                        green: 106.0/255.0,
                                        blue: 78.0/255.0,
                                        alpha: 1.0)
-        
+
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        
+
         colorBottleGreen.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
@@ -41,13 +41,12 @@ extension UIImage {
                                                height: radius))
         colorRed.setFill()
         path.fill()
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
 }
 
 #endif
-

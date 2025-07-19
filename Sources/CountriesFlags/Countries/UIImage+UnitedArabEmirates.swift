@@ -30,27 +30,27 @@ extension UIImage {
                                alpha: 1.0)
         let colorWhite = UIColor.white
         let colorBlack = UIColor.black
-        
+
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        
+
         colorGreen.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height * 2.0 / 6.0),
                           size: CGSize(width: size.width, height: size.height * 2.0 / 6.0)))
-        
+
         colorBlack.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height * 4.0 / 6.0),
                           size: CGSize(width: size.width, height: size.height * 2.0 / 6.0)))
-        
+
         colorRed.setFill()
         UIRectFill(CGRect(origin: .zero,
                           size: CGSize(width: size.width * 3.0 / 12.0, height: size.height)))
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
 }

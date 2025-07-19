@@ -25,9 +25,9 @@ extension UIImage {
                                blue: 45.0/255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
-        
+
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        
+
         colorWhite.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
@@ -38,10 +38,10 @@ extension UIImage {
                                                height: radius))
         colorRed.setFill()
         path.fill()
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
 }

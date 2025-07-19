@@ -32,12 +32,12 @@ extension UIImage {
                                green: 36.0/255.0,
                                blue: 31.0/255.0,
                                alpha: 1.0)
-        
+
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        
+
         colorYellow.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
-        
+
         colorGreen.setFill()
         let polygonGreenPath = UIBezierPath()
         polygonGreenPath.move(to: .zero)
@@ -53,10 +53,10 @@ extension UIImage {
         polygonYellowPath.addLine(to: CGPoint(x: size.width / 3.0, y: size.height))
         polygonYellowPath.close()
         polygonYellowPath.fill()
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
 }

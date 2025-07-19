@@ -3,6 +3,8 @@
 //  CountriesFlags
 //  
 
+// swiftlint:disable identifier_name
+
 import UIKit
 
 extension UIBezierPath {
@@ -26,7 +28,7 @@ extension UIBezierPath {
         polygonPath.close()
         return polygonPath
     }
-    
+
     static func triangle(in size: CGSize) -> UIBezierPath {
         let path = UIBezierPath()
         let sideLength = size.height
@@ -42,21 +44,21 @@ extension UIBezierPath {
         let y1 = 0.0
         let x2 = 0.0
         let y2 = sideLength
-        let x3 = sideLength * sin(.pi / 3) //sin(60 degrees)
+        let x3 = sideLength * sin(.pi / 3) // sin(60 degrees)
         let y3 = sideLength / 2.0
 
         path.move(to: CGPoint(x: x1, y: y1))
         path.addLine(to: CGPoint(x: x2, y: y2))
         path.addLine(to: CGPoint(x: x3, y: y3))
         path.close()
-        
+
         return path
     }
-    
+
     static func plus(in size: CGSize, with sideWidth: CGFloat) -> UIBezierPath {
         let xOffset = size.width / 2.0 - sideWidth * 3.0 / 2.0
         let yOffset = size.height / 2.0 - sideWidth * 3.0 / 2.0
-        
+
         let path = UIBezierPath()
         // top
         path.move(to: CGPoint(x: xOffset + sideWidth, y: yOffset))
@@ -75,7 +77,9 @@ extension UIBezierPath {
         path.addLine(to: CGPoint(x: xOffset, y: yOffset + sideWidth))
         path.addLine(to: CGPoint(x: xOffset + sideWidth, y: yOffset + sideWidth))
         path.close()
-        
+
         return path
     }
 }
+
+// swiftlint:enable identifier_name

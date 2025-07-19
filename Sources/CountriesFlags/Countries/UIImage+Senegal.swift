@@ -32,27 +32,27 @@ extension UIImage {
                                green: 27.0/255.0,
                                blue: 35.0/255.0,
                                alpha: 1.0)
-        
+
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        
+
         colorGreen.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorYellow.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: size.width / 3.0, y: 0.0),
                           size: CGSize(width: size.width / 3.0, height: size.height)))
-        
+
         colorRed.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: size.width / 3.0 * 2.0, y: 0.0),
                           size: CGSize(width: size.width / 3.0, height: size.height)))
-        
+
         colorGreen.setFill()
         let radius = CGFloat(size.height * 5.0 / 12.0) / 2.0
         UIBezierPath.star(with: size, radius: radius).fill()
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
 }

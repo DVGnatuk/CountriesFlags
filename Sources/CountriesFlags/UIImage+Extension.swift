@@ -3,6 +3,9 @@
 //  CountriesFlags
 //
 
+// swiftlint:disable cyclomatic_complexity
+// swiftlint:disable function_body_length
+
 //#if canImport(SwiftUI)
 //
 //import SwiftUI
@@ -76,10 +79,14 @@ extension UIImage {
         case .Ukraine: return flagUkraine(with: size)
         case .UnitedArabEmirates: return flagUnitedArabEmirates(with: size)
         case .Vietnam: return flagVietnam(with: size)
-        case .WallisAndFutuna: return flagFrance(with: size) // The official flag of Wallis and Futuna is the French national flag, as it is a French territory.
+        // The official flag of Wallis and Futuna is the French national flag, as it is a French territory.
+        case .WallisAndFutuna: return flagFrance(with: size)
         case .Yemen: return flagYemen(with: size)
         }
     }
 }
 
 #endif
+
+// swiftlint:enable cyclomatic_complexity
+// swiftlint:enable function_body_length

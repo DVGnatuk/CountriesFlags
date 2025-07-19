@@ -3,6 +3,8 @@
 //  CountriesFlags
 //
 
+// swiftlint:disable identifier_name
+
 public enum CountriesFlags {
 //        case Afghanistan
 //        case AlandIslands
@@ -245,3 +247,5 @@ public enum CountriesFlags {
 //        case Zambia
 //        case Zimbabwe
 }
+
+// swiftlint:enable identifier_name

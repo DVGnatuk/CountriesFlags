@@ -32,23 +32,23 @@ extension UIImage {
                                green: 33.0/255.0,
                                blue: 41.0/255.0,
                                alpha: 1.0)
-        
+
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        
+
         colorGreen.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: size.width / 3.0, y: 0.0),
                           size: CGSize(width: size.width / 3.0, height: size.height)))
-        
+
         colorRed.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: size.width / 3.0 * 2.0, y: 0.0),
                           size: CGSize(width: size.width / 3.0, height: size.height)))
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
 }

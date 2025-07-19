@@ -25,19 +25,19 @@ extension UIImage {
                                blue: 60.0/255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
-        
+
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        
+
         colorWhite.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorRed.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 2.0),
                           size: CGSize(width: size.width, height: size.height / 2.0)))
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
 }

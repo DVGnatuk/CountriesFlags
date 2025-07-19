@@ -163,7 +163,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case NewZealand
 //        case Nicaragua
 //        case Niger
-//        case Nigeria
+    CountriesFlagsNigeria,
 //        case Niue
 //        case NorfolkIsland
 //        case NorthernMarianaIslands

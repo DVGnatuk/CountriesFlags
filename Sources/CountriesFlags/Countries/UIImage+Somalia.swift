@@ -25,19 +25,19 @@ extension UIImage {
                                 blue: 222.0/255.0,
                                 alpha: 1.0)
         let colorWhite = UIColor.white
-        
+
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        
+
         colorBlue.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
         let radius = CGFloat(size.height / 2.0) / 2.0
         UIBezierPath.star(with: size, radius: radius).fill()
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
 }

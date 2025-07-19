@@ -25,25 +25,25 @@ extension UIImage {
                                blue: 0.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
-        
+
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        
+
         colorRed.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: 0.0),
                           size: CGSize(width: size.width / 48.0 * 20.0, height: size.height / 2.0)))
-        
+
         let plusWidth = size.width / 48.0 * 3.0
-        
+
         colorRed.setFill()
         UIBezierPath.plus(in: CGSize(width: size.width / 48.0 * 20.0, height: size.height / 2.0),
                           with: plusWidth).fill()
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
 }

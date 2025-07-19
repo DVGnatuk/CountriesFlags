@@ -29,9 +29,9 @@ extension UIImage {
                                   blue: 44.0/255.0,
                                   alpha: 1.0)
         let colorBlack = UIColor.black
-        
+
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        
+
         colorAquamarine.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
@@ -41,10 +41,10 @@ extension UIImage {
 
         colorBlack.setFill()
         UIBezierPath.triangle(in: size).fill()
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
 }

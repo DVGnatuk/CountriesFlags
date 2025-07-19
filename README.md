@@ -17,8 +17,9 @@ macOS:
 If you want to use the Swift Package Manager as integration method, either use Xcode to add the package dependency or add the following dependency to your Package.swift:
 
 ```swift
-.package(url: "https://github.com/DVGnatuk/CountriesFlags.git", from: "1.0.0"),
+.package(url: "https://github.com/DVGnatuk/CountriesFlags.git", from: "<version>"),
 ```
+Replace `<version>` with the desired minimum or exact version.
 
 > [!IMPORTANT]
 > Select `CountriesFlags` package product for Swift or `CountriesFlagsObjC` for Objective-C.
