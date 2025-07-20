@@ -220,7 +220,7 @@ public enum CountriesFlags {
 //        case Tanzania
     case Thailand
 //        case TimorLeste
-//        case Togo
+    case Togo
 //        case Tokelau
     case Tonga
 //        case TrinidadAndTobago

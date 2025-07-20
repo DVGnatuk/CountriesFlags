@@ -24,7 +24,7 @@ extension UIImage {
                                       green: 169.0/255.0,
                                       blue: 206.0/255.0,
                                       alpha: 1.0)
-        let colorYellow = UIColor(red: 255.0/255.0,
+        let colorYellow = UIColor(red: 1.0,
                                   green: 199.0/255.0,
                                   blue: 44.0/255.0,
                                   alpha: 1.0)
