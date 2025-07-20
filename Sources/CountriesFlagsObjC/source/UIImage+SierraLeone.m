@@ -1,5 +1,6 @@
 //
 //  UIImage+SierraLeone.m
+//  CountriesFlags
 //
 
 #import "UIImage+SierraLeone.h"

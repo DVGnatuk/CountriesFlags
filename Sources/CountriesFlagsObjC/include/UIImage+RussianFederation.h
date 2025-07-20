@@ -1,5 +1,6 @@
 //
 //  UIImage+RussianFederation.h
+//  CountriesFlags
 //
 
 #import <UIKit/UIKit.h>

@@ -1,5 +1,6 @@
 //
 //  UIImage+Mali.m
+//  CountriesFlags
 //
 
 #import "UIImage+Mali.h"

@@ -1,5 +1,6 @@
 //
 //  UIImage+Botswana.h
+//  CountriesFlags
 //  
 
 #import <UIKit/UIKit.h>

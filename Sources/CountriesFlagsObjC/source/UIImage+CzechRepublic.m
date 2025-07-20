@@ -1,5 +1,6 @@
 //
 //  UIImage+CzechRepublic.m
+//  CountriesFlags
 //
 
 #import "UIImage+CzechRepublic.h"

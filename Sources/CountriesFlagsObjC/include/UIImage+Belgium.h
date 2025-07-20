@@ -1,5 +1,6 @@
 //
 //  UIImage+Belgium.h
+//  CountriesFlags
 //
 
 #import <UIKit/UIKit.h>

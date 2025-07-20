@@ -1,5 +1,6 @@
 //
 //  UIImage+Benin.h
+//  CountriesFlags
 //
 
 #import <UIKit/UIKit.h>

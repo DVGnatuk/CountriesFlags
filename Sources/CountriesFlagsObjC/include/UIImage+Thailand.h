@@ -1,5 +1,6 @@
 //
 //  UIImage+Thailand.h
+//  CountriesFlags
 //
 
 #import <UIKit/UIKit.h>

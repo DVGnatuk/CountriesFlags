@@ -1,5 +1,6 @@
 //
 //  UIImage+Monaco.h
+//  CountriesFlags
 //
 
 #import <UIKit/UIKit.h>

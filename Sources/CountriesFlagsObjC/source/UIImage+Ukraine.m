@@ -1,6 +1,6 @@
 //
 //  UIImage+Ukraine.m
-//  
+//  CountriesFlags
 //
 
 #import "UIImage+Ukraine.h"

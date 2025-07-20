@@ -1,5 +1,6 @@
 //
 //  UIImage+Botswana.m
+//  CountriesFlags
 //
 
 #import "UIImage+Botswana.h"
