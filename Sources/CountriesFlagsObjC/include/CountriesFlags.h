@@ -63,7 +63,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Croatia
 //        case Cuba
 //        case Cyprus
-//        case CzechRepublic
+    CountriesFlagsCzechRepublic,
 //        case Denmark
 //        case Djibouti
 //        case Dominica
