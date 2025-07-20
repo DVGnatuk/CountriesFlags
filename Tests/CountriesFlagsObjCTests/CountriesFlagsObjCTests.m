@@ -102,6 +102,15 @@
     }
 }
 
+- (void)testChad {
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsChad size:self.imageSize];
+    XCTAssertNotNil(image, @"Generated flag is nil");
+    XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
+    if (@available(iOS 14, *)) {
+        XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagChad"]);
+    }
+}
+
 - (void)testColombia {
     UIImage* image = [UIImage flagForCountry:CountriesFlagsColombia size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");
@@ -180,6 +189,15 @@
     XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
     if (@available(iOS 14, *)) {
         XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagNigeria"]);
+    }
+}
+
+- (void)testNorway {
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsNorway size:self.imageSize];
+    XCTAssertNotNil(image, @"Generated flag is nil");
+    XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
+    if (@available(iOS 14, *)) {
+        XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagNorway"]);
     }
 }
 
