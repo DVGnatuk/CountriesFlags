@@ -3,6 +3,8 @@
 //  CountriesFlags
 //
 
+// swiftlint:disable function_body_length
+
 #if canImport(UIKit)
 
 import UIKit
@@ -42,7 +44,7 @@ extension UIImage {
 
         colorBlue.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
-        
+
         colorYellow.setFill()
         var path = UIBezierPath()
         path.move(to: CGPoint(x: size.width / 6.0 * 2.0, y: 0.0))
@@ -50,7 +52,7 @@ extension UIImage {
         path.addLine(to: CGPoint(x: 0.0, y: size.height))
         path.close()
         path.fill()
-        
+
         colorRed.setFill()
         path = UIBezierPath()
         path.move(to: CGPoint(x: size.width / 6.0 * 4.0, y: 0.0))
@@ -59,7 +61,7 @@ extension UIImage {
         path.addLine(to: CGPoint(x: 0.0, y: size.height))
         path.close()
         path.fill()
-        
+
         colorWhite.setFill()
         path = UIBezierPath()
         path.move(to: CGPoint(x: size.width, y: size.height / 3.0))
@@ -67,7 +69,7 @@ extension UIImage {
         path.addLine(to: CGPoint(x: 0.0, y: size.height))
         path.close()
         path.fill()
-        
+
         colorGreen.setFill()
         path = UIBezierPath()
         path.move(to: CGPoint(x: size.width, y: size.height / 3.0 * 2.0))
@@ -84,3 +86,5 @@ extension UIImage {
 }
 
 #endif
+
+// swiftlint:enable function_body_length

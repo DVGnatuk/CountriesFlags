@@ -15,9 +15,11 @@
 #import "UIImage+Bulgaria.h"
 #import "UIImage+Chad.h"
 #import "UIImage+Colombia.h"
+#import "UIImage+CostaRica.h"
 #import "UIImage+CzechRepublic.h"
 #import "UIImage+Finland.h"
 #import "UIImage+France.h"
+#import "UIImage+Ireland.h"
 #import "UIImage+Mali.h"
 #import "UIImage+Martinique.h"
 #import "UIImage+Monaco.h"
@@ -50,9 +52,11 @@
         case CountriesFlagsBulgaria: return [UIImage flagBulgariaWithSize: size];
         case CountriesFlagsChad: return [UIImage flagChadWithSize: size];
         case CountriesFlagsColombia: return [UIImage flagColombiaWithSize: size];
+        case CountriesFlagsCostaRica: return [UIImage flagCostaRicaWithSize: size];
         case CountriesFlagsCzechRepublic: return [UIImage flagCzechRepublicWithSize: size];
         case CountriesFlagsFinland: return [UIImage flagFinlandWithSize: size];
         case CountriesFlagsFrance: return [UIImage flagFranceWithSize: size];
+        case CountriesFlagsIreland: return [UIImage flagIrelandWithSize: size];
         case CountriesFlagsMali: return [UIImage flagMaliWithSize: size];
         case CountriesFlagsMartinique: return [UIImage flagMartiniqueWithSize: size];
         case CountriesFlagsMonaco: return [UIImage flagMonacoWithSize: size];

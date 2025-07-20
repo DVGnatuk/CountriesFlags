@@ -36,11 +36,11 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 6.0),
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 6.0),
                           size: CGSize(width: size.width, height: size.height / 6.0 * 4.0)))
 
         colorRed.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 6.0 * 2.0),
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 6.0 * 2.0),
                           size: CGSize(width: size.width, height: size.height / 6.0 * 2.0)))
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
