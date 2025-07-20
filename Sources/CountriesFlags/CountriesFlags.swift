@@ -208,7 +208,7 @@ public enum CountriesFlags {
 //        case SouthGeorgiaAndSouthSandwichIslands
 //        case Spain
 //        case SriLanka
-//        case Sudan
+    case Sudan
 //        case Suriname
 //        case SvalbardAndJanMayen
 //        case Swaziland

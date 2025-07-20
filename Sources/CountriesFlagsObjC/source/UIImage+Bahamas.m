@@ -1,5 +1,6 @@
 //
 //  UIImage+Bahamas.m
+//  CountriesFlags
 //
 
 #import "UIImage+Bahamas.h"

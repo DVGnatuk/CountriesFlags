@@ -40,7 +40,7 @@ extension UIImage {
                           size: CGSize(width: size.width, height: size.height / 3.0)))
 
         colorBlack.setFill()
-        UIBezierPath.triangle(in: size).fill()
+        UIBezierPath.triangle(in: size, type: .leftEquilateral).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
