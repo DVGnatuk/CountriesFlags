@@ -5,6 +5,8 @@
 
 #import "UIImage+CzechRepublic.h"
 
+#import "UIBezierPath+Extension.h"
+
 @implementation UIImage (CzechRepublic)
 
 +(UIImage * _Nullable) flagCzechRepublicWithSize:(CGSize)size {
@@ -27,12 +29,8 @@
     UIRectFill(CGRectMake(0.0f, size.height / 2.0f, size.width, size.height / 2.0f));
     
     [colorBlue setFill];
-    UIBezierPath* path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(0.0f, 0.0f)];
-    [path addLineToPoint:CGPointMake(size.width / 2.0f, size.height / 2.0f)];
-    [path addLineToPoint:CGPointMake(0.0f, size.height)];
-    [path closePath];
-    [path fill];
+    [[UIBezierPath triangleInSize: CGSizeMake(size.width / 2.0f, size.height)
+                             type: FlagTriangleTypeLeft] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

@@ -137,7 +137,7 @@ public enum CountriesFlags {
     case Mali
 //        case Malta
 //        case MarshallIslands
-//        case Martinique
+    case Martinique
 //        case Mauritania
     case Mauritius
 //        case Mayotte

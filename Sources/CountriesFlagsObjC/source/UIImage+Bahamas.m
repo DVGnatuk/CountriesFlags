@@ -29,7 +29,8 @@
     UIRectFill(CGRectMake(0.0f, size.height / 3.0f, size.width, size.height / 3.0f));
     
     [colorBlack setFill];
-    [[UIBezierPath triangleInSize: size] fill];
+    [[UIBezierPath triangleInSize: size
+                             type: FlagTriangleTypeLeftEquilateral] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

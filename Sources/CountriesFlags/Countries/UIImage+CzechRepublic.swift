@@ -40,12 +40,8 @@ extension UIImage {
                           size: CGSize(width: size.width, height: size.height / 2.0)))
 
         colorBlue.setFill()
-        let path = UIBezierPath()
-        path.move(to: CGPoint(x: 0.0, y: 0.0))
-        path.addLine(to: CGPoint(x: size.width / 2.0, y: size.height / 2.0))
-        path.addLine(to: CGPoint(x: 0.0, y: size.height))
-        path.close()
-        path.fill()
+        UIBezierPath.triangle(in: CGSize(width: size.width / 2.0, height: size.height),
+                              type: .left).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
