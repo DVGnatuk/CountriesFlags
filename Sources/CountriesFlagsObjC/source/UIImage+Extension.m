@@ -21,6 +21,7 @@
 #import "UIImage+Romania.h"
 #import "UIImage+RussianFederation.h"
 #import "UIImage+SierraLeone.h"
+#import "UIImage+Sweden.h"
 #import "UIImage+Thailand.h"
 #import "UIImage+Ukraine.h"
 #import "UIImage+UnitedArabEmirates.h"
@@ -46,6 +47,7 @@
         case CountriesFlagsRomania: return [UIImage flagRomaniaWithSize: size];
         case CountriesFlagsRussianFederation: return [UIImage flagRussianFederationWithSize: size];
         case CountriesFlagsSierraLeone: return [UIImage flagSierraLeoneWithSize: size];
+        case CountriesFlagsSweden: return [UIImage flagSwedenWithSize: size];
         case CountriesFlagsThailand: return [UIImage flagThailandWithSize: size];
         case CountriesFlagsUkraine: return [UIImage flagUkraineWithSize: size];
         case CountriesFlagsUnitedArabEmirates: return [UIImage flagUnitedArabEmiratesWithSize: size];

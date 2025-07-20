@@ -212,7 +212,7 @@ public enum CountriesFlags {
 //        case Suriname
 //        case SvalbardAndJanMayen
 //        case Swaziland
-//        case Sweden
+    case Sweden
 //        case Switzerland
 //        case SyrianArabRepublic
 //        case Taiwan
