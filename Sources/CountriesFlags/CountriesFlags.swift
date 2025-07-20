@@ -61,7 +61,7 @@ public enum CountriesFlags {
 //        case Cuba
 //        case Cyprus
     case CzechRepublic
-//        case Denmark
+    case Denmark
 //        case Djibouti
 //        case Dominica
 //        case DominicanRepublic
