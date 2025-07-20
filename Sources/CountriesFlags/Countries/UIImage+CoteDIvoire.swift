@@ -20,7 +20,7 @@ extension UIImage {
      - Returns: Returns the flag of Côte d'Ivoire.
      */
     internal static func flagCoteDIvoire(with size: CGSize) -> UIImage? {
-        let colorOrange = UIColor(red: 255.0/255.0,
+        let colorOrange = UIColor(red: 1.0,
                                   green: 130.0/255.0,
                                   blue: 0.0,
                                   alpha: 1.0)

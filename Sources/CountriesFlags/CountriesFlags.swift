@@ -22,7 +22,7 @@ public enum CountriesFlags {
     case Austria
 //        case Azerbaijan
     case Bahamas
-//        case Bahrain
+    case Bahrain
     case Bangladesh
 //        case Barbados
 //        case Belarus

@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsAustria,
 //        case Azerbaijan
     CountriesFlagsBahamas,
-//        case Bahrain
+    CountriesFlagsBahrain,
     CountriesFlagsBangladesh,
 //        case Barbados
 //        case Belarus
@@ -59,7 +59,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case CongoDemocraticRepublic
 //        case CookIslands
     CountriesFlagsCostaRica,
-//        case CoteDIvoire
+    CountriesFlagsCoteDIvoire,
 //        case Croatia
 //        case Cuba
 //        case Cyprus
