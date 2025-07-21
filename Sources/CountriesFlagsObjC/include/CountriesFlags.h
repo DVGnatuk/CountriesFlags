@@ -120,7 +120,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Kiribati
 //        case Kosovo
 //        case Korea
-//        case Kuwait
+    CountriesFlagsKuwait,
 //        case Kyrgyzstan
 //        case Laos
 //        case Latvia

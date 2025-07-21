@@ -117,7 +117,7 @@ public enum CountriesFlags {
 //        case Kiribati
 //        case Kosovo
 //        case Korea
-//        case Kuwait
+    case Kuwait
 //        case Kyrgyzstan
     case Laos
     case Latvia
