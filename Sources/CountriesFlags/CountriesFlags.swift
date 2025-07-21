@@ -99,7 +99,7 @@ public enum CountriesFlags {
     case Honduras
 //        case HongKong
     case Hungary
-//        case Iceland
+    case Iceland
 //        case India
     case Indonesia
 //        case Iran

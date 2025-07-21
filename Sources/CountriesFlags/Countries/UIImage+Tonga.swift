@@ -35,11 +35,9 @@ extension UIImage {
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: 0.0),
                           size: CGSize(width: size.width / 48.0 * 20.0, height: size.height / 2.0)))
 
-        let plusWidth = size.width / 48.0 * 3.0
-
         colorRed.setFill()
         UIBezierPath.plus(in: CGSize(width: size.width / 48.0 * 20.0, height: size.height / 2.0),
-                          with: plusWidth).fill()
+                          with: size.width / 48.0 * 3.0).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

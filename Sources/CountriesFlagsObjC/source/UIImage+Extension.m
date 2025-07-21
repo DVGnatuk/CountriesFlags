@@ -24,6 +24,7 @@
 #import "UIImage+Estonia.h"
 #import "UIImage+Finland.h"
 #import "UIImage+France.h"
+#import "UIImage+Iceland.h"
 #import "UIImage+Ireland.h"
 #import "UIImage+Mali.h"
 #import "UIImage+Martinique.h"
@@ -39,6 +40,7 @@
 #import "UIImage+Sweden.h"
 #import "UIImage+Switzerland.h"
 #import "UIImage+Thailand.h"
+#import "UIImage+Tonga.h"
 #import "UIImage+Ukraine.h"
 #import "UIImage+UnitedArabEmirates.h"
 #import "UIImage+Yemen.h"
@@ -70,6 +72,7 @@
         case CountriesFlagsFrenchGuiana: return [UIImage flagFranceWithSize: size];
         // The French tricolore is the official national flag used in Guadeloupe.
         case CountriesFlagsGuadeloupe: return [UIImage flagFranceWithSize: size];
+        case CountriesFlagsIceland: return [UIImage flagIcelandWithSize: size];
         case CountriesFlagsIreland: return [UIImage flagIrelandWithSize: size];
         case CountriesFlagsMali: return [UIImage flagMaliWithSize: size];
         case CountriesFlagsMartinique: return [UIImage flagMartiniqueWithSize: size];
@@ -85,6 +88,7 @@
         case CountriesFlagsSweden: return [UIImage flagSwedenWithSize: size];
         case CountriesFlagsSwitzerland: return [UIImage flagSwitzerlandWithSize: size];
         case CountriesFlagsThailand: return [UIImage flagThailandWithSize: size];
+        case CountriesFlagsTonga: return [UIImage flagTongaWithSize: size];
         case CountriesFlagsUkraine: return [UIImage flagUkraineWithSize: size];
         case CountriesFlagsUnitedArabEmirates: return [UIImage flagUnitedArabEmiratesWithSize: size];
         // The official flag of Wallis and Futuna is the French national flag, as it is a French territory.
