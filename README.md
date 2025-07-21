@@ -8,7 +8,7 @@ SwiftPM: 5.7+
 UI libraries: UIKit, ~~SwiftUI~~  
 Xcode: 14.2+  
 iOS: 13.0+  
-macOS:
+~~macOS:~~  
 
 ## Installation
 

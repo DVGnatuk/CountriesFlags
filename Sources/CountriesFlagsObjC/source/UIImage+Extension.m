@@ -20,6 +20,7 @@
 #import "UIImage+CoteDIvoire.h"
 #import "UIImage+CzechRepublic.h"
 #import "UIImage+Denmark.h"
+#import "UIImage+FaroeIslands.h"
 #import "UIImage+Estonia.h"
 #import "UIImage+Finland.h"
 #import "UIImage+France.h"
@@ -61,9 +62,14 @@
         case CountriesFlagsCoteDIvoire: return [UIImage flagCoteDIvoireWithSize: size];
         case CountriesFlagsCzechRepublic: return [UIImage flagCzechRepublicWithSize: size];
         case CountriesFlagsDenmark: return [UIImage flagDenmarkWithSize: size];
+        case CountriesFlagsFaroeIslands: return [UIImage flagFaroeIslandsWithSize: size];
         case CountriesFlagsEstonia: return [UIImage flagEstoniaWithSize: size];
         case CountriesFlagsFinland: return [UIImage flagFinlandWithSize: size];
         case CountriesFlagsFrance: return [UIImage flagFranceWithSize: size];
+        // The official flag of French Guiana is the French flag due to it being an overseas region and department of France.
+        case CountriesFlagsFrenchGuiana: return [UIImage flagFranceWithSize: size];
+        // The French tricolore is the official national flag used in Guadeloupe.
+        case CountriesFlagsGuadeloupe: return [UIImage flagFranceWithSize: size];
         case CountriesFlagsIreland: return [UIImage flagIrelandWithSize: size];
         case CountriesFlagsMali: return [UIImage flagMaliWithSize: size];
         case CountriesFlagsMartinique: return [UIImage flagMartiniqueWithSize: size];

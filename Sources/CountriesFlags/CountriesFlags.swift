@@ -73,11 +73,11 @@ public enum CountriesFlags {
     case Estonia
 //        case Eswatini
 //        case FalklandIslands
-//        case FaroeIslands
+    case FaroeIslands
 //        case Fiji
     case Finland
     case France
-//        case FrenchGuiana
+    case FrenchGuiana
 //        case FrenchPolynesia
     case Gabon
     case Gambia
@@ -88,7 +88,7 @@ public enum CountriesFlags {
 //        case Greece
 //        case Greenland
 //        case Grenada
-//        case Guadeloupe
+    case Guadeloupe
 //        case Guam
 //        case Guatemala
     case Guinea

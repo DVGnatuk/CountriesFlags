@@ -49,7 +49,7 @@ final class CountriesFlagsTests: XCTestCase {
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagBahamas"))
     }
-    
+
     func testBahrain() throws {
         guard let image = UIImage.flag(for: .Bahrain, with: imageSize) else {
             XCTFail("Generated flag is nil")
@@ -200,6 +200,16 @@ final class CountriesFlagsTests: XCTestCase {
         XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagEstonia"))
     }
 
+    func testFaroeIslands() throws {
+        guard let image = UIImage.flag(for: .FaroeIslands, with: imageSize) else {
+            XCTFail("Generated flag is nil")
+            return
+        }
+
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagFaroeIslands"))
+    }
+
     func testFinland() throws {
         guard let image = UIImage.flag(for: .Finland, with: imageSize) else {
             XCTFail("Generated flag is nil")
@@ -212,6 +222,26 @@ final class CountriesFlagsTests: XCTestCase {
 
     func testFrance() throws {
         guard let image = UIImage.flag(for: .France, with: imageSize) else {
+            XCTFail("Generated flag is nil")
+            return
+        }
+
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagFrance"))
+    }
+
+    func testFrenchGuiana() throws {
+        guard let image = UIImage.flag(for: .FrenchGuiana, with: imageSize) else {
+            XCTFail("Generated flag is nil")
+            return
+        }
+
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagFrance"))
+    }
+
+    func testGuadeloupe() throws {
+        guard let image = UIImage.flag(for: .Guadeloupe, with: imageSize) else {
             XCTFail("Generated flag is nil")
             return
         }
