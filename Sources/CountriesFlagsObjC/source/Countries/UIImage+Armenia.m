@@ -21,16 +21,16 @@
                                             blue:0.0f
                                            alpha:1.0f];
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
     
     [colorRed setFill];
-    UIRectFill(CGRectMake(0.0, 0, size.width, size.height));
+    UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
     [colorBlue setFill];
-    UIRectFill(CGRectMake(0, size.height / 3.0, size.width, size.height / 3.0));
+    UIRectFill(CGRectMake(0.0f, size.height / 3.0f, size.width, size.height / 3.0f));
     
     [colorOrange setFill];
-    UIRectFill(CGRectMake(0, size.height / 3.0 * 2.0, size.width, size.height / 3.0));
+    UIRectFill(CGRectMake(0.0f, size.height / 3.0f * 2.0f, size.width, size.height / 3.0f));
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

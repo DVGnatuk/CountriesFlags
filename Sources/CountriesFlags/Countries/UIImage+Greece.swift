@@ -40,18 +40,18 @@ extension UIImage {
                           size: CGSize(width: size.width, height: size.height / 18.0 * 2.0)))
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 18.0 * 14.0),
                           size: CGSize(width: size.width, height: size.height / 18.0 * 2.0)))
-        
+
         colorBlue.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: 0.0),
                           size: CGSize(width: size.width / 27.0 * 10.0, height: size.height / 18.0 * 10.0)))
-        
+
         colorWhite.setFill()
         // horizontal line
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 18.0 * 4.0),
                           size: CGSize(width: size.width / 27.0 * 10.0, height: size.height / 18.0 * 2.0)))
-        // vertical line
+        // vertical line - add 0.5 to remove blue line for small images
         UIRectFill(CGRect(origin: CGPoint(x: size.width / 27.0 * 4.0, y: 0.0),
-                          size: CGSize(width: size.width / 27.0 * 2.0, height: size.height / 18.0 * 10.0)))
+                          size: CGSize(width: size.width / 27.0 * 2.0, height: size.height / 18.0 * 10.5)))
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

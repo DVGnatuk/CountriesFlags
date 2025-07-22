@@ -31,8 +31,8 @@
     [colorWhite setFill];
     // horizontal line
     UIRectFill(CGRectMake(0.0f, size.height / 18.0f * 4.0f, size.width / 27.0f * 10.0f, size.height / 18.0f * 2.0f));
-    // vertical line
-    UIRectFill(CGRectMake(size.width / 27.0f * 4.0f, 0.0f, size.width / 27.0f * 2.0f, size.height / 18.0f * 10.0f));
+    // vertical line - add 0.5 to remove blue line for small images
+    UIRectFill(CGRectMake(size.width / 27.0f * 4.0f, 0.0f, size.width / 27.0f * 2.0f, size.height / 18.0f * 10.5f));
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

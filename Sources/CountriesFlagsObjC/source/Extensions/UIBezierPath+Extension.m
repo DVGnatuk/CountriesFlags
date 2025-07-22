@@ -6,6 +6,27 @@
 
 @implementation UIBezierPath (Extension)
 
++ (UIBezierPath *)starWithSize:(CGSize)size radius:(CGFloat)radius {
+    UIBezierPath* polygonPath = [UIBezierPath bezierPath];
+
+    CGFloat xCenter = size.width / 2.0f;
+    CGFloat yCenter = size.height / 2.0f;
+    CGFloat flip = -1.0f; // use this to flip the figure 1.0 or -1.0
+    NSUInteger polySide = 5;
+    CGFloat theta = 2.0 * M_PI * 2.0f / (CGFloat)polySide;
+
+    [polygonPath moveToPoint:CGPointMake(xCenter, radius * flip + yCenter)];
+
+    for (NSUInteger i = 1; i < polySide; i++) {
+        CGFloat x = radius * (CGFloat)sinf((CGFloat)i * theta);
+        CGFloat y = radius * (CGFloat)cosf((CGFloat)i * theta);
+        [polygonPath addLineToPoint:CGPointMake(x + xCenter, y * flip + yCenter)];
+    }
+
+    [polygonPath closePath];
+    return polygonPath;
+}
+
 + (UIBezierPath *)triangleInSize:(CGSize)size type:(FlagTriangleTypes)type {
     UIBezierPath* path = [UIBezierPath bezierPath];
 
