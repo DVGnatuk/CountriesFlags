@@ -7,7 +7,7 @@
 
 @implementation UIImage (CoteDIvoire)
 
-+(UIImage * _Nullable) flagCoteDIvoireWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagCoteDIvoireWithSize:(CGSize)size {
     UIColor* colorOrange = [UIColor colorWithRed:1.0f
                                            green:130.0f/255.0f
                                             blue:0.0f

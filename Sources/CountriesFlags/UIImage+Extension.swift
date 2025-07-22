@@ -50,12 +50,14 @@ extension UIImage {
         case .FaroeIslands: return flagFaroeIslands(with: size)
         case .Finland: return flagFinland(with: size)
         case .France: return flagFrance(with: size)
-        // The official flag of French Guiana is the French flag due to it being an overseas region and department of France.
+        // The official flag of French Guiana is the French flag due to it being an
+        // overseas region and department of France.
         case .FrenchGuiana: return flagFrance(with: size)
         case .Gabon: return flagGabon(with: size)
         case .Gambia: return flagGambia(with: size)
         case .Germany: return flagGermany(with: size)
         case .Ghana: return flagGhana(with: size)
+        case .Greece: return flagGreece(with: size)
         // The French tricolore is the official national flag used in Guadeloupe.
         case .Guadeloupe: return flagFrance(with: size)
         case .Guinea: return flagGuinea(with: size)

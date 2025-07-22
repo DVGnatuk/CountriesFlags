@@ -52,7 +52,7 @@ extension UIImage {
         path.addLine(to: CGPoint(x: 0.0, y: size.height))
         path.close()
         path.fill()
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 

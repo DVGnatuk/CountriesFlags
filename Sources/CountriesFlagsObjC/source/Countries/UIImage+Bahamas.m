@@ -9,7 +9,7 @@
 
 @implementation UIImage (Bahamas)
 
-+(UIImage * _Nullable) flagBahamasWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagBahamasWithSize:(CGSize)size {
     UIColor* colorAquamarine = [UIColor colorWithRed:0.0f
                                                green:169.0f/255.0f
                                                 blue:206.0f/255.0f

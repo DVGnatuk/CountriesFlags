@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Colombia.
  */
-+(UIImage * _Nullable) flagColombiaWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagColombiaWithSize:(CGSize)size;
 
 @end
 

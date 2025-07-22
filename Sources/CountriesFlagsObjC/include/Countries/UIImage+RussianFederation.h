@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Russian federation.
  */
-+(UIImage * _Nullable) flagRussianFederationWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagRussianFederationWithSize:(CGSize)size;
 
 @end
 

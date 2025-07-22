@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Armenia.
  */
-+(UIImage * _Nullable) flagArmeniaWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagArmeniaWithSize:(CGSize)size;
 
 @end
 

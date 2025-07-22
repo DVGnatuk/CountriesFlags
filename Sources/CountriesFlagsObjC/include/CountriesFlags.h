@@ -88,7 +88,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //    case Germany
 //        case Ghana
 //        case Gibraltar
-//        case Greece
+    CountriesFlagsGreece,
 //        case Greenland
 //        case Grenada
     CountriesFlagsGuadeloupe,

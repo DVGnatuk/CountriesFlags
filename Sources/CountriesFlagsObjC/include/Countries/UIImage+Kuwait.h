@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Kuwait.
  */
-+(UIImage * _Nullable) flagKuwaitWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagKuwaitWithSize:(CGSize)size;
 
 @end
 

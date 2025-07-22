@@ -7,7 +7,7 @@
 
 @implementation UIImage (RussianFederation)
 
-+(UIImage * _Nullable) flagRussianFederationWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagRussianFederationWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:50.0f/255.0f
                                           blue:160.0f/255.0f

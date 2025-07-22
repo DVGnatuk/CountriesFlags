@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Tonga.
  */
-+(UIImage * _Nullable) flagTongaWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagTongaWithSize:(CGSize)size;
 
 @end
 

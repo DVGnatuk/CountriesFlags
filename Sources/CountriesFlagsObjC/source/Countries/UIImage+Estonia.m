@@ -7,7 +7,7 @@
 
 @implementation UIImage (Estonia)
 
-+(UIImage * _Nullable) flagEstoniaWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagEstoniaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:114.0f/255.0f
                                           blue:206.0f/255.0f

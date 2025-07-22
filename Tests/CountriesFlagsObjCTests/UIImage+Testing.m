@@ -6,7 +6,7 @@
 
 @implementation UIImage (Testing)
 
--(CGFloat) percentageDifferenceWithImage:(UIImage *)otherImage {
+- (CGFloat)percentageDifferenceWithImage:(UIImage *)otherImage {
     CGImageRef image1 = self.CGImage;
     CGImageRef image2 = otherImage.CGImage;
     if (image1 == nil || image2 == nil) return 100.0f; // Or handle error appropriately

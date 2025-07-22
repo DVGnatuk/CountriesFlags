@@ -7,7 +7,7 @@
 
 @implementation UIImage (Bulgaria)
 
-+(UIImage * _Nullable) flagBulgariaWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagBulgariaWithSize:(CGSize)size {
     UIColor* colorGreen = [UIColor colorWithRed:0.0f
                                           green:153.0f/255.0f
                                            blue:0.0f

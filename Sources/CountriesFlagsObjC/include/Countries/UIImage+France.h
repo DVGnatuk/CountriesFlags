@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of France.
  */
-+(UIImage * _Nullable) flagFranceWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagFranceWithSize:(CGSize)size;
 
 @end
 

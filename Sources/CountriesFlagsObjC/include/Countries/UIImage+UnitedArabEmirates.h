@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of UnitedArabEmirates.
  */
-+(UIImage * _Nullable) flagUnitedArabEmiratesWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagUnitedArabEmiratesWithSize:(CGSize)size;
 
 @end
 

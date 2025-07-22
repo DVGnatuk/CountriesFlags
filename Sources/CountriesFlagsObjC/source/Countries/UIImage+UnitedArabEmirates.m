@@ -7,7 +7,7 @@
 
 @implementation UIImage (UnitedArabEmirates)
 
-+(UIImage * _Nullable) flagUnitedArabEmiratesWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagUnitedArabEmiratesWithSize:(CGSize)size {
     UIColor* colorGreen = [UIColor colorWithRed:0.0f
                                           green:115.0f/255.0f
                                            blue:47.0f/255.0f

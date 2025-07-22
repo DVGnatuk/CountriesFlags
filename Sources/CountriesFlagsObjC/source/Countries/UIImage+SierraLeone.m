@@ -7,7 +7,7 @@
 
 @implementation UIImage (SierraLeone)
 
-+(UIImage * _Nullable) flagSierraLeoneWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagSierraLeoneWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:114.0f/255.0f
                                           blue:198.0f/255.0f

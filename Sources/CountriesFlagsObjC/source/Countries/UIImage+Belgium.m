@@ -7,7 +7,7 @@
 
 @implementation UIImage (Belgium)
 
-+(UIImage * _Nullable) flagBelgiumWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagBelgiumWithSize:(CGSize)size {
     UIColor* colorBlack = [UIColor blackColor];
     UIColor* colorRed = [UIColor colorWithRed:239.0f/255.0f
                                         green:51.0f/255.0f

@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Switzerland.
  */
-+(UIImage * _Nullable) flagSwitzerlandWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagSwitzerlandWithSize:(CGSize)size;
 
 @end
 

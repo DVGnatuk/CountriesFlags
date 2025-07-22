@@ -44,3 +44,14 @@ let image = UIImage.flag(for: .Austria, with: imageSize)
 
 UIImage* image = [UIImage flagForCountry:CountriesFlagsUkraine size:imageSize)]
 ```
+
+## Code style
+
+### Swift
+
+To enforce Swift style and conventions the library uses [SwiftLint](https://github.com/realm/SwiftLint).  
+SwiftLint should be installed locally on mac:
+```bash
+brew install swiftlint
+```
+### Objective-C

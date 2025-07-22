@@ -7,7 +7,7 @@
 
 @implementation UIImage (Ukraine)
 
-+(UIImage *) flagUkraineWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagUkraineWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:87.0f/255.0f
                                           blue:184.0f/255.0f

@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Ukraine.
  */
-+(UIImage * _Nullable) flagUkraineWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagUkraineWithSize:(CGSize)size;
 
 @end
 

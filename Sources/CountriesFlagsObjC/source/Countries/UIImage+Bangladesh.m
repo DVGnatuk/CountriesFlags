@@ -7,7 +7,7 @@
 
 @implementation UIImage (Bangladesh)
 
-+(UIImage * _Nullable) flagBangladeshWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagBangladeshWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:244.0f/255.0f
                                         green:42.0f/255.0f
                                          blue:65.0f/255.0f

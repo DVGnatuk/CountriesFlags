@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Finland.
  */
-+(UIImage * _Nullable) flagFinlandWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagFinlandWithSize:(CGSize)size;
 
 @end
 

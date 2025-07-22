@@ -24,6 +24,7 @@
 #import "Countries/UIImage+Estonia.h"
 #import "Countries/UIImage+Finland.h"
 #import "Countries/UIImage+France.h"
+#import "Countries/UIImage+Greece.h"
 #import "Countries/UIImage+Iceland.h"
 #import "Countries/UIImage+Ireland.h"
 #import "Countries/UIImage+Kuwait.h"
@@ -48,7 +49,7 @@
 
 @implementation UIImage (CountriesFlags)
 
-+ (UIImage *)flagForCountry:(CountriesFlags)country size:(CGSize)size {
++ (UIImage * _Nullable)flagForCountry:(CountriesFlags)country size:(CGSize)size {
     switch (country) {
         case CountriesFlagsArmenia: return [UIImage flagArmeniaWithSize: size];
         case CountriesFlagsAustria: return [UIImage flagAustriaWithSize: size];
@@ -69,10 +70,12 @@
         case CountriesFlagsEstonia: return [UIImage flagEstoniaWithSize: size];
         case CountriesFlagsFinland: return [UIImage flagFinlandWithSize: size];
         case CountriesFlagsFrance: return [UIImage flagFranceWithSize: size];
-        // The official flag of French Guiana is the French flag due to it being an overseas region and department of France.
+        // The official flag of French Guiana is the French flag due to it being an
+        // overseas region and department of France.
         case CountriesFlagsFrenchGuiana: return [UIImage flagFranceWithSize: size];
         // The French tricolore is the official national flag used in Guadeloupe.
         case CountriesFlagsGuadeloupe: return [UIImage flagFranceWithSize: size];
+        case CountriesFlagsGreece: return [UIImage flagGreeceWithSize: size];
         case CountriesFlagsIceland: return [UIImage flagIcelandWithSize: size];
         case CountriesFlagsIreland: return [UIImage flagIrelandWithSize: size];
         case CountriesFlagsKuwait: return [UIImage flagKuwaitWithSize: size];

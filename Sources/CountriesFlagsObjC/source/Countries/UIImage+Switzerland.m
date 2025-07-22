@@ -7,7 +7,7 @@
 
 @implementation UIImage (Switzerland)
 
-+(UIImage * _Nullable) flagSwitzerlandWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagSwitzerlandWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor redColor];
     UIColor* colorWhite = [UIColor whiteColor];
     

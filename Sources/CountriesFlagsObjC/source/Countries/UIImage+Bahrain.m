@@ -7,7 +7,7 @@
 
 @implementation UIImage (Bahrain)
 
-+(UIImage * _Nullable) flagBahrainWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagBahrainWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:218.0f/255.0f
                                         green:41.0f/255.0f
                                          blue:28.0f/255.0f

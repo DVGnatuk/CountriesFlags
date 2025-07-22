@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Chad.
  */
-+(UIImage * _Nullable) flagChadWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagChadWithSize:(CGSize)size;
 
 @end
 

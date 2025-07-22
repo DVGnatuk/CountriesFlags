@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Costa Rica.
  */
-+(UIImage * _Nullable) flagCostaRicaWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagCostaRicaWithSize:(CGSize)size;
 
 @end
 

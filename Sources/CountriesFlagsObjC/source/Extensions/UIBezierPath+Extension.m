@@ -6,7 +6,7 @@
 
 @implementation UIBezierPath (Extension)
 
-+(UIBezierPath *) triangleInSize:(CGSize)size type:(FlagTriangleTypes)type {
++ (UIBezierPath *)triangleInSize:(CGSize)size type:(FlagTriangleTypes)type {
     UIBezierPath* path = [UIBezierPath bezierPath];
 
     // Calculate vertex coordinates
@@ -40,7 +40,7 @@
     return path;
 }
 
-+(UIBezierPath *) plusInSize:(CGSize)size sideWidth:(CGFloat)sideWidth {
++ (UIBezierPath *)plusInSize:(CGSize)size sideWidth:(CGFloat)sideWidth {
     CGFloat xOffset = size.width / 2.0f - sideWidth * 3.0f / 2.0f;
     CGFloat yOffset = size.height / 2.0f - sideWidth * 3.0f / 2.0f;
 

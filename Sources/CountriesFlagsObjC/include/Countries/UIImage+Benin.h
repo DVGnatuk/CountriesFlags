@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Benin.
  */
-+(UIImage * _Nullable) flagBeninWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagBeninWithSize:(CGSize)size;
 
 @end
 

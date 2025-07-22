@@ -7,7 +7,7 @@
 
 @implementation UIImage (Yemen)
 
-+(UIImage * _Nullable) flagYemenWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagYemenWithSize:(CGSize)size {
     UIColor* colorBlack = [UIColor blackColor];
     UIColor* colorRed = [UIColor colorWithRed:206.0f/255.0f
                                         green:17.0f/255.0f

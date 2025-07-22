@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Monaco.
  */
-+(UIImage * _Nullable) flagMonacoWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagMonacoWithSize:(CGSize)size;
 
 @end
 

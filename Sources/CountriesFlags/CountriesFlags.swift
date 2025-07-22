@@ -85,7 +85,7 @@ public enum CountriesFlags {
     case Germany
     case Ghana
 //        case Gibraltar
-//        case Greece
+    case Greece
 //        case Greenland
 //        case Grenada
     case Guadeloupe

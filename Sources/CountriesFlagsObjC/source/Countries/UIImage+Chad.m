@@ -7,7 +7,7 @@
 
 @implementation UIImage (Chad)
 
-+(UIImage * _Nullable) flagChadWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagChadWithSize:(CGSize)size {
     UIColor* colorIndigo = [UIColor colorWithRed:0.0f
                                            green:32.0f/255.0f
                                             blue:91.0f/255.0f

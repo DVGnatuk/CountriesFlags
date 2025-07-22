@@ -7,7 +7,7 @@
 
 @implementation UIImage (Netherlands)
 
-+(UIImage * _Nullable) flagNetherlandsWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagNetherlandsWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:30.0f/255.0f
                                          green:71.0f/255.0f
                                           blue:133.0f/255.0f

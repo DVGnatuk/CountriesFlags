@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Bahamas.
  */
-+(UIImage * _Nullable) flagBahamasWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagBahamasWithSize:(CGSize)size;
 
 @end
 

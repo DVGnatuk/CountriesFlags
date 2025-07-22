@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Seychelles.
  */
-+(UIImage * _Nullable) flagSeychellesWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagSeychellesWithSize:(CGSize)size;
 
 @end
 

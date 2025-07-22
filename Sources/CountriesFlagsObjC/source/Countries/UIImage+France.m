@@ -7,7 +7,7 @@
 
 @implementation UIImage (France)
 
-+(UIImage * _Nullable) flagFranceWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagFranceWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:0.0f
                                           blue:145.0f/255.0f

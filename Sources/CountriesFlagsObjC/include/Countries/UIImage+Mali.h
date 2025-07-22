@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Mali.
  */
-+(UIImage * _Nullable) flagMaliWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagMaliWithSize:(CGSize)size;
 
 @end
 

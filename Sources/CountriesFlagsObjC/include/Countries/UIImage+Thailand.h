@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Thailand.
  */
-+(UIImage * _Nullable) flagThailandWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagThailandWithSize:(CGSize)size;
 
 @end
 

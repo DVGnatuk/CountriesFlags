@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Denmark.
  */
-+(UIImage * _Nullable) flagDenmarkWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagDenmarkWithSize:(CGSize)size;
 
 @end
 

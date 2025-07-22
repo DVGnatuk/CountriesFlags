@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Returns: Returns the flag of Ireland.
  */
-+(UIImage * _Nullable) flagIrelandWithSize:(CGSize)size;
++ (UIImage * _Nullable)flagIrelandWithSize:(CGSize)size;
 
 @end
 

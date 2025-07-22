@@ -8,7 +8,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (Testing)
 
--(CGFloat) percentageDifferenceWithImage:(UIImage *)otherImage;
+- (CGFloat)percentageDifferenceWithImage:(UIImage *)otherImage;
 
 @end
 
