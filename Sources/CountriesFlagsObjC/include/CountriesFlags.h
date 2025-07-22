@@ -17,7 +17,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Andorra
 //        case Angola
 //        case Anguilla
-//        case AntiguaAndBarbuda
+    CountriesFlagsAntiguaAndBarbuda,
 //        case Argentina
     CountriesFlagsArmenia,
 //        case Aruba
@@ -50,7 +50,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case CaymanIslands
 //        case CentralAfricanRepublic
     CountriesFlagsChad,
-//        case Chile
+    CountriesFlagsChile,
 //        case China
 //        case ChristmasIsland
 //        case CocosIslands
