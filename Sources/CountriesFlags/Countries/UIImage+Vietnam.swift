@@ -35,7 +35,7 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorYellow.setFill()
-        let radius = CGFloat(size.height * 12.0 / 20.0) / 2.0
+        let radius: CGFloat = size.height * 12.0 / 20.0 / 2.0
         UIBezierPath.star(with: size, radius: radius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

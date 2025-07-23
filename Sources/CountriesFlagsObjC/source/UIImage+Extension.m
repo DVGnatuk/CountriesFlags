@@ -21,6 +21,7 @@
 #import "Countries/UIImage+Colombia.h"
 #import "Countries/UIImage+CostaRica.h"
 #import "Countries/UIImage+CoteDIvoire.h"
+#import "Countries/UIImage+Cuba.h"
 #import "Countries/UIImage+CzechRepublic.h"
 #import "Countries/UIImage+Denmark.h"
 #import "Countries/UIImage+FaroeIslands.h"
@@ -53,6 +54,7 @@
 #import "Countries/UIImage+Tonga.h"
 #import "Countries/UIImage+Ukraine.h"
 #import "Countries/UIImage+UnitedArabEmirates.h"
+#import "Countries/UIImage+Vietnam.h"
 #import "Countries/UIImage+Yemen.h"
 
 @implementation UIImage (CountriesFlags)
@@ -75,6 +77,7 @@
         case CountriesFlagsColombia: return [UIImage flagColombiaWithSize: size];
         case CountriesFlagsCostaRica: return [UIImage flagCostaRicaWithSize: size];
         case CountriesFlagsCoteDIvoire: return [UIImage flagCoteDIvoireWithSize: size];
+        case CountriesFlagsCuba: return [UIImage flagCubaWithSize: size];
         case CountriesFlagsCzechRepublic: return [UIImage flagCzechRepublicWithSize: size];
         case CountriesFlagsDenmark: return [UIImage flagDenmarkWithSize: size];
         case CountriesFlagsEstonia: return [UIImage flagEstoniaWithSize: size];
@@ -114,6 +117,7 @@
         case CountriesFlagsUnitedArabEmirates: return [UIImage flagUnitedArabEmiratesWithSize: size];
         // The official flag of Wallis and Futuna is the French national flag, as it is a French territory.
         case CountriesFlagsWallisAndFutuna: return [UIImage flagFranceWithSize: size];
+        case CountriesFlagsVietnam: return [UIImage flagVietnamWithSize: size];
         case CountriesFlagsYemen: return [UIImage flagYemenWithSize: size];
             
         default: return nil;

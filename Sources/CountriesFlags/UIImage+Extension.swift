@@ -44,6 +44,7 @@ extension UIImage {
         case .Chile: return flagChile(with: size)
         case .Colombia: return flagColombia(with: size)
         case .CostaRica: return flagCostaRica(with: size)
+        case .Cuba: return flagCuba(with: size)
         case .CoteDIvoire: return flagCoteDIvoire(with: size)
         case .CzechRepublic: return flagCzechRepublic(with: size)
         case .Denmark: return flagDenmark(with: size)
