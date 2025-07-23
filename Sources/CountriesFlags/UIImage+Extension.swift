@@ -59,6 +59,7 @@ extension UIImage {
         case .Germany: return flagGermany(with: size)
         case .Ghana: return flagGhana(with: size)
         case .Greece: return flagGreece(with: size)
+        case .Greenland: return flagGreenland(with: size)
         // The French tricolore is the official national flag used in Guadeloupe.
         case .Guadeloupe: return flagFrance(with: size)
         case .Guinea: return flagGuinea(with: size)

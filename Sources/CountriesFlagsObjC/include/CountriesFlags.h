@@ -83,13 +83,13 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsFrenchGuiana,
 //        case FrenchPolynesia
     CountriesFlagsGabon,
-//        case Gambia
+    CountriesFlagsGambia,
 //        case Georgia
 //    case Germany
 //        case Ghana
 //        case Gibraltar
     CountriesFlagsGreece,
-//        case Greenland
+    CountriesFlagsGreenland,
 //        case Grenada
     CountriesFlagsGuadeloupe,
 //        case Guam

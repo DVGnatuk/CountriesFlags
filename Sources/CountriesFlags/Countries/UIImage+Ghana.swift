@@ -47,10 +47,11 @@ extension UIImage {
         UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0 * 2.0),
                           size: CGSize(width: size.width, height: size.height / 3.0)))
 
-        // TODO: fix star position
         colorBlack.setFill()
-        let radius = CGFloat(size.height / 3.0) / 2.0
-        UIBezierPath.star(with: size, radius: radius).fill()
+        let radius = CGFloat(size.height / 12.0) * 4.422291236 / 2.0
+        let xDelta = CGFloat(size.height / 12.0) * 0.211145618
+        UIBezierPath.star(with: CGSizeMake(size.width, size.height + xDelta * 2.0),
+                          radius: radius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
