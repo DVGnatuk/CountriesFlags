@@ -169,7 +169,7 @@ public enum CountriesFlags {
 //        case Pakistan
     case Palau
 //        case PalestinianTerritory
-//        case Panama
+    case Panama
 //        case PapuaNewGuinea
 //        case Paraguay
 //        case Peru

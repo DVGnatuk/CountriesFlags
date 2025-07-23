@@ -27,6 +27,7 @@
 #import "Countries/UIImage+Estonia.h"
 #import "Countries/UIImage+Finland.h"
 #import "Countries/UIImage+France.h"
+#import "Countries/UIImage+Gabon.h"
 #import "Countries/UIImage+Greece.h"
 #import "Countries/UIImage+Iceland.h"
 #import "Countries/UIImage+Ireland.h"
@@ -37,6 +38,7 @@
 #import "Countries/UIImage+Netherlands.h"
 #import "Countries/UIImage+Nigeria.h"
 #import "Countries/UIImage+Norway.h"
+#import "Countries/UIImage+Panama.h"
 #import "Countries/UIImage+Poland.h"
 #import "Countries/UIImage+Qatar.h"
 #import "Countries/UIImage+Romania.h"
@@ -73,8 +75,8 @@
         case CountriesFlagsCoteDIvoire: return [UIImage flagCoteDIvoireWithSize: size];
         case CountriesFlagsCzechRepublic: return [UIImage flagCzechRepublicWithSize: size];
         case CountriesFlagsDenmark: return [UIImage flagDenmarkWithSize: size];
-        case CountriesFlagsFaroeIslands: return [UIImage flagFaroeIslandsWithSize: size];
         case CountriesFlagsEstonia: return [UIImage flagEstoniaWithSize: size];
+        case CountriesFlagsFaroeIslands: return [UIImage flagFaroeIslandsWithSize: size];
         case CountriesFlagsFinland: return [UIImage flagFinlandWithSize: size];
         case CountriesFlagsFrance: return [UIImage flagFranceWithSize: size];
         // The official flag of French Guiana is the French flag due to it being an
@@ -82,6 +84,7 @@
         case CountriesFlagsFrenchGuiana: return [UIImage flagFranceWithSize: size];
         // The French tricolore is the official national flag used in Guadeloupe.
         case CountriesFlagsGuadeloupe: return [UIImage flagFranceWithSize: size];
+        case CountriesFlagsGabon: return [UIImage flagGabonWithSize: size];
         case CountriesFlagsGreece: return [UIImage flagGreeceWithSize: size];
         case CountriesFlagsIceland: return [UIImage flagIcelandWithSize: size];
         case CountriesFlagsIreland: return [UIImage flagIrelandWithSize: size];
@@ -92,6 +95,7 @@
         case CountriesFlagsNetherlands: return [UIImage flagNetherlandsWithSize: size];
         case CountriesFlagsNigeria: return [UIImage flagNigeriaWithSize: size];
         case CountriesFlagsNorway: return [UIImage flagNorwayWithSize: size];
+        case CountriesFlagsPanama: return [UIImage flagPanamaWithSize: size];
         case CountriesFlagsPoland: return [UIImage flagPolandWithSize: size];
         case CountriesFlagsQatar: return [UIImage flagQatarWithSize: size];
         case CountriesFlagsRomania: return [UIImage flagRomaniaWithSize: size];

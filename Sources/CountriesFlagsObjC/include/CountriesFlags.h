@@ -82,7 +82,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsFrance,
     CountriesFlagsFrenchGuiana,
 //        case FrenchPolynesia
-//        case Gabon
+    CountriesFlagsGabon,
 //        case Gambia
 //        case Georgia
 //    case Germany
@@ -172,7 +172,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Pakistan
 //        case Palau
 //        case PalestinianTerritory
-//        case Panama
+    CountriesFlagsPanama,
 //        case PapuaNewGuinea
 //        case Paraguay
 //        case Peru

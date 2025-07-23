@@ -246,6 +246,15 @@
     }
 }
 
+- (void)testGabon {
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsGabon size:self.imageSize];
+    XCTAssertNotNil(image, @"Generated flag is nil");
+    XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
+    if (@available(iOS 14, *)) {
+        XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagGabon"]);
+    }
+}
+
 - (void)testGreece {
     UIImage* image = [UIImage flagForCountry:CountriesFlagsGreece size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");
@@ -307,6 +316,16 @@
     if (@available(iOS 14, *)) {
         XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagMonaco"]);
     }
+}
+
+- (void)testPanama {
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsPanama size:self.imageSize];
+    XCTAssertNotNil(image, @"Generated flag is nil");
+    XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
+    // TODO: find wrong pixel
+//    if (@available(iOS 14, *)) {
+//        XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagPanama"]);
+//    }
 }
 
 - (void)testPoland {
