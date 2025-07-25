@@ -24,11 +24,13 @@ extension UIBezierPath {
             let innerRadius = radius * 2.0 / 6.0
             for index in 1..<8 {
                 let currentRadius = index % 2 == 0 ? radius : innerRadius
-                let angle = -.pi / 2.0 + CGFloat(index) * .pi / 4.0
+                let angle: CGFloat = -.pi / 2.0 + CGFloat(index) * .pi / 4.0
 
-                polygonPath.addLine(to: CGPoint(x: xCenter + currentRadius * cos(angle),
-                                                y: yCenter + currentRadius * sin(angle) ))
+                let xPos: CGFloat = currentRadius * cos(angle)
+                let yPos: CGFloat = currentRadius * sin(angle)
+                polygonPath.addLine(to: CGPoint(x: xCenter + xPos, y: yCenter + yPos))
             }
+
         default:
             let theta: Float = 2.0 * Float.pi * 2.0 / 5.0
             for index in 1..<5 {

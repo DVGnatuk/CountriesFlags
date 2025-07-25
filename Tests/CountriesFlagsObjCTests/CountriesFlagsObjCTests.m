@@ -138,6 +138,16 @@
     }
 }
 
+- (void)testCentralAfricanRepublic {
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsCentralAfricanRepublic size:self.imageSize];
+    XCTAssertNotNil(image, @"Generated flag is nil");
+    XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
+    // TODO: find wrong pixel
+//    if (@available(iOS 14, *)) {
+//        XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagCentralAfricanRepublic"]);
+//    }
+}
+
 - (void)testChad {
     UIImage* image = [UIImage flagForCountry:CountriesFlagsChad size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");
