@@ -17,7 +17,7 @@ public enum CountriesFlags {
     case AntiguaAndBarbuda
 //        case Argentina
     case Armenia
-//        case Aruba
+    case Aruba
 //        case Australia
     case Austria
 //        case Azerbaijan

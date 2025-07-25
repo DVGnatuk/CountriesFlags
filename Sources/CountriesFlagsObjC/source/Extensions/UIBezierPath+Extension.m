@@ -6,21 +6,38 @@
 
 @implementation UIBezierPath (Extension)
 
-+ (UIBezierPath *)starWithSize:(CGSize)size radius:(CGFloat)radius {
++ (UIBezierPath *)starWithSize:(CGSize)size radius:(CGFloat)radius type:(FlagStarTypes)type {
     UIBezierPath* polygonPath = [UIBezierPath bezierPath];
 
     CGFloat xCenter = size.width / 2.0f;
     CGFloat yCenter = size.height / 2.0f;
-    CGFloat flip = -1.0f; // use this to flip the figure 1.0 or -1.0
-    NSUInteger polySide = 5;
-    CGFloat theta = 2.0 * M_PI * 2.0f / (CGFloat)polySide;
 
-    [polygonPath moveToPoint:CGPointMake(xCenter, radius * flip + yCenter)];
+    [polygonPath moveToPoint:CGPointMake(xCenter, -radius + yCenter)];
 
-    for (NSUInteger i = 1; i < polySide; i++) {
-        CGFloat x = radius * (CGFloat)sinf((CGFloat)i * theta);
-        CGFloat y = radius * (CGFloat)cosf((CGFloat)i * theta);
-        [polygonPath addLineToPoint:CGPointMake(x + xCenter, y * flip + yCenter)];
+    switch (type) {
+        case FlagStarTypeFourPointed: {
+            CGFloat innerRadius = radius * 2.0f / 6.0f;
+            for (NSUInteger index = 1; index < 8; index++) {
+                CGFloat r = index % 2 == 0 ? radius : innerRadius;
+                CGFloat angle = -M_PI / 2.0 + (CGFloat)index * M_PI / 4.0;
+
+                [polygonPath addLineToPoint:CGPointMake(xCenter + r * cos(angle), yCenter + r * sin(angle))];
+            }
+        }
+            break;
+            
+        case FlagStarTypeFivePointed: {
+            CGFloat theta = 2.0 * M_PI * 2.0f / 5.0f;
+            for (NSUInteger i = 1; i < 5; i++) {
+                CGFloat x = radius * (CGFloat)sinf((CGFloat)i * theta);
+                CGFloat y = radius * (CGFloat)cosf((CGFloat)i * theta);
+                [polygonPath addLineToPoint:CGPointMake(xCenter + x, yCenter - y)];
+            }
+        }
+            break;
+            
+        default:
+            break;
     }
 
     [polygonPath closePath];

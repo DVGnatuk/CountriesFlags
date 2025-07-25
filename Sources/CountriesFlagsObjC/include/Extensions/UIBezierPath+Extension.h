@@ -11,9 +11,14 @@ typedef NS_ENUM(NSUInteger, FlagTriangleTypes)  {
     FlagTriangleTypeLeftEquilateral
 };
 
+typedef NS_ENUM(NSUInteger, FlagStarTypes) {
+    FlagStarTypeFourPointed = 0,
+    FlagStarTypeFivePointed
+};
+
 @interface UIBezierPath (Extension)
 
-+ (UIBezierPath *)starWithSize:(CGSize)size radius:(CGFloat)radius;
++ (UIBezierPath *)starWithSize:(CGSize)size radius:(CGFloat)radius type:(FlagStarTypes)type;
 + (UIBezierPath *)triangleInSize:(CGSize)size type:(FlagTriangleTypes)type;
 + (UIBezierPath *)plusInSize:(CGSize)size sideWidth:(CGFloat)sideWidth;
 

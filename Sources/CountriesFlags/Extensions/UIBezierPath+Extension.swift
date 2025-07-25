@@ -3,26 +3,39 @@
 //  CountriesFlags
 //  
 
-// swiftlint:disable identifier_name
-
 import UIKit
 
 extension UIBezierPath {
-    static func star(with size: CGSize, radius: CGFloat) -> UIBezierPath {
+    enum StarType {
+        case fourPointed
+        case fivePointed
+    }
+
+    static func star(with size: CGSize, radius: CGFloat, type: StarType = .fivePointed) -> UIBezierPath {
         let polygonPath = UIBezierPath()
 
         let xCenter: CGFloat = size.width / 2.0
         let yCenter: CGFloat = size.height / 2.0
-        let flip: CGFloat = -1.0 // use this to flip the figure 1.0 or -1.0
-        let polySide: Int = 5
-        let theta: Float = 2.0 * Float.pi * 2.0 / Float(polySide)
 
-        polygonPath.move(to: CGPoint(x: xCenter, y: radius * flip + yCenter))
+        polygonPath.move(to: CGPoint(x: xCenter, y: -radius + yCenter))
 
-        for i in 1..<Int(polySide) {
-            let x: CGFloat = radius * CGFloat( sinf(Float(i) * theta) )
-            let y: CGFloat = radius * CGFloat( cosf(Float(i) * theta) )
-            polygonPath.addLine(to: CGPoint(x: x + xCenter, y: y * flip + yCenter))
+        switch type {
+        case .fourPointed:
+            let innerRadius = radius * 2.0 / 6.0
+            for index in 1..<8 {
+                let currentRadius = index % 2 == 0 ? radius : innerRadius
+                let angle = -.pi / 2.0 + CGFloat(index) * .pi / 4.0
+
+                polygonPath.addLine(to: CGPoint(x: xCenter + currentRadius * cos(angle),
+                                                y: yCenter + currentRadius * sin(angle) ))
+            }
+        default:
+            let theta: Float = 2.0 * Float.pi * 2.0 / 5.0
+            for index in 1..<5 {
+                let xPos: CGFloat = radius * CGFloat( sinf(Float(index) * theta) )
+                let yPos: CGFloat = radius * CGFloat( cosf(Float(index) * theta) )
+                polygonPath.addLine(to: CGPoint(x: xCenter + xPos, y: yCenter - yPos))
+            }
         }
 
         polygonPath.close()
@@ -92,5 +105,3 @@ extension UIBezierPath {
         return path
     }
 }
-
-// swiftlint:enable identifier_name
