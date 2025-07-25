@@ -14,13 +14,13 @@
                                         alpha:1.0f];
     UIColor* colorWhite = [UIColor whiteColor];
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
     
     [colorWhite setFill];
-    UIRectFill(CGRectMake(0.0, 0, size.width, size.height));
+    UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
     [colorRed setFill];
-    UIRectFill(CGRectMake(0, size.height / 2.0, size.width, size.height / 2.0));
+    UIRectFill(CGRectMake(0.0f, size.height / 2.0f, size.width, size.height / 2.0f));
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

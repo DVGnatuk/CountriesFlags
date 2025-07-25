@@ -142,7 +142,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case MarshallIslands
     CountriesFlagsMartinique,
 //        case Mauritania
-//        case Mauritius
+    CountriesFlagsMauritius,
 //        case Mayotte
 //        case Mexico
 //        case Micronesia
@@ -180,7 +180,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Pitcairn
     CountriesFlagsPoland,
 //        case Portugal
-//        case PuertoRico
+    CountriesFlagsPuertoRico,
     CountriesFlagsQatar,
     CountriesFlagsRomania,
     CountriesFlagsRussianFederation,
