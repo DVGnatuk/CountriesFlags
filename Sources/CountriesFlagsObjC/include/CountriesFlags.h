@@ -95,7 +95,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Guam
 //        case Guatemala
 //        case Guinea
-//        case GuineaBissau
+    CountriesFlagsGuineaBissau,
 //        case Guyana
 //        case Haiti
 //        case VaticanCityState
@@ -222,7 +222,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Tanzania
     CountriesFlagsThailand,
 //        case TimorLeste
-//        case Togo
+    CountriesFlagsTogo,
 //        case Tokelau
     CountriesFlagsTonga,
 //        case TrinidadAndTobago
