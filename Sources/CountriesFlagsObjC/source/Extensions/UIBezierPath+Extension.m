@@ -17,21 +17,24 @@
     switch (type) {
         case FlagStarTypeFourPointed: {
             CGFloat innerRadius = radius * 2.0f / 6.0f;
-            for (NSUInteger index = 1; index < 8; index++) {
+            for (int index = 1; index < 8; index++) {
                 CGFloat r = index % 2 == 0 ? radius : innerRadius;
-                CGFloat angle = -M_PI / 2.0 + (CGFloat)index * M_PI / 4.0;
+                double angle = -M_PI / 2.0 + index * M_PI / 4.0;
 
-                [polygonPath addLineToPoint:CGPointMake(xCenter + r * cos(angle), yCenter + r * sin(angle))];
+                double x = r * cos(angle);
+                double y = r * sin(angle);
+                [polygonPath addLineToPoint:CGPointMake(xCenter + x, yCenter + y)];
             }
         }
             break;
             
         case FlagStarTypeFivePointed: {
-            CGFloat theta = 2.0 * M_PI * 2.0f / 5.0f;
-            for (NSUInteger i = 1; i < 5; i++) {
-                CGFloat x = radius * (CGFloat)sinf((CGFloat)i * theta);
-                CGFloat y = radius * (CGFloat)cosf((CGFloat)i * theta);
+            double theta = 2.0 * M_PI * 2.0f / 5.0f;
+            for (int i = 1; i < 5; i++) {
+                double x = radius * sin(i * theta);
+                double y = radius * cos(i * theta);
                 [polygonPath addLineToPoint:CGPointMake(xCenter + x, yCenter - y)];
+//                NSLog(@"Five pointed star: x: %f, y: %f", x, y);
             }
         }
             break;

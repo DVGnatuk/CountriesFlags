@@ -37,6 +37,7 @@ extension UIBezierPath {
                 let xPos: CGFloat = radius * CGFloat( sinf(Float(index) * theta) )
                 let yPos: CGFloat = radius * CGFloat( cosf(Float(index) * theta) )
                 polygonPath.addLine(to: CGPoint(x: xCenter + xPos, y: yCenter - yPos))
+//                print("Five pointed star: x: \(xPos), y: \(yPos)")
             }
         }
 

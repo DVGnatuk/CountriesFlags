@@ -209,7 +209,7 @@ public enum CountriesFlags {
 //        case Spain
 //        case SriLanka
     case Sudan
-//        case Suriname
+    case Suriname
 //        case SvalbardAndJanMayen
 //        case Swaziland
     case Sweden
