@@ -40,10 +40,10 @@ extension UIImage {
                           size: CGSize(width: size.width, height: size.height / 30.0 * 6.0)))
         UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 30.0 * 18.0),
                           size: CGSize(width: size.width, height: size.height / 30.0 * 6.0)))
-        
+
         colorBlue.setFill()
         UIBezierPath.triangle(in: size, type: .leftEquilateral).fill()
-        
+
         colorWhite.setFill()
         UIBezierPath.star(with: CGSize(width: size.width / 45.0 * 8.660254037844386 * 2.0, height: size.height),
                           radius: size.height / 30.0 * 10.0 / 2.0).fill()

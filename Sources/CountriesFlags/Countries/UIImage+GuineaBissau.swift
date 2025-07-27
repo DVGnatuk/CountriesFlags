@@ -42,7 +42,7 @@ extension UIImage {
         colorGreen.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 2.0),
                           size: CGSize(width: size.width, height: size.height / 2.0)))
-        
+
         colorRed.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: 0.0),
                           size: CGSize(width: size.width / 3.0, height: size.height)))

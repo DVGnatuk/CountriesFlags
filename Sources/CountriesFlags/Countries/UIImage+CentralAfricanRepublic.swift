@@ -46,15 +46,15 @@ extension UIImage {
         colorWhite.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 40.0 * 10.0),
                           size: CGSize(width: size.width, height: size.height / 40.0 * 10.0)))
-        
+
         colorGreen.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 40.0 * 20.0),
                           size: CGSize(width: size.width, height: size.height / 40.0 * 10.0)))
-        
+
         colorYellow.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 40.0 * 30.0),
                           size: CGSize(width: size.width, height: size.height / 40.0 * 10.0)))
-        
+
         colorRed.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: size.width / 60.0 * 25.0, y: 0.0),
                           size: CGSize(width: size.width / 60.0 * 10.0, height: size.height)))
