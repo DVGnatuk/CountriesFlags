@@ -1,14 +1,13 @@
 //
 //  CountriesFlagsObjCTests.m
-//  
+//  CountriesFlags
+//
 
-#import <XCTest/XCTest.h>
+#import "CountriesFlagsObjCBaseTests.h"
 
 #import "UIImage+Extension.h"
 
-#import "UIImage+Testing.h"
-
-@interface CountriesFlagsObjCTests : XCTestCase
+@interface CountriesFlagsObjCTests : CountriesFlagsObjCBaseTests
 
 @property (nonatomic, assign) CGSize imageSize;
 
@@ -142,10 +141,11 @@
     UIImage* image = [UIImage flagForCountry:CountriesFlagsCentralAfricanRepublic size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");
     XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
-    // TODO: find wrong pixel
-//    if (@available(iOS 14, *)) {
-//        XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagCentralAfricanRepublic"]);
-//    }
+    if (@available(iOS 14, *)) {
+        XCTAssertTrue([self compareGeneratedFlag:image
+                                            with:@"Flags/flagCentralAfricanRepublic"
+                         maxPercentageDifference:0.01f]);
+    }
 }
 
 - (void)testChad {
@@ -355,6 +355,15 @@
     }
 }
 
+- (void)testJordan {
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsJordan size:self.imageSize];
+    XCTAssertNotNil(image, @"Generated flag is nil");
+    XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
+    if (@available(iOS 14, *)) {
+        XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagJordan"]);
+    }
+}
+
 - (void)testKuwait {
     UIImage* image = [UIImage flagForCountry:CountriesFlagsKuwait size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");
@@ -404,10 +413,11 @@
     UIImage* image = [UIImage flagForCountry:CountriesFlagsPanama size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");
     XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
-    // TODO: find wrong pixel
-//    if (@available(iOS 14, *)) {
-//        XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagPanama"]);
-//    }
+    if (@available(iOS 14, *)) {
+        XCTAssertTrue([self compareGeneratedFlag:image
+                                            with:@"Flags/flagPanama"
+                         maxPercentageDifference:0.01]);
+    }
 }
 
 - (void)testPoland {
@@ -479,6 +489,17 @@
     XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
     if (@available(iOS 14, *)) {
         XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagRussianFederation"]);
+    }
+}
+
+- (void)testSenegal {
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsSenegal size:self.imageSize];
+    XCTAssertNotNil(image, @"Generated flag is nil");
+    XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
+    if (@available(iOS 14, *)) {
+        XCTAssertTrue([self compareGeneratedFlag:image
+                                            with:@"Flags/flagSenegal"
+                         maxPercentageDifference:0.01]);
     }
 }
 
@@ -606,18 +627,6 @@
     if (@available(iOS 14, *)) {
         XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagYemen"]);
     }
-}
-
-- (BOOL)compareGeneratedFlag:(UIImage *)flag with:(NSString *)source API_AVAILABLE(ios(14)) {
-    // SWIFTPM_MODULE_BUNDLE requires ios 14: https://github.com/swiftlang/swift-evolution/blob/main/proposals/0271-package-manager-resources.md
-    NSString* path = [SWIFTPM_MODULE_BUNDLE pathForResource:source ofType:@"png"];
-    XCTAssertTrue([path length] > 0);
-    
-    UIImage* testFlag = [UIImage imageWithContentsOfFile: path];
-    XCTAssertNotNil(testFlag, @"Test flag is nil");
-
-    CGFloat percentageDifference = [flag percentageDifferenceWithImage:testFlag];
-    return percentageDifference == 0.0f;
 }
 
 @end

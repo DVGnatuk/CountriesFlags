@@ -1,5 +1,6 @@
 //
 //  UIBezierPath+Extension.h
+//  CountriesFlags
 //
 
 #import <UIKit/UIKit.h>
@@ -13,7 +14,8 @@ typedef NS_ENUM(NSUInteger, FlagTriangleTypes)  {
 
 typedef NS_ENUM(NSUInteger, FlagStarTypes) {
     FlagStarTypeFourPointed = 0,
-    FlagStarTypeFivePointed
+    FlagStarTypeFivePointed,
+    FlagStarTypeSevenPointed
 };
 
 @interface UIBezierPath (Extension)

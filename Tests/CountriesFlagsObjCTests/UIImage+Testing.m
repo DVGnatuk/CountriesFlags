@@ -1,6 +1,7 @@
 //
 //  UIImage.m
-//  
+//  CountriesFlags
+//
 
 #import "UIImage+Testing.h"
 

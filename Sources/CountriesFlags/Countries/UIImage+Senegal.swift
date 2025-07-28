@@ -47,7 +47,7 @@ extension UIImage {
                           size: CGSize(width: size.width / 3.0, height: size.height)))
 
         colorGreen.setFill()
-        let radius = CGFloat(size.height * 5.0 / 12.0) / 2.0
+        let radius: CGFloat = size.height * 5.0 / 12.0 / 2.0
         UIBezierPath.star(with: size, radius: radius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

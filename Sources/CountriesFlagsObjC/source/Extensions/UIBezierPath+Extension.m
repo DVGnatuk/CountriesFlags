@@ -1,5 +1,6 @@
 //
 //  UIBezierPath+Extension.m
+//  CountriesFlags
 //
 
 #import "Extensions/UIBezierPath+Extension.h"
@@ -35,6 +36,25 @@
                 double y = radius * cos(i * theta);
                 [polygonPath addLineToPoint:CGPointMake(xCenter + x, yCenter - y)];
 //                NSLog(@"Five pointed star: x: %f, y: %f", x, y);
+            }
+        }
+            break;
+            
+        case FlagStarTypeSevenPointed: {
+            CGFloat innerRadius = radius / 2.0f * 0.7f;
+            CGFloat angleIncrement = M_PI * 2.0f / 7.0f;
+            
+            CGFloat startAngle = -M_PI / 2.0;
+            [polygonPath moveToPoint:CGPointMake(xCenter + radius * cos(startAngle),
+                                                 yCenter + radius * sin(startAngle))];
+            
+            for (int index = 1; index < 14; index++) {
+                CGFloat angle = startAngle + angleIncrement * index;
+                CGFloat currentRadius = index % 2 == 0 ? radius : innerRadius;
+                
+                CGPoint point = CGPointMake(xCenter + currentRadius * cos(angle),
+                                            yCenter + currentRadius * sin(angle));
+                [polygonPath addLineToPoint:point];
             }
         }
             break;

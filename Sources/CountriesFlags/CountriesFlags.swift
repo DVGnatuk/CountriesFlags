@@ -111,7 +111,7 @@ public enum CountriesFlags {
 //        case Jamaica
     case Japan
 //        case Jersey
-//        case Jordan
+    case Jordan
 //        case Kazakhstan
 //        case Kenya
 //        case Kiribati
