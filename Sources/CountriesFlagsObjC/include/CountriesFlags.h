@@ -225,7 +225,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsTogo,
 //        case Tokelau
     CountriesFlagsTonga,
-//        case TrinidadAndTobago
+    CountriesFlagsTrinidadAndTobago,
 //        case Tunisia
 //        case Turkey
 //        case Turkmenistan

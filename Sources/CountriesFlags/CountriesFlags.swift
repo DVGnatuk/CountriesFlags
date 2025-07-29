@@ -223,7 +223,7 @@ public enum CountriesFlags {
     case Togo
 //        case Tokelau
     case Tonga
-//        case TrinidadAndTobago
+    case TrinidadAndTobago
 //        case Tunisia
 //        case Turkey
 //        case Turkmenistan

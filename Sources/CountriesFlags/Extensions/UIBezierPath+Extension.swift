@@ -31,19 +31,19 @@ extension UIBezierPath {
                 let yPos: CGFloat = currentRadius * sin(angle)
                 polygonPath.addLine(to: CGPoint(x: xCenter + xPos, y: yCenter + yPos))
             }
-            
+
         case .sevenPointed:
             let innerRadius = radius / 2.0 * 0.7
             let angleIncrement = .pi * 2.0 / 7.0
-            
-            let startAngle = -.pi / 2.0
+
+            let startAngle: CGFloat = -.pi / 2.0
             polygonPath.move(to: CGPoint(x: xCenter + radius * cos(startAngle),
                                          y: yCenter + radius * sin(startAngle)))
-            
+
             for index in 1..<14 {
                 let angle = startAngle + angleIncrement * Double(index)
                 let currentRadius = index % 2 == 0 ? radius : innerRadius
-                
+
                 let point = CGPoint(x: xCenter + currentRadius * cos(angle),
                                     y: yCenter + currentRadius * sin(angle))
                 polygonPath.addLine(to: point)
