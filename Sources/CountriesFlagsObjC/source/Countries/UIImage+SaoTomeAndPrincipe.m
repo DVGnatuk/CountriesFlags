@@ -1,0 +1,53 @@
+//
+//  UIImage+SaoTomeAndPrincipe.m
+//  CountriesFlags
+//
+
+#import "Countries/UIImage+SaoTomeAndPrincipe.h"
+
+#import "Extensions/UIBezierPath+Extension.h"
+
+@implementation UIImage (SaoTomeAndPrincipe)
+
++ (UIImage * _Nullable)flagSaoTomeAndPrincipeWithSize:(CGSize)size {
+    UIColor* colorGreen = [UIColor colorWithRed:0.0f
+                                          green:151.0f/255.0f
+                                           blue:57.0f/255.0f
+                                          alpha:1.0f];
+    UIColor* colorYellow = [UIColor colorWithRed:1.0f
+                                           green:209.0f/255.0f
+                                            blue:0.0f
+                                           alpha:1.0f];
+    UIColor* colorBlack = [UIColor blackColor];
+    UIColor* colorRed = [UIColor colorWithRed:239.0f/255.0f
+                                        green:51.0f/255.0f
+                                         blue:64.0f/255.0f
+                                        alpha:1.0f];
+    
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    
+    [colorGreen setFill];
+    UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
+    
+    [colorYellow setFill];
+    UIRectFill(CGRectMake(0.0f, size.height / 84.0f * 24.0f, size.width, size.height / 84.0f * 36.0f));
+    
+    [colorRed setFill];
+    [[UIBezierPath triangleInSize:CGSizeMake(size.width / 168.0f * 42.0f, size.height)
+                             type:FlagTriangleTypeLeft] fill];
+    
+    [colorBlack setFill];
+    [[UIBezierPath starWithSize:CGSizeMake(size.width, size.height + size.height / 84.0f * 1.37244652 * 2.0f)
+                         radius:size.height / 84.0f * 28.74489303 / 2.0f
+                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starWithSize:CGSizeMake(size.width * 1.5f, size.height + size.height / 84.0f * 1.37244652 * 2.0f)
+                         radius:size.height / 84.0f * 28.74489303 / 2.0f
+                           type:FlagStarTypeFivePointed] fill];
+    
+    UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+@end

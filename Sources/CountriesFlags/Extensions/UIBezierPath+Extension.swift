@@ -41,8 +41,8 @@ extension UIBezierPath {
                                          y: yCenter + radius * sin(startAngle)))
 
             for index in 1..<14 {
-                let angle = startAngle + angleIncrement * Double(index)
-                let currentRadius = index % 2 == 0 ? radius : innerRadius
+                let angle = startAngle + angleIncrement * CGFloat(index)
+                let currentRadius: CGFloat = index % 2 == 0 ? radius : innerRadius
 
                 let point = CGPoint(x: xCenter + currentRadius * cos(angle),
                                     y: yCenter + currentRadius * sin(angle))
