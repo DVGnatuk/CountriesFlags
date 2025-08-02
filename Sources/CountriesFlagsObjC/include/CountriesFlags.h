@@ -10,7 +10,7 @@
 
 typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Afghanistan
-//        case AlandIslands
+    CountriesFlagsAlandIslands,
 //        case Albania
 //        case Algeria
 //        case AmericanSamoa
@@ -133,7 +133,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //    case Luxembourg
 //        case Macao
 //        case Macedonia
-//        case Madagascar
+    CountriesFlagsMadagascar,
 //        case Malawi
 //        case Malaysia
 //        case Maldives

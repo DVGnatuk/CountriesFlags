@@ -5,6 +5,7 @@
 
 #import "UIImage+Extension.h"
 
+#import "Countries/UIImage+AlandIslands.h"
 #import "Countries/UIImage+AntiguaAndBarbuda.h"
 #import "Countries/UIImage+Armenia.h"
 #import "Countries/UIImage+Aruba.h"
@@ -41,6 +42,7 @@
 #import "Countries/UIImage+Ireland.h"
 #import "Countries/UIImage+Jordan.h"
 #import "Countries/UIImage+Kuwait.h"
+#import "Countries/UIImage+Madagascar.h"
 #import "Countries/UIImage+Mali.h"
 #import "Countries/UIImage+Martinique.h"
 #import "Countries/UIImage+Mauritius.h"
@@ -79,6 +81,7 @@
 
 + (UIImage * _Nullable)flagForCountry:(CountriesFlags)country size:(CGSize)size {
     switch (country) {
+        case CountriesFlagsAlandIslands: return [UIImage flagAlandIslandsWithSize: size];
         case CountriesFlagsAntiguaAndBarbuda: return [UIImage flagAntiguaAndBarbudaWithSize: size];
         case CountriesFlagsArmenia: return [UIImage flagArmeniaWithSize: size];
         case CountriesFlagsAruba: return [UIImage flagArubaWithSize: size];
@@ -120,6 +123,7 @@
         case CountriesFlagsIreland: return [UIImage flagIrelandWithSize: size];
         case CountriesFlagsJordan: return [UIImage flagJordanWithSize: size];
         case CountriesFlagsKuwait: return [UIImage flagKuwaitWithSize: size];
+        case CountriesFlagsMadagascar: return [UIImage flagMadagascarWithSize: size];
         case CountriesFlagsMali: return [UIImage flagMaliWithSize: size];
         case CountriesFlagsMartinique: return [UIImage flagMartiniqueWithSize: size];
         case CountriesFlagsMauritius: return [UIImage flagMauritiusWithSize: size];

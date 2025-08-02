@@ -7,7 +7,7 @@
 
 public enum CountriesFlags {
 //        case Afghanistan
-//        case AlandIslands
+    case AlandIslands
 //        case Albania
 //        case Algeria
 //        case AmericanSamoa

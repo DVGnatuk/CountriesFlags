@@ -10,13 +10,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Nauru)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Nauru "wikipedia"
- 
  Generates the flag of Nauru.
- For more information see [wikipedia].
-
- @param size: image size.
- @returns: Returns the flag of Nauru.
+ @see https://en.wikipedia.org/wiki/Flag_of_Nauru
+ @param size: Image size.
+ @returns Returns the flag of Nauru.
  */
 + (UIImage * _Nullable)flagNauruWithSize:(CGSize)size;
 

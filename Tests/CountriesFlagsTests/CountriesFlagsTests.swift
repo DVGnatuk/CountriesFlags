@@ -20,6 +20,16 @@ final class CountriesFlagsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    func testAlandIslands() throws {
+        guard let image = UIImage.flag(for: .AlandIslands, with: imageSize) else {
+            XCTFail("Generated flag is nil")
+            return
+        }
+
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagAlandIslands"))
+    }
+
     func testAntiguaAndBarbuda() throws {
         guard let image = UIImage.flag(for: .AntiguaAndBarbuda, with: imageSize) else {
             XCTFail("Generated flag is nil")
