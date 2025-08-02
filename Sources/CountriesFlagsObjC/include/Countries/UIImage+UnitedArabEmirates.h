@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (UnitedArabEmirates)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates"wikipedia"
- 
  Generates the flag of UnitedArabEmirates.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of UnitedArabEmirates.
+ @see https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates
  */
 + (UIImage * _Nullable)flagUnitedArabEmiratesWithSize:(CGSize)size;
 

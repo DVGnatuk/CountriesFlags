@@ -37,7 +37,7 @@ extension UIImage {
 
         colorBlue.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
-        
+
         colorYellow.setFill()
         // horizontal line
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 837.0 * 295.0),

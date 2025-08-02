@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Ireland)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Ireland "wikipedia"
- 
  Generates the flag of Ireland.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Ireland.
+ @see https://en.wikipedia.org/wiki/Flag_of_Ireland
  */
 + (UIImage * _Nullable)flagIrelandWithSize:(CGSize)size;
 

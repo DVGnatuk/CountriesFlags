@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (TrinidadAndTobago)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago "wikipedia"
- 
  Generates the flag of Trinidad and Tobago.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Trinidad and Tobago.
+ @see https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago
  */
 + (UIImage * _Nullable)flagTrinidadAndTobagoWithSize:(CGSize)size;
 

@@ -1,0 +1,44 @@
+//
+//  UIImage+Niger.m
+//  CountriesFlags
+//
+
+#import "Countries/UIImage+Niger.h"
+
+@implementation UIImage (Niger)
+
++ (UIImage * _Nullable)flagNigerWithSize:(CGSize)size {
+    UIColor* colorOrange = [UIColor colorWithRed:224.0f/255.0f
+                                           green:82.0f/255.0f
+                                            blue:6.0f/255.0f
+                                           alpha:1.0f];
+    UIColor* colorWhite = [UIColor whiteColor];
+    UIColor* colorGreen = [UIColor colorWithRed:13.0f/255.0f
+                                          green:176.0f/255.0f
+                                           blue:43.0f/255.0f
+                                          alpha:1.0f];
+    
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    
+    [colorWhite setFill];
+    UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
+    
+    [colorGreen setFill];
+    UIRectFill(CGRectMake(0.0f, size.height / 3.0f * 2.0f, size.width, size.height / 3.0f));
+    
+    [colorOrange setFill];
+    UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height / 3.0f));
+    
+    CGFloat radius = size.height * 3.0f / 5.0f * (2.0f / 5.0f);
+    [[UIBezierPath bezierPathWithOvalInRect:CGRectMake(size.width / 2.0f - radius / 2.0f,
+                                                       size.height / 2.0f - radius / 2.0f,
+                                                       radius,
+                                                       radius)] fill];
+    
+    UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+@end

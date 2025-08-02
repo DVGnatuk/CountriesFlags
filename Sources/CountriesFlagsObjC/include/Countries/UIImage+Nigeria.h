@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Nigeria)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Nigeria "wikipedia"
- 
  Generates the flag of Nigeria.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Nigeria.
+ @see https://en.wikipedia.org/wiki/Flag_of_Nigeria
  */
 + (UIImage * _Nullable)flagNigeriaWithSize:(CGSize)size;
 

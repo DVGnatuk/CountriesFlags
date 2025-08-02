@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (FaroeIslands)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands "wikipedia"
- 
  Generates the flag of the Faroe Islands.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of the Faroe Islands.
+ @see https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands
  */
 + (UIImage * _Nullable)flagFaroeIslandsWithSize:(CGSize)size;
 

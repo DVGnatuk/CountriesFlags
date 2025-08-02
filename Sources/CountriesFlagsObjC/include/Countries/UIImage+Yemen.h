@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Yemen)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Yemen "wikipedia"
- 
  Generates the flag of Yemen.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Yemen.
+ @see https://en.wikipedia.org/wiki/Flag_of_Yemen
  */
 + (UIImage * _Nullable)flagYemenWithSize:(CGSize)size;
 

@@ -145,7 +145,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsMauritius,
 //        case Mayotte
 //        case Mexico
-//        case Micronesia
+    CountriesFlagsMicronesia,
 //        case Moldova
     CountriesFlagsMonaco,
 //        case Mongolia
@@ -162,7 +162,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case NewCaledonia
 //        case NewZealand
 //        case Nicaragua
-//        case Niger
+    CountriesFlagsNiger,
     CountriesFlagsNigeria,
 //        case Niue
 //        case NorfolkIsland

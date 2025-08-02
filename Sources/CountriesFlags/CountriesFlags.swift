@@ -142,7 +142,7 @@ public enum CountriesFlags {
     case Mauritius
 //        case Mayotte
 //        case Mexico
-//        case Micronesia
+    case Micronesia
 //        case Moldova
     case Monaco
 //        case Mongolia

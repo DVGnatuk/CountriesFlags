@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Bahrain)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Bahrain "wikipedia"
- 
  Generates the flag of Bahrain.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Bahrain.
+ @see https://en.wikipedia.org/wiki/Flag_of_Bahrain
  */
 + (UIImage * _Nullable)flagBahrainWithSize:(CGSize)size;
 

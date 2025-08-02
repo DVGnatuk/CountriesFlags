@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Iceland)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Iceland "wikipedia"
- 
  Generates the flag of Iceland.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Iceland.
+ @see https://en.wikipedia.org/wiki/Flag_of_Iceland
  */
 + (UIImage * _Nullable)flagIcelandWithSize:(CGSize)size;
 

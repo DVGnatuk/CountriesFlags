@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Germany)
 
 /**
- [wikipedia]: https://ru.wikipedia.org/wiki/Флаг_Германии "wikipedia"
- 
  Generates the flag of Germany.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Germany.
+ @see https://en.wikipedia.org/wiki/Flag_of_Germany
  */
 + (UIImage * _Nullable)flagGermanyWithSize:(CGSize)size;
 

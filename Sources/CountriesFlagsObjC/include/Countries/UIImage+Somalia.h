@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Somalia)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Somalia "wikipedia"
- 
  Generates the flag of Somalia.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Somalia.
+ @see https://en.wikipedia.org/wiki/Flag_of_Somalia
  */
 + (UIImage * _Nullable)flagSomaliaWithSize:(CGSize)size;
 

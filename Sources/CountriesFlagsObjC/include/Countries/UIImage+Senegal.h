@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Senegal)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Senegal "wikipedia"
- 
  Generates the flag of Senegal.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Senegal.
+ @see https://en.wikipedia.org/wiki/Flag_of_Senegal
  */
 + (UIImage * _Nullable)flagSenegalWithSize:(CGSize)size;
 

@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Qatar)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Qatar "wikipedia"
- 
  Generates the flag of Qatar.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Qatar.
+ @see https://en.wikipedia.org/wiki/Flag_of_Qatar
  */
 + (UIImage * _Nullable)flagQatarWithSize:(CGSize)size;
 

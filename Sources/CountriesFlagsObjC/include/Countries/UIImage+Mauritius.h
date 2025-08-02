@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Mauritius)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Mauritius "wikipedia"
- 
  Generates the flag of Mauritius.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Mauritius.
+ @see https://en.wikipedia.org/wiki/Flag_of_Mauritius
  */
 + (UIImage * _Nullable)flagMauritiusWithSize:(CGSize)size;
 

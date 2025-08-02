@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (France)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_France "wikipedia"
- 
  Generates the flag of France.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of France.
+ @see https://en.wikipedia.org/wiki/Flag_of_France
  */
 + (UIImage * _Nullable)flagFranceWithSize:(CGSize)size;
 

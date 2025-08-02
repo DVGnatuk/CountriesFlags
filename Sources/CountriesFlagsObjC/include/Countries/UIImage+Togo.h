@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Togo)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Togo "wikipedia"
- 
  Generates the flag of Togo.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Togo.
+ @see https://en.wikipedia.org/wiki/Flag_of_Togo
  */
 + (UIImage * _Nullable)flagTogoWithSize:(CGSize)size;
 

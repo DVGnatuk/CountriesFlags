@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (RepublicCongo)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo "wikipedia"
- 
  Generates the flag of the Republic of the Congo.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of the Republic of the Congo.
+ @see https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo
  */
 + (UIImage * _Nullable)flagRepublicCongoWithSize:(CGSize)size;
 

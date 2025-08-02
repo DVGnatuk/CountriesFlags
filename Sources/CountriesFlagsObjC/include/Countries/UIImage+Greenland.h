@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Greenland)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Greenland "wikipedia"
- 
  Generates the flag of Greenland.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Greenland.
+ @see https://en.wikipedia.org/wiki/Flag_of_Greenland
  */
 + (UIImage * _Nullable)flagGreenlandWithSize:(CGSize)size;
 

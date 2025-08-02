@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Djibouti)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Djibouti "wikipedia"
- 
  Generates the flag of Djibouti.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Djibouti.
+ @see https://en.wikipedia.org/wiki/Flag_of_Djibouti
  */
 + (UIImage * _Nullable)flagDjiboutiWithSize:(CGSize)size;
 

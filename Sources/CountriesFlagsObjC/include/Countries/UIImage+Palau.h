@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Palau)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Palau "wikipedia"
- 
  Generates the flag of Palau.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Palau.
+ @see https://en.wikipedia.org/wiki/Flag_of_Palau
  */
 + (UIImage * _Nullable)flagPalauWithSize:(CGSize)size;
 

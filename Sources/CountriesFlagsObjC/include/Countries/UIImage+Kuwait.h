@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Kuwait)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Kuwait "wikipedia"
- 
  Generates the flag of Kuwait.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Kuwait.
+ @see https://en.wikipedia.org/wiki/Flag_of_Kuwait
  */
 + (UIImage * _Nullable)flagKuwaitWithSize:(CGSize)size;
 

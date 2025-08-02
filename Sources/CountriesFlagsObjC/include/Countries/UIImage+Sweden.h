@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Sweden)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Sweden "wikipedia"
- 
  Generates the flag of Sweden.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Sweden.
+ @see https://en.wikipedia.org/wiki/Flag_of_Sweden
  */
 + (UIImage * _Nullable)flagSwedenWithSize:(CGSize)size;
 

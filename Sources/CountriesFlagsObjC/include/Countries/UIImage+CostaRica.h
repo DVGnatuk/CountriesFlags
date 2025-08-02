@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (CostaRica)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Costa_Rica "wikipedia"
- 
  Generates the flag of Costa Rica.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Costa Rica.
+ @see https://en.wikipedia.org/wiki/Flag_of_Costa_Rica
  */
 + (UIImage * _Nullable)flagCostaRicaWithSize:(CGSize)size;
 

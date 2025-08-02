@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Cuba)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Cuba "wikipedia"
- 
  Generates the flag of Cuba.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Cuba.
+ @see https://en.wikipedia.org/wiki/Flag_of_Cuba
  */
 + (UIImage * _Nullable)flagCubaWithSize:(CGSize)size;
 

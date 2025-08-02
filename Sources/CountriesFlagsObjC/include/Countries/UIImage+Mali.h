@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Mali)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Mali "wikipedia"
- 
  Generates the flag of Mali.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Mali.
+ @see https://en.wikipedia.org/wiki/Flag_of_Mali
  */
 + (UIImage * _Nullable)flagMaliWithSize:(CGSize)size;
 

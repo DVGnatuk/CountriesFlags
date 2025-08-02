@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (SierraLeone)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone "wikipedia"
- 
  Generates the flag of Sierra Leone.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Sierra Leone.
+ @see https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone
  */
 + (UIImage * _Nullable)flagSierraLeoneWithSize:(CGSize)size;
 

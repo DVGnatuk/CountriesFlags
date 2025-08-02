@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Belgium)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Belgium "wikipedia"
- 
  Generates the flag of Belgium.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Belgium.
+ @see https://en.wikipedia.org/wiki/Flag_of_Belgium
  */
 + (UIImage * _Nullable)flagBelgiumWithSize:(CGSize)size;
 

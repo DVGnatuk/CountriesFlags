@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (AntiguaAndBarbuda)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda "wikipedia"
- 
  Generates the flag of Antigua and Barbuda.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Antigua and Barbuda.
+ @see https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda
  */
 + (UIImage * _Nullable)flagAntiguaAndBarbudaWithSize:(CGSize)size;
 

@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Bahamas)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_the_Bahamas "wikipedia"
- 
  Generates the flag of Bahamas.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Bahamas.
+ @see https://en.wikipedia.org/wiki/Flag_of_the_Bahamas
  */
 + (UIImage * _Nullable)flagBahamasWithSize:(CGSize)size;
 

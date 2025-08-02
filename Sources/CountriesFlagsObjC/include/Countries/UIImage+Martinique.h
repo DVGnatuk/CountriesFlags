@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Martinique)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Martinique "wikipedia"
- 
  Generates the flag of Martinique.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Martinique.
+ @see https://en.wikipedia.org/wiki/Flag_of_Martinique
  */
 + (UIImage * _Nullable)flagMartiniqueWithSize:(CGSize)size;
 

@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Benin)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Benin"wikipedia"
- 
  Generates the flag of Benin.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Benin.
+ @see https://en.wikipedia.org/wiki/Flag_of_Benin
  */
 + (UIImage * _Nullable)flagBeninWithSize:(CGSize)size;
 

@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Aruba)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Aruba "wikipedia"
- 
  Generates the flag of Aruba.
- For more information see [wikipedia].
-
- @param size: Image size.
+ 
+ @param size Image size.
  @returns Returns the flag of Aruba.
+ @see https://en.wikipedia.org/wiki/Flag_of_Aruba
  */
 + (UIImage * _Nullable)flagArubaWithSize:(CGSize)size;
 

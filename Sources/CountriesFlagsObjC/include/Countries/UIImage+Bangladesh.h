@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Bangladesh)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Bangladesh "wikipedia"
- 
  Generates the flag of Bangladesh.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Bangladesh.
+ @see https://en.wikipedia.org/wiki/Flag_of_Bangladesh
  */
 + (UIImage * _Nullable)flagBangladeshWithSize:(CGSize)size;
 

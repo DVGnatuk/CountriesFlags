@@ -10,13 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (Tonga)
 
 /**
- [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Tonga "wikipedia"
- 
  Generates the flag of Tonga.
- For more information see [wikipedia].
  
- @param size: Image size.
+ @param size Image size.
  @returns Returns the flag of Tonga.
+ @see https://en.wikipedia.org/wiki/Flag_of_Tonga
  */
 + (UIImage * _Nullable)flagTongaWithSize:(CGSize)size;
 

@@ -9,7 +9,7 @@ import UIKit
 
 extension UIImage {
     /**
-     [wikipedia]: https://ru.wikipedia.org/wiki/Флаг_Германии "wikipedia"
+     [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Germany "wikipedia"
      
      Generates the flag of Germany.
      For more information see [wikipedia].
