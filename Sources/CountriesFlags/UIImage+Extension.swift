@@ -112,6 +112,7 @@ extension UIImage {
         case .Sweden: return flagSweden(with: size)
         case .Switzerland: return flagSwitzerland(with: size)
         case .Thailand: return flagThailand(with: size)
+        case .TimorLeste: return flagTimorLeste(with: size)
         case .Togo: return flagTogo(with: size)
         case .Tonga: return flagTonga(with: size)
         case .TrinidadAndTobago: return flagTrinidadAndTobago(with: size)
