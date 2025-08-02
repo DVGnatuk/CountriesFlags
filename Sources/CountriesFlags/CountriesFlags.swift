@@ -191,7 +191,7 @@ public enum CountriesFlags {
 //        case SaintMartin
 //        case SaintPierreAndMiquelon
 //        case SaintVincentAndTheGrenadines
-//        case Samoa
+    case Samoa
 //        case SanMarino
     case SaoTomeAndPrincipe
 //        case SaudiArabia

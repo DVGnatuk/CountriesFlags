@@ -24,7 +24,7 @@ extension UIImage {
                                   green: 185.0/255.0,
                                   blue: 19.0/255.0,
                                   alpha: 1.0)
-        let colorGreen = UIColor(red: 0.0/255.0,
+        let colorGreen = UIColor(red: 0.0,
                                  green: 106.0/255.0,
                                  blue: 68.0/255.0,
                                  alpha: 1.0)
@@ -39,11 +39,11 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorGreen.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0),
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 3.0),
                           size: CGSize(width: size.width, height: size.height / 3.0)))
 
         colorRed.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0 * 2.0),
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 3.0 * 2.0),
                           size: CGSize(width: size.width, height: size.height / 3.0)))
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

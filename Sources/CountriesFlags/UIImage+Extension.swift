@@ -100,6 +100,7 @@ extension UIImage {
         case .PuertoRico: return flagPuertoRico(with: size)
         case .Qatar: return flagQatar(with: size)
         case .RepublicCongo: return flagRepublicCongo(with: size)
+        case .Samoa: return flagSamoa(with: size)
         case .Romania: return flagRomania(with: size)
         case .RussianFederation: return flagRussianFederation(with: size)
         case .SaoTomeAndPrincipe: return flagSaoTomeAndPrincipe(with: size)
