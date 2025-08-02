@@ -5,7 +5,7 @@
 
 #import "Countries/UIImage+Tonga.h"
 
-#import "Extensions/UIBezierPath+Extension.h"
+#import "Extensions/UIBezierPath+Plus.h"
 
 @implementation UIImage (Tonga)
 

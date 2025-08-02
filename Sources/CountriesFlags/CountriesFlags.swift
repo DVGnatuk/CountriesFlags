@@ -152,7 +152,7 @@ public enum CountriesFlags {
 //        case Mozambique
 //        case Myanmar
 //        case Namibia
-//        case Nauru
+    case Nauru
 //        case Nepal
     case Netherlands
 //        case NetherlandsAntilles

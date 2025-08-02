@@ -5,7 +5,7 @@
 
 #import "Countries/UIImage+BurkinaFaso.h"
 
-#import "Extensions/UIBezierPath+Extension.h"
+#import "Extensions/UIBezierPath+Star.h"
 
 @implementation UIImage (BurkinaFaso)
 

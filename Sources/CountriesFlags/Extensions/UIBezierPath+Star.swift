@@ -1,15 +1,19 @@
 //
-//  UIBezierPath+Extension.swift
+//  UIBezierPath+Star.swift
 //  CountriesFlags
-//  
+//
+
+// swiftlint:disable function_body_length
 
 import UIKit
 
 extension UIBezierPath {
+
     enum StarType {
         case fourPointed
         case fivePointed
         case sevenPointed
+        case twelvePointed
     }
 
     static func star(with size: CGSize, radius: CGFloat, type: StarType = .fivePointed) -> UIBezierPath {
@@ -49,6 +53,21 @@ extension UIBezierPath {
                 polygonPath.addLine(to: point)
             }
 
+        case .twelvePointed:
+            let innerRadius = radius * 0.5
+
+            polygonPath.move(to: CGPoint(x: xCenter + radius * cos(0.0),
+                                         y: yCenter + radius * sin(0.0)))
+
+            for index in 1..<24 {
+                let angle = CGFloat(index) * .pi / 12.0
+                let currentRadius: CGFloat = index % 2 == 0 ? radius : innerRadius
+
+                let point = CGPoint(x: xCenter + currentRadius * cos(angle),
+                                    y: yCenter + currentRadius * sin(angle))
+                polygonPath.addLine(to: point)
+            }
+
         default:
             let theta: Float = 2.0 * Float.pi * 2.0 / 5.0
             for index in 1..<5 {
@@ -62,67 +81,6 @@ extension UIBezierPath {
         polygonPath.close()
         return polygonPath
     }
-
-    enum TriangleType {
-        case left
-        case leftEquilateral
-    }
-
-    static func triangle(in size: CGSize, type: TriangleType) -> UIBezierPath {
-        // Calculate vertex coordinates
-        // x1 y1
-        // |\
-        // | \ x3 y3
-        // | /
-        // |/
-        // x2 y2
-        let x1 = 0.0
-        let y1 = 0.0
-
-        let x2 = 0.0
-        let y2 = size.height
-
-        var x3 = 0.0
-        switch type {
-        case .leftEquilateral:
-            x3 = size.height * sin(.pi / 3) // sin(60 degrees)
-        case .left:
-            x3 = size.width
-        }
-        let y3 = size.height / 2.0
-
-        let path = UIBezierPath()
-        path.move(to: CGPoint(x: x1, y: y1))
-        path.addLine(to: CGPoint(x: x2, y: y2))
-        path.addLine(to: CGPoint(x: x3, y: y3))
-        path.close()
-
-        return path
-    }
-
-    static func plus(in size: CGSize, with sideWidth: CGFloat) -> UIBezierPath {
-        let xOffset = size.width / 2.0 - sideWidth * 3.0 / 2.0
-        let yOffset = size.height / 2.0 - sideWidth * 3.0 / 2.0
-
-        let path = UIBezierPath()
-        // top
-        path.move(to: CGPoint(x: xOffset + sideWidth, y: yOffset))
-        path.addLine(to: CGPoint(x: xOffset + sideWidth * 2.0, y: yOffset))
-        path.addLine(to: CGPoint(x: xOffset + sideWidth * 2.0, y: yOffset + sideWidth))
-        // right
-        path.addLine(to: CGPoint(x: xOffset + sideWidth * 3.0, y: yOffset + sideWidth))
-        path.addLine(to: CGPoint(x: xOffset + sideWidth * 3.0, y: yOffset + sideWidth * 2.0))
-        path.addLine(to: CGPoint(x: xOffset + sideWidth * 2.0, y: yOffset + sideWidth * 2.0))
-        // bottom
-        path.addLine(to: CGPoint(x: xOffset + sideWidth * 2.0, y: yOffset + sideWidth * 3.0))
-        path.addLine(to: CGPoint(x: xOffset + sideWidth, y: yOffset + sideWidth * 3.0))
-        path.addLine(to: CGPoint(x: xOffset + sideWidth, y: yOffset + sideWidth * 2.0))
-        // left
-        path.addLine(to: CGPoint(x: xOffset, y: yOffset + sideWidth * 2.0))
-        path.addLine(to: CGPoint(x: xOffset, y: yOffset + sideWidth))
-        path.addLine(to: CGPoint(x: xOffset + sideWidth, y: yOffset + sideWidth))
-        path.close()
-
-        return path
-    }
 }
+
+// swiftlint:enable function_body_length

@@ -45,9 +45,11 @@
 #import "Countries/UIImage+Martinique.h"
 #import "Countries/UIImage+Mauritius.h"
 #import "Countries/UIImage+Monaco.h"
+#import "Countries/UIImage+Nauru.h"
 #import "Countries/UIImage+Netherlands.h"
 #import "Countries/UIImage+Nigeria.h"
 #import "Countries/UIImage+Norway.h"
+#import "Countries/UIImage+Palau.h"
 #import "Countries/UIImage+Panama.h"
 #import "Countries/UIImage+Poland.h"
 #import "Countries/UIImage+PuertoRico.h"
@@ -122,9 +124,11 @@
         case CountriesFlagsMartinique: return [UIImage flagMartiniqueWithSize: size];
         case CountriesFlagsMauritius: return [UIImage flagMauritiusWithSize: size];
         case CountriesFlagsMonaco: return [UIImage flagMonacoWithSize: size];
+        case CountriesFlagsNauru: return [UIImage flagNauruWithSize: size];
         case CountriesFlagsNetherlands: return [UIImage flagNetherlandsWithSize: size];
         case CountriesFlagsNigeria: return [UIImage flagNigeriaWithSize: size];
         case CountriesFlagsNorway: return [UIImage flagNorwayWithSize: size];
+        case CountriesFlagsPalau: return [UIImage flagPalauWithSize: size];
         case CountriesFlagsPanama: return [UIImage flagPanamaWithSize: size];
         case CountriesFlagsPoland: return [UIImage flagPolandWithSize: size];
         case CountriesFlagsPuertoRico: return [UIImage flagPuertoRicoWithSize: size];

@@ -5,7 +5,7 @@
 
 #import "Countries/UIImage+CzechRepublic.h"
 
-#import "Extensions/UIBezierPath+Extension.h"
+#import "Extensions/UIBezierPath+Triangle.h"
 
 @implementation UIImage (CzechRepublic)
 

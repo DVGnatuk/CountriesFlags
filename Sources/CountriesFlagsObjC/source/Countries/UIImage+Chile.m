@@ -5,7 +5,7 @@
 
 #import "Countries/UIImage+Chile.h"
 
-#import "Extensions/UIBezierPath+Extension.h"
+#import "Extensions/UIBezierPath+Star.h"
 
 @implementation UIImage (Chile)
 

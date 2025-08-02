@@ -46,11 +46,13 @@ extension UIImage {
         colorRed.setFill()
         UIBezierPath.triangle(in: CGSize(width: size.width / 168.0 * 42.0, height: size.height),
                               type: .left).fill()
-        
+
         colorBlack.setFill()
-        UIBezierPath.star(with: CGSize(width: size.width, height: size.height + size.height / 84.0 * 1.37244652 * 2.0),
+        var starSize = CGSize(width: size.width, height: size.height + size.height / 84.0 * 1.37244652 * 2.0)
+        UIBezierPath.star(with: starSize,
                           radius: size.height / 84.0 * 28.74489303 / 2.0).fill()
-        UIBezierPath.star(with: CGSize(width: size.width * 1.5, height: size.height + size.height / 84.0 * 1.37244652 * 2.0),
+        starSize = CGSize(width: size.width * 1.5, height: size.height + size.height / 84.0 * 1.37244652 * 2.0)
+        UIBezierPath.star(with: starSize,
                           radius: size.height / 84.0 * 28.74489303 / 2.0).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

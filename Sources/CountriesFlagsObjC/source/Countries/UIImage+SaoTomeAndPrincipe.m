@@ -5,7 +5,8 @@
 
 #import "Countries/UIImage+SaoTomeAndPrincipe.h"
 
-#import "Extensions/UIBezierPath+Extension.h"
+#import "Extensions/UIBezierPath+Triangle.h"
+#import "Extensions/UIBezierPath+Star.h"
 
 @implementation UIImage (SaoTomeAndPrincipe)
 

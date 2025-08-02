@@ -5,7 +5,7 @@
 
 #import "Countries/UIImage+CentralAfricanRepublic.h"
 
-#import "Extensions/UIBezierPath+Extension.h"
+#import "Extensions/UIBezierPath+Star.h"
 
 @implementation UIImage (CentralAfricanRepublic)
 
