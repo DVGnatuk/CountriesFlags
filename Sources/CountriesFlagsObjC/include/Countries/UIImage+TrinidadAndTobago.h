@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Trinidad and Tobago.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Trinidad and Tobago.
+ @param size: Image size.
+ @returns Returns the flag of Trinidad and Tobago.
  */
 + (UIImage * _Nullable)flagTrinidadAndTobagoWithSize:(CGSize)size;
 

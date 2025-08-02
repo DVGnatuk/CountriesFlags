@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Costa Rica.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Costa Rica.
+ @param size: Image size.
+ @returns Returns the flag of Costa Rica.
  */
 + (UIImage * _Nullable)flagCostaRicaWithSize:(CGSize)size;
 

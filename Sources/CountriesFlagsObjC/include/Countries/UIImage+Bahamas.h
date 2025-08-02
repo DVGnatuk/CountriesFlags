@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Bahamas.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Bahamas.
+ @param size: Image size.
+ @returns Returns the flag of Bahamas.
  */
 + (UIImage * _Nullable)flagBahamasWithSize:(CGSize)size;
 

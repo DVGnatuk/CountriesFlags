@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Jordan.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Jordan.
+ @param size: Image size.
+ @returns Returns the flag of Jordan.
  */
 + (UIImage * _Nullable)flagJordanWithSize:(CGSize)size;
 

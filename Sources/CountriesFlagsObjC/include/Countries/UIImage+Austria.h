@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Austria.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Austria.
+ @param size: Image size.
+ @returns Returns the flag of Austria.
  */
 + (UIImage * _Nullable)flagAustriaWithSize:(CGSize)size;
 

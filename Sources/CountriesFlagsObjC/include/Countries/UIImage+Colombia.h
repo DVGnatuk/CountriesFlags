@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Colombia.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Colombia.
+ @param size: Image size.
+ @returns Returns the flag of Colombia.
  */
 + (UIImage * _Nullable)flagColombiaWithSize:(CGSize)size;
 

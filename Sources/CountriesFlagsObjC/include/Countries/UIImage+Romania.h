@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Romania.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Romania.
+ @param size: Image size.
+ @returns Returns the flag of Romania.
  */
 + (UIImage * _Nullable)flagRomaniaWithSize:(CGSize)size;
 

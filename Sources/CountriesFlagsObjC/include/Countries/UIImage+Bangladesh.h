@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Bangladesh.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Bangladesh.
+ @param size: Image size.
+ @returns Returns the flag of Bangladesh.
  */
 + (UIImage * _Nullable)flagBangladeshWithSize:(CGSize)size;
 

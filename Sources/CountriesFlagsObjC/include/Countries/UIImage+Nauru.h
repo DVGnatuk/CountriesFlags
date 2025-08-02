@@ -11,9 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Generates the flag of Nauru.
- @see https://en.wikipedia.org/wiki/Flag_of_Nauru
  @param size: Image size.
  @returns Returns the flag of Nauru.
+ @see https://en.wikipedia.org/wiki/Flag_of_Nauru wikipedia
  */
 + (UIImage * _Nullable)flagNauruWithSize:(CGSize)size;
 

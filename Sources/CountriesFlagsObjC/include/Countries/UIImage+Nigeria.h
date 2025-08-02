@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Nigeria.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Nigeria.
+ @param size: Image size.
+ @returns Returns the flag of Nigeria.
  */
 + (UIImage * _Nullable)flagNigeriaWithSize:(CGSize)size;
 

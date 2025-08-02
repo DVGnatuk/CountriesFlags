@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of UnitedArabEmirates.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of UnitedArabEmirates.
+ @param size: Image size.
+ @returns Returns the flag of UnitedArabEmirates.
  */
 + (UIImage * _Nullable)flagUnitedArabEmiratesWithSize:(CGSize)size;
 

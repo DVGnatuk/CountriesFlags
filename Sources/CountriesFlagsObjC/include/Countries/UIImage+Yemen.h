@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Yemen.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Yemen.
+ @param size: Image size.
+ @returns Returns the flag of Yemen.
  */
 + (UIImage * _Nullable)flagYemenWithSize:(CGSize)size;
 

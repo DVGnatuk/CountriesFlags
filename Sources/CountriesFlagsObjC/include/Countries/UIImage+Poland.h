@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Poland.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Poland.
+ @param size: Image size.
+ @returns Returns the flag of Poland.
  */
 + (UIImage * _Nullable)flagPolandWithSize:(CGSize)size;
 

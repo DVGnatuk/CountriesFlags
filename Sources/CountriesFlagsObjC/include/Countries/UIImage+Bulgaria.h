@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Bulgaria.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Bulgaria.
+ @param size: Image size.
+ @returns Returns the flag of Bulgaria.
  */
 + (UIImage * _Nullable)flagBulgariaWithSize:(CGSize)size;
 

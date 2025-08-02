@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Kuwait.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Kuwait.
+ @param size: Image size.
+ @returns Returns the flag of Kuwait.
  */
 + (UIImage * _Nullable)flagKuwaitWithSize:(CGSize)size;
 

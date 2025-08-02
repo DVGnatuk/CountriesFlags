@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Burkina Faso.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Burkina Faso.
+ @param size: Image size.
+ @returns Returns the flag of Burkina Faso.
  */
 + (UIImage * _Nullable)flagBurkinaFasoWithSize:(CGSize)size;
 

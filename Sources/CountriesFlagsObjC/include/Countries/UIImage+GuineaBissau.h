@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Guinea-Bissau.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Guinea-Bissau.
+ @param size: Image size.
+ @returns Returns the flag of Guinea-Bissau.
  */
 + (UIImage * _Nullable)flagGuineaBissauWithSize:(CGSize)size;
 

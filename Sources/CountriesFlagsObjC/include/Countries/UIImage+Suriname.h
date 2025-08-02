@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Suriname.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Suriname.
+ @param size: Image size.
+ @returns Returns the flag of Suriname.
  */
 + (UIImage * _Nullable)flagSurinameWithSize:(CGSize)size;
 

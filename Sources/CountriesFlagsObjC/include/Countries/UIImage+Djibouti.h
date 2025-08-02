@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Djibouti.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Djibouti.
+ @param size: Image size.
+ @returns Returns the flag of Djibouti.
  */
 + (UIImage * _Nullable)flagDjiboutiWithSize:(CGSize)size;
 

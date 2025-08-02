@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Bahrain.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Bahrain.
+ @param size: Image size.
+ @returns Returns the flag of Bahrain.
  */
 + (UIImage * _Nullable)flagBahrainWithSize:(CGSize)size;
 

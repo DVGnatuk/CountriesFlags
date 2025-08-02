@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Puerto Rico.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Puerto Rico.
+ @param size: Image size.
+ @returns Returns the flag of Puerto Rico.
  */
 + (UIImage * _Nullable)flagPuertoRicoWithSize:(CGSize)size;
 

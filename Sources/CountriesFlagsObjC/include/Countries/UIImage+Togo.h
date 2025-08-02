@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Togo.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Togo.
+ @param size: Image size.
+ @returns Returns the flag of Togo.
  */
 + (UIImage * _Nullable)flagTogoWithSize:(CGSize)size;
 

@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Netherlands.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Netherlands.
+ @param size: Image size.
+ @returns Returns the flag of Netherlands.
  */
 + (UIImage * _Nullable)flagNetherlandsWithSize:(CGSize)size;
 

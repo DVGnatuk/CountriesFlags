@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Iceland.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Iceland.
+ @param size: Image size.
+ @returns Returns the flag of Iceland.
  */
 + (UIImage * _Nullable)flagIcelandWithSize:(CGSize)size;
 

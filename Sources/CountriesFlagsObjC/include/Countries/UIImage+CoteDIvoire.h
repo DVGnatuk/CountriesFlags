@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Côte d'Ivoire.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Côte d'Ivoire.
+ @param size: Image size.
+ @returns Returns the flag of Côte d'Ivoire.
  */
 + (UIImage * _Nullable)flagCoteDIvoireWithSize:(CGSize)size;
 

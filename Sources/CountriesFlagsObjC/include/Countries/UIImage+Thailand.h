@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Thailand.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Thailand.
+ @param size: Image size.
+ @returns Returns the flag of Thailand.
  */
 + (UIImage * _Nullable)flagThailandWithSize:(CGSize)size;
 

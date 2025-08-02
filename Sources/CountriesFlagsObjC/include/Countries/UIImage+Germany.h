@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Germany.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Germany.
+ @param size: Image size.
+ @returns Returns the flag of Germany.
  */
 + (UIImage * _Nullable)flagGermanyWithSize:(CGSize)size;
 

@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Estonia.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Estonia.
+ @param size: Image size.
+ @returns Returns the flag of Estonia.
  */
 + (UIImage * _Nullable)flagEstoniaWithSize:(CGSize)size;
 

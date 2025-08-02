@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Senegal.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Senegal.
+ @param size: Image size.
+ @returns Returns the flag of Senegal.
  */
 + (UIImage * _Nullable)flagSenegalWithSize:(CGSize)size;
 

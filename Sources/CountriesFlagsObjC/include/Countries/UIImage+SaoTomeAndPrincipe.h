@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of São Tomé and Príncipe.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of São Tomé and Príncipe.
+ @param size: Image size.
+ @returns Returns the flag of São Tomé and Príncipe.
  */
 + (UIImage * _Nullable)flagSaoTomeAndPrincipeWithSize:(CGSize)size;
 

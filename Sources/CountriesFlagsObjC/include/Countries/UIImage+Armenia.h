@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Armenia.
  For more information see [wikipedia].
 
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Armenia.
+ @param size: Image size.
+ @returns Returns the flag of Armenia.
  */
 + (UIImage * _Nullable)flagArmeniaWithSize:(CGSize)size;
 

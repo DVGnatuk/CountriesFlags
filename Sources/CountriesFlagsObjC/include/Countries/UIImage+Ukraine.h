@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  Generates the flag of Ukraine.
  For more information see [wikipedia].
  
- - Parameters:
-    - size: image size.
- 
- - Returns: Returns the flag of Ukraine.
+ @param size: Image size.
+ @returns Returns the flag of Ukraine.
  */
 + (UIImage * _Nullable)flagUkraineWithSize:(CGSize)size;
 
