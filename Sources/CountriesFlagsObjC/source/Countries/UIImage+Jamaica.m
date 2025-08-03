@@ -27,9 +27,9 @@
     
     [colorBlack setFill];
     [[UIBezierPath triangleInSize:CGSizeMake(size.width / 2.0f, size.height)
-                             type:FlagTriangleTypeLeft] fill];
+                             type:FlagTriangleTypeLeftMiddle] fill];
     [[UIBezierPath triangleInSize:size
-                             type:FlagTriangleTypeRight] fill];
+                             type:FlagTriangleTypeRightMiddle] fill];
     
     [colorGold setStroke];
     UIBezierPath* path = [UIBezierPath bezierPath];

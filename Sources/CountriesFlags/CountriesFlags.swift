@@ -217,7 +217,7 @@ public enum CountriesFlags {
 //        case SyrianArabRepublic
 //        case Taiwan
 //        case Tajikistan
-//        case Tanzania
+    case Tanzania
     case Thailand
     case TimorLeste
     case Togo

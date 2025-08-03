@@ -37,10 +37,12 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorYellow.setFill()
-        UIBezierPath.triangle(in: CGSize(width: size.width / 2.0, height: size.height), type: .left).fill()
+        UIBezierPath.triangle(in: CGSize(width: size.width / 2.0, height: size.height),
+                              type: .leftMiddle).fill()
 
         colorBlack.setFill()
-        UIBezierPath.triangle(in: CGSize(width: size.width / 36.0 * 12.0, height: size.height), type: .left).fill()
+        UIBezierPath.triangle(in: CGSize(width: size.width / 36.0 * 12.0, height: size.height),
+                              type: .leftMiddle).fill()
 
         colorWhite.setFill()
         let radius = CGFloat(size.height / 18.0 * 6.0) / 2.0

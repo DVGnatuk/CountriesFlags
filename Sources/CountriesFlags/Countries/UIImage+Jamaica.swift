@@ -36,8 +36,8 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorBlack.setFill()
-        UIBezierPath.triangle(in: CGSize(width: size.width / 2.0, height: size.height), type: .left).fill()
-        UIBezierPath.triangle(in: size, type: .right).fill()
+        UIBezierPath.triangle(in: CGSize(width: size.width / 2.0, height: size.height), type: .leftMiddle).fill()
+        UIBezierPath.triangle(in: size, type: .rightMiddle).fill()
 
         colorGold.setStroke()
         var path = UIBezierPath()
@@ -46,7 +46,7 @@ extension UIImage {
         path.close()
         path.lineWidth = size.height / 6.0
         path.stroke()
-        
+
         path = UIBezierPath()
         path.move(to: CGPoint(x: 0.0, y: size.height))
         path.addLine(to: CGPoint(x: size.width, y: 0.0))

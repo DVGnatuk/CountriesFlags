@@ -36,7 +36,7 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorBlue.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 4.0),
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 4.0),
                           size: CGSize(width: size.width, height: size.height / 2.0)))
 
         let radius = size.height / 2.0 * (4.0 / 5.0)

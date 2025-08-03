@@ -35,7 +35,7 @@
     
     [colorRed setFill];
     [[UIBezierPath triangleInSize:CGSizeMake(size.width / 2.0f, size.height)
-                             type:FlagTriangleTypeLeft] fill];
+                             type:FlagTriangleTypeLeftMiddle] fill];
     
     [colorWhite setFill];
     [[UIBezierPath starWithSize:CGSizeMake(size.width / 84.0 * 12.97871376 * 2.0, size.height)

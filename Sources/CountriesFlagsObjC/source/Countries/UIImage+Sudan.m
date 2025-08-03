@@ -34,7 +34,7 @@
     
     [colorGreen setFill];
     [[UIBezierPath triangleInSize:CGSizeMake(size.width / 6.0f * 2.0f, size.height)
-                             type:FlagTriangleTypeLeft] fill];
+                             type:FlagTriangleTypeLeftMiddle] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

@@ -45,7 +45,7 @@ extension UIImage {
 
         colorWhite.setFill()
         UIBezierPath.triangle(in: CGSize(width: size.width / 1280.0 * 740.0, height: size.height),
-                              type: .left).fill()
+                              type: .leftMiddle).fill()
 
         colorRed.setFill()
         let starSize = CGSize(width: size.width / 1200.0 * 530.0,

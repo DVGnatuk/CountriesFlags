@@ -8,9 +8,9 @@ import UIKit
 extension UIBezierPath {
 
     enum TriangleType {
-        case left
+        case leftMiddle
         case leftEquilateral
-        case right
+        case rightMiddle
     }
 
     static func triangle(in size: CGSize, type: TriangleType) -> UIBezierPath {
@@ -34,9 +34,11 @@ extension UIBezierPath {
         switch type {
         case .leftEquilateral:
             x3 = size.height * sin(.pi / 3) // sin(60 degrees)
-        case .left:
+
+        case .leftMiddle:
             x3 = size.width
-        case .right:
+
+        case .rightMiddle:
             x1 = size.width
             x2 = size.width
             x3 = size.width / 2.0

@@ -32,7 +32,7 @@
             x3 = size.height * sin(M_PI / 3); // sin(60 degrees)
             break;
             
-        case FlagTriangleTypeRight:
+        case FlagTriangleTypeRightMiddle:
             x1 = size.width;
             x2 = size.width;
             x3 = size.width / 2.0f;

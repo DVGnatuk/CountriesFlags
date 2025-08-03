@@ -30,11 +30,11 @@
     
     [colorYellow setFill];
     [[UIBezierPath triangleInSize:CGSizeMake(size.width / 2.0f, size.height)
-                             type:FlagTriangleTypeLeft] fill];
+                             type:FlagTriangleTypeLeftMiddle] fill];
     
     [colorBlack setFill];
     [[UIBezierPath triangleInSize:CGSizeMake(size.width / 36.0f * 12.0f, size.height)
-                             type:FlagTriangleTypeLeft] fill];
+                             type:FlagTriangleTypeLeftMiddle] fill];
     
     [colorWhite setFill];
     CGFloat radius = size.height / 18.0 * 6.0 / 2.0;

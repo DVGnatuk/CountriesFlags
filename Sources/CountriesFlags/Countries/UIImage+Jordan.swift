@@ -46,7 +46,7 @@ extension UIImage {
 
         colorRed.setFill()
         UIBezierPath.triangle(in: CGSize(width: size.width / 2.0, height: size.height),
-                              type: .left).fill()
+                              type: .leftMiddle).fill()
 
         colorWhite.setFill()
         UIBezierPath.star(with: CGSize(width: size.width / 84.0 * 12.97871376 * 2.0, height: size.height),
