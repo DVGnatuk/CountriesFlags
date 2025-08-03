@@ -21,20 +21,20 @@ extension UIImage {
      */
     internal static func flagCentralAfricanRepublic(with size: CGSize) -> UIImage? {
         let colorBlue = UIColor(red: 0.0,
-                                green: 48.0/255.0,
-                                blue: 130.0/255.0,
+                                green: 48.0 / 255.0,
+                                blue: 130.0 / 255.0,
                                 alpha: 1.0)
-        let colorGreen = UIColor(red: 40.0/255.0,
-                                 green: 151.0/255.0,
-                                 blue: 40.0/255.0,
+        let colorGreen = UIColor(red: 40.0 / 255.0,
+                                 green: 151.0 / 255.0,
+                                 blue: 40.0 / 255.0,
                                  alpha: 1.0)
         let colorYellow = UIColor(red: 1.0,
-                                  green: 206.0/255.0,
-                                  blue: 0.0/255.0,
+                                  green: 206.0 / 255.0,
+                                  blue: 0.0,
                                   alpha: 1.0)
-        let colorRed = UIColor(red: 210.0/255.0,
-                               green: 16.0/255.0,
-                               blue: 52.0/255.0,
+        let colorRed = UIColor(red: 210.0 / 255.0,
+                               green: 16.0 / 255.0,
+                               blue: 52.0 / 255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
 

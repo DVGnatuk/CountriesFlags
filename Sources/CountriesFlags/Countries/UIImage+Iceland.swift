@@ -20,13 +20,13 @@ extension UIImage {
      - Returns: Returns the flag of Iceland.
      */
     internal static func flagIceland(with size: CGSize) -> UIImage? {
-        let colorBlue = UIColor(red: 2.0/255.0,
-                                green: 82.0/255.0,
-                                blue: 156.0/255.0,
+        let colorBlue = UIColor(red: 2.0 / 255.0,
+                                green: 82.0 / 255.0,
+                                blue: 156.0 / 255.0,
                                 alpha: 1.0)
-        let colorRed = UIColor(red: 220.0/255.0,
-                               green: 30.0/255.0,
-                               blue: 53.0/255.0,
+        let colorRed = UIColor(red: 220.0 / 255.0,
+                               green: 30.0 / 255.0,
+                               blue: 53.0 / 255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
 

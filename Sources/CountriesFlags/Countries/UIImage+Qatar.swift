@@ -20,9 +20,9 @@ extension UIImage {
      - Returns: Returns the flag of Qatar.
      */
     internal static func flagQatar(with size: CGSize) -> UIImage? {
-        let colorMaroon = UIColor(red: 138.0/255.0,
-                                  green: 21.0/255.0,
-                                  blue: 56.0/255.0,
+        let colorMaroon = UIColor(red: 138.0 / 255.0,
+                                  green: 21.0 / 255.0,
+                                  blue: 56.0 / 255.0,
                                   alpha: 1.0)
         let colorWhite = UIColor.white
 

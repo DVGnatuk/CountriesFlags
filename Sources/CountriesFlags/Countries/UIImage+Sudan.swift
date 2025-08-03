@@ -21,12 +21,12 @@ extension UIImage {
      */
     internal static func flagSudan(with size: CGSize) -> UIImage? {
         let colorGreen = UIColor(red: 0.0,
-                                 green: 114.0/255.0,
-                                 blue: 41.0/255.0,
+                                 green: 114.0 / 255.0,
+                                 blue: 41.0 / 255.0,
                                  alpha: 1.0)
-        let colorRed = UIColor(red: 210.0/255.0,
-                               green: 16.0/255.0,
-                               blue: 52.0/255.0,
+        let colorRed = UIColor(red: 210.0 / 255.0,
+                               green: 16.0 / 255.0,
+                               blue: 52.0 / 255.0,
                                alpha: 1.0)
         let colorBlack = UIColor.black
         let colorWhite = UIColor.white

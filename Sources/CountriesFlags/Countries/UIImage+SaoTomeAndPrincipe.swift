@@ -21,17 +21,17 @@ extension UIImage {
      */
     internal static func flagSaoTomeAndPrincipe(with size: CGSize) -> UIImage? {
         let colorGreen = UIColor(red: 0.0,
-                                green: 151.0/255.0,
-                                blue: 57.0/255.0,
-                                alpha: 1.0)
+                                 green: 151.0 / 255.0,
+                                 blue: 57.0 / 255.0,
+                                 alpha: 1.0)
         let colorYellow = UIColor(red: 1.0,
-                                green: 209.0/255.0,
-                                blue: 0.0,
-                                alpha: 1.0)
+                                  green: 209.0 / 255.0,
+                                  blue: 0.0,
+                                  alpha: 1.0)
         let colorBlack = UIColor.black
-        let colorRed = UIColor(red: 239.0/255.0,
-                               green: 51.0/255.0,
-                               blue: 64.0/255.0,
+        let colorRed = UIColor(red: 239.0 / 255.0,
+                               green: 51.0 / 255.0,
+                               blue: 64.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

@@ -20,9 +20,9 @@ extension UIImage {
      - Returns: Returns the flag of Greece.
      */
     internal static func flagGreece(with size: CGSize) -> UIImage? {
-        let colorBlue = UIColor(red: 13.0/255.0,
-                                green: 94.0/255.0,
-                                blue: 175.0/255.0,
+        let colorBlue = UIColor(red: 13.0 / 255.0,
+                                green: 94.0 / 255.0,
+                                blue: 175.0 / 255.0,
                                 alpha: 1.0)
         let colorWhite = UIColor.white
 

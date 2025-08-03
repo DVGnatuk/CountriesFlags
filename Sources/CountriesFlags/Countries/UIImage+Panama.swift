@@ -20,13 +20,13 @@ extension UIImage {
      - Returns: Returns the flag of Panama.
      */
     internal static func flagPanama(with size: CGSize) -> UIImage? {
-        let colorBlue = UIColor(red: 1.0/255.0,
-                                green: 30.0/255.0,
-                                blue: 86.0/255.0,
+        let colorBlue = UIColor(red: 1.0 / 255.0,
+                                green: 30.0 / 255.0,
+                                blue: 86.0 / 255.0,
                                 alpha: 1.0)
-        let colorRed = UIColor(red: 219.0/255.0,
-                               green: 10.0/255.0,
-                               blue: 19.0/255.0,
+        let colorRed = UIColor(red: 219.0 / 255.0,
+                               green: 10.0 / 255.0,
+                               blue: 19.0 / 255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
 

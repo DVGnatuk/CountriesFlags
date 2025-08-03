@@ -23,21 +23,21 @@ extension UIImage {
      */
     internal static func flagSeychelles(with size: CGSize) -> UIImage? {
         let colorBlue = UIColor(red: 0.0,
-                                green: 61.0/255.0,
-                                blue: 136.0/255.0,
+                                green: 61.0 / 255.0,
+                                blue: 136.0 / 255.0,
                                 alpha: 1.0)
-        let colorYellow = UIColor(red: 252.0/255.0,
-                                  green: 217.0/255.0,
-                                  blue: 85.0/255.0,
+        let colorYellow = UIColor(red: 252.0 / 255.0,
+                                  green: 217.0 / 255.0,
+                                  blue: 85.0 / 255.0,
                                   alpha: 1.0)
-        let colorRed = UIColor(red: 215.0/255.0,
-                               green: 35.0/255.0,
-                               blue: 35.0/255.0,
+        let colorRed = UIColor(red: 215.0 / 255.0,
+                               green: 35.0 / 255.0,
+                               blue: 35.0 / 255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
         let colorGreen = UIColor(red: 0.0,
-                                 green: 123.0/255.0,
-                                 blue: 58.0/255.0,
+                                 green: 123.0 / 255.0,
+                                 blue: 58.0 / 255.0,
                                  alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

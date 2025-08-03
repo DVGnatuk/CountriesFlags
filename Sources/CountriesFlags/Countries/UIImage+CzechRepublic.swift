@@ -20,13 +20,13 @@ extension UIImage {
      - Returns: Returns the flag of the Czech Republic.
      */
     internal static func flagCzechRepublic(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 215.0/255.0,
-                               green: 20.0/255.0,
-                               blue: 26.0/255.0,
+        let colorRed = UIColor(red: 215.0 / 255.0,
+                               green: 20.0 / 255.0,
+                               blue: 26.0 / 255.0,
                                alpha: 1.0)
-        let colorBlue = UIColor(red: 17.0/255.0,
-                                green: 69.0/255.0,
-                                blue: 126.0/255.0,
+        let colorBlue = UIColor(red: 17.0 / 255.0,
+                                green: 69.0 / 255.0,
+                                blue: 126.0 / 255.0,
                                 alpha: 1.0)
         let colorWhite = UIColor.white
 

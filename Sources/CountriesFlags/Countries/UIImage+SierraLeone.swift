@@ -22,12 +22,12 @@ extension UIImage {
     internal static func flagSierraLeone(with size: CGSize) -> UIImage? {
         let colorWhite = UIColor.white
         let colorBlue = UIColor(red: 0.0,
-                                green: 114.0/255.0,
-                                blue: 198.0/255.0,
+                                green: 114.0 / 255.0,
+                                blue: 198.0 / 255.0,
                                 alpha: 1.0)
-        let colorGreen = UIColor(red: 30.0/255.0,
-                                 green: 181.0/255.0,
-                                 blue: 58.0/255.0,
+        let colorGreen = UIColor(red: 30.0 / 255.0,
+                                 green: 181.0 / 255.0,
+                                 blue: 58.0 / 255.0,
                                  alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

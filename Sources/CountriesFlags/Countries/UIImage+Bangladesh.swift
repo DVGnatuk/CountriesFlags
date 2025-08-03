@@ -20,13 +20,13 @@ extension UIImage {
      - Returns: Returns the flag of Bangladesh.
      */
     internal static func flagBangladesh(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 244.0/255.0,
-                               green: 42.0/255.0,
-                               blue: 65.0/255.0,
+        let colorRed = UIColor(red: 244.0 / 255.0,
+                               green: 42.0 / 255.0,
+                               blue: 65.0 / 255.0,
                                alpha: 1.0)
         let colorBottleGreen = UIColor(red: 0.0,
-                                       green: 106.0/255.0,
-                                       blue: 78.0/255.0,
+                                       green: 106.0 / 255.0,
+                                       blue: 78.0 / 255.0,
                                        alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

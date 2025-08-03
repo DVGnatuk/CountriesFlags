@@ -21,16 +21,16 @@ extension UIImage {
      */
     internal static func flagGabon(with size: CGSize) -> UIImage? {
         let colorGreen = UIColor(red: 0.0,
-                                 green: 158.0/255.0,
-                                 blue: 96.0/255.0,
+                                 green: 158.0 / 255.0,
+                                 blue: 96.0 / 255.0,
                                  alpha: 1.0)
-        let colorYellow = UIColor(red: 252.0/255.0,
-                                  green: 209.0/255.0,
-                                  blue: 22.0/255.0,
+        let colorYellow = UIColor(red: 252.0 / 255.0,
+                                  green: 209.0 / 255.0,
+                                  blue: 22.0 / 255.0,
                                   alpha: 1.0)
-        let colorBlue = UIColor(red: 70.0/255.0,
-                                green: 100.0/255.0,
-                                blue: 178.0/255.0,
+        let colorBlue = UIColor(red: 70.0 / 255.0,
+                                green: 100.0 / 255.0,
+                                blue: 178.0 / 255.0,
                                 alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

@@ -20,18 +20,18 @@ extension UIImage {
      - Returns: Returns the flag of Ghana.
      */
     internal static func flagGhana(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 207.0/255.0,
-                               green: 9.0/255.0,
-                               blue: 33.0/255.0,
+        let colorRed = UIColor(red: 207.0 / 255.0,
+                               green: 9.0 / 255.0,
+                               blue: 33.0 / 255.0,
                                alpha: 1.0)
-        let colorYellow = UIColor(red: 252.0/255.0,
-                                  green: 210.0/255.0,
-                                  blue: 15.0/255.0,
+        let colorYellow = UIColor(red: 252.0 / 255.0,
+                                  green: 210.0 / 255.0,
+                                  blue: 15.0 / 255.0,
                                   alpha: 1.0)
         let colorGreen = UIColor(red: 0.0,
-                                green: 107.0/255.0,
-                                blue: 61.0/255.0,
-                                alpha: 1.0)
+                                 green: 107.0 / 255.0,
+                                 blue: 61.0 / 255.0,
+                                 alpha: 1.0)
         let colorBlack = UIColor.black
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

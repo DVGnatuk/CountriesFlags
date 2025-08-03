@@ -21,16 +21,16 @@ extension UIImage {
      */
     internal static func flagBenin(with size: CGSize) -> UIImage? {
         let colorGreen = UIColor(red: 0.0,
-                                 green: 136.0/255.0,
-                                 blue: 80.0/255.0,
+                                 green: 136.0 / 255.0,
+                                 blue: 80.0 / 255.0,
                                  alpha: 1.0)
-        let colorYellow = UIColor(red: 252.0/255.0,
-                                  green: 210.0/255.0,
-                                  blue: 15.0/255.0,
+        let colorYellow = UIColor(red: 252.0 / 255.0,
+                                  green: 210.0 / 255.0,
+                                  blue: 15.0 / 255.0,
                                   alpha: 1.0)
-        let colorRed = UIColor(red: 233.0/255.0,
-                               green: 9.0/255.0,
-                               blue: 41.0/255.0,
+        let colorRed = UIColor(red: 233.0 / 255.0,
+                               green: 9.0 / 255.0,
+                               blue: 41.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

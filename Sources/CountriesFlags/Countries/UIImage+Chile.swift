@@ -20,14 +20,14 @@ extension UIImage {
      - Returns: Returns the flag of Chile.
      */
     internal static func flagChile(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 213.0/255.0,
-                               green: 43.0/255.0,
-                               blue: 30.0/255.0,
+        let colorRed = UIColor(red: 213.0 / 255.0,
+                               green: 43.0 / 255.0,
+                               blue: 30.0 / 255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
         let colorBlue = UIColor(red: 0.0,
-                                green: 57.0/255.0,
-                                blue: 166.0/255.0,
+                                green: 57.0 / 255.0,
+                                blue: 166.0 / 255.0,
                                 alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

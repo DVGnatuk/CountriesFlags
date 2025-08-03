@@ -21,13 +21,13 @@ extension UIImage {
      */
     internal static func flagMadagascar(with size: CGSize) -> UIImage? {
         let colorWhite = UIColor.white
-        let colorWarmRed = UIColor(red: 249.0/255.0,
-                                   green: 66.0/255.0,
-                                   blue: 58.0/255.0,
+        let colorWarmRed = UIColor(red: 249.0 / 255.0,
+                                   green: 66.0 / 255.0,
+                                   blue: 58.0 / 255.0,
                                    alpha: 1.0)
         let colorGreen = UIColor(red: 0.0,
-                                 green: 132.0/255.0,
-                                 blue: 61.0/255.0,
+                                 green: 132.0 / 255.0,
+                                 blue: 61.0 / 255.0,
                                  alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

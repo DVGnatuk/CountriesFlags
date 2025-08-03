@@ -12,13 +12,13 @@ final class CountriesFlagsTests: XCTestCase {
 
     private let imageSize = CGSize(width: 100, height: 50)
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+//    override func setUpWithError() throws {
+//        // Put setup code here. This method is called before the invocation of each test method in the class.
+//    }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+//    override func tearDownWithError() throws {
+//        // Put teardown code here. This method is called after the invocation of each test method in the class.
+//    }
 
     func testAlandIslands() throws {
         guard let image = UIImage.flag(for: .AlandIslands, with: imageSize) else {
@@ -538,6 +538,16 @@ final class CountriesFlagsTests: XCTestCase {
 
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagMadagascar"))
+    }
+
+    func testMaldives() throws {
+        guard let image = UIImage.flag(for: .Maldives, with: imageSize) else {
+            XCTFail("Generated flag is nil")
+            return
+        }
+
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagMaldives"))
     }
 
     func testMali() throws {

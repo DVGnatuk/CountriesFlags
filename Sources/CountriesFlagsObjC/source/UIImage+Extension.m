@@ -42,9 +42,11 @@
 #import "Countries/UIImage+Ireland.h"
 #import "Countries/UIImage+Jordan.h"
 #import "Countries/UIImage+Kuwait.h"
+#import "Countries/UIImage+Liberia.h"
 #import "Countries/UIImage+Lithuania.h"
 #import "Countries/UIImage+Luxembourg.h"
 #import "Countries/UIImage+Madagascar.h"
+#import "Countries/UIImage+Maldives.h"
 #import "Countries/UIImage+Mali.h"
 #import "Countries/UIImage+Martinique.h"
 #import "Countries/UIImage+Mauritius.h"
@@ -129,9 +131,11 @@
         case CountriesFlagsIreland: return [UIImage flagIrelandWithSize: size];
         case CountriesFlagsJordan: return [UIImage flagJordanWithSize: size];
         case CountriesFlagsKuwait: return [UIImage flagKuwaitWithSize: size];
+        case CountriesFlagsLiberia: return [UIImage flagLiberiaWithSize: size];
         case CountriesFlagsLithuania: return [UIImage flagLithuaniaWithSize: size];
         case CountriesFlagsLuxembourg: return [UIImage flagLuxembourgWithSize: size];
         case CountriesFlagsMadagascar: return [UIImage flagMadagascarWithSize: size];
+        case CountriesFlagsMaldives: return [UIImage flagMaldivesWithSize: size];
         case CountriesFlagsMali: return [UIImage flagMaliWithSize: size];
         case CountriesFlagsMartinique: return [UIImage flagMartiniqueWithSize: size];
         case CountriesFlagsMauritius: return [UIImage flagMauritiusWithSize: size];

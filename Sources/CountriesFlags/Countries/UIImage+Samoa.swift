@@ -21,13 +21,13 @@ extension UIImage {
      */
     internal static func flagSamoa(with size: CGSize) -> UIImage? {
         let colorBlue = UIColor(red: 0.0,
-                                green: 43.0/255.0,
-                                blue: 127.0/255.0,
+                                green: 43.0 / 255.0,
+                                blue: 127.0 / 255.0,
                                 alpha: 1.0)
         let colorWhite = UIColor.white
-        let colorRed = UIColor(red: 206.0/255.0,
-                               green: 17.0/255.0,
-                               blue: 38.0/255.0,
+        let colorRed = UIColor(red: 206.0 / 255.0,
+                               green: 17.0 / 255.0,
+                               blue: 38.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

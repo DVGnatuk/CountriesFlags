@@ -20,17 +20,17 @@ extension UIImage {
      - Returns: Returns the flag of Thailand.
      */
     internal static func flagThailand(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 165.0/255.0,
-                               green: 25.0/255.0,
-                               blue: 49.0/255.0,
+        let colorRed = UIColor(red: 165.0 / 255.0,
+                               green: 25.0 / 255.0,
+                               blue: 49.0 / 255.0,
                                alpha: 1.0)
-        let colorWhite = UIColor(red: 244.0/255.0,
-                                 green: 245.0/255.0,
-                                 blue: 248.0/255.0,
+        let colorWhite = UIColor(red: 244.0 / 255.0,
+                                 green: 245.0 / 255.0,
+                                 blue: 248.0 / 255.0,
                                  alpha: 1.0)
-        let colorBlue = UIColor(red: 45.0/255.0,
-                                green: 42.0/255.0,
-                                blue: 74.0/255.0,
+        let colorBlue = UIColor(red: 45.0 / 255.0,
+                                green: 42.0 / 255.0,
+                                blue: 74.0 / 255.0,
                                 alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

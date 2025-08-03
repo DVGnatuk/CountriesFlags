@@ -20,17 +20,17 @@ extension UIImage {
      - Returns: Returns the flag of Burkina Faso.
      */
     internal static func flagBurkinaFaso(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 239.0/255.0,
-                               green: 43.0/255.0,
-                               blue: 45.0/255.0,
+        let colorRed = UIColor(red: 239.0 / 255.0,
+                               green: 43.0 / 255.0,
+                               blue: 45.0 / 255.0,
                                alpha: 1.0)
-        let colorYellow = UIColor(red: 252.0/255.0,
-                                  green: 209.0/255.0,
-                                  blue: 22.0/255.0,
+        let colorYellow = UIColor(red: 252.0 / 255.0,
+                                  green: 209.0 / 255.0,
+                                  blue: 22.0 / 255.0,
                                   alpha: 1.0)
         let colorGreen = UIColor(red: 0.0,
-                                 green: 158.0/255.0,
-                                 blue: 73.0/255.0,
+                                 green: 158.0 / 255.0,
+                                 blue: 73.0 / 255.0,
                                  alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

@@ -21,11 +21,11 @@ extension UIImage {
      */
     internal static func flagPalau(with size: CGSize) -> UIImage? {
         let colorBlue = UIColor(red: 0.0,
-                                green: 133.0/255.0,
-                                blue: 202.0/255.0,
+                                green: 133.0 / 255.0,
+                                blue: 202.0 / 255.0,
                                 alpha: 1.0)
         let colorYellow = UIColor(red: 1.0,
-                                  green: 209.0/255.0,
+                                  green: 209.0 / 255.0,
                                   blue: 0.0,
                                   alpha: 1.0)
 

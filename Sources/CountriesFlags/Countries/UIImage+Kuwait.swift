@@ -21,13 +21,13 @@ extension UIImage {
      */
     internal static func flagKuwait(with size: CGSize) -> UIImage? {
         let colorWhite = UIColor.white
-        let colorRed = UIColor(red: 206.0/255.0,
-                               green: 17.0/255.0,
-                               blue: 38.0/255.0,
+        let colorRed = UIColor(red: 206.0 / 255.0,
+                               green: 17.0 / 255.0,
+                               blue: 38.0 / 255.0,
                                alpha: 1.0)
         let colorGreen = UIColor(red: 0.0,
-                                 green: 122.0/255.0,
-                                 blue: 61.0/255.0,
+                                 green: 122.0 / 255.0,
+                                 blue: 61.0 / 255.0,
                                  alpha: 1.0)
         let colorBlack = UIColor.black
 

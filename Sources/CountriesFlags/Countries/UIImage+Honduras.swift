@@ -21,8 +21,8 @@ extension UIImage {
      */
     internal static func flagHonduras(with size: CGSize) -> UIImage? {
         let colorBlueTurquoise = UIColor(red: 0.0,
-                                         green: 188.0/255.0,
-                                         blue: 228.0/255.0,
+                                         green: 188.0 / 255.0,
+                                         blue: 228.0 / 255.0,
                                          alpha: 1.0)
         let colorWhite = UIColor.white
 

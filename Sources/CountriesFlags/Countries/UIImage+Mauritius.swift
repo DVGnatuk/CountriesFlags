@@ -20,21 +20,21 @@ extension UIImage {
      - Returns: Returns the flag of Mauritius.
      */
     internal static func flagMauritius(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 235.0/255.0,
-                               green: 36.0/255.0,
-                               blue: 54.0/255.0,
+        let colorRed = UIColor(red: 235.0 / 255.0,
+                               green: 36.0 / 255.0,
+                               blue: 54.0 / 255.0,
                                alpha: 1.0)
-        let colorBlue = UIColor(red: 19.0/255.0,
-                                green: 26.0/255.0,
-                                blue: 109.0/255.0,
+        let colorBlue = UIColor(red: 19.0 / 255.0,
+                                green: 26.0 / 255.0,
+                                blue: 109.0 / 255.0,
                                 alpha: 1.0)
         let colorYellow = UIColor(red: 1.0,
-                                  green: 214.0/255.0,
+                                  green: 214.0 / 255.0,
                                   blue: 0.0,
                                   alpha: 1.0)
         let colorGreen = UIColor(red: 0.0,
-                                 green: 166.0/255.0,
-                                 blue: 80.0/255.0,
+                                 green: 166.0 / 255.0,
+                                 blue: 80.0 / 255.0,
                                  alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

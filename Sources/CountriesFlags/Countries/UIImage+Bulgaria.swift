@@ -22,10 +22,10 @@ extension UIImage {
     internal static func flagBulgaria(with size: CGSize) -> UIImage? {
         let colorWhite = UIColor.white
         let colorGreen = UIColor(red: 0.0,
-                                 green: 153.0/255.0,
+                                 green: 153.0 / 255.0,
                                  blue: 0.0,
                                  alpha: 1.0)
-        let colorRed = UIColor(red: 204.0/255.0,
+        let colorRed = UIColor(red: 204.0 / 255.0,
                                green: 0.0,
                                blue: 0.0,
                                alpha: 1.0)

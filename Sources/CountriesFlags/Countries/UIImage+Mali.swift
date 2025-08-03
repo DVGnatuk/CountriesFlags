@@ -20,17 +20,17 @@ extension UIImage {
      - Returns: Returns the flag of Mali.
      */
     internal static func flagMali(with size: CGSize) -> UIImage? {
-        let colorGreen = UIColor(red: 20.0/255.0,
-                                 green: 181.0/255.0,
-                                 blue: 58.0/255.0,
+        let colorGreen = UIColor(red: 20.0 / 255.0,
+                                 green: 181.0 / 255.0,
+                                 blue: 58.0 / 255.0,
                                  alpha: 1.0)
-        let colorYellow = UIColor(red: 252.0/255.0,
-                                  green: 209.0/255.0,
-                                  blue: 22.0/255.0,
+        let colorYellow = UIColor(red: 252.0 / 255.0,
+                                  green: 209.0 / 255.0,
+                                  blue: 22.0 / 255.0,
                                   alpha: 1.0)
-        let colorRed = UIColor(red: 206.0/255.0,
-                               green: 17.0/255.0,
-                               blue: 38.0/255.0,
+        let colorRed = UIColor(red: 206.0 / 255.0,
+                               green: 17.0 / 255.0,
+                               blue: 38.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

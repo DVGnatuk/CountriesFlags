@@ -22,12 +22,12 @@ extension UIImage {
     internal static func flagFrance(with size: CGSize) -> UIImage? {
         let colorBlue = UIColor(red: 0.0,
                                 green: 0.0,
-                                blue: 145.0/255.0,
+                                blue: 145.0 / 255.0,
                                 alpha: 1.0)
         let colorWhite = UIColor.white
-        let colorRed = UIColor(red: 225.0/255.0,
-                               green: 0.0/255.0,
-                               blue: 15.0/255.0,
+        let colorRed = UIColor(red: 225.0 / 255.0,
+                               green: 0.0 / 255.0,
+                               blue: 15.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

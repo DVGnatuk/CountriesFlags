@@ -20,17 +20,17 @@ extension UIImage {
      - Returns: Returns the flag of Guinea-Bissau.
      */
     internal static func flagGuineaBissau(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 206.0/255.0,
-                               green: 17.0/255.0,
-                               blue: 38.0/255.0,
+        let colorRed = UIColor(red: 206.0 / 255.0,
+                               green: 17.0 / 255.0,
+                               blue: 38.0 / 255.0,
                                alpha: 1.0)
-        let colorYellow = UIColor(red: 252.0/255.0,
-                                  green: 209.0/255.0,
-                                  blue: 22.0/255.0,
+        let colorYellow = UIColor(red: 252.0 / 255.0,
+                                  green: 209.0 / 255.0,
+                                  blue: 22.0 / 255.0,
                                   alpha: 1.0)
         let colorGreen = UIColor(red: 0.0,
-                                 green: 158.0/255.0,
-                                 blue: 73.0/255.0,
+                                 green: 158.0 / 255.0,
+                                 blue: 73.0 / 255.0,
                                  alpha: 1.0)
         let colorBlack = UIColor.black
 

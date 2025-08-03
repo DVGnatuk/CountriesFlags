@@ -20,17 +20,17 @@ extension UIImage {
      - Returns: Returns the flag of Martinique.
      */
     internal static func flagMartinique(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 239.0/255.0,
-                               green: 25.0/255.0,
-                               blue: 35.0/255.0,
+        let colorRed = UIColor(red: 239.0 / 255.0,
+                               green: 25.0 / 255.0,
+                               blue: 35.0 / 255.0,
                                alpha: 1.0)
         let colorGreen = UIColor(red: 0.0,
-                                 green: 166.0/255.0,
-                                 blue: 80.0/255.0,
+                                 green: 166.0 / 255.0,
+                                 blue: 80.0 / 255.0,
                                  alpha: 1.0)
-        let colorBlack = UIColor(red: 35.0/255.0,
-                                 green: 31.0/255.0,
-                                 blue: 30.0/255.0,
+        let colorBlack = UIColor(red: 35.0 / 255.0,
+                                 green: 31.0 / 255.0,
+                                 blue: 30.0 / 255.0,
                                  alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

@@ -21,16 +21,16 @@ extension UIImage {
      */
     internal static func flagAlandIslands(with size: CGSize) -> UIImage? {
         let colorBlue = UIColor(red: 0.0,
-                                green: 100.0/255.0,
-                                blue: 174.0/255.0,
+                                green: 100.0 / 255.0,
+                                blue: 174.0 / 255.0,
                                 alpha: 1.0)
         let colorYellow = UIColor(red: 1.0,
-                                 green: 211.0/255.0,
-                                 blue: 0.0,
-                                 alpha: 1.0)
-        let colorRed = UIColor(red: 219.0/255.0,
-                               green: 15.0/255.0,
-                               blue: 22.0/255.0,
+                                  green: 211.0 / 255.0,
+                                  blue: 0.0,
+                                  alpha: 1.0)
+        let colorRed = UIColor(red: 219.0 / 255.0,
+                               green: 15.0 / 255.0,
+                               blue: 22.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

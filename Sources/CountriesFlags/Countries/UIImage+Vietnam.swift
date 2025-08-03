@@ -24,9 +24,9 @@ extension UIImage {
                                   green: 1.0,
                                   blue: 0.0,
                                   alpha: 1.0)
-        let colorRed = UIColor(red: 218.0/255.0,
-                               green: 37.0/255.0,
-                               blue: 29.0/255.0,
+        let colorRed = UIColor(red: 218.0 / 255.0,
+                               green: 37.0 / 255.0,
+                               blue: 29.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

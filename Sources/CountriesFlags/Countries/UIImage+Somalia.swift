@@ -20,9 +20,9 @@ extension UIImage {
      - Returns: Returns the flag of Somalia.
      */
     internal static func flagSomalia(with size: CGSize) -> UIImage? {
-        let colorBlue = UIColor(red: 65.0/255.0,
-                                green: 143.0/255.0,
-                                blue: 222.0/255.0,
+        let colorBlue = UIColor(red: 65.0 / 255.0,
+                                green: 143.0 / 255.0,
+                                blue: 222.0 / 255.0,
                                 alpha: 1.0)
         let colorWhite = UIColor.white
 

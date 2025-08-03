@@ -22,12 +22,12 @@ extension UIImage {
     internal static func flagLuxembourg(with size: CGSize) -> UIImage? {
         let colorWhite = UIColor.white
         let colorCelestialBlue = UIColor(red: 0.0,
-                                         green: 163.0/255.0,
-                                         blue: 224.0/255.0,
+                                         green: 163.0 / 255.0,
+                                         blue: 224.0 / 255.0,
                                          alpha: 1.0)
-        let colorRed = UIColor(red: 239.0/255.0,
-                               green: 51.0/255.0,
-                               blue: 64.0/255.0,
+        let colorRed = UIColor(red: 239.0 / 255.0,
+                               green: 51.0 / 255.0,
+                               blue: 64.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

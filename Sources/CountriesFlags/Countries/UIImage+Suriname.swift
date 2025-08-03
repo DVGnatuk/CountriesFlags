@@ -20,18 +20,18 @@ extension UIImage {
      - Returns: Returns the flag of Suriname.
      */
     internal static func flagSuriname(with size: CGSize) -> UIImage? {
-        let colorGreen = UIColor(red: 55.0/255.0,
-                                 green: 126.0/255.0,
-                                 blue: 63.0/255.0,
+        let colorGreen = UIColor(red: 55.0 / 255.0,
+                                 green: 126.0 / 255.0,
+                                 blue: 63.0 / 255.0,
                                  alpha: 1.0)
         let colorWhite = UIColor.white
-        let colorRed = UIColor(red: 180.0/255.0,
-                               green: 10.0/255.0,
-                               blue: 45.0/255.0,
+        let colorRed = UIColor(red: 180.0 / 255.0,
+                               green: 10.0 / 255.0,
+                               blue: 45.0 / 255.0,
                                alpha: 1.0)
-        let colorYellow = UIColor(red: 236.0/255.0,
-                                  green: 200.0/255.0,
-                                  blue: 29.0/255.0,
+        let colorYellow = UIColor(red: 236.0 / 255.0,
+                                  green: 200.0 / 255.0,
+                                  blue: 29.0 / 255.0,
                                   alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

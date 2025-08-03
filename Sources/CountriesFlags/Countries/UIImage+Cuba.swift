@@ -21,13 +21,13 @@ extension UIImage {
      */
     internal static func flagCuba(with size: CGSize) -> UIImage? {
         let colorBlue = UIColor(red: 0.0,
-                                green: 37.0/255.0,
-                                blue: 144.0/255.0,
+                                green: 37.0 / 255.0,
+                                blue: 144.0 / 255.0,
                                 alpha: 1.0)
         let colorWhite = UIColor.white
-        let colorRed = UIColor(red: 204.0/255.0,
-                               green: 13.0/255.0,
-                               blue: 13.0/255.0,
+        let colorRed = UIColor(red: 204.0 / 255.0,
+                               green: 13.0 / 255.0,
+                               blue: 13.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

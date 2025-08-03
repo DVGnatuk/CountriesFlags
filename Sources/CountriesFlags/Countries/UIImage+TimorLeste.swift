@@ -20,15 +20,15 @@ extension UIImage {
      - Returns: Returns the flag of Timor-Leste.
      */
     internal static func flagTimorLeste(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 218.0/255.0,
-                               green: 41.0/255.0,
-                               blue: 28.0/255.0,
+        let colorRed = UIColor(red: 218.0 / 255.0,
+                               green: 41.0 / 255.0,
+                               blue: 28.0 / 255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
         let colorBlack = UIColor.black
         let colorYellow = UIColor(red: 1.0,
-                                  green: 199.0/255.0,
-                                  blue: 44.0/255.0,
+                                  green: 199.0 / 255.0,
+                                  blue: 44.0 / 255.0,
                                   alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

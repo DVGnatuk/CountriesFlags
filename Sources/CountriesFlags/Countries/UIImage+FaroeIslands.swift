@@ -21,12 +21,12 @@ extension UIImage {
      */
     internal static func flagFaroeIslands(with size: CGSize) -> UIImage? {
         let colorBlue = UIColor(red: 0.0,
-                                green: 94.0/255.0,
-                                blue: 185.0/255.0,
+                                green: 94.0 / 255.0,
+                                blue: 185.0 / 255.0,
                                 alpha: 1.0)
-        let colorRed = UIColor(red: 239.0/255.0,
-                               green: 48.0/255.0,
-                               blue: 62.0/255.0,
+        let colorRed = UIColor(red: 239.0 / 255.0,
+                               green: 48.0 / 255.0,
+                               blue: 62.0 / 255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
 

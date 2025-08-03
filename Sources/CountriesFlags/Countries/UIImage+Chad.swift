@@ -21,16 +21,16 @@ extension UIImage {
      */
     internal static func flagChad(with size: CGSize) -> UIImage? {
         let colorIndigo = UIColor(red: 0.0,
-                                  green: 32.0/255.0,
-                                  blue: 91.0/255.0,
+                                  green: 32.0 / 255.0,
+                                  blue: 91.0 / 255.0,
                                   alpha: 1.0)
-        let colorYellow = UIColor(red: 252.0/255.0,
-                                  green: 205.0/255.0,
+        let colorYellow = UIColor(red: 252.0 / 255.0,
+                                  green: 205.0 / 255.0,
                                   blue: 0.0,
                                   alpha: 1.0)
-        let colorRed = UIColor(red: 200.0/255.0,
-                               green: 16.0/255.0,
-                               blue: 46.0/255.0,
+        let colorRed = UIColor(red: 200.0 / 255.0,
+                               green: 16.0 / 255.0,
+                               blue: 46.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

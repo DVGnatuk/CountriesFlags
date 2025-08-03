@@ -21,9 +21,9 @@ extension UIImage {
      */
     internal static func flagLatvia(with size: CGSize) -> UIImage? {
         let colorWhite = UIColor.white
-        let colorRed = UIColor(red: 157.0/255.0,
-                               green: 34.0/255.0,
-                               blue: 53.0/255.0,
+        let colorRed = UIColor(red: 157.0 / 255.0,
+                               green: 34.0 / 255.0,
+                               blue: 53.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

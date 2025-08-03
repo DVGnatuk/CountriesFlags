@@ -20,14 +20,14 @@ extension UIImage {
      - Returns: Returns the flag of Costa Rica.
      */
     internal static func flagCostaRica(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 218.0/255.0,
-                               green: 41.0/255.0,
-                               blue: 28.0/255.0,
+        let colorRed = UIColor(red: 218.0 / 255.0,
+                               green: 41.0 / 255.0,
+                               blue: 28.0 / 255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
         let colorBlue = UIColor(red: 0.0,
-                                green: 20.0/255.0,
-                                blue: 137.0/255.0,
+                                green: 20.0 / 255.0,
+                                blue: 137.0 / 255.0,
                                 alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

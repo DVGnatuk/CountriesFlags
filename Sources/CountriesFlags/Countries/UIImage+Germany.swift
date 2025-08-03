@@ -23,7 +23,7 @@ extension UIImage {
         let colorBlack = UIColor.black
         let colorRed = UIColor.red
         let colorGold = UIColor(red: 1.0,
-                                green: 204.0/255.0,
+                                green: 204.0 / 255.0,
                                 blue: 0.0,
                                 alpha: 1.0)
 

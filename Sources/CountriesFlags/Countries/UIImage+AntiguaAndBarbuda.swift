@@ -23,17 +23,17 @@ extension UIImage {
      */
     internal static func flagAntiguaAndBarbuda(with size: CGSize) -> UIImage? {
         let colorBlue = UIColor(red: 0.0,
-                                green: 94.0/255.0,
-                                blue: 184.0/255.0,
+                                green: 94.0 / 255.0,
+                                blue: 184.0 / 255.0,
                                 alpha: 1.0)
-        let colorRed = UIColor(red: 239.0/255.0,
-                               green: 51.0/255.0,
-                               blue: 64.0/255.0,
+        let colorRed = UIColor(red: 239.0 / 255.0,
+                               green: 51.0 / 255.0,
+                               blue: 64.0 / 255.0,
                                alpha: 1.0)
         let colorOrange = UIColor(red: 1.0,
-                                 green: 209.0/255.0,
-                                 blue: 0.0,
-                                 alpha: 1.0)
+                                  green: 209.0 / 255.0,
+                                  blue: 0.0,
+                                  alpha: 1.0)
         let colorBlack = UIColor.black
         let colorWhite = UIColor.white
 

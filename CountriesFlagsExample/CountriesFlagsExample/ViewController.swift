@@ -15,5 +15,4 @@ class ViewController: UIViewController {
 
         imageView.image = UIImage.flag(for: .Ukraine, with: imageView.frame.size)
     }
-
 }

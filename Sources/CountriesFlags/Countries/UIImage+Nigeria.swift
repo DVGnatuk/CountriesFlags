@@ -22,8 +22,8 @@ extension UIImage {
     internal static func flagNigeria(with size: CGSize) -> UIImage? {
         let colorWhite = UIColor.white
         let colorGreen = UIColor(red: 0.0,
-                                 green: 135.0/255.0,
-                                 blue: 81.0/255.0,
+                                 green: 135.0 / 255.0,
+                                 blue: 81.0 / 255.0,
                                  alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

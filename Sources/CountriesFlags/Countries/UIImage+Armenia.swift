@@ -21,17 +21,17 @@ extension UIImage {
      */
     internal static func flagArmenia(with size: CGSize) -> UIImage? {
         let colorBlue = UIColor(red: 0.0,
-                                green: 51.0/255.0,
-                                blue: 160.0/255.0,
+                                green: 51.0 / 255.0,
+                                blue: 160.0 / 255.0,
                                 alpha: 1.0)
-        let colorRed = UIColor(red: 217.0/255.0,
+        let colorRed = UIColor(red: 217.0 / 255.0,
                                green: 0.0,
-                               blue: 18.0/255.0,
+                               blue: 18.0 / 255.0,
                                alpha: 1.0)
-        let colorOrange = UIColor(red: 245.0/255.0,
-                                 green: 168.0/255.0,
-                                 blue: 0.0,
-                                 alpha: 1.0)
+        let colorOrange = UIColor(red: 245.0 / 255.0,
+                                  green: 168.0 / 255.0,
+                                  blue: 0.0,
+                                  alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
 

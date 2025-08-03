@@ -20,17 +20,17 @@ extension UIImage {
      - Returns: Returns the flag of Lithuania.
      */
     internal static func flagLithuania(with size: CGSize) -> UIImage? {
-        let colorYellow = UIColor(red: 253.0/255.0,
-                                  green: 185.0/255.0,
-                                  blue: 19.0/255.0,
+        let colorYellow = UIColor(red: 253.0 / 255.0,
+                                  green: 185.0 / 255.0,
+                                  blue: 19.0 / 255.0,
                                   alpha: 1.0)
         let colorGreen = UIColor(red: 0.0,
-                                 green: 106.0/255.0,
-                                 blue: 68.0/255.0,
+                                 green: 106.0 / 255.0,
+                                 blue: 68.0 / 255.0,
                                  alpha: 1.0)
-        let colorRed = UIColor(red: 193.0/255.0,
-                               green: 39.0/255.0,
-                               blue: 45.0/255.0,
+        let colorRed = UIColor(red: 193.0 / 255.0,
+                               green: 39.0 / 255.0,
+                               blue: 45.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

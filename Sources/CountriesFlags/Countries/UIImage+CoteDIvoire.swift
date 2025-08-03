@@ -21,13 +21,13 @@ extension UIImage {
      */
     internal static func flagCoteDIvoire(with size: CGSize) -> UIImage? {
         let colorOrange = UIColor(red: 1.0,
-                                  green: 130.0/255.0,
+                                  green: 130.0 / 255.0,
                                   blue: 0.0,
                                   alpha: 1.0)
         let colorWhite = UIColor.white
         let colorGreen = UIColor(red: 0.0,
-                                 green: 154.0/255.0,
-                                 blue: 68.0/255.0,
+                                 green: 154.0 / 255.0,
+                                 blue: 68.0 / 255.0,
                                  alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

@@ -20,9 +20,9 @@ extension UIImage {
      - Returns: Returns the flag of Botswana.
      */
     internal static func flagBotswana(with size: CGSize) -> UIImage? {
-        let colorBlue = UIColor(red: 171.0/255.0,
-                                green: 202.0/255.0,
-                                blue: 233.0/255.0,
+        let colorBlue = UIColor(red: 171.0 / 255.0,
+                                green: 202.0 / 255.0,
+                                blue: 233.0 / 255.0,
                                 alpha: 1.0)
         let colorWhite = UIColor.white
         let colorBlack = UIColor.black

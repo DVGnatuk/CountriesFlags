@@ -20,9 +20,9 @@ extension UIImage {
      - Returns: Returns the flag of Denmark.
      */
     internal static func flagDenmark(with size: CGSize) -> UIImage? {
-        let colorRed = UIColor(red: 200.0/255.0,
-                               green: 16.0/255.0,
-                               blue: 46.0/255.0,
+        let colorRed = UIColor(red: 200.0 / 255.0,
+                               green: 16.0 / 255.0,
+                               blue: 46.0 / 255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
 

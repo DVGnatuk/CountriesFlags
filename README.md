@@ -71,6 +71,11 @@ SwiftLint should be installed locally on mac:
 ```bash
 brew install swiftlint
 ```
+To find all the available swiftlint rules:
+
+```bash
+swiftlint rules
+```
 
 ### Objective-C
 

@@ -20,17 +20,17 @@ extension UIImage {
      - Returns: Returns the flag of Djibouti.
      */
     internal static func flagDjibouti(with size: CGSize) -> UIImage? {
-        let colorBlue = UIColor(red: 106.0/255.0,
-                                green: 178.0/255.0,
-                                blue: 231.0/255.0,
+        let colorBlue = UIColor(red: 106.0 / 255.0,
+                                green: 178.0 / 255.0,
+                                blue: 231.0 / 255.0,
                                 alpha: 1.0)
-        let colorGreen = UIColor(red: 18.0/255.0,
-                                 green: 173.0/255.0,
-                                 blue: 43.0/255.0,
+        let colorGreen = UIColor(red: 18.0 / 255.0,
+                                 green: 173.0 / 255.0,
+                                 blue: 43.0 / 255.0,
                                  alpha: 1.0)
-        let colorRed = UIColor(red: 215.0/255.0,
-                               green: 20.0/255.0,
-                               blue: 26.0/255.0,
+        let colorRed = UIColor(red: 215.0 / 255.0,
+                               green: 20.0 / 255.0,
+                               blue: 26.0 / 255.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
 

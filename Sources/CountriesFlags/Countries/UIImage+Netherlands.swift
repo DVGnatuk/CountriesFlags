@@ -21,13 +21,13 @@ extension UIImage {
      */
     internal static func flagNetherlands(with size: CGSize) -> UIImage? {
         let colorWhite = UIColor.white
-        let colorBlue = UIColor(red: 30.0/255.0,
-                                green: 71.0/255.0,
-                                blue: 133.0/255.0,
+        let colorBlue = UIColor(red: 30.0 / 255.0,
+                                green: 71.0 / 255.0,
+                                blue: 133.0 / 255.0,
                                 alpha: 1.0)
-        let colorRed = UIColor(red: 173.0/255.0,
-                               green: 29.0/255.0,
-                               blue: 37.0/255.0,
+        let colorRed = UIColor(red: 173.0 / 255.0,
+                               green: 29.0 / 255.0,
+                               blue: 37.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

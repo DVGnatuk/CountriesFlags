@@ -21,5 +21,4 @@ extension UIBezierPath {
         transform = transform.translatedBy(x: -center.x, y: -center.y)
         apply(transform)
     }
-
 }

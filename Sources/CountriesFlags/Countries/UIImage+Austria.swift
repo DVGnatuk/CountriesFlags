@@ -23,9 +23,9 @@ extension UIImage {
         let colorWhite = UIColor.white
         // The Austrian law does not specify the colour shades of the flag, but in May 2018,
         // the Ministry of Defence issued a regulation specified the red on the flag is Pantone 186 C.
-        let colorRed = UIColor(red: 200.0/255.0,
-                               green: 16.0/255.0,
-                               blue: 46.0/255.0,
+        let colorRed = UIColor(red: 200.0 / 255.0,
+                               green: 16.0 / 255.0,
+                               blue: 46.0 / 255.0,
                                alpha: 1.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
