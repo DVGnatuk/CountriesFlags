@@ -9,7 +9,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, FlagTriangleTypes)  {
     FlagTriangleTypeLeft = 0,
-    FlagTriangleTypeLeftEquilateral
+    FlagTriangleTypeLeftEquilateral,
+    FlagTriangleTypeRight
 };
 
 @interface UIBezierPath (Extension)

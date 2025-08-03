@@ -32,7 +32,7 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 5.0 * 2.0),
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 5.0 * 2.0),
                           size: CGSize(width: size.width, height: size.height / 5.0)))
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

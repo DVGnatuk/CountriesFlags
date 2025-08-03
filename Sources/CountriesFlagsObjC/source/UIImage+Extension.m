@@ -40,8 +40,10 @@
 #import "Countries/UIImage+GuineaBissau.h"
 #import "Countries/UIImage+Iceland.h"
 #import "Countries/UIImage+Ireland.h"
+#import "Countries/UIImage+Jamaica.h"
 #import "Countries/UIImage+Jordan.h"
 #import "Countries/UIImage+Kuwait.h"
+#import "Countries/UIImage+Latvia.h"
 #import "Countries/UIImage+Liberia.h"
 #import "Countries/UIImage+Lithuania.h"
 #import "Countries/UIImage+Luxembourg.h"
@@ -129,8 +131,10 @@
         case CountriesFlagsGuineaBissau: return [UIImage flagGuineaBissauWithSize: size];
         case CountriesFlagsIceland: return [UIImage flagIcelandWithSize: size];
         case CountriesFlagsIreland: return [UIImage flagIrelandWithSize: size];
+        case CountriesFlagsJamaica: return [UIImage flagJamaicaWithSize: size];
         case CountriesFlagsJordan: return [UIImage flagJordanWithSize: size];
         case CountriesFlagsKuwait: return [UIImage flagKuwaitWithSize: size];
+        case CountriesFlagsLatvia: return [UIImage flagLatviaWithSize: size];
         case CountriesFlagsLiberia: return [UIImage flagLiberiaWithSize: size];
         case CountriesFlagsLithuania: return [UIImage flagLithuaniaWithSize: size];
         case CountriesFlagsLuxembourg: return [UIImage flagLuxembourgWithSize: size];

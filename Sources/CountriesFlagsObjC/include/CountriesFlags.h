@@ -111,7 +111,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case IsleOfMan
 //        case Israel
 //    case Italy
-//        case Jamaica
+    CountriesFlagsJamaica,
 //        case Japan
 //        case Jersey
     CountriesFlagsJordan,
@@ -123,7 +123,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsKuwait,
 //        case Kyrgyzstan
 //        case Laos
-//        case Latvia
+    CountriesFlagsLatvia,
 //        case Lebanon
 //        case Lesotho
     CountriesFlagsLiberia,
