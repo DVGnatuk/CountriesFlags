@@ -214,7 +214,7 @@ public enum CountriesFlags {
 //        case Swaziland
     case Sweden
     case Switzerland
-//        case SyrianArabRepublic
+    case Syria
 //        case Taiwan
 //        case Tajikistan
     case Tanzania
