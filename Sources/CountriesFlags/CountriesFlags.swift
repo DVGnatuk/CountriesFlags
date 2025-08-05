@@ -53,7 +53,6 @@ public enum CountriesFlags {
 //        case CocosIslands
     case Colombia
 //        case Comoros
-//        case CongoDemocraticRepublic
 //        case CookIslands
     case CostaRica
     case CoteDIvoire
@@ -61,6 +60,7 @@ public enum CountriesFlags {
     case Cuba
 //        case Cyprus
     case CzechRepublic
+    case DemocraticRepublicCongo
     case Denmark
     case Djibouti
 //        case Dominica
@@ -214,7 +214,7 @@ public enum CountriesFlags {
 //        case Swaziland
     case Sweden
     case Switzerland
-    case Syria
+    case SyrianArabRepublic
 //        case Taiwan
 //        case Tajikistan
     case Tanzania

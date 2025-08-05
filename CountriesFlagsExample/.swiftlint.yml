@@ -5,12 +5,15 @@ opt_in_rules: # some rules are turned off by default, so you need to opt-in
   - attributes
   - closure_spacing
   - collection_alignment
+  - direct_return
   - empty_count
   - empty_xctest_method
   - file_types_order # Specifies how the types within a file should be ordered.
   - let_var_whitespace
   - literal_expression_end_indentation
   - multiline_arguments
+  - no_magic_numbers
+  - no_space_in_method_call
   - operator_usage_whitespace
   - type_contents_order
   - unused_import

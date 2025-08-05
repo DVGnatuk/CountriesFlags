@@ -9,7 +9,7 @@
 
 @implementation UIImage (Syria)
 
-+ (UIImage * _Nullable)flagSyriaWithSize:(CGSize)size {
++ (UIImage * _Nullable)flagSyrianArabRepublicWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:206.0f/255.0f
                                         green:17.0f/255.0f
                                          blue:38.0f/255.0f

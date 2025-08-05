@@ -56,7 +56,6 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case CocosIslands
     CountriesFlagsColombia,
 //        case Comoros
-//        case CongoDemocraticRepublic
 //        case CookIslands
     CountriesFlagsCostaRica,
     CountriesFlagsCoteDIvoire,
@@ -64,6 +63,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsCuba,
 //        case Cyprus
     CountriesFlagsCzechRepublic,
+    CountriesFlagsDemocraticRepublicCongo,
     CountriesFlagsDenmark,
     CountriesFlagsDjibouti,
 //        case Dominica
@@ -86,7 +86,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsGambia,
 //        case Georgia
     CountriesFlagsGermany,
-//        case Ghana
+    CountriesFlagsGhana,
 //        case Gibraltar
     CountriesFlagsGreece,
     CountriesFlagsGreenland,
@@ -217,7 +217,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //    CountriesFlagsSwaziland,
     CountriesFlagsSweden,
     CountriesFlagsSwitzerland,
-    CountriesFlagsSyria,
+    CountriesFlagsSyrianArabRepublic,
 //        case Taiwan
 //        case Tajikistan
     CountriesFlagsTanzania,

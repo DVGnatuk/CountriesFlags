@@ -26,6 +26,7 @@
 #import "Countries/UIImage+CoteDIvoire.h"
 #import "Countries/UIImage+Cuba.h"
 #import "Countries/UIImage+CzechRepublic.h"
+#import "Countries/UIImage+DemocraticRepublicCongo.h"
 #import "Countries/UIImage+Denmark.h"
 #import "Countries/UIImage+Djibouti.h"
 #import "Countries/UIImage+FaroeIslands.h"
@@ -33,9 +34,10 @@
 #import "Countries/UIImage+Finland.h"
 #import "Countries/UIImage+France.h"
 #import "Countries/UIImage+Gabon.h"
-#import "Countries/UIImage+Greece.h"
 #import "Countries/UIImage+Gambia.h"
 #import "Countries/UIImage+Germany.h"
+#import "Countries/UIImage+Ghana.h"
+#import "Countries/UIImage+Greece.h"
 #import "Countries/UIImage+Greenland.h"
 #import "Countries/UIImage+GuineaBissau.h"
 #import "Countries/UIImage+Iceland.h"
@@ -116,6 +118,7 @@
         case CountriesFlagsCoteDIvoire: return [UIImage flagCoteDIvoireWithSize: size];
         case CountriesFlagsCuba: return [UIImage flagCubaWithSize: size];
         case CountriesFlagsCzechRepublic: return [UIImage flagCzechRepublicWithSize: size];
+        case CountriesFlagsDemocraticRepublicCongo: return [UIImage flagDemocraticRepublicCongoWithSize: size];
         case CountriesFlagsDenmark: return [UIImage flagDenmarkWithSize: size];
         case CountriesFlagsDjibouti: return [UIImage flagDjiboutiWithSize: size];
         case CountriesFlagsEstonia: return [UIImage flagEstoniaWithSize: size];
@@ -128,9 +131,10 @@
         // The French tricolore is the official national flag used in Guadeloupe.
         case CountriesFlagsGuadeloupe: return [UIImage flagFranceWithSize: size];
         case CountriesFlagsGabon: return [UIImage flagGabonWithSize: size];
-        case CountriesFlagsGreece: return [UIImage flagGreeceWithSize: size];
         case CountriesFlagsGambia: return [UIImage flagGambiaWithSize: size];
         case CountriesFlagsGermany: return [UIImage flagGermanyWithSize: size];
+        case CountriesFlagsGhana: return [UIImage flagGhanaWithSize: size];
+        case CountriesFlagsGreece: return [UIImage flagGreeceWithSize: size];
         case CountriesFlagsGreenland: return [UIImage flagGreenlandWithSize: size];
         case CountriesFlagsGuineaBissau: return [UIImage flagGuineaBissauWithSize: size];
         case CountriesFlagsIceland: return [UIImage flagIcelandWithSize: size];
@@ -174,7 +178,7 @@
         case CountriesFlagsSuriname: return [UIImage flagSurinameWithSize: size];
         case CountriesFlagsSweden: return [UIImage flagSwedenWithSize: size];
         case CountriesFlagsSwitzerland: return [UIImage flagSwitzerlandWithSize: size];
-        case CountriesFlagsSyria: return [UIImage flagSyriaWithSize: size];
+        case CountriesFlagsSyrianArabRepublic: return [UIImage flagSyrianArabRepublicWithSize: size];
         case CountriesFlagsTanzania: return [UIImage flagTanzaniaWithSize: size];
         case CountriesFlagsThailand: return [UIImage flagThailandWithSize: size];
         case CountriesFlagsTimorLeste: return [UIImage flagTimorLesteWithSize: size];
