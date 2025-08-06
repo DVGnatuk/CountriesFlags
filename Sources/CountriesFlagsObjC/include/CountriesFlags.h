@@ -35,7 +35,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Bermuda
 //        case Bhutan
 //        case Bolivia
-//        case BosniaAndHerzegovina
+    CountriesFlagsBosniaAndHerzegovina,
     CountriesFlagsBotswana,
 //        case Brazil
 //        case BritishIndianOceanTerritory
@@ -94,7 +94,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsGuadeloupe,
 //        case Guam
 //        case Guatemala
-//        case Guinea
+    CountriesFlagsGuinea,
     CountriesFlagsGuineaBissau,
 //        case Guyana
 //        case Haiti

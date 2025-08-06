@@ -120,6 +120,16 @@ final class CountriesFlagsTests: XCTestCase {
         XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagBenin"))
     }
 
+    func testBosniaAndHerzegovina() throws {
+        guard let image = UIImage.flag(for: .BosniaAndHerzegovina, with: imageSize) else {
+            XCTFail("Generated flag is nil")
+            return
+        }
+
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagBosniaAndHerzegovina"))
+    }
+
     func testBotswana() throws {
         guard let image = UIImage.flag(for: .Botswana, with: imageSize) else {
             XCTFail("Generated flag is nil")

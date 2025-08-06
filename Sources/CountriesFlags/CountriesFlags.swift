@@ -32,7 +32,7 @@ public enum CountriesFlags {
 //        case Bermuda
 //        case Bhutan
 //        case Bolivia
-//        case BosniaAndHerzegovina
+    case BosniaAndHerzegovina
     case Botswana
 //        case Brazil
 //        case BritishIndianOceanTerritory
