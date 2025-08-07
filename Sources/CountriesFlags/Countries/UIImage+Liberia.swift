@@ -36,16 +36,10 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 11.0),
-                          size: CGSize(width: size.width, height: size.height / 11.0)))
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 11.0 * 3.0),
-                          size: CGSize(width: size.width, height: size.height / 11.0)))
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 11.0 * 5.0),
-                          size: CGSize(width: size.width, height: size.height / 11.0)))
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 11.0 * 7.0),
-                          size: CGSize(width: size.width, height: size.height / 11.0)))
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 11.0 * 9.0),
-                          size: CGSize(width: size.width, height: size.height / 11.0)))
+        for index in stride(from: 1, through: 9, by: 2) {
+            UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 11.0 * CGFloat(index)),
+                              size: CGSize(width: size.width, height: size.height / 11.0)))
+        }
 
         colorBlue.setFill()
         UIRectFill(CGRect(origin: .zero,

@@ -20,10 +20,9 @@
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
     [colorWhite setFill];
-    UIRectFill(CGRectMake(0.0f, size.height / 18.0f * 2.0f, size.width, size.height / 18.0f * 2.0f));
-    UIRectFill(CGRectMake(0.0f, size.height / 18.0f * 6.0f, size.width, size.height / 18.0f * 2.0f));
-    UIRectFill(CGRectMake(0.0f, size.height / 18.0f * 10.0f, size.width, size.height / 18.0f * 2.0f));
-    UIRectFill(CGRectMake(0.0f, size.height / 18.0f * 14.0f, size.width, size.height / 18.0f * 2.0f));
+    for (int i = 2; i <= 24; i += 4) {
+        UIRectFill(CGRectMake(0.0f, size.height / 18.0f * i, size.width, size.height / 18.0f * 2.0f));
+    }
     
     [colorBlue setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width / 27.0f * 10.0f, size.height / 18.0f * 10.0f));

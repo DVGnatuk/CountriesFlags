@@ -43,7 +43,7 @@ public enum CountriesFlags {
 //        case CaboVerde
 //        case Cambodia
 //        case Canada
-//        case CapeVerde
+    case CapeVerde
 //        case CaymanIslands
     case CentralAfricanRepublic
     case Chad

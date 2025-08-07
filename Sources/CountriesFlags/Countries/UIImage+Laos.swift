@@ -39,13 +39,12 @@ extension UIImage {
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 4.0),
                           size: CGSize(width: size.width, height: size.height / 2.0)))
 
-        let radius = size.height / 2.0 * (4.0 / 5.0)
-        let path = UIBezierPath(ovalIn: CGRect(x: size.width / 2.0 - radius / 2.0,
-                                               y: size.height / 2.0 - radius / 2.0,
-                                               width: radius,
-                                               height: radius))
         colorWhite.setFill()
-        path.fill()
+        let radius = size.height / 2.0 * (4.0 / 5.0)
+        UIBezierPath(ovalIn: CGRect(x: size.width / 2.0 - radius / 2.0,
+                                    y: size.height / 2.0 - radius / 2.0,
+                                    width: radius,
+                                    height: radius)).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

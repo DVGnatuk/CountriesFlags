@@ -22,13 +22,12 @@
     [colorBlue setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
-    CGFloat radius = size.height * 3.0f / 5.0f;
-    UIBezierPath* path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(size.width * 7.0f / 16.0f - radius / 2.0f,
-                                                                           size.height / 2.0f - radius / 2.0f,
-                                                                           radius,
-                                                                           radius)];
     [colorYellow setFill];
-    [path fill];
+    CGFloat radius = size.height * 3.0f / 5.0f;
+    [[UIBezierPath bezierPathWithOvalInRect:CGRectMake(size.width * 7.0f / 16.0f - radius / 2.0f,
+                                                       size.height / 2.0f - radius / 2.0f,
+                                                       radius,
+                                                       radius)] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

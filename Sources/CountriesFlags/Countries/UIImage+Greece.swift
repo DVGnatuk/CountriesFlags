@@ -32,14 +32,10 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 18.0 * 2.0),
-                          size: CGSize(width: size.width, height: size.height / 18.0 * 2.0)))
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 18.0 * 6.0),
-                          size: CGSize(width: size.width, height: size.height / 18.0 * 2.0)))
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 18.0 * 10.0),
-                          size: CGSize(width: size.width, height: size.height / 18.0 * 2.0)))
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 18.0 * 14.0),
-                          size: CGSize(width: size.width, height: size.height / 18.0 * 2.0)))
+        for index in stride(from: 2, through: 14, by: 4) {
+            UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 18.0 * CGFloat(index)),
+                              size: CGSize(width: size.width, height: size.height / 18.0 * 2.0)))
+        }
 
         colorBlue.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: 0.0),
