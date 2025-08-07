@@ -3,6 +3,8 @@
 //  CountriesFlags
 //
 
+// swiftlint:disable function_body_length
+
 #if canImport(UIKit)
 
 import UIKit
@@ -46,7 +48,7 @@ extension UIImage {
         colorRed.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 12.0 * 7.0),
                           size: CGSize(width: size.width, height: size.height / 12.0)))
-    
+
         colorYellow.setFill()
         let radius = CGFloat(size.height / 12.0) / 2.0
         let yOffset = size.height / 12.0 * 0.1
@@ -84,3 +86,5 @@ extension UIImage {
 }
 
 #endif
+
+// swiftlint:enable function_body_length

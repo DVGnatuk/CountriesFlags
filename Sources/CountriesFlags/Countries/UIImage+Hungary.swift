@@ -9,7 +9,7 @@ import UIKit
 
 extension UIImage {
     /**
-     [wikipedia]: https://uk.wikipedia.org/wiki/Прапор_Угорщини "wikipedia"
+     [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_Hungary "wikipedia"
      
      Generates the flag of Hungary.
      For more information see [wikipedia].
@@ -36,11 +36,11 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0),
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 3.0),
                           size: CGSize(width: size.width, height: size.height / 3.0)))
 
         colorFairway.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0 * 2.0),
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 3.0 * 2.0),
                           size: CGSize(width: size.width, height: size.height / 3.0)))
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
