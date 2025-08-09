@@ -155,7 +155,7 @@ public enum CountriesFlags {
     case Nauru
 //        case Nepal
     case Netherlands
-//        case NetherlandsAntilles
+    case NetherlandsAntilles
 //        case NewCaledonia
 //        case NewZealand
 //        case Nicaragua
