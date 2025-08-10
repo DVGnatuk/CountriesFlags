@@ -190,7 +190,7 @@ public enum CountriesFlags {
 //        case SaintLucia
 //        case SaintMartin
 //        case SaintPierreAndMiquelon
-//        case SaintVincentAndTheGrenadines
+    case SaintVincentAndTheGrenadines
     case Samoa
 //        case SanMarino
     case SaoTomeAndPrincipe
