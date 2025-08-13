@@ -48,7 +48,7 @@ public enum CountriesFlags {
     case CentralAfricanRepublic
     case Chad
     case Chile
-//        case China
+    case China
 //        case ChristmasIsland
 //        case CocosIslands
     case Colombia
@@ -183,7 +183,7 @@ public enum CountriesFlags {
     case RussianFederation
 //        case Rwanda
     case RepublicCongo
-//        case Reunion
+    case Reunion
 //        case SaintBarthelemy
 //        case SaintHelena
 //        case SaintKittsAndNevis

@@ -33,7 +33,7 @@ extension UIImage {
 
         colorWhite.setFill()
         let path = UIBezierPath()
-        path.move(to: CGPoint(x: 0.0, y: 0.0))
+        path.move(to: .zero)
         path.addLine(to: CGPoint(x: size.width / 100.0 * 25.0, y: 0.0))
         path.addLine(to: CGPoint(x: size.width / 100.0 * 40.0, y: size.height / 60.0 * 6.0))
         path.addLine(to: CGPoint(x: size.width / 100.0 * 25.0, y: size.height / 60.0 * 12.0))

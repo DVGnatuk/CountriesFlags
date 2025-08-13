@@ -23,31 +23,16 @@
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
     [colorWhite setFill];
-    // top
-    [[UIBezierPath starWithSize:(CGSizeMake(size.width, size.height / 5.0f * 2.0f))
-                         radius:size.height / 5.0f / 2.0f
-                           type:FlagStarTypeFivePointed] fill];
-    // bottom
-    UIBezierPath* path = [UIBezierPath starWithSize:CGSizeMake(size.width, size.height / 5.0 * 2.0)
-                                             radius:size.height / 5.0f / 2.0f
-                                               type:FlagStarTypeFivePointed];
-    [path rotateToAngle:180.0f
-                 center:CGPointMake(size.width / 2.0f, size.height / 2.0f)];
-    [path fill];
-    // right
-    path = [UIBezierPath starWithSize:CGSizeMake(size.width, size.height / 5.0f * 2.0f)
-                               radius:size.height / 5.0f / 2.0f
-                                 type:FlagStarTypeFivePointed];
-    [path rotateToAngle:90.0f
-                 center:CGPointMake(size.width / 2.0f, size.height / 2.0f)];
-    [path fill];
-    // left
-    path = [UIBezierPath starWithSize:CGSizeMake(size.width, size.height / 5.0f * 2.0f)
-                               radius:size.height / 5.0f / 2.0f
-                                 type:FlagStarTypeFivePointed];
-    [path rotateToAngle:-90.0f
-                 center:CGPointMake(size.width / 2.0f, size.height / 2.0f)];
-    [path fill];
+    CGSize starSize = CGSizeMake(size.width, size.height / 5.0f * 2.0f);
+    CGFloat starRadius = size.height / 5.0f / 2.0f;
+    CGPoint rotatePoint = CGPointMake(size.width / 2.0f, size.height / 2.0f);
+    for (int angle = 0; angle <= 270; angle += 90) {
+        UIBezierPath* path = [UIBezierPath starWithSize:starSize
+                                                 radius:starRadius
+                                                   type:FlagStarTypeFivePointed];
+        [path rotateToAngle:angle center:rotatePoint];
+        [path fill];
+    }
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

@@ -32,24 +32,14 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
-        // top
-        UIBezierPath.star(with: CGSize(width: size.width, height: size.height / 5.0 * 2.0),
-                          radius: size.height / 5.0 / 2.0).fill()
-        // bottom
-        var path = UIBezierPath.star(with: CGSize(width: size.width, height: size.height / 5.0 * 2.0),
-                                     radius: size.height / 5.0 / 2.0)
-        path.rotate(to: 180.0, around: CGPoint(x: size.width / 2.0, y: size.height / 2.0))
-        path.fill()
-        // right
-        path = UIBezierPath.star(with: CGSize(width: size.width, height: size.height / 5.0 * 2.0),
-                                 radius: size.height / 5.0 / 2.0)
-        path.rotate(to: 90.0, around: CGPoint(x: size.width / 2.0, y: size.height / 2.0))
-        path.fill()
-        // left
-        path = UIBezierPath.star(with: CGSize(width: size.width, height: size.height / 5.0 * 2.0),
-                                 radius: size.height / 5.0 / 2.0)
-        path.rotate(to: -90.0, around: CGPoint(x: size.width / 2.0, y: size.height / 2.0))
-        path.fill()
+        let starSize = CGSize(width: size.width, height: size.height / 5.0 * 2.0)
+        let starRadius = size.height / 5.0 / 2.0
+        let rotatePoint = CGPoint(x: size.width / 2.0, y: size.height / 2.0)
+        for angle in stride(from: 0, through: 270, by: 90) {
+            let path = UIBezierPath.star(with: starSize, radius: starRadius)
+            path.rotate(to: CGFloat(angle), around: rotatePoint)
+            path.fill()
+        }
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
