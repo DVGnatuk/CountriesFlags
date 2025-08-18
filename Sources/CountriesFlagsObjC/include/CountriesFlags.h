@@ -236,7 +236,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsUkraine,
     CountriesFlagsUnitedArabEmirates,
 //        case UnitedKingdom
-//        case UnitedStatesOfAmerica
+    CountriesFlagsUnitedStatesOfAmerica,
 //        case UnitedSovietSocialRepublics
 //        case Uruguay
 //        case Uzbekistan

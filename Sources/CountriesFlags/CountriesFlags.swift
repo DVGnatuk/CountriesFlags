@@ -233,7 +233,7 @@ public enum CountriesFlags {
     case Ukraine
     case UnitedArabEmirates
 //        case UnitedKingdom
-//        case UnitedStatesOfAmerica
+    case UnitedStatesOfAmerica
 //        case UnitedSovietSocialRepublics
 //        case Uruguay
 //        case Uzbekistan

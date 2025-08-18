@@ -36,15 +36,15 @@ extension UIImage {
                           radius: size.height / 20.0 * 6.0 / 2.0).fill()
 
         var path = UIBezierPath.star(with: CGSize(width: size.height / 20.0 * 24.4, height: size.height / 20.0 * 10.9),
-                          radius: size.height / 20.0)
+                                     radius: size.height / 20.0)
         path.rotate(to: 20.0, around: CGPoint(x: size.height / 20.0, y: size.height / 20.0))
         path.fill()
 
         UIBezierPath.star(with: CGSize(width: size.height / 20.0 * 24.0, height: size.height / 20.0 * 14.0),
                           radius: size.height / 20.0).fill()
-        
+
         path = UIBezierPath.star(with: CGSize(width: size.height / 20.0 * 20.2, height: size.height / 20.0 * 22.8),
-                          radius: size.height / 20.0)
+                                 radius: size.height / 20.0)
         path.rotate(to: 45.0, around: CGPoint(x: size.height, y: size.height / 20.0 * 10.0))
         path.fill()
 

@@ -11,13 +11,13 @@ extension UIImage {
     /**
      [wikipedia]: https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates"wikipedia"
      
-     Generates the flag of UnitedArabEmirates.
+     Generates the flag of United Arab Emirates.
      For more information see [wikipedia].
 
      - Parameters:
         - size: image size.
      
-     - Returns: Returns the flag of UnitedArabEmirates.
+     - Returns: Returns the flag of United Arab Emirates.
      */
     internal static func flagUnitedArabEmirates(with size: CGSize) -> UIImage? {
         let colorGreen = UIColor(red: 0.0,
@@ -37,11 +37,11 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height * 2.0 / 6.0),
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height * 2.0 / 6.0),
                           size: CGSize(width: size.width, height: size.height * 2.0 / 6.0)))
 
         colorBlack.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height * 4.0 / 6.0),
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height * 4.0 / 6.0),
                           size: CGSize(width: size.width, height: size.height * 2.0 / 6.0)))
 
         colorRed.setFill()
