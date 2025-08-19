@@ -189,7 +189,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsReunion,
 //        case SaintBarthelemy
 //        case SaintHelena
-//        case SaintKittsAndNevis
+    CountriesFlagsSaintKittsAndNevis,
 //        case SaintLucia
 //        case SaintMartin
 //        case SaintPierreAndMiquelon

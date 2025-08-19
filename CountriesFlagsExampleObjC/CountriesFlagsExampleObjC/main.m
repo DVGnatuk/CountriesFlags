@@ -2,8 +2,6 @@
 //  main.m
 //  CountriesFlagsExampleObjC
 //
-//  Created by Дмитрий on 12.07.2025.
-//
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"

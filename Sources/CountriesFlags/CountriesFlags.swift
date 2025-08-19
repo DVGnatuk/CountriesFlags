@@ -186,7 +186,7 @@ public enum CountriesFlags {
     case Reunion
 //        case SaintBarthelemy
 //        case SaintHelena
-//        case SaintKittsAndNevis
+    case SaintKittsAndNevis
 //        case SaintLucia
 //        case SaintMartin
 //        case SaintPierreAndMiquelon
