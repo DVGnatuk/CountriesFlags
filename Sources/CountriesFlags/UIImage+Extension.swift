@@ -110,9 +110,10 @@ extension UIImage {
         case .RepublicCongo: return flagRepublicCongo(with: size)
         // The region uses the flag of France, the national flag of the country.
         case .Reunion: return flagFrance(with: size)
-        case .SaintKittsAndNevis: return flagSaintKittsAndNevis(with: size)
         case .Romania: return flagRomania(with: size)
         case .RussianFederation: return flagRussianFederation(with: size)
+        case .SaintKittsAndNevis: return flagSaintKittsAndNevis(with: size)
+        case .SaintLucia: return flagSaintLucia(with: size)
         case .SaintVincentAndTheGrenadines: return flagSaintVincentAndTheGrenadines(with: size)
         case .Samoa: return flagSamoa(with: size)
         case .SaoTomeAndPrincipe: return flagSaoTomeAndPrincipe(with: size)

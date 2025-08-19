@@ -79,9 +79,10 @@
 #import "Countries/UIImage+PuertoRico.h"
 #import "Countries/UIImage+Qatar.h"
 #import "Countries/UIImage+RepublicCongo.h"
-#import "Countries/UIImage+SaintKittsAndNevis.h"
 #import "Countries/UIImage+Romania.h"
 #import "Countries/UIImage+RussianFederation.h"
+#import "Countries/UIImage+SaintKittsAndNevis.h"
+#import "Countries/UIImage+SaintLucia.h"
 #import "Countries/UIImage+SaintVincentAndTheGrenadines.h"
 #import "Countries/UIImage+Samoa.h"
 #import "Countries/UIImage+SaoTomeAndPrincipe.h"
@@ -191,9 +192,10 @@
         case CountriesFlagsRepublicCongo: return [UIImage flagRepublicCongoWithSize: size];
         // The region uses the flag of France, the national flag of the country.
         case CountriesFlagsReunion: return [UIImage flagFranceWithSize: size];
-        case CountriesFlagsSaintKittsAndNevis: return [UIImage flagSaintKittsAndNevisWithSize: size];
         case CountriesFlagsRomania: return [UIImage flagRomaniaWithSize: size];
         case CountriesFlagsRussianFederation: return [UIImage flagRussianFederationWithSize: size];
+        case CountriesFlagsSaintKittsAndNevis: return [UIImage flagSaintKittsAndNevisWithSize: size];
+        case CountriesFlagsSaintLucia: return [UIImage flagSaintLuciaWithSize: size];
         case CountriesFlagsSaintVincentAndTheGrenadines: return [UIImage flagSaintVincentAndTheGrenadinesWithSize: size];
         case CountriesFlagsSamoa: return [UIImage flagSamoaWithSize: size];
         case CountriesFlagsSaoTomeAndPrincipe: return [UIImage flagSaoTomeAndPrincipeWithSize: size];

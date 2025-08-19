@@ -187,7 +187,7 @@ public enum CountriesFlags {
 //        case SaintBarthelemy
 //        case SaintHelena
     case SaintKittsAndNevis
-//        case SaintLucia
+    case SaintLucia
 //        case SaintMartin
 //        case SaintPierreAndMiquelon
     case SaintVincentAndTheGrenadines
