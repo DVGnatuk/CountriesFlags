@@ -71,9 +71,8 @@
                 CGFloat angle = startAngle + angleIncrement * index;
                 CGFloat currentRadius = index % 2 == 0 ? radius : innerRadius;
                 
-                CGPoint point = CGPointMake(xCenter + currentRadius * cos(angle),
-                                            yCenter + currentRadius * sin(angle));
-                [polygonPath addLineToPoint:point];
+                [polygonPath addLineToPoint:CGPointMake(xCenter + currentRadius * cos(angle),
+                                                        yCenter + currentRadius * sin(angle))];
             }
         }
             break;

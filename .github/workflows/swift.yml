@@ -15,7 +15,7 @@ jobs:
 # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#standard-github-hosted-runners-for-public-repositories
     runs-on: macos-latest
     
-    name: Unit Testing on iOS 18.2
+    name: iOS Unit Testing
 
     steps:
     - uses: actions/checkout@v4
@@ -26,6 +26,6 @@ jobs:
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode.app && /usr/bin/xcodebuild -version
     - name: Build and run swift tests
-      run: xcodebuild test -scheme CountriesFlags -destination 'platform=iOS Simulator,name=iPhone SE (3rd generation),OS=18.2' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild test -scheme CountriesFlags -destination 'platform=iOS Simulator,name=iPhone SE (3rd generation),OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
     - name: Build and run objective-c tests
-      run: xcodebuild test -scheme CountriesFlagsObjC -destination 'platform=iOS Simulator,name=iPhone SE (3rd generation),OS=18.2' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild test -scheme CountriesFlagsObjC -destination 'platform=iOS Simulator,name=iPhone SE (3rd generation),OS=latest' | xcpretty && exit ${PIPESTATUS[0]}

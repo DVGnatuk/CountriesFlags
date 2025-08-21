@@ -225,7 +225,7 @@ public enum CountriesFlags {
     case Tonga
     case TrinidadAndTobago
 //        case Tunisia
-//        case Turkey
+    case Turkey
 //        case Turkmenistan
 //        case TurksAndCaicosIslands
 //        case Tuvalu

@@ -66,9 +66,8 @@ extension UIBezierPath {
                 let angle = startAngle + angleIncrement * CGFloat(index)
                 let currentRadius: CGFloat = index % 2 == 0 ? radius : innerRadius
 
-                let point = CGPoint(x: xCenter + currentRadius * cos(angle),
-                                    y: yCenter + currentRadius * sin(angle))
-                polygonPath.addLine(to: point)
+                polygonPath.addLine(to: CGPoint(x: xCenter + currentRadius * cos(angle),
+                                                y: yCenter + currentRadius * sin(angle)))
             }
 
         case .twelvePointed:
