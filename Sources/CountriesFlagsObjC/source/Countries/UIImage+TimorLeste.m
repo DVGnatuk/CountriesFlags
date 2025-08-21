@@ -29,11 +29,10 @@
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
     [colorYellow setFill];
-    [[UIBezierPath triangleInSize:CGSizeMake(size.width / 2.0f, size.height)
-                             type:FlagTriangleTypeLeftMiddle] fill];
+    [[UIBezierPath triangleInSize:size type:FlagTriangleTypeLeftMiddle] fill];
     
     [colorBlack setFill];
-    [[UIBezierPath triangleInSize:CGSizeMake(size.width / 36.0f * 12.0f, size.height)
+    [[UIBezierPath triangleInSize:CGSizeMake(size.width / 36.0f * 24.0f, size.height)
                              type:FlagTriangleTypeLeftMiddle] fill];
     
     [colorWhite setFill];

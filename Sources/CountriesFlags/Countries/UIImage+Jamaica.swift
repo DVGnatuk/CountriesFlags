@@ -36,7 +36,7 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorBlack.setFill()
-        UIBezierPath.triangle(in: CGSize(width: size.width / 2.0, height: size.height), type: .leftMiddle).fill()
+        UIBezierPath.triangle(in: size, type: .leftMiddle).fill()
         UIBezierPath.triangle(in: size, type: .rightMiddle).fill()
 
         colorGold.setStroke()

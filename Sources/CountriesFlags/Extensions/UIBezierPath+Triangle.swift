@@ -28,7 +28,7 @@ extension UIBezierPath {
         var x2 = 0.0
         let y2 = size.height
 
-        var x3 = 0.0
+        var x3 = size.width / 2.0
         let y3 = size.height / 2.0
 
         switch type {
@@ -36,12 +36,11 @@ extension UIBezierPath {
             x3 = size.height * sin(.pi / 3) // sin(60 degrees)
 
         case .leftMiddle:
-            x3 = size.width
+            break
 
         case .rightMiddle:
             x1 = size.width
             x2 = size.width
-            x3 = size.width / 2.0
         }
 
         let path = UIBezierPath()

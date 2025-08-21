@@ -45,7 +45,7 @@ extension UIImage {
                           size: CGSize(width: size.width, height: size.height / 3.0)))
 
         colorGreen.setFill()
-        UIBezierPath.triangle(in: CGSize(width: size.width / 6.0 * 2.0, height: size.height),
+        UIBezierPath.triangle(in: CGSize(width: size.width / 6.0 * 4.0, height: size.height),
                               type: .leftMiddle).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

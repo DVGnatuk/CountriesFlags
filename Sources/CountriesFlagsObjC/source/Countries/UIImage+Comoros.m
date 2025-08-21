@@ -44,8 +44,7 @@
     UIRectFill(CGRectMake(0.0f, size.height / 4.0f * 3.0f, size.width, size.height / 4.0f));
     
     [colorGreen setFill];
-    [[UIBezierPath triangleInSize:CGSizeMake(size.width / 2.0f, size.height)
-                             type:FlagTriangleTypeLeftMiddle] fill];
+    [[UIBezierPath triangleInSize:size type:FlagTriangleTypeLeftMiddle] fill];
     
     [colorWhite setFill];
     CGFloat radius = size.height / 50.0f * 11.8f;

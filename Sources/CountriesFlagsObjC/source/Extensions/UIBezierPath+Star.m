@@ -40,6 +40,25 @@
         }
             break;
             
+        case FlagStarTypeSixPointed: {
+            CGFloat angle = -M_PI / 2.0f;
+            for (int index = 0; index < 6; index++) {
+                CGFloat xPoint = xCenter + cos(angle) * radius;
+                CGFloat yPoint = yCenter + sin(angle) * radius;
+                if (index == 0) {
+                    [polygonPath moveToPoint:CGPointMake(xPoint, yPoint)];
+                } else {
+                    [polygonPath addLineToPoint:CGPointMake(xPoint, yPoint)];
+                }
+                angle += M_PI / 6.0f;
+
+                [polygonPath addLineToPoint:CGPointMake(xCenter + cos(angle) * (radius * 0.58),
+                                                        yCenter + sin(angle) * (radius * 0.58))];
+                angle += M_PI / 6.0f;
+            }
+        }
+            break;
+            
         case FlagStarTypeSevenPointed: {
             CGFloat innerRadius = radius / 2.0f * 0.7f;
             CGFloat angleIncrement = M_PI * 2.0f / 7.0f;

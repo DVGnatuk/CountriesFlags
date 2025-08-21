@@ -58,8 +58,7 @@ extension UIImage {
                           size: CGSize(width: size.width, height: size.height / 4.0)))
 
         colorGreen.setFill()
-        UIBezierPath.triangle(in: CGSize(width: size.width / 2.0, height: size.height),
-                              type: .leftMiddle).fill()
+        UIBezierPath.triangle(in: size, type: .leftMiddle).fill()
 
         colorWhite.setFill()
         var radius = size.height / 50.0 * 11.8

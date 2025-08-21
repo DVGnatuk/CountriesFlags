@@ -12,6 +12,7 @@ extension UIBezierPath {
     enum StarType {
         case fourPointed
         case fivePointed
+        case sixPointed
         case sevenPointed
         case twelvePointed
     }
@@ -34,6 +35,23 @@ extension UIBezierPath {
                 let xPos: CGFloat = currentRadius * cos(angle)
                 let yPos: CGFloat = currentRadius * sin(angle)
                 polygonPath.addLine(to: CGPoint(x: xCenter + xPos, y: yCenter + yPos))
+            }
+
+        case .sixPointed:
+            var angle = -CGFloat.pi / 2.0
+            for index in 0..<6 {
+                let xPoint = xCenter + cos(angle) * radius
+                let yPoint = yCenter + sin(angle) * radius
+                if index == 0 {
+                    polygonPath.move(to: CGPoint(x: xPoint, y: yPoint))
+                } else {
+                    polygonPath.addLine(to: CGPoint(x: xPoint, y: yPoint))
+                }
+                angle += CGFloat.pi / 6.0
+
+                polygonPath.addLine(to: CGPoint(x: xCenter + cos(angle) * (radius * 0.58),
+                                                y: yCenter + sin(angle) * (radius * 0.58)))
+                angle += CGFloat.pi / 6.0
             }
 
         case .sevenPointed:

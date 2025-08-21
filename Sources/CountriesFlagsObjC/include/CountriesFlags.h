@@ -42,7 +42,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case BruneiDarussalam
     CountriesFlagsBulgaria,
     CountriesFlagsBurkinaFaso,
-//        case Burundi
+    CountriesFlagsBurundi,
 //        case CaboVerde
 //        case Cambodia
 //        case Canada

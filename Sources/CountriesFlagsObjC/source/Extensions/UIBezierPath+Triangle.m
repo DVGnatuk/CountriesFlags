@@ -24,7 +24,7 @@
     CGFloat x2 = 0.0f;
     CGFloat y2 = size.height;
     
-    CGFloat x3 = 0.0f;//size.height * sin(M_PI / 3); // sin(60 degrees)
+    CGFloat x3 = size.width / 2.0;
     CGFloat y3 = size.height / 2.0f;
     
     switch (type) {
@@ -35,11 +35,9 @@
         case FlagTriangleTypeRightMiddle:
             x1 = size.width;
             x2 = size.width;
-            x3 = size.width / 2.0f;
             break;
             
         default:
-            x3 = size.width;
             break;
     }
 
