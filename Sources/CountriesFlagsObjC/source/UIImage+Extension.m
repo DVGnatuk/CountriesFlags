@@ -68,6 +68,7 @@
 #import "Countries/UIImage+Mauritius.h"
 #import "Countries/UIImage+Micronesia.h"
 #import "Countries/UIImage+Monaco.h"
+#import "Countries/UIImage+Myanmar.h"
 #import "Countries/UIImage+Nauru.h"
 #import "Countries/UIImage+Netherlands.h"
 #import "Countries/UIImage+NetherlandsAntilles.h"
@@ -128,6 +129,8 @@
         case CountriesFlagsBulgaria: return [UIImage flagBulgariaWithSize: size];
         case CountriesFlagsBurkinaFaso: return [UIImage flagBurkinaFasoWithSize: size];
         case CountriesFlagsBurundi: return [UIImage flagBurundiWithSize: size];
+        case CountriesFlagsCaboVerde: return [UIImage flagCapeVerdeWithSize: size];
+        // Cape Verde or Cabo Verde, officially the Republic of Cabo Verde
         case CountriesFlagsCapeVerde: return [UIImage flagCapeVerdeWithSize: size];
         case CountriesFlagsCentralAfricanRepublic: return [UIImage flagCentralAfricanRepublicWithSize: size];
         case CountriesFlagsChad: return [UIImage flagChadWithSize: size];
@@ -181,6 +184,7 @@
         case CountriesFlagsMauritius: return [UIImage flagMauritiusWithSize: size];
         case CountriesFlagsMicronesia: return [UIImage flagMicronesiaWithSize: size];
         case CountriesFlagsMonaco: return [UIImage flagMonacoWithSize: size];
+        case CountriesFlagsMyanmar: return [UIImage flagMyanmarWithSize: size];
         case CountriesFlagsNauru: return [UIImage flagNauruWithSize: size];
         case CountriesFlagsNetherlands: return [UIImage flagNetherlandsWithSize: size];
         case CountriesFlagsNetherlandsAntilles: return [UIImage flagNetherlandsAntillesWithSize: size];

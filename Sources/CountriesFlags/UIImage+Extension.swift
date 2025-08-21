@@ -44,6 +44,8 @@ extension UIImage {
         case .Bulgaria: return flagBulgaria(with: size)
         case .BurkinaFaso: return flagBurkinaFaso(with: size)
         case .Burundi: return flagBurundi(with: size)
+        case .CaboVerde: return flagCapeVerde(with: size)
+        // Cape Verde or Cabo Verde, officially the Republic of Cabo Verde
         case .CapeVerde: return flagCapeVerde(with: size)
         case .CentralAfricanRepublic: return flagCentralAfricanRepublic(with: size)
         case .Chad: return flagChad(with: size)
@@ -97,6 +99,7 @@ extension UIImage {
         case .Mauritius: return flagMauritius(with: size)
         case .Micronesia: return flagMicronesia(with: size)
         case .Monaco: return flagMonaco(with: size)
+        case .Myanmar: return flagMyanmar(with: size)
         case .Nauru: return flagNauru(with: size)
         case .Netherlands: return flagNetherlands(with: size)
         case .NetherlandsAntilles: return flagNetherlandsAntilles(with: size)

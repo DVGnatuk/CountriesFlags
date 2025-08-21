@@ -43,7 +43,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsBulgaria,
     CountriesFlagsBurkinaFaso,
     CountriesFlagsBurundi,
-//        case CaboVerde
+    CountriesFlagsCaboVerde,
 //        case Cambodia
 //        case Canada
     CountriesFlagsCapeVerde,
@@ -153,7 +153,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Montserrat
 //        case Morocco
 //        case Mozambique
-//        case Myanmar
+    CountriesFlagsMyanmar,
 //        case Namibia
     CountriesFlagsNauru,
 //        case Nepal

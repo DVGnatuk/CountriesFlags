@@ -40,7 +40,7 @@ public enum CountriesFlags {
     case Bulgaria
     case BurkinaFaso
     case Burundi
-//        case CaboVerde
+    case CaboVerde
 //        case Cambodia
 //        case Canada
     case CapeVerde
@@ -150,7 +150,7 @@ public enum CountriesFlags {
 //        case Montserrat
 //        case Morocco
 //        case Mozambique
-//        case Myanmar
+    case Myanmar
 //        case Namibia
     case Nauru
 //        case Nepal
