@@ -93,7 +93,7 @@ public enum CountriesFlags {
 //        case Guatemala
     case Guinea
     case GuineaBissau
-//        case Guyana
+    case Guyana
 //        case Haiti
 //        case VaticanCityState
     case Honduras

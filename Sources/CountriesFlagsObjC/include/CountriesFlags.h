@@ -96,7 +96,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Guatemala
     CountriesFlagsGuinea,
     CountriesFlagsGuineaBissau,
-//        case Guyana
+    CountriesFlagsGuyana,
 //        case Haiti
 //        case VaticanCityState
     CountriesFlagsHonduras,

@@ -1,9 +1,9 @@
 //
-//  UIBezierPath+Rotate.m
+//  UIBezierPath+AffineTransform.m
 //  CountriesFlags
 //
 
-#import "Extensions/UIBezierPath+Rotate.h"
+#import "Extensions/UIBezierPath+AffineTransform.h"
 
 @implementation UIBezierPath (Rotate)
 
@@ -14,6 +14,12 @@
     transform = CGAffineTransformRotate(transform, radians);
     transform = CGAffineTransformTranslate(transform, -center.x, -center.y);
     [self  applyTransform:transform];
+}
+
+- (void)translateToPoint:(CGPoint)point {
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    transform = CGAffineTransformTranslate(transform, point.x, point.y);
+    [self applyTransform:transform];
 }
 
 @end

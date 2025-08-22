@@ -1,5 +1,5 @@
 //
-//  UIBezierPath+Rotate.h
+//  UIBezierPath+AffineTransform.h
 //  CountriesFlags
 //
 
@@ -17,6 +17,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)rotateToAngle:(CGFloat)angle center:(CGPoint)center;
 
+/**
+ Translates UIBezierPath to specified CGPoint.
+ 
+ @param point: CGPoint of translation.
+ */
+- (void)translateToPoint:(CGPoint)point;
 @end
 
 NS_ASSUME_NONNULL_END

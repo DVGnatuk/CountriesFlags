@@ -1,5 +1,5 @@
 //
-//  UIBezierPath+Rotate.swift
+//  UIBezierPath+AffineTransform.swift
 //  CountriesFlags
 //
 
@@ -20,5 +20,15 @@ extension UIBezierPath {
         transform = transform.rotated(by: radians)
         transform = transform.translatedBy(x: -center.x, y: -center.y)
         apply(transform)
+    }
+    
+    /**
+     Translates UIBezierPath to specified CGPoint.
+     
+     - Parameters:
+        - point: CGPoint of translation.
+     */
+    func translate(to point: CGPoint) {
+        apply(CGAffineTransform(translationX: point.x, y: point.y))
     }
 }

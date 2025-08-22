@@ -18,13 +18,18 @@ jobs:
     name: iOS Unit Testing
 
     steps:
+# https://github.com/actions/checkout
     - uses: actions/checkout@v4
 #    - name: Build
 #      run: swift build -v
 #    - name: Run tests
 #      run: swift test -v
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode.app && /usr/bin/xcodebuild -version
+      run: sudo xcode-select -switch /Applications/Xcode_16.4.app && /usr/bin/xcodebuild -version
+#    - name: Download iOS Simulator Runtime
+#      run: sudo xcodebuild -downloadPlatform iOS
+    - name: List available simulators (debug)
+      run: xcrun simctl list devices
     - name: Build and run swift tests
       run: xcodebuild test -scheme CountriesFlags -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
     - name: Build and run objective-c tests

@@ -6,7 +6,7 @@
 #import "Countries/UIImage+China.h"
 
 #import "Extensions/UIBezierPath+Star.h"
-#import "Extensions/UIBezierPath+Rotate.h"
+#import "Extensions/UIBezierPath+AffineTransform.h"
 
 @implementation UIImage (China)
 

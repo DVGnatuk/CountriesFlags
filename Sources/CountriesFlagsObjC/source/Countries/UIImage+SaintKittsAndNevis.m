@@ -6,7 +6,7 @@
 #import "Countries/UIImage+SaintKittsAndNevis.h"
 
 #import "Extensions/UIBezierPath+Star.h"
-#import "Extensions/UIBezierPath+Rotate.h"
+#import "Extensions/UIBezierPath+AffineTransform.h"
 
 @implementation UIImage (SaintKittsAndNevis)
 
