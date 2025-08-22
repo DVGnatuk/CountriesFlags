@@ -12,6 +12,7 @@ typedef NS_ENUM(NSUInteger, FlagStarTypes) {
     FlagStarTypeFivePointed,
     FlagStarTypeSixPointed,
     FlagStarTypeSevenPointed,
+    FlagStarTypeEightPointed,
     FlagStarTypeTwelvePointed
 };
 

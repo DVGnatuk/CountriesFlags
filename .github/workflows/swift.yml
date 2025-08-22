@@ -31,6 +31,6 @@ jobs:
     - name: List available simulators (debug)
       run: xcrun simctl list devices
     - name: Build and run swift tests
-      run: xcodebuild test -scheme CountriesFlags -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.4' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild test -scheme CountriesFlags -destination 'platform=iOS Simulator,name=iPhone SE (3rd generation),OS=18.4' | xcpretty && exit ${PIPESTATUS[0]}
     - name: Build and run objective-c tests
-      run: xcodebuild test -scheme CountriesFlagsObjC -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.4' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild test -scheme CountriesFlagsObjC -destination 'platform=iOS Simulator,name=iPhone SE (3rd generation),OS=18.4' | xcpretty && exit ${PIPESTATUS[0]}

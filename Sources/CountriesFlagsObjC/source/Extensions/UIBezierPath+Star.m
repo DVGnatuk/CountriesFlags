@@ -77,6 +77,21 @@
         }
             break;
             
+        case FlagStarTypeEightPointed: {
+            for (int index = 0; index < 16; index++) {
+                CGFloat angle = index * M_PI / 8.0;
+                CGFloat r = index % 2 == 0 ? radius : radius / 2.0f;
+                CGPoint point = CGPointMake(xCenter + r * cos(angle),
+                                            yCenter + r * sin(angle));
+                if (index == 0) {
+                    [polygonPath moveToPoint:point];
+                } else {
+                    [polygonPath addLineToPoint: point];
+                }
+            }
+        }
+            break;
+            
         case FlagStarTypeTwelvePointed: {
             CGFloat innerRadius = radius * 0.5f;
 

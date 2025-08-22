@@ -24,6 +24,10 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
 }
 
+- (void)testScreenScaleFactor {
+    XCTAssertTrue([[UIScreen mainScreen] scale] == 2.0, "All tests must be run on device with @2x screen scale factor");
+}
+
 - (void)testUnknownCountry {
     UIImage* image = [UIImage flagForCountry:NSUIntegerMax size:self.imageSize];
     XCTAssertNil(image);
@@ -80,6 +84,15 @@
     XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
     if (@available(iOS 14, *)) {
         XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagAustria"]);
+    }
+}
+
+- (void)testAzerbaijan {
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsAzerbaijan size:self.imageSize];
+    XCTAssertNotNil(image, @"Generated flag is nil");
+    XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
+    if (@available(iOS 14, *)) {
+        XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagAzerbaijan"]);
     }
 }
 

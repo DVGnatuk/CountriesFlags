@@ -20,6 +20,10 @@ final class CountriesFlagsTests: XCTestCase {
 //        // Put teardown code here. This method is called after the invocation of each test method in the class.
 //    }
 
+    func testScreenScaleFactor() throws {
+        XCTAssertTrue(UIScreen.main.scale == 2.0, "All tests must be run on device with @2x screen scale factor")
+    }
+
     func testAlandIslands() throws {
         guard let image = UIImage.flag(for: .AlandIslands, with: imageSize) else {
             XCTFail("Generated flag is nil")
@@ -78,6 +82,16 @@ final class CountriesFlagsTests: XCTestCase {
 
         XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
         XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagAustria"))
+    }
+
+    func testAzerbaijan() throws {
+        guard let image = UIImage.flag(for: .Azerbaijan, with: imageSize) else {
+            XCTFail("Generated flag is nil")
+            return
+        }
+        
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagAzerbaijan"))
     }
 
     func testBahamas() throws {

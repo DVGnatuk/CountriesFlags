@@ -14,6 +14,7 @@ extension UIBezierPath {
         case fivePointed
         case sixPointed
         case sevenPointed
+        case eightPointed
         case twelvePointed
     }
 
@@ -68,6 +69,19 @@ extension UIBezierPath {
 
                 polygonPath.addLine(to: CGPoint(x: xCenter + currentRadius * cos(angle),
                                                 y: yCenter + currentRadius * sin(angle)))
+            }
+
+        case .eightPointed:
+            for index in 0..<16 {
+                let angle: CGFloat = CGFloat(index) * .pi / 8.0
+                let r = index % 2 == 0 ? radius : radius / 2.0
+                let point = CGPoint(x: xCenter + r * cos(angle),
+                                    y: yCenter + r * sin(angle))
+                if index == 0 {
+                    polygonPath.move(to: point)
+                } else {
+                    polygonPath.addLine(to: point)
+                }
             }
 
         case .twelvePointed:
