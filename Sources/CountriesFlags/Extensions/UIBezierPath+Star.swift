@@ -40,12 +40,12 @@ extension UIBezierPath {
         case .sixPointed:
             var angle = -CGFloat.pi / 2.0
             for index in 0..<6 {
-                let xPoint = xCenter + cos(angle) * radius
-                let yPoint = yCenter + sin(angle) * radius
+                let point = CGPoint(x: xCenter + cos(angle) * radius,
+                                    y: yCenter + sin(angle) * radius)
                 if index == 0 {
-                    polygonPath.move(to: CGPoint(x: xPoint, y: yPoint))
+                    polygonPath.move(to: point)
                 } else {
-                    polygonPath.addLine(to: CGPoint(x: xPoint, y: yPoint))
+                    polygonPath.addLine(to: point)
                 }
                 angle += CGFloat.pi / 6.0
 

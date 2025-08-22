@@ -6,6 +6,7 @@
 #import "UIImage+Extension.h"
 
 #import "Countries/UIImage+AlandIslands.h"
+#import "Countries/UIImage+Algeria.h"
 #import "Countries/UIImage+AntiguaAndBarbuda.h"
 #import "Countries/UIImage+Armenia.h"
 #import "Countries/UIImage+Aruba.h"
@@ -116,6 +117,7 @@
 + (UIImage * _Nullable)flagForCountry:(CountriesFlags)country size:(CGSize)size {
     switch (country) {
         case CountriesFlagsAlandIslands: return [UIImage flagAlandIslandsWithSize: size];
+        case CountriesFlagsAlgeria: return [UIImage flagAlgeriaWithSize: size];
         case CountriesFlagsAntiguaAndBarbuda: return [UIImage flagAntiguaAndBarbudaWithSize: size];
         case CountriesFlagsArmenia: return [UIImage flagArmeniaWithSize: size];
         case CountriesFlagsAruba: return [UIImage flagArubaWithSize: size];

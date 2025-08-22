@@ -45,8 +45,8 @@ extension UIImage {
                               type: .leftMiddle).fill()
 
         colorYellow.setFill()
-        var path = UIBezierPath.triangle(in: CGSize(width: size.width / 1920.0 * 3570.0, height: size.height / 1152.0 * 1078.0),
-                                         type: .leftMiddle)
+        var triangleSize = CGSize(width: size.width / 1920.0 * 3570.0, height: size.height / 1152.0 * 1078.0)
+        var path = UIBezierPath.triangle(in: triangleSize, type: .leftMiddle)
         path.translate(to: CGPoint(x: 0.0, y: size.height / 1152.0 * 37.0))
         path.fill()
 
@@ -54,8 +54,8 @@ extension UIImage {
         UIBezierPath.triangle(in: size, type: .leftMiddle).fill()
 
         colorRed.setFill()
-        path = UIBezierPath.triangle(in: CGSize(width: size.width / 1920.0 * 1772.0, height: size.height / 1152.0 * 1062.0),
-                                     type: .leftMiddle)
+        triangleSize = CGSize(width: size.width / 1920.0 * 1772.0, height: size.height / 1152.0 * 1062.0)
+        path = UIBezierPath.triangle(in: triangleSize, type: .leftMiddle)
         path.translate(to: CGPoint(x: 0.0, y: size.height / 1152.0 * 43.0))
         path.fill()
 
