@@ -169,7 +169,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case NorthernMarianaIslands
     CountriesFlagsNorway,
 //        case Oman
-//        case Pakistan
+    CountriesFlagsPakistan,
     CountriesFlagsPalau,
 //        case PalestinianTerritory
     CountriesFlagsPanama,
