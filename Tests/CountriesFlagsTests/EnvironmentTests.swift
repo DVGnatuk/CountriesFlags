@@ -1,8 +1,6 @@
 //
 //  EnvironmentTests.swift
 //  
-//  EnvironmentTests.swift
-//
 
 import XCTest
 
