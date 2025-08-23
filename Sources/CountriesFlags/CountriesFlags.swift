@@ -199,7 +199,7 @@ public enum CountriesFlags {
 //        case Serbia
     case Seychelles
     case SierraLeone
-//        case Singapore
+    case Singapore
 //        case Slovakia
 //        case Slovenia
 //        case SolomonIslands

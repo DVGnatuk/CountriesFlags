@@ -74,9 +74,9 @@ extension UIBezierPath {
         case .eightPointed:
             for index in 0..<16 {
                 let angle: CGFloat = CGFloat(index) * .pi / 8.0
-                let r = index % 2 == 0 ? radius : radius / 2.0
-                let point = CGPoint(x: xCenter + r * cos(angle),
-                                    y: yCenter + r * sin(angle))
+                let currentRadius = index % 2 == 0 ? radius : radius / 2.0
+                let point = CGPoint(x: xCenter + currentRadius * cos(angle),
+                                    y: yCenter + currentRadius * sin(angle))
                 if index == 0 {
                     polygonPath.move(to: point)
                 } else {
