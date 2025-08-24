@@ -145,6 +145,7 @@ extension UIImage {
         case .Turkey: return flagTurkey(with: size)
         case .Ukraine: return flagUkraine(with: size)
         case .UnitedArabEmirates: return flagUnitedArabEmirates(with: size)
+        case .UnitedKingdom: return flagUnitedKingdom(with: size)
         case .UnitedStatesOfAmerica: return flagUnitedStatesOfAmerica(with: size)
         case .Vietnam: return flagVietnam(with: size)
         // The official flag of Wallis and Futuna is the French national flag, as it is a French territory.

@@ -33,7 +33,7 @@
     [path fill];
 
     [colorBlack setFill];
-    path = [UIBezierPath bezierPath];
+    [path removeAllPoints];
     [path moveToPoint:CGPointMake(size.width / 72.0f * 25.6f, size.height / 36.0f * 14.83239697 * 2.0f + size.height / 36.0f * 3.16760303)];
     [path addLineToPoint:CGPointMake(size.width / 2.0f, size.height / 36.0f * 7.16760303)];
     [path addLineToPoint:CGPointMake(size.width / 72.0f * 46.4f, size.height / 36.0f * 14.83239697 * 2.0f + size.height / 36.0f * 3.16760303)];
@@ -41,7 +41,7 @@
     [path fill];
 
     [colorYellow setFill];
-    path = [UIBezierPath bezierPath];
+    [path removeAllPoints];
     [path moveToPoint:CGPointMake(size.width / 72.0f * 24.0f, size.height / 36.0f * 14.83239697 * 2.0f + size.height / 36.0f * 3.16760303)];
     [path addLineToPoint:CGPointMake(size.width / 2.0f, size.height / 2.0f)];
     [path addLineToPoint:CGPointMake(size.width / 72.0f * 48.0f, size.height / 36.0f * 14.83239697 * 2.0f + size.height / 36.0f * 3.16760303)];

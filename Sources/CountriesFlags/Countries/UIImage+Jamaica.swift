@@ -40,14 +40,14 @@ extension UIImage {
         UIBezierPath.triangle(in: size, type: .rightMiddle).fill()
 
         colorGold.setStroke()
-        var path = UIBezierPath()
+        let path = UIBezierPath()
         path.move(to: .zero)
         path.addLine(to: CGPoint(x: size.width, y: size.height))
         path.close()
         path.lineWidth = size.height / 6.0
         path.stroke()
 
-        path = UIBezierPath()
+        path.removeAllPoints()
         path.move(to: CGPoint(x: 0.0, y: size.height))
         path.addLine(to: CGPoint(x: size.width, y: 0.0))
         path.close()

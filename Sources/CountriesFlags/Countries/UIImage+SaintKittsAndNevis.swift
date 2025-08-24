@@ -51,7 +51,7 @@ extension UIImage {
         path.fill()
 
         colorYellow.setFill()
-        path = UIBezierPath()
+        path.removeAllPoints()
         path.move(to: CGPoint(x: 0.0, y: size.height / 854.0 * 639.0))
         path.addLine(to: CGPoint(x: size.width / 1280.0 * 956.0, y: 0.0))
         path.addLine(to: CGPoint(x: size.width, y: 0.0))
@@ -62,7 +62,7 @@ extension UIImage {
         path.fill()
 
         colorBlack.setFill()
-        path = UIBezierPath()
+        path.removeAllPoints()
         path.move(to: CGPoint(x: 0.0, y: size.height / 854.0 * 699.0))
         path.addLine(to: CGPoint(x: size.width / 1280.0 * 1048.0, y: 0.0))
         path.addLine(to: CGPoint(x: size.width, y: 0.0))

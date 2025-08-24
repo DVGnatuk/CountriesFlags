@@ -39,7 +39,7 @@ extension UIImage {
         colorWhite.setFill()
         let xUnit = size.width / 72.0
         let yUnit = size.height / 36.0
-        var path = UIBezierPath()
+        let path = UIBezierPath()
         path.move(to: CGPoint(x: xUnit * 24.0, y: yUnit * 14.83239697 * 2.0 + yUnit * 3.16760303))
         path.addLine(to: CGPoint(x: size.width / 2.0, y: yUnit * 3.16760303))
         path.addLine(to: CGPoint(x: xUnit * 48.0, y: yUnit * 14.83239697 * 2.0 + yUnit * 3.16760303))
@@ -47,7 +47,7 @@ extension UIImage {
         path.fill()
 
         colorBlack.setFill()
-        path = UIBezierPath()
+        path.removeAllPoints()
         path.move(to: CGPoint(x: xUnit * 25.6, y: yUnit * 14.83239697 * 2.0 + yUnit * 3.16760303))
         path.addLine(to: CGPoint(x: size.width / 2.0, y: yUnit * 7.16760303))
         path.addLine(to: CGPoint(x: xUnit * 46.4, y: yUnit * 14.83239697 * 2.0 + yUnit * 3.16760303))
@@ -55,7 +55,7 @@ extension UIImage {
         path.fill()
 
         colorYellow.setFill()
-        path = UIBezierPath()
+        path.removeAllPoints()
         path.move(to: CGPoint(x: xUnit * 24.0, y: yUnit * 14.83239697 * 2.0 + yUnit * 3.16760303))
         path.addLine(to: CGPoint(x: size.width / 2.0, y: size.height / 2.0))
         path.addLine(to: CGPoint(x: xUnit * 48.0, y: yUnit * 14.83239697 * 2.0 + yUnit * 3.16760303))

@@ -39,7 +39,7 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorGreen.setFill()
-        var path = UIBezierPath()
+        let path = UIBezierPath()
         path.move(to: .zero)
         path.addLine(to: CGPoint(x: 0.0, y: size.height))
         path.addLine(to: CGPoint(x: size.width * 2.0 / 3.0, y: 0.0))
@@ -47,7 +47,7 @@ extension UIImage {
         path.fill()
 
         colorRed.setFill()
-        path = UIBezierPath()
+        path.removeAllPoints()
         path.move(to: CGPoint(x: size.width, y: 0.0))
         path.addLine(to: CGPoint(x: size.width, y: size.height))
         path.addLine(to: CGPoint(x: size.width / 3.0, y: size.height))

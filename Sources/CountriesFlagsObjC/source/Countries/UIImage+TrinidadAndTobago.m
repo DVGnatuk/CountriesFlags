@@ -30,7 +30,7 @@
     [path fill];
     
     [colorBlack setFill];
-    path = [UIBezierPath bezierPath];
+    [path removeAllPoints];
     [path moveToPoint:CGPointMake(size.width / 30.0f, 0.0f)];
     [path addLineToPoint:CGPointMake(size.width / 30.0f * 5.0f, 0.0f)];
     [path addLineToPoint:CGPointMake(size.width / 30.0f * 29.0f, size.height)];
