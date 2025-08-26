@@ -76,6 +76,7 @@
 #import "Countries/UIImage+Nauru.h"
 #import "Countries/UIImage+Netherlands.h"
 #import "Countries/UIImage+NetherlandsAntilles.h"
+#import "Countries/UIImage+NewZealand.h"
 #import "Countries/UIImage+Niger.h"
 #import "Countries/UIImage+Nigeria.h"
 #import "Countries/UIImage+Norway.h"
@@ -200,6 +201,7 @@
         case CountriesFlagsNauru: return [UIImage flagNauruWithSize: size];
         case CountriesFlagsNetherlands: return [UIImage flagNetherlandsWithSize: size];
         case CountriesFlagsNetherlandsAntilles: return [UIImage flagNetherlandsAntillesWithSize: size];
+        case CountriesFlagsNewZealand: return [UIImage flagNewZealandWithSize: size];
         case CountriesFlagsNiger: return [UIImage flagNigerWithSize: size];
         case CountriesFlagsNigeria: return [UIImage flagNigeriaWithSize: size];
         case CountriesFlagsNorway: return [UIImage flagNorwayWithSize: size];

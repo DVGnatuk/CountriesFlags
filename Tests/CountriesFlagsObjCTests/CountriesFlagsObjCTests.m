@@ -701,6 +701,15 @@
     }
 }
 
+- (void)testNewZealand {
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsNewZealand size:self.imageSize];
+    XCTAssertNotNil(image, @"Generated flag is nil");
+    XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
+    if (@available(iOS 14, *)) {
+        XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagNewZealand"]);
+    }
+}
+
 - (void)testNiger {
     UIImage* image = [UIImage flagForCountry:CountriesFlagsNiger size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");
