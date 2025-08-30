@@ -100,6 +100,7 @@ extension UIImage {
         case .Maldives: return flagMaldives(with: size)
         case .Mali: return flagMali(with: size)
         case .Martinique: return flagMartinique(with: size)
+        case .Mauritania: return flagMauritania(with: size)
         case .Mauritius: return flagMauritius(with: size)
         case .Micronesia: return flagMicronesia(with: size)
         case .Monaco: return flagMonaco(with: size)

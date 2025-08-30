@@ -141,7 +141,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Malta
 //        case MarshallIslands
     CountriesFlagsMartinique,
-//        case Mauritania
+    CountriesFlagsMauritania,
     CountriesFlagsMauritius,
 //        case Mayotte
 //        case Mexico
