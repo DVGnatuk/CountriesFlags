@@ -148,7 +148,7 @@ public enum CountriesFlags {
 //        case Mongolia
 //        case Montenegro
 //        case Montserrat
-//        case Morocco
+    case Morocco
 //        case Mozambique
     case Myanmar
 //        case Namibia

@@ -151,7 +151,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Mongolia
 //        case Montenegro
 //        case Montserrat
-//        case Morocco
+    CountriesFlagsMorocco,
 //        case Mozambique
     CountriesFlagsMyanmar,
 //        case Namibia
