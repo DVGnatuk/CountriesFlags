@@ -118,6 +118,7 @@
 #import "Countries/UIImage+UnitedArabEmirates.h"
 #import "Countries/UIImage+UnitedKingdom.h"
 #import "Countries/UIImage+UnitedStatesOfAmerica.h"
+#import "Countries/UIImage+Uzbekistan.h"
 #import "Countries/UIImage+Vietnam.h"
 #import "Countries/UIImage+Yemen.h"
 
@@ -249,6 +250,7 @@
         case CountriesFlagsUnitedStatesOfAmerica: return [UIImage flagUnitedStatesOfAmericaWithSize: size];
         // The official flag of Wallis and Futuna is the French national flag, as it is a French territory.
         case CountriesFlagsWallisAndFutuna: return [UIImage flagFranceWithSize: size];
+        case CountriesFlagsUzbekistan: return [UIImage flagUzbekistanWithSize: size];
         case CountriesFlagsVietnam: return [UIImage flagVietnamWithSize: size];
         case CountriesFlagsYemen: return [UIImage flagYemenWithSize: size];
             

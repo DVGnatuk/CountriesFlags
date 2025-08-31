@@ -236,7 +236,7 @@ public enum CountriesFlags {
     case UnitedStatesOfAmerica
 //        case UnitedSovietSocialRepublics
 //        case Uruguay
-//        case Uzbekistan
+    case Uzbekistan
 //        case Vanuatu
 //        case Venezuela
     case Vietnam

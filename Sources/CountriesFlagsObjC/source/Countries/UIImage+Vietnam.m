@@ -10,10 +10,7 @@
 @implementation UIImage (Vietnam)
 
 + (UIImage * _Nullable)flagVietnamWithSize:(CGSize)size {
-    UIColor* colorYellow = [UIColor colorWithRed:1.0f
-                                           green:1.0f
-                                            blue:0.0f
-                                           alpha:1.0f];
+    UIColor* colorYellow = [UIColor yellowColor];
     UIColor* colorRed = [UIColor colorWithRed:218.0f/255.0f
                                         green:37.0f/255.0f
                                          blue:29.0f/255.0f
