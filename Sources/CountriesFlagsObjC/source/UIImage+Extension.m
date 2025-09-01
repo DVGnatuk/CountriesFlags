@@ -114,6 +114,7 @@
 #import "Countries/UIImage+TrinidadAndTobago.h"
 #import "Countries/UIImage+Tunisia.h"
 #import "Countries/UIImage+Turkey.h"
+#import "Countries/UIImage+Tuvalu.h"
 #import "Countries/UIImage+Ukraine.h"
 #import "Countries/UIImage+UnitedArabEmirates.h"
 #import "Countries/UIImage+UnitedKingdom.h"
@@ -244,6 +245,7 @@
         case CountriesFlagsTrinidadAndTobago: return [UIImage flagTrinidadAndTobagoWithSize: size];
         case CountriesFlagsTunisia: return [UIImage flagTunisiaWithSize: size];
         case CountriesFlagsTurkey: return [UIImage flagTurkeyWithSize: size];
+        case CountriesFlagsTuvalu: return [UIImage flagTuvaluWithSize: size];
         case CountriesFlagsUkraine: return [UIImage flagUkraineWithSize: size];
         case CountriesFlagsUnitedArabEmirates: return [UIImage flagUnitedArabEmiratesWithSize: size];
         case CountriesFlagsUnitedKingdom: return [UIImage flagUnitedKingdomWithSize: size];

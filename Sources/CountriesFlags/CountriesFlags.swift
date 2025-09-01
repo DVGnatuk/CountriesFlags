@@ -228,7 +228,7 @@ public enum CountriesFlags {
     case Turkey
 //        case Turkmenistan
 //        case TurksAndCaicosIslands
-//        case Tuvalu
+    case Tuvalu
 //        case Uganda
     case Ukraine
     case UnitedArabEmirates
