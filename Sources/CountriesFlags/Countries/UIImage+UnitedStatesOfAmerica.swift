@@ -37,8 +37,8 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
-        for index in stride(from: 1, through: 13, by: 2) {
-            UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 13.0 * CGFloat(index)),
+        for index in stride(from: 1.0, through: 13.0, by: 2.0) {
+            UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 13.0 * index),
                               size: CGSize(width: size.width, height: size.height / 13.0)))
         }
 

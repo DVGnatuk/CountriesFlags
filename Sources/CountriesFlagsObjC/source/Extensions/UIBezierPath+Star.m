@@ -46,6 +46,11 @@
         }
             break;
             
+        case FlagStarTypeFourteenPointed: {
+            [self fourteenPointerStarWithRadius:radius xCenter:xCenter yCenter:yCenter path:path];
+        }
+            break;
+            
         default:
             break;
     }
@@ -154,6 +159,25 @@
 
         CGPoint point = CGPointMake(xCenter + currentRadius * cos(angle), yCenter + currentRadius * sin(angle));
         [path addLineToPoint:point];
+    }
+}
+
++ (void)fourteenPointerStarWithRadius:(CGFloat)radius
+                              xCenter:(CGFloat)xCenter
+                              yCenter:(CGFloat)yCenter
+                                 path:(UIBezierPath *)path {
+    CGFloat innerRadius = radius * 2.0f / 5.0f;
+    CGFloat angleIncrement = M_PI * 2.0f / 28.0f;
+
+    for (int index = 0; index < 28; index++) {
+        CGFloat currentRadius = index % 2 == 0 ? radius : innerRadius;
+        CGFloat angle = angleIncrement * index - M_PI / 2.0f;
+
+        if (index == 0) {
+            [path moveToPoint:(CGPointMake(xCenter + radius * cos(angle), yCenter + radius * sin(angle)))];
+        } else {
+            [path addLineToPoint:(CGPointMake(xCenter + currentRadius * cos(angle), yCenter + currentRadius * sin(angle)))];
+        }
     }
 }
 

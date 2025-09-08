@@ -14,6 +14,7 @@ extension UIBezierPath {
         case sevenPointed
         case eightPointed
         case twelvePointed
+        case fourteenPointed
     }
 
     static func star(with size: CGSize, radius: CGFloat, type: StarType = .fivePointed) -> UIBezierPath {
@@ -31,6 +32,7 @@ extension UIBezierPath {
         case .sevenPointed: sevenPointerStar(with: radius, xCenter: xCenter, yCenter: yCenter, path: path)
         case .eightPointed: eightPointerStar(with: radius, xCenter: xCenter, yCenter: yCenter, path: path)
         case .twelvePointed: twelvePointedStar(with: radius, xCenter: xCenter, yCenter: yCenter, path: path)
+        case .fourteenPointed: fourteenPointedStar(with: radius, xCenter: xCenter, yCenter: yCenter, path: path)
         }
 
         path.close()
@@ -139,6 +141,27 @@ extension UIBezierPath {
             let point = CGPoint(x: xCenter + currentRadius * cos(angle),
                                 y: yCenter + currentRadius * sin(angle))
             path.addLine(to: point)
+        }
+    }
+
+    static private func fourteenPointedStar(with radius: CGFloat,
+                                            xCenter: CGFloat,
+                                            yCenter: CGFloat,
+                                            path: UIBezierPath) {
+        let innerRadius = radius * 2.0 / 5.0
+        let angleIncrement = .pi * 2.0 / 28.0
+
+        for index in 0..<28 {
+            let currentRadius: CGFloat = index % 2 == 0 ? radius : innerRadius
+            let angle = angleIncrement * CGFloat(index) - .pi / 2.0
+
+            if index == 0 {
+                path.move(to: CGPoint(x: xCenter + radius * cos(angle),
+                                      y: yCenter + radius * sin(angle)))
+            } else {
+                path.addLine(to: CGPoint(x: xCenter + currentRadius * cos(angle),
+                                         y: yCenter + currentRadius * sin(angle)))
+            }
         }
     }
 }
