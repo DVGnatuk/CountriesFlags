@@ -39,50 +39,45 @@ extension UIImage {
         colorYellow.setFill()
         // Nanumea island
         let starRadius = size.height / 100.0 * 8.7
-        UIBezierPath.star(with: CGSize(width: size.width / 1000.0 * 1092.0, height: size.height / 100.0 * 180.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 1000.0 * 546.0, y: size.height / 100.0 * 90.0),
                           radius: starRadius).fill()
         // Nukufetau island
-        UIBezierPath.star(with: CGSize(width: size.width / 1000.0 * 1684.0, height: size.height / 100.0 * 128.3),
+        UIBezierPath.star(at: CGPoint(x: size.width / 1000.0 * 842.0, y: size.height / 100.0 * 64.15),
                           radius: starRadius).fill()
         // Niulakita island
-        UIBezierPath.star(with: CGSize(width: size.width / 1000.0 * 1858.0, height: size.height / 100.0 * 106.5),
+        UIBezierPath.star(at: CGPoint(x: size.width / 1000.0 * 929.0, y: size.height / 100.0 * 53.25),
                           radius: starRadius).fill()
         // Nukulaelae island
-        UIBezierPath.star(with: CGSize(width: size.width / 1000.0 * 1858.0, height: size.height / 100.0 * 26.5),
+        UIBezierPath.star(at: CGPoint(x: size.width / 1000.0 * 929.0, y: size.height / 100.0 * 13.25),
                           radius: starRadius).fill()
         // Niutao island
-        let starSize = CGSize(width: size.width / 1000.0 * 1300.0,
-                              height: size.height / 100.0 * 128.5)
-        var path = UIBezierPath.star(with: starSize, radius: starRadius)
-        path.rotate(to: 36.0, around: CGPoint(x: size.width / 1000.0 * 1300.0 / 2.0,
-                                              y: size.height / 100.0 * 128.5 / 2.0))
+        var starCenter = CGPoint(x: size.width / 1000.0 * 650.0,
+                                 y: size.height / 100.0 * 64.25)
+        var path = UIBezierPath.star(at: starCenter, radius: starRadius)
+        path.rotate(to: 36.0, around: starCenter)
         path.fill()
         // Nanumanga island
-        path = UIBezierPath.star(with: CGSize(width: size.width / 1000.0 * 1300.0, height: size.height / 100.0 * 170.0),
-                                 radius: starRadius)
-        path.rotate(to: 36.0, around: CGPoint(x: size.width / 1000.0 * 1300.0 / 2.0,
-                                              y: size.height / 100.0 * 170.0 / 2.0))
+        starCenter = CGPoint(x: size.width / 1000.0 * 650.0, y: size.height / 100.0 * 85.0)
+        path = UIBezierPath.star(at: starCenter, radius: starRadius)
+        path.rotate(to: 36.0, around: starCenter)
         path.fill()
         // Nui island
-        path = UIBezierPath.star(with: CGSize(width: size.width / 1000.0 * 1509.0, height: size.height / 100.0 * 158.5),
-                                 radius: starRadius)
-        path.rotate(to: 36.0, around: CGPoint(x: size.width / 1000.0 * 1509.0 / 2.0,
-                                              y: size.height / 100.0 * 158.5 / 2.0))
+        starCenter = CGPoint(x: size.width / 1000.0 * 754.5, y: size.height / 100.0 * 79.25)
+        path = UIBezierPath.star(at: starCenter, radius: starRadius)
+        path.rotate(to: 36.0, around: starCenter)
         path.fill()
         // Vaitupu island
-        path = UIBezierPath.star(with: CGSize(width: size.width / 1000.0 * 1509.0, height: size.height / 100.0 * 71.5),
-                                 radius: starRadius)
-        path.rotate(to: 36.0, around: CGPoint(x: size.width / 1000.0 * 1509.0 / 2.0,
-                                              y: size.height / 100.0 * 71.5 / 2.0))
+        starCenter = CGPoint(x: size.width / 1000.0 * 754.5, y: size.height / 100.0 * 35.75)
+        path = UIBezierPath.star(at: starCenter, radius: starRadius)
+        path.rotate(to: 36.0, around: starCenter)
         path.fill()
         // Funafuti island
-        path = UIBezierPath.star(with: CGSize(width: size.width / 1000.0 * 1683.0, height: size.height / 100.0 * 58.6),
-                                 radius: starRadius)
-        path.rotate(to: 36.0, around: CGPoint(x: size.width / 1000.0 * 1683.0 / 2.0,
-                                              y: size.height / 100.0 * 58.6 / 2.0))
+        starCenter = CGPoint(x: size.width / 1000.0 * 841.5, y: size.height / 100.0 * 29.3)
+        path = UIBezierPath.star(at: starCenter, radius: starRadius)
+        path.rotate(to: 36.0, around: starCenter)
         path.fill()
 
-        flagUnitedKingdom(with: CGSize(width: size.width / 2.0, height: size.height / 2.0))?.draw(at: .zero)
+        flagUnitedKingdom(with: size.halfSize)?.draw(at: .zero)
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

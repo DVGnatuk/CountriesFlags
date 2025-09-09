@@ -33,30 +33,30 @@ extension UIImage {
 
         colorWhite.setFill()
         // Commonwealth star
-        UIBezierPath.star(with: CGSize(width: size.width / 2.0, height: size.height * 1.5),
+        UIBezierPath.star(at: CGPoint(x: size.width / 4.0, y: size.height * 0.75),
                           radius: size.height / 20.0 * 3.0,
                           type: .sevenPointed).fill()
         // Beta Crucis star
-        UIBezierPath.star(with: CGSize(width: size.width * 1.25, height: size.height / 6.0 * 5.26),
+        UIBezierPath.star(at: CGPoint(x: size.width * 0.625, y: size.height / 6.0 * 2.63),
                           radius: size.height / 14.0,
                           type: .sevenPointed).fill()
         // Gamma Crucis star
-        UIBezierPath.star(with: CGSize(width: size.width * 1.5, height: size.height / 6.0 * 2.0),
+        UIBezierPath.star(at: CGPoint(x: size.width * 0.75, y: size.height / 6.0),
                           radius: size.height / 14.0,
                           type: .sevenPointed).fill()
         // Delta Crucis star
-        UIBezierPath.star(with: CGSize(width: size.width * 1.722, height: size.height / 6.0 * 4.46),
+        UIBezierPath.star(at: CGPoint(x: size.width * 0.861, y: size.height / 6.0 * 2.23),
                           radius: size.height / 14.0,
                           type: .sevenPointed).fill()
         // Alpha Crucis star
-        UIBezierPath.star(with: CGSize(width: size.width * 1.4995, height: size.height / 6.0 * 10.0),
+        UIBezierPath.star(at: CGPoint(x: size.width * 0.74975, y: size.height / 6.0 * 5.0),
                           radius: size.height / 14.0,
                           type: .sevenPointed).fill()
         // Epsilon Crucis star
-        UIBezierPath.star(with: CGSize(width: size.width * 1.6, height: size.height / 6.0 * 6.5),
+        UIBezierPath.star(at: CGPoint(x: size.width * 0.8, y: size.height / 6.0 * 3.25),
                           radius: size.height / 24.0).fill()
 
-        flagUnitedKingdom(with: CGSize(width: size.width / 2.0, height: size.height / 2.0))?.draw(at: .zero)
+        flagUnitedKingdom(with: size.halfSize)?.draw(at: .zero)
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

@@ -9,6 +9,7 @@
 
 #import "Extensions/UIBezierPath+Star.h"
 #import "Extensions/UIBezierPath+AffineTransform.h"
+#import "Extensions/CGSize+Extension.h"
 
 @implementation UIImage (Tuvalu)
 
@@ -30,48 +31,56 @@
     [colorYellow setFill];
     // Nanumea island
     CGFloat starRadius = size.height / 100.0f * 8.7f;
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 1000.0f * 1092.0f, size.height / 100.0f * 180.0f)
-                         radius:starRadius
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 1000.0f * 546.0f, size.height / 100.0f * 90.0f)
+                        radius:starRadius
+                          type:FlagStarTypeFivePointed] fill];
     // Nukufetau island
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 1000.0f * 1684.0f, size.height / 100.0f * 128.3f)
-                         radius:starRadius
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 1000.0f * 842.0f, size.height / 100.0f * 64.15f)
+                        radius:starRadius
+                          type:FlagStarTypeFivePointed] fill];
     // Niulakita island
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 1000.0f * 1858.0f, size.height / 100.0f * 106.5f)
-                         radius:starRadius
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 1000.0f * 929.0f, size.height / 100.0f * 53.25f)
+                        radius:starRadius
+                          type:FlagStarTypeFivePointed] fill];
     // Nukulaelae island
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 1000.0f * 1858.0f, size.height / 100.0f * 26.5f)
-                         radius:starRadius
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 1000.0f * 929.0f, size.height / 100.0f * 13.25f)
+                        radius:starRadius
+                          type:FlagStarTypeFivePointed] fill];
     // Niutao island
-    CGSize starSize = CGSizeMake(size.width / 1000.0f * 1300.0f, size.height / 100.0f * 128.5f);
-    UIBezierPath* path = [UIBezierPath starWithSize:starSize radius:starRadius type:FlagStarTypeFivePointed];
-    [path rotateToAngle:36.0f center:CGPointMake(size.width / 1000.0f * 1300.0f / 2.0f, size.height / 100.0f * 128.5f / 2.0f)];
+    CGPoint starCenter = CGPointMake(size.width / 1000.0f * 650.0f, size.height / 100.0f * 64.25f);
+    UIBezierPath* path = [UIBezierPath starAtPoint:starCenter radius:starRadius type:FlagStarTypeFivePointed];
+    [path rotateToAngle:36.0f center:starCenter];
     [path fill];
     // Nanumanga island
-    path = [UIBezierPath starWithSize:CGSizeMake(size.width / 1000.0f * 1300.0f, size.height / 100.0f * 170.0f)
-                               radius:starRadius type:FlagStarTypeFivePointed];
-    [path rotateToAngle:36.0f center:CGPointMake(size.width / 1000.0f * 1300.0f / 2.0f, size.height / 100.0f * 170.0f / 2.0f)];
+    starCenter = CGPointMake(size.width / 1000.0f * 650.0f, size.height / 100.0f * 85.0f);
+    path = [UIBezierPath starAtPoint:starCenter
+                              radius:starRadius
+                                type:FlagStarTypeFivePointed];
+    [path rotateToAngle:36.0f center:starCenter];
     [path fill];
     // Nui island
-    path = [UIBezierPath starWithSize:CGSizeMake(size.width / 1000.0f * 1509.0f, size.height / 100.0f * 158.5f)
-                               radius:starRadius type:FlagStarTypeFivePointed];
-    [path rotateToAngle:36.0f center:CGPointMake(size.width / 1000.0f * 1509.0f / 2.0f, size.height / 100.0f * 158.5f / 2.0f)];
+    starCenter = CGPointMake(size.width / 1000.0f * 754.5f, size.height / 100.0f * 79.25f);
+    path = [UIBezierPath starAtPoint:starCenter
+                              radius:starRadius
+                                type:FlagStarTypeFivePointed];
+    [path rotateToAngle:36.0f center:starCenter];
     [path fill];
     // Vaitupu island
-    path = [UIBezierPath starWithSize:CGSizeMake(size.width / 1000.0f * 1509.0f, size.height / 100.0f * 71.5f)
-                               radius:starRadius type:FlagStarTypeFivePointed];
-    [path rotateToAngle:36.0f center:CGPointMake(size.width / 1000.0f * 1509.0f / 2.0f, size.height / 100.0f * 71.5f / 2.0f)];
+    starCenter = CGPointMake(size.width / 1000.0f * 754.5f, size.height / 100.0f * 35.75f);
+    path = [UIBezierPath starAtPoint:starCenter
+                              radius:starRadius
+                                type:FlagStarTypeFivePointed];
+    [path rotateToAngle:36.0f center:starCenter];
     [path fill];
     // Funafuti island
-    path = [UIBezierPath starWithSize:CGSizeMake(size.width / 1000.0f * 1683.0f, size.height / 100.0f * 58.6f)
-                               radius:starRadius type:FlagStarTypeFivePointed];
-    [path rotateToAngle:36.0f center:CGPointMake(size.width / 1000.0f * 1683.0f / 2.0f, size.height / 100.0f * 58.6f / 2.0f)];
+    starCenter = CGPointMake(size.width / 1000.0f * 841.5f, size.height / 100.0f * 29.3f);
+    path = [UIBezierPath starAtPoint:starCenter
+                              radius:starRadius
+                                type:FlagStarTypeFivePointed];
+    [path rotateToAngle:36.0f center:starCenter];
     [path fill];
 
-    [[UIImage flagUnitedKingdomWithSize:CGSizeMake(size.width / 2.0f, size.height / 2.0f)] drawAtPoint:CGPointZero];
+    [[UIImage flagUnitedKingdomWithSize:CGSizeHalfSize(size)] drawAtPoint:CGPointZero];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

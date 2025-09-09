@@ -36,9 +36,9 @@
     UIRectFill(CGRectMake(0.0f, size.height / 3.0f * 2.0f, size.width, size.height / 3.0f));
     
     [colorWhite setFill];
-    [[UIBezierPath starWithSize:CGSizeMake(size.width, size.height + (size.height / 6.0f * 0.422291236))
-                         radius:size.height / 12.0f * 8.844582472 / 2.0f
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 2.0, (size.height + (size.height / 6.0f * 0.422291236)) / 2.0f)
+                        radius:size.height / 12.0f * 8.844582472 / 2.0f
+                          type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

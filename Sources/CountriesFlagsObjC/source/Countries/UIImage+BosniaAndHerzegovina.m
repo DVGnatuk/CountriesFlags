@@ -37,11 +37,11 @@
     CGFloat starRadius = size.height / 200.0f * 19.0f;
     CGFloat yOffset = size.height / 200.0 * 2.24264579;
     for (int index = 0; index <= 8; index++) {
-        CGFloat starWidth = size.width / 400.0f * (70.0f + index * 25.0f) * 2.0f;
+        CGFloat starWidth = size.width / 400.0f * (70.0f + index * 25.0f);
         CGFloat starHeight = index == 0 ? -yOffset : size.height / 200.0f * (48.0f + (index - 1) * 50.0f);
-        [[UIBezierPath starWithSize:CGSizeMake(starWidth, starHeight - yOffset)
-                             radius:starRadius
-                               type:FlagStarTypeFivePointed] fill];
+        [[UIBezierPath starAtPoint:CGPointMake(starWidth, (starHeight - yOffset) / 2.0)
+                            radius:starRadius
+                              type:FlagStarTypeFivePointed] fill];
     }
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();

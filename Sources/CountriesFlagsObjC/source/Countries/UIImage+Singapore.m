@@ -39,26 +39,27 @@
                                  clockwise:YES] fill];
 
     [colorWhite setFill];
+    CGFloat starRadius = size.height / 36.0f * 3.45f / 2.0f;
     // top
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 54.0f * 30.1f, size.height / 36.0f * 10.4f)
-                         radius:size.height / 36.0f * 3.45f / 2.0f
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 54.0f * 15.05f, size.height / 36.0f * 5.2f)
+                        radius:starRadius
+                          type:FlagStarTypeFivePointed] fill];
     // left middle
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 54.0f * 22.8f, size.height / 36.0f * 15.7f)
-                         radius:size.height / 36.0f * 3.45f / 2.0f
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 54.0f * 11.4f, size.height / 36.0f * 7.85f)
+                        radius:starRadius
+                          type:FlagStarTypeFivePointed] fill];
     // right middle
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 54.0f * 37.3f, size.height / 36.0f * 15.7f)
-                         radius:size.height / 36.0f * 3.45f / 2.0f
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 54.0f * 18.65f, size.height / 36.0f * 7.85f)
+                        radius:starRadius
+                          type:FlagStarTypeFivePointed] fill];
     // left bottom
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 54.0f * 25.6f, size.height / 36.0f * 24.2f)
-                         radius:size.height / 36.0f * 3.45f / 2.0f
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 54.0f * 12.8f, size.height / 36.0f * 12.1f)
+                        radius:starRadius
+                          type:FlagStarTypeFivePointed] fill];
     // right bottom
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 54.0f * 34.5f, size.height / 36.0f * 24.2f)
-                         radius:size.height / 36.0f * 3.45f / 2.0f
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 54.0f * 17.25f, size.height / 36.0f * 12.1f)
+                        radius:starRadius
+                          type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

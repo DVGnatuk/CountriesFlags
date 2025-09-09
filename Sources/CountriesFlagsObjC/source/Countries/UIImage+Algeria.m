@@ -57,11 +57,11 @@
                                  clockwise:YES] fill];
 
     [colorRed setFill];
-    UIBezierPath* path = [UIBezierPath starWithSize:CGSizeMake((size.width / 2.0f + size.height / 20.0f * 2.022542486) * 2.0f, size.height)
-                                             radius:size.height / 20.0f * 5.0f / 2.0f
-                                               type:FlagStarTypeFivePointed];
-    [path rotateToAngle:18.0f
-                 center:CGPointMake(size.width / 2.0f + size.height / 20.0f * 2.022542486, size.height / 2.0f)];
+    CGPoint starCenter = CGPointMake(size.width / 2.0f + size.height / 20.0f * 2.022542486, size.height / 2.0f);
+    UIBezierPath* path = [UIBezierPath starAtPoint:starCenter
+                                            radius:size.height / 20.0f * 5.0f / 2.0f
+                                              type:FlagStarTypeFivePointed];
+    [path rotateToAngle:18.0f center:starCenter];
     [path fill];
 
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();

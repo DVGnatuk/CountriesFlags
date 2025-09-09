@@ -64,7 +64,7 @@ extension UIImage {
                      clockwise: true).fill()
 
         colorWhite.setFill()
-        UIBezierPath.star(with: CGSize(width: size.width / 1920.0 * 2148.0, height: size.height),
+        UIBezierPath.star(at: CGPoint(x: size.width / 1920.0 * 1074.0, y: size.height / 2.0),
                           radius: size.height / 12.0,
                           type: .eightPointed).fill()
 

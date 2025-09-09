@@ -34,9 +34,9 @@
     [[UIBezierPath triangleInSize:size type:FlagTriangleTypeLeftEquilateral] fill];
     
     [colorWhite setFill];
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 45.0 * 8.660254037844386 * 2.0, size.height)
-                         radius:size.height / 30.0f * 10.0f / 2.0f
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 45.0f * 8.660254037844386, size.height / 2.0f)
+                        radius:size.height / 30.0f * 10.0f / 2.0f
+                          type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

@@ -47,9 +47,9 @@ extension UIImage {
         let starRadius = size.height / 200.0 * 19.0
         let yOffset = size.height / 200.0 * 2.24264579
         for index in 0...8 {
-            let starWidth: CGFloat = size.width / 400.0 * (70.0 + CGFloat(index) * 25.0) * 2.0
+            let starWidth: CGFloat = size.width / 400.0 * (70.0 + CGFloat(index) * 25.0)
             let starHeight: CGFloat = index == 0 ? -yOffset : size.height / 200.0 * (48.0 + CGFloat(index - 1) * 50.0)
-            UIBezierPath.star(with: CGSize(width: starWidth, height: starHeight - yOffset),
+            UIBezierPath.star(at: CGPoint(x: starWidth, y: (starHeight - yOffset) / 2.0),
                               radius: starRadius).fill()
         }
 

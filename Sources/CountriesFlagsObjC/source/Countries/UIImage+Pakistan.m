@@ -39,9 +39,10 @@
                                  clockwise:YES] fill];
     
     [colorWhite setFill];
-    UIBezierPath* path = [UIBezierPath starWithSize:CGSizeMake(size.width / 30.0f * 21.75f * 2.0f, size.height / 20.0f * 14.7f)
-                                             radius:size.height / 20.0f * 2.0f
-                                               type:FlagStarTypeFivePointed];
+    CGPoint starCenter = CGPointMake(size.width / 30.0f * 21.75f, size.height / 20.0f * 7.35f);
+    UIBezierPath* path = [UIBezierPath starAtPoint:starCenter
+                                            radius:size.height / 20.0f * 2.0f
+                                              type:FlagStarTypeFivePointed];
     [path rotateToAngle:-24.0f
                  center:CGPointMake(size.width / 30.0f * 21.75f, size.height / 20.0f * 14.7f / 2.0f)];
     [path fill];

@@ -6,6 +6,7 @@
 #import "Countries/UIImage+BurkinaFaso.h"
 
 #import "Extensions/UIBezierPath+Star.h"
+#import "Extensions/CGSize+Extension.h"
 
 @implementation UIImage (BurkinaFaso)
 
@@ -33,9 +34,9 @@
     
     [colorYellow setFill];
     CGFloat radius = (size.height * 7.0f / 20.0f) / 2.0f;
-    [[UIBezierPath starWithSize:size
-                         radius:radius
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGSizeMidPoint(size)
+                        radius:radius
+                          type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

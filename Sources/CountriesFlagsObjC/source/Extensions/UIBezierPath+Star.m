@@ -7,47 +7,44 @@
 
 @implementation UIBezierPath (Star)
 
-+ (UIBezierPath *)starWithSize:(CGSize)size radius:(CGFloat)radius type:(FlagStarTypes)type {
++ (UIBezierPath *)starAtPoint:(CGPoint)point radius:(CGFloat)radius type:(FlagStarTypes)type {
     UIBezierPath* path = [UIBezierPath bezierPath];
 
-    CGFloat xCenter = size.width / 2.0f;
-    CGFloat yCenter = size.height / 2.0f;
-
-    [path moveToPoint:CGPointMake(xCenter, -radius + yCenter)];
+    [path moveToPoint:CGPointMake(point.x, -radius + point.y)];
 
     switch (type) {
         case FlagStarTypeFourPointed: {
-            [self fourPointerStarWithRadius:radius xCenter:xCenter yCenter:yCenter path:path];
+            [self fourPointerStarWithRadius:radius xCenter:point.x yCenter:point.y path:path];
         }
             break;
             
         case FlagStarTypeFivePointed: {
-            [self fivePointerStarWithRadius:radius xCenter:xCenter yCenter:yCenter path:path];
+            [self fivePointerStarWithRadius:radius xCenter:point.x yCenter:point.y path:path];
         }
             break;
             
         case FlagStarTypeSixPointed: {
-            [self sixPointerStarWithRadius:radius xCenter:xCenter yCenter:yCenter path:path];
+            [self sixPointerStarWithRadius:radius xCenter:point.x yCenter:point.y path:path];
         }
             break;
             
         case FlagStarTypeSevenPointed: {
-            [self sevenPointerStarWithRadius:radius xCenter:xCenter yCenter:yCenter path:path];
+            [self sevenPointerStarWithRadius:radius xCenter:point.x yCenter:point.y path:path];
         }
             break;
             
         case FlagStarTypeEightPointed: {
-            [self eightPointerStarWithRadius:radius xCenter:xCenter yCenter:yCenter path:path];
+            [self eightPointerStarWithRadius:radius xCenter:point.x yCenter:point.y path:path];
         }
             break;
             
         case FlagStarTypeTwelvePointed: {
-            [self twelvePointerStarWithRadius:radius xCenter:xCenter yCenter:yCenter path:path];
+            [self twelvePointerStarWithRadius:radius xCenter:point.x yCenter:point.y path:path];
         }
             break;
             
         case FlagStarTypeFourteenPointed: {
-            [self fourteenPointerStarWithRadius:radius xCenter:xCenter yCenter:yCenter path:path];
+            [self fourteenPointerStarWithRadius:radius xCenter:point.x yCenter:point.y path:path];
         }
             break;
             

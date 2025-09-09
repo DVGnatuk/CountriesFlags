@@ -6,6 +6,7 @@
 #import "Countries/UIImage+Somalia.h"
 
 #import "Extensions/UIBezierPath+Star.h"
+#import "Extensions/CGSize+Extension.h"
 
 @implementation UIImage (Somalia)
 
@@ -22,9 +23,9 @@
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
     [colorWhite setFill];
-    [[UIBezierPath starWithSize:size
-                         radius:size.height / 2.0f / 2.0f
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGSizeMidPoint(size)
+                        radius:size.height / 2.0f / 2.0f
+                          type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

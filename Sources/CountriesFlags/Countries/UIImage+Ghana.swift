@@ -50,7 +50,7 @@ extension UIImage {
         colorBlack.setFill()
         let radius = CGFloat(size.height / 12.0) * 4.422291236 / 2.0
         let xDelta = CGFloat(size.height / 12.0) * 0.211145618
-        UIBezierPath.star(with: CGSize(width: size.width, height: size.height + xDelta * 2.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 2.0, y: (size.height + xDelta * 2.0) / 2.0),
                           radius: radius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

@@ -43,9 +43,9 @@
                                  clockwise:YES] fill];
     
     [colorYellow setFill];
-    [[UIBezierPath starWithSize:CGSizeMake(size.width, size.height / 1000.0f * 812.0f)
-                         radius:size.height / 1000.0f * 210.0f / 2.0f
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 2.0f, size.height / 1000.0f * 406.0f)
+                        radius:size.height / 1000.0f * 210.0f / 2.0f
+                          type:FlagStarTypeFivePointed] fill];
 
     [colorRed setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height / 1000.0f * 200.0f));

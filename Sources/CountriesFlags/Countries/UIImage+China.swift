@@ -32,23 +32,23 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorYellow.setFill()
-        UIBezierPath.star(with: CGSize(width: size.height / 2.0, height: size.height / 2.0),
+        UIBezierPath.star(at: CGPoint(x: size.height / 4.0, y: size.height / 4.0),
                           radius: size.height / 20.0 * 6.0 / 2.0).fill()
 
-        var path = UIBezierPath.star(with: CGSize(width: size.height / 20.0 * 24.4, height: size.height / 20.0 * 10.9),
+        var path = UIBezierPath.star(at: CGPoint(x: size.height / 20.0 * 12.2, y: size.height / 20.0 * 5.45),
                                      radius: size.height / 20.0)
         path.rotate(to: 20.0, around: CGPoint(x: size.height / 20.0, y: size.height / 20.0))
         path.fill()
 
-        UIBezierPath.star(with: CGSize(width: size.height / 20.0 * 24.0, height: size.height / 20.0 * 14.0),
+        UIBezierPath.star(at: CGPoint(x: size.height / 20.0 * 12.0, y: size.height / 20.0 * 7.0),
                           radius: size.height / 20.0).fill()
 
-        path = UIBezierPath.star(with: CGSize(width: size.height / 20.0 * 20.2, height: size.height / 20.0 * 22.8),
+        path = UIBezierPath.star(at: CGPoint(x: size.height / 20.0 * 10.1, y: size.height / 20.0 * 11.4),
                                  radius: size.height / 20.0)
         path.rotate(to: 45.0, around: CGPoint(x: size.height, y: size.height / 20.0 * 10.0))
         path.fill()
 
-        path = UIBezierPath.star(with: CGSize(width: size.height / 20.0 * 20.1, height: size.height / 20.0 * 12.5),
+        path = UIBezierPath.star(at: CGPoint(x: size.height / 20.0 * 10.05, y: size.height / 20.0 * 6.25),
                                  radius: size.height / 20.0)
         path.rotate(to: 24.0, around: CGPoint(x: size.height, y: size.height / 20.0 * 4.0))
         path.fill()

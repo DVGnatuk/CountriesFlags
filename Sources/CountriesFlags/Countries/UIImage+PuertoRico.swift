@@ -45,7 +45,7 @@ extension UIImage {
         UIBezierPath.triangle(in: size, type: .leftEquilateral).fill()
 
         colorWhite.setFill()
-        UIBezierPath.star(with: CGSize(width: size.width / 45.0 * 8.660254037844386 * 2.0, height: size.height),
+        UIBezierPath.star(at: CGPoint(x: size.width / 45.0 * 8.660254037844386, y: size.height / 2.0),
                           radius: size.height / 30.0 * 10.0 / 2.0).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

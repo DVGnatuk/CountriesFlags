@@ -48,12 +48,11 @@ extension UIImage {
                               type: .leftMiddle).fill()
 
         colorBlack.setFill()
-        var starSize = CGSize(width: size.width, height: size.height + size.height / 84.0 * 1.37244652 * 2.0)
-        UIBezierPath.star(with: starSize,
-                          radius: size.height / 84.0 * 28.74489303 / 2.0).fill()
-        starSize = CGSize(width: size.width * 1.5, height: size.height + size.height / 84.0 * 1.37244652 * 2.0)
-        UIBezierPath.star(with: starSize,
-                          radius: size.height / 84.0 * 28.74489303 / 2.0).fill()
+        let starRadius = size.height / 84.0 * 28.74489303 / 2.0
+        var starCenter = CGPoint(x: size.width / 2.0, y: (size.height + size.height / 84.0 * 1.37244652 * 2.0) / 2.0)
+        UIBezierPath.star(at: starCenter, radius: starRadius).fill()
+        starCenter = CGPoint(x: size.width * 1.5 / 2.0, y: (size.height + size.height / 84.0 * 1.37244652 * 2.0) / 2.0)
+        UIBezierPath.star(at: starCenter, radius: starRadius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

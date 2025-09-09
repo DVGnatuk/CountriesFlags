@@ -50,7 +50,7 @@ extension UIImage {
 
         colorWhite.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 2.0 + size.height / 20.0 * 1.207628020, y: size.height / 2.0),
-                     radius: size.height / 20.0 * 8.0 / 2.0,
+                     radius: size.height / 20.0 * 4.0,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
@@ -59,16 +59,15 @@ extension UIImage {
         let startAngle = Measurement(value: 107.6, unit: UnitAngle.degrees).converted(to: .radians).value
         let endAngle = Measurement(value: -107.6, unit: UnitAngle.degrees).converted(to: .radians).value
         UIBezierPath(arcCenter: CGPoint(x: size.width / 2.0 + size.height / 20.0 * 1.207628020, y: size.height / 2.0),
-                     radius: size.height / 20.0 * 8.0 / 2.0,
+                     radius: size.height / 20.0 * 4.0,
                      startAngle: startAngle,
                      endAngle: endAngle,
                      clockwise: true).fill()
 
         colorRed.setFill()
-        let starSize = CGSize(width: (size.width / 2.0 + size.height / 20.0 * 2.022542486) * 2.0, height: size.height)
-        let path = UIBezierPath.star(with: starSize, radius: size.height / 20.0 * 5.0 / 2.0)
-        let rotatePoint = CGPoint(x: size.width / 2.0 + size.height / 20.0 * 2.022542486, y: size.height / 2.0)
-        path.rotate(to: 18.0, around: rotatePoint)
+        let starCenter = CGPoint(x: size.width / 2.0 + size.height / 20.0 * 2.022542486, y: size.height / 2.0)
+        let path = UIBezierPath.star(at: starCenter, radius: size.height / 20.0 * 2.5)
+        path.rotate(to: 18.0, around: starCenter)
         path.fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

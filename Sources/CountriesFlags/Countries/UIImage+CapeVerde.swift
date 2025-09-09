@@ -53,29 +53,29 @@ extension UIImage {
         let radius = CGFloat(size.height / 12.0) / 2.0
         let yOffset = size.height / 12.0 * 0.1
         // 1 column
-        UIBezierPath.star(with: CGSize(width: size.width / 80.0 * 37.5, height: size.height / 12.0 * 13.0 + yOffset),
+        UIBezierPath.star(at: CGPoint(x: size.width / 80.0 * 18.75, y: (size.height / 12.0 * 13.0 + yOffset) / 2.0),
                           radius: radius).fill()
-        UIBezierPath.star(with: CGSize(width: size.width / 80.0 * 37.5, height: size.height / 12.0 * 17.0 + yOffset),
+        UIBezierPath.star(at: CGPoint(x: size.width / 80.0 * 18.75, y: (size.height / 12.0 * 17.0 + yOffset) / 2.0),
                           radius: radius).fill()
         // 2 column
-        UIBezierPath.star(with: CGSize(width: size.width / 80.0 * 46.1, height: size.height / 12.0 * 10.0 + yOffset),
+        UIBezierPath.star(at: CGPoint(x: size.width / 80.0 * 23.05, y: (size.height / 12.0 * 10.0 + yOffset) / 2.0),
                           radius: radius).fill()
-        UIBezierPath.star(with: CGSize(width: size.width / 80.0 * 46.1, height: size.height / 12.0 * 19.7 + yOffset),
+        UIBezierPath.star(at: CGPoint(x: size.width / 80.0 * 23.05, y: (size.height / 12.0 * 19.7 + yOffset) / 2.0),
                           radius: radius).fill()
         // 3 column
-        UIBezierPath.star(with: CGSize(width: size.width / 80.0 * 59.8, height: size.height / 12.0 * 8.9 + yOffset),
+        UIBezierPath.star(at: CGPoint(x: size.width / 80.0 * 29.9, y: (size.height / 12.0 * 8.9 + yOffset) / 2.0),
                           radius: radius).fill()
-        UIBezierPath.star(with: CGSize(width: size.width / 80.0 * 59.8, height: size.height / 12.0 * 20.9 + yOffset),
+        UIBezierPath.star(at: CGPoint(x: size.width / 80.0 * 29.9, y: (size.height / 12.0 * 20.9 + yOffset) / 2.0),
                           radius: radius).fill()
         // 4 column
-        UIBezierPath.star(with: CGSize(width: size.width / 80.0 * 73.7, height: size.height / 12.0 * 10.0 + yOffset),
+        UIBezierPath.star(at: CGPoint(x: size.width / 80.0 * 36.85, y: (size.height / 12.0 * 10.0 + yOffset) / 2.0),
                           radius: radius).fill()
-        UIBezierPath.star(with: CGSize(width: size.width / 80.0 * 73.7, height: size.height / 12.0 * 19.7 + yOffset),
+        UIBezierPath.star(at: CGPoint(x: size.width / 80.0 * 36.85, y: (size.height / 12.0 * 19.7 + yOffset) / 2.0),
                           radius: radius).fill()
         // 5 column
-        UIBezierPath.star(with: CGSize(width: size.width / 80.0 * 82.0, height: size.height / 12.0 * 13.0 + yOffset),
+        UIBezierPath.star(at: CGPoint(x: size.width / 80.0 * 41.0, y: (size.height / 12.0 * 13.0 + yOffset) / 2.0),
                           radius: radius).fill()
-        UIBezierPath.star(with: CGSize(width: size.width / 80.0 * 82.0, height: size.height / 12.0 * 17.0 + yOffset),
+        UIBezierPath.star(at: CGPoint(x: size.width / 80.0 * 41.0, y: (size.height / 12.0 * 17.0 + yOffset) / 2.0),
                           radius: radius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

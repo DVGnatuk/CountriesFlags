@@ -6,6 +6,7 @@
 #import "Countries/UIImage+Morocco.h"
 
 #import "Extensions/UIBezierPath+Star.h"
+#import "Extensions/CGSize+Extension.h"
 
 @implementation UIImage (Morocco)
 
@@ -25,9 +26,9 @@
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
     [colorGreen setStroke];
-    UIBezierPath* path = [UIBezierPath starWithSize:size
-                                             radius:size.height / 4.7f
-                                               type:FlagStarTypeFivePointed];
+    UIBezierPath* path = [UIBezierPath starAtPoint:CGSizeMidPoint(size)
+                                            radius:size.height / 4.7f
+                                              type:FlagStarTypeFivePointed];
     path.lineWidth = size.height / 4.0f * 0.095105652;
     [path stroke];
     

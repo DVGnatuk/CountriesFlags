@@ -32,11 +32,11 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
-        let starSize = CGSize(width: size.width, height: size.height / 5.0 * 2.0)
+        let starCenter = CGPoint(x: size.width / 2.0, y: size.height / 5.0)
         let starRadius = size.height / 5.0 / 2.0
         let rotatePoint = CGPoint(x: size.width / 2.0, y: size.height / 2.0)
         for angle in stride(from: 0, through: 270, by: 90) {
-            let path = UIBezierPath.star(with: starSize, radius: starRadius)
+            let path = UIBezierPath.star(at: starCenter, radius: starRadius)
             path.rotate(to: CGFloat(angle), around: rotatePoint)
             path.fill()
         }

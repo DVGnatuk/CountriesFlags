@@ -73,21 +73,21 @@ extension UIImage {
         for column in stride(from: 4.0, through: 0.0, by: -1.0) {
             switch column {
             case 2, 3, 4:
-                let starSize = CGSize(width: size.width / 250.0 * (88.0 + column * 24.0),
-                                      height: size.height / 125.0 * 16.0)
-                UIBezierPath.star(with: starSize, radius: radius).fill()
+                let starCenter = CGPoint(x: (size.width / 250.0 * (88.0 + column * 24.0)) / 2.0,
+                                         y: size.height / 125.0 * 8.0)
+                UIBezierPath.star(at: starCenter, radius: radius).fill()
                 fallthrough
 
             case 1:
-                let starSize = CGSize(width: size.width / 250.0 * (88.0 + column * 24.0),
-                                      height: size.height / 125.0 * 40.0)
-                UIBezierPath.star(with: starSize, radius: radius).fill()
+                let starCenter = CGPoint(x: (size.width / 250.0 * (88.0 + column * 24.0)) / 2.0,
+                                         y: size.height / 125.0 * 20.0)
+                UIBezierPath.star(at: starCenter, radius: radius).fill()
                 fallthrough
 
             case 0:
-                let starSize = CGSize(width: size.width / 250.0 * (88.0 + column * 24.0),
-                                      height: size.height / 125.0 * 64.0)
-                UIBezierPath.star(with: starSize, radius: radius).fill()
+                let starCenter = CGPoint(x: (size.width / 250.0 * (88.0 + column * 24.0)) / 2.0,
+                                         y: size.height / 125.0 * 32.0)
+                UIBezierPath.star(at: starCenter, radius: radius).fill()
 
             default:
                 break

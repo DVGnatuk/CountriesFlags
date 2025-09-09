@@ -48,9 +48,9 @@ extension UIImage {
                               type: .leftMiddle).fill()
 
         colorRed.setFill()
-        let starSize = CGSize(width: size.width / 1200.0 * 530.0,
-                              height: size.height + (size.height / 27.0 * 0.381966011 * 2.0))
-        UIBezierPath.star(with: starSize,
+        let starCenter = CGPoint(x: size.width / 1200.0 * 265.0,
+                                 y: (size.height + (size.height / 27.0 * 0.381966011 * 2.0)) / 2.0)
+        UIBezierPath.star(at: starCenter,
                           radius: size.height / 850.0 * 235.0 / 2.0).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

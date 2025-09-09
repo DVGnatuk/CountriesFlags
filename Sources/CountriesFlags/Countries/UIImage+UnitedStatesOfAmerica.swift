@@ -54,14 +54,14 @@ extension UIImage {
             for indexX in stride(from: 0.0, through: 5.0, by: 1.0) {
                 let size = CGSize(width: xOffset * 2.0 + xOffset * (indexX * 2.0) * 2.0,
                                   height: yOffset * indexY * 4.0 - yOffset * 2.0)
-                UIBezierPath.star(with: size, radius: starRadius).fill()
+                UIBezierPath.star(at: size.midPoint, radius: starRadius).fill()
             }
         }
         for indexY in stride(from: 1.5, through: 5.0, by: 1.0) {
             for indexX in stride(from: 0.5, through: 5.0, by: 1.0) {
                 let size = CGSize(width: xOffset * 2.0 + xOffset * (indexX * 2.0) * 2.0,
                                   height: yOffset * indexY * 4.0 - yOffset * 2.0)
-                UIBezierPath.star(with: size, radius: starRadius).fill()
+                UIBezierPath.star(at: size.midPoint, radius: starRadius).fill()
             }
         }
 

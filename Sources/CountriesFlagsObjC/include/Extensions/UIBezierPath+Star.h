@@ -19,7 +19,7 @@ typedef NS_ENUM(NSUInteger, FlagStarTypes) {
 
 @interface UIBezierPath (Star)
 
-+ (UIBezierPath *)starWithSize:(CGSize)size radius:(CGFloat)radius type:(FlagStarTypes)type;
++ (UIBezierPath *)starAtPoint:(CGPoint)point radius:(CGFloat)radius type:(FlagStarTypes)type;
 
 @end
 

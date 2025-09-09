@@ -35,7 +35,7 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorGreen.setStroke()
-        let path = UIBezierPath.star(with: size, radius: size.height / 4.7)
+        let path = UIBezierPath.star(at: size.midPoint, radius: size.height / 4.7)
         path.lineWidth = size.height / 4.0 * 0.095105652
         path.stroke()
 

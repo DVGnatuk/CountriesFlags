@@ -17,22 +17,19 @@ extension UIBezierPath {
         case fourteenPointed
     }
 
-    static func star(with size: CGSize, radius: CGFloat, type: StarType = .fivePointed) -> UIBezierPath {
+    static func star(at point: CGPoint, radius: CGFloat, type: StarType = .fivePointed) -> UIBezierPath {
         let path = UIBezierPath()
 
-        let xCenter: CGFloat = size.width / 2.0
-        let yCenter: CGFloat = size.height / 2.0
-
-        path.move(to: CGPoint(x: xCenter, y: -radius + yCenter))
+        path.move(to: CGPoint(x: point.x, y: -radius + point.y))
 
         switch type {
-        case .fourPointed: fourPointerStar(with: radius, xCenter: xCenter, yCenter: yCenter, path: path)
-        case .fivePointed: fivePointerStar(with: radius, xCenter: xCenter, yCenter: yCenter, path: path)
-        case .sixPointed: sixPointerStar(with: radius, xCenter: xCenter, yCenter: yCenter, path: path)
-        case .sevenPointed: sevenPointerStar(with: radius, xCenter: xCenter, yCenter: yCenter, path: path)
-        case .eightPointed: eightPointerStar(with: radius, xCenter: xCenter, yCenter: yCenter, path: path)
-        case .twelvePointed: twelvePointedStar(with: radius, xCenter: xCenter, yCenter: yCenter, path: path)
-        case .fourteenPointed: fourteenPointedStar(with: radius, xCenter: xCenter, yCenter: yCenter, path: path)
+        case .fourPointed: fourPointerStar(with: radius, xCenter: point.x, yCenter: point.y, path: path)
+        case .fivePointed: fivePointerStar(with: radius, xCenter: point.x, yCenter: point.y, path: path)
+        case .sixPointed: sixPointerStar(with: radius, xCenter: point.x, yCenter: point.y, path: path)
+        case .sevenPointed: sevenPointerStar(with: radius, xCenter: point.x, yCenter: point.y, path: path)
+        case .eightPointed: eightPointerStar(with: radius, xCenter: point.x, yCenter: point.y, path: path)
+        case .twelvePointed: twelvePointedStar(with: radius, xCenter: point.x, yCenter: point.y, path: path)
+        case .fourteenPointed: fourteenPointedStar(with: radius, xCenter: point.x, yCenter: point.y, path: path)
         }
 
         path.close()
@@ -153,7 +150,7 @@ extension UIBezierPath {
 
         for index in 0..<28 {
             let currentRadius: CGFloat = index % 2 == 0 ? radius : innerRadius
-            let angle = angleIncrement * CGFloat(index) - .pi / 2.0
+            let angle: CGFloat = angleIncrement * CGFloat(index) - .pi / 2.0
 
             if index == 0 {
                 path.move(to: CGPoint(x: xCenter + radius * cos(angle),

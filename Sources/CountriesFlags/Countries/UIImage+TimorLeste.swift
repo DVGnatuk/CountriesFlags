@@ -44,11 +44,10 @@ extension UIImage {
                               type: .leftMiddle).fill()
 
         colorWhite.setFill()
+        let starCenter = CGPoint(x: size.width / 36.0 * 4.0, y: size.height / 2.0)
         let radius = CGFloat(size.height / 18.0 * 6.0) / 2.0
-        let path = UIBezierPath.star(with: CGSize(width: size.width / 36.0 * 8.0, height: size.height),
-                                     radius: radius)
-        path.rotate(to: -atan(4.0 / 9.0) * 180.0 / .pi,
-                    around: CGPoint(x: size.width / 36.0 * 8.0 / 2.0, y: size.height / 2.0))
+        let path = UIBezierPath.star(at: starCenter, radius: radius)
+        path.rotate(to: -atan(4.0 / 9.0) * 180.0 / .pi, around: starCenter)
         path.fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

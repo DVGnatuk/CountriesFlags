@@ -33,7 +33,7 @@ extension UIImage {
 
         colorYellow.setFill()
         let radius: CGFloat = size.height * 12.0 / 20.0 / 2.0
-        UIBezierPath.star(with: size, radius: radius).fill()
+        UIBezierPath.star(at: size.midPoint, radius: radius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

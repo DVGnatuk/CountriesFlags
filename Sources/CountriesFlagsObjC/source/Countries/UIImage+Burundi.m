@@ -53,19 +53,19 @@
                                  clockwise:YES] fill];
 
     [colorGreen setFill];
-    CGSize topStarSize = CGSizeMake(size.width, size.height / 150.0f * 106.0f);
-    CGSize rightStarSize = CGSizeMake(size.width / 250.0f * 288.0f, size.height / 150.0f * 172.0f);
-    CGSize leftStarSize = CGSizeMake(size.width / 250.0f * 212.0f, size.height / 150.0f * 172.0f);
+    CGPoint topStarSize = CGPointMake(size.width / 2.0f, size.height / 150.0f * 53.0f);
+    CGPoint rightStarSize = CGPointMake(size.width / 250.0f * 144.0f, size.height / 150.0f * 86.0f);
+    CGPoint leftStarSize = CGPointMake(size.width / 250.0f * 106.0f, size.height / 150.0f * 86.0f);
     CGFloat starRadius = size.height / 150.0f * 10.0f;
-    [[UIBezierPath starWithSize:topStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
-    [[UIBezierPath starWithSize:rightStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
-    [[UIBezierPath starWithSize:leftStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
+    [[UIBezierPath starAtPoint:topStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
+    [[UIBezierPath starAtPoint:rightStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
+    [[UIBezierPath starAtPoint:leftStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
     
     [colorRed setFill];
     starRadius = size.height / 150.0f * 8.0f;
-    [[UIBezierPath starWithSize:topStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
-    [[UIBezierPath starWithSize:rightStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
-    [[UIBezierPath starWithSize:leftStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
+    [[UIBezierPath starAtPoint:topStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
+    [[UIBezierPath starAtPoint:rightStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
+    [[UIBezierPath starAtPoint:leftStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

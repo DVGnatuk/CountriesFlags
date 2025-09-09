@@ -38,19 +38,18 @@ extension UIImage {
         colorBlueTurquoise.setFill()
         let radius = CGFloat(size.height / 72.0 * 8.0) / 2.0
         // center
-        UIBezierPath.star(with: CGSize(width: size.width, height: size.height),
-                          radius: radius).fill()
+        UIBezierPath.star(at: size.midPoint, radius: radius).fill()
         // top left
-        UIBezierPath.star(with: CGSize(width: size.width / 72.0 * 52.0, height: size.height / 36.0 * 30.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 72.0 * 26.0, y: size.height / 36.0 * 15.0),
                           radius: radius).fill()
         // top right
-        UIBezierPath.star(with: CGSize(width: size.width / 72.0 * 92.0, height: size.height / 36.0 * 30.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 72.0 * 46.0, y: size.height / 36.0 * 15.0),
                           radius: radius).fill()
         // bottom left
-        UIBezierPath.star(with: CGSize(width: size.width / 72.0 * 52.0, height: size.height / 36.0 * 42.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 72.0 * 26.0, y: size.height / 36.0 * 21.0),
                           radius: radius).fill()
         // bottom right
-        UIBezierPath.star(with: CGSize(width: size.width / 72.0 * 92.0, height: size.height / 36.0 * 42.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 72.0 * 46.0, y: size.height / 36.0 * 21.0),
                           radius: radius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

@@ -49,21 +49,22 @@ extension UIImage {
                      clockwise: true).fill()
 
         colorWhite.setFill()
+        let starRadius = size.height / 36.0 * 3.45 / 2.0
         // top
-        UIBezierPath.star(with: CGSize(width: size.width / 54.0 * 30.1, height: size.height / 36.0 * 10.4),
-                          radius: size.height / 36.0 * 3.45 / 2.0).fill()
+        UIBezierPath.star(at: CGPoint(x: size.width / 54.0 * 15.05, y: size.height / 36.0 * 5.2),
+                          radius: starRadius).fill()
         // left middle
-        UIBezierPath.star(with: CGSize(width: size.width / 54.0 * 22.8, height: size.height / 36.0 * 15.7),
-                          radius: size.height / 36.0 * 3.45 / 2.0).fill()
+        UIBezierPath.star(at: CGPoint(x: size.width / 54.0 * 11.4, y: size.height / 36.0 * 7.85),
+                          radius: starRadius).fill()
         // right middle
-        UIBezierPath.star(with: CGSize(width: size.width / 54.0 * 37.3, height: size.height / 36.0 * 15.7),
-                          radius: size.height / 36.0 * 3.45 / 2.0).fill()
+        UIBezierPath.star(at: CGPoint(x: size.width / 54.0 * 18.65, y: size.height / 36.0 * 7.85),
+                          radius: starRadius).fill()
         // left bottom
-        UIBezierPath.star(with: CGSize(width: size.width / 54.0 * 25.6, height: size.height / 36.0 * 24.2),
-                          radius: size.height / 36.0 * 3.45 / 2.0).fill()
+        UIBezierPath.star(at: CGPoint(x: size.width / 54.0 * 12.8, y: size.height / 36.0 * 12.1),
+                          radius: starRadius).fill()
         // right bottom
-        UIBezierPath.star(with: CGSize(width: size.width / 54.0 * 34.5, height: size.height / 36.0 * 24.2),
-                          radius: size.height / 36.0 * 3.45 / 2.0).fill()
+        UIBezierPath.star(at: CGPoint(x: size.width / 54.0 * 17.25, y: size.height / 36.0 * 12.1),
+                          radius: starRadius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

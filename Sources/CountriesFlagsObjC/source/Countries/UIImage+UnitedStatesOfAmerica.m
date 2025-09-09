@@ -6,6 +6,7 @@
 #import "Countries/UIImage+UnitedStatesOfAmerica.h"
 
 #import "Extensions/UIBezierPath+Star.h"
+#import "Extensions/CGSize+Extension.h"
 
 @implementation UIImage (UnitedStatesOfAmerica)
 
@@ -39,16 +40,18 @@
     CGFloat starRadius = size.height * 0.0616f / 2.0f;
     for (int indexY = 1; indexY <= 5; indexY++) {
         for (int indexX = 0; indexX <= 5; indexX++) {
-            [[UIBezierPath starWithSize:CGSizeMake(xOffset * 2.0f + xOffset * (indexX * 2.0f) * 2.0f, yOffset * indexY * 4.0f - yOffset * 2.0f)
+            CGSize size = CGSizeMake(xOffset * 2.0f + xOffset * (indexX * 2.0f) * 2.0f, yOffset * indexY * 4.0f - yOffset * 2.0f);
+            [[UIBezierPath starAtPoint:CGSizeMidPoint(size)
                                 radius:starRadius
-                                   type:FlagStarTypeFivePointed] fill];
+                                  type:FlagStarTypeFivePointed] fill];
         }
     }
     for (CGFloat indexY = 1.5f; indexY <= 5; indexY++) {
         for (CGFloat indexX = 0.5; indexX <= 5; indexX++) {
-            [[UIBezierPath starWithSize:CGSizeMake(xOffset * 2.0f + xOffset * (indexX * 2.0f) * 2.0f, yOffset * indexY * 4.0f - yOffset * 2.0f)
+            CGSize size = CGSizeMake(xOffset * 2.0f + xOffset * (indexX * 2.0f) * 2.0f, yOffset * indexY * 4.0f - yOffset * 2.0f);
+            [[UIBezierPath starAtPoint:CGSizeMidPoint(size)
                                 radius:starRadius
-                                   type:FlagStarTypeFivePointed] fill];
+                                  type:FlagStarTypeFivePointed] fill];
         }
     }
     

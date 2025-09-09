@@ -37,18 +37,18 @@ extension UIImage {
 
         colorRed.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: size.width / 2.0, y: 0.0),
-                          size: CGSize(width: size.width / 2.0, height: size.height / 2.0)))
+                          size: size.halfSize))
 
         colorBlue.setFill()
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 2.0),
-                          size: CGSize(width: size.width / 2.0, height: size.height / 2.0)))
+                          size: size.halfSize))
 
         let radius = size.height / 8.0 * 1.111145618
         let xDelta = size.height / 8.0 * 0.105572809
-        UIBezierPath.star(with: CGSize(width: size.width / 2.0, height: size.height / 2.0 + xDelta * 2.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 4.0, y: (size.height / 2.0 + xDelta * 2.0) / 2.0),
                           radius: radius).fill()
         colorRed.setFill()
-        UIBezierPath.star(with: CGSize(width: size.width * 1.5, height: size.height * 1.5 + xDelta * 2.0),
+        UIBezierPath.star(at: CGPoint(x: size.width * 0.75, y: (size.height * 1.5 + xDelta * 2.0) / 2.0),
                           radius: radius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

@@ -38,9 +38,9 @@
     [colorBlack setFill];
     CGFloat radius = (size.height / 12.0f) * 4.422291236 / 2.0f;
     CGFloat xDelta = (size.height / 12.0f) * 0.211145618;
-    [[UIBezierPath starWithSize:(CGSizeMake(size.width, size.height + xDelta * 2.0f))
-                         radius:radius
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 2.0f, (size.height + xDelta * 2.0f) / 2.0f)
+                        radius:radius
+                          type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

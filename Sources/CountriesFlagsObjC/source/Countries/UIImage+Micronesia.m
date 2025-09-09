@@ -23,13 +23,13 @@
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
     [colorWhite setFill];
-    CGSize starSize = CGSizeMake(size.width, size.height / 5.0f * 2.0f);
+    CGPoint starCenter = CGPointMake(size.width / 2.0f, size.height / 5.0f);
     CGFloat starRadius = size.height / 5.0f / 2.0f;
     CGPoint rotatePoint = CGPointMake(size.width / 2.0f, size.height / 2.0f);
     for (int angle = 0; angle <= 270; angle += 90) {
-        UIBezierPath* path = [UIBezierPath starWithSize:starSize
-                                                 radius:starRadius
-                                                   type:FlagStarTypeFivePointed];
+        UIBezierPath* path = [UIBezierPath starAtPoint:starCenter
+                                                radius:starRadius
+                                                  type:FlagStarTypeFivePointed];
         [path rotateToAngle:angle center:rotatePoint];
         [path fill];
     }

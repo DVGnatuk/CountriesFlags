@@ -50,9 +50,9 @@
                                  clockwise:YES] fill];
     
     [colorWhite setFill];
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 1920.0f * 2148.0f, size.height)
-                         radius:size.height / 12.0f
-                           type:FlagStarTypeEightPointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 1920.0f * 1074.0f, size.height / 2.0f)
+                        radius:size.height / 12.0f
+                          type:FlagStarTypeEightPointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

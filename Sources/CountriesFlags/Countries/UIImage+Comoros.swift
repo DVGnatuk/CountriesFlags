@@ -78,14 +78,15 @@ extension UIImage {
                      clockwise: true).fill()
 
         colorWhite.setFill()
-        UIBezierPath.star(with: CGSize(width: size.width / 100.0 * 40.9, height: size.height / 100.0 * 69.5),
-                          radius: size.height / 50.0 * 2.3).fill()
-        UIBezierPath.star(with: CGSize(width: size.width / 100.0 * 40.9, height: size.height / 100.0 * 90.0),
-                          radius: size.height / 50.0 * 2.3).fill()
-        UIBezierPath.star(with: CGSize(width: size.width / 100.0 * 40.9, height: size.height / 100.0 * 110.9),
-                          radius: size.height / 50.0 * 2.3).fill()
-        UIBezierPath.star(with: CGSize(width: size.width / 100.0 * 40.9, height: size.height / 100.0 * 131.7),
-                          radius: size.height / 50.0 * 2.3).fill()
+        let starRadius = size.height / 50.0 * 2.3
+        UIBezierPath.star(at: CGPoint(x: size.width / 100.0 * 20.45, y: size.height / 100.0 * 34.75),
+                          radius: starRadius).fill()
+        UIBezierPath.star(at: CGPoint(x: size.width / 100.0 * 20.45, y: size.height / 100.0 * 45.0),
+                          radius: starRadius).fill()
+        UIBezierPath.star(at: CGPoint(x: size.width / 100.0 * 20.45, y: size.height / 100.0 * 55.45),
+                          radius: starRadius).fill()
+        UIBezierPath.star(at: CGPoint(x: size.width / 100.0 * 20.45, y: size.height / 100.0 * 65.85),
+                          radius: starRadius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

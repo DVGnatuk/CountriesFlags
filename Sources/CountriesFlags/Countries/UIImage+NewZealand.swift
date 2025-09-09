@@ -40,49 +40,49 @@ extension UIImage {
         // TODO: rework star() func and use stroke
         // Top star
         colorWhite.setFill()
-        var path = UIBezierPath.star(with: CGSize(width: size.width / 120.0 * 180.0, height: size.height / 60.0 * 24.0),
+        var path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 90.0, y: size.height / 60.0 * 12.0),
                                      radius: size.height / 60.0 * 9.54484132 / 2.0)
         path.fill()
 
         colorRed.setFill()
-        path = UIBezierPath.star(with: CGSize(width: size.width / 120.0 * 180.0, height: size.height / 60.0 * 24.0),
+        path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 90.0, y: size.height / 60.0 * 12.0),
                                  radius: size.height / 60.0 * 6.4 / 2.0)
         path.fill()
 
         // Left star
         colorWhite.setFill()
-        path = UIBezierPath.star(with: CGSize(width: size.width / 120.0 * 152.3, height: size.height / 60.0 * 52.0),
+        path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 76.15, y: size.height / 60.0 * 26.0),
                                  radius: size.height / 60.0 * 9.54484132 / 2.0)
         path.fill()
 
         colorRed.setFill()
-        path = UIBezierPath.star(with: CGSize(width: size.width / 120.0 * 152.3, height: size.height / 60.0 * 52.0),
+        path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 76.15, y: size.height / 60.0 * 26.0),
                                  radius: size.height / 60.0 * 6.4 / 2.0)
         path.fill()
 
         // Right star
         colorWhite.setFill()
-        path = UIBezierPath.star(with: CGSize(width: size.width / 120.0 * 203.7, height: size.height / 60.0 * 44.6),
+        path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 101.85, y: size.height / 60.0 * 22.3),
                                  radius: size.height / 60.0 * 8.49337910 / 2.0)
         path.fill()
 
         colorRed.setFill()
-        path = UIBezierPath.star(with: CGSize(width: size.width / 120.0 * 203.7, height: size.height / 60.0 * 44.6),
+        path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 101.85, y: size.height / 60.0 * 22.3),
                                  radius: size.height / 60.0 * 5.2 / 2.0)
         path.fill()
 
         // Bottom star
         colorWhite.setFill()
-        path = UIBezierPath.star(with: CGSize(width: size.width / 120.0 * 180.0, height: size.height / 60.0 * 96.0),
+        path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 90.0, y: size.height / 60.0 * 48.0),
                                  radius: size.height / 60.0 * 10.59630355 / 2.0)
         path.fill()
 
         colorRed.setFill()
-        path = UIBezierPath.star(with: CGSize(width: size.width / 120.0 * 180.0, height: size.height / 60.0 * 96.0),
+        path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 90.0, y: size.height / 60.0 * 48.0),
                                  radius: size.height / 60.0 * 7.45 / 2.0)
         path.fill()
 
-        flagUnitedKingdom(with: CGSize(width: size.width / 2.0, height: size.height / 2.0))?.draw(at: .zero)
+        flagUnitedKingdom(with: size.halfSize)?.draw(at: .zero)
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

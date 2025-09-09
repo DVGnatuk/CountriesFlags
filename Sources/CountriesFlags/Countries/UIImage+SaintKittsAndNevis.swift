@@ -73,14 +73,15 @@ extension UIImage {
         path.fill()
 
         colorWhite.setFill()
-        var starSize = CGSize(width: size.width / 1280.0 * 800.0, height: size.height / 854.0 * 1200.0)
-        path = UIBezierPath.star(with: starSize, radius: size.height / 854.0 * 240.0 / 2.0)
-        path.rotate(to: 38.0, around: CGPoint(x: starSize.width / 2.0, y: starSize.height / 2.0))
+        var starCenter = CGPoint(x: size.width / 1280.0 * 400.0, y: size.height / 854.0 * 600.0)
+        let starRadius = size.height / 854.0 * 240.0 / 2.0
+        path = UIBezierPath.star(at: starCenter, radius: starRadius)
+        path.rotate(to: 38.0, around: starCenter)
         path.fill()
 
-        starSize = CGSize(width: size.width / 1280.0 * 1785.0, height: size.height / 854.0 * 545.0)
-        path = UIBezierPath.star(with: starSize, radius: size.height / 854.0 * 240.0 / 2.0)
-        path.rotate(to: 38.0, around: CGPoint(x: starSize.width / 2.0, y: starSize.height / 2.0))
+        starCenter = CGPoint(x: size.width / 1280.0 * 892.5, y: size.height / 854.0 * 272.5)
+        path = UIBezierPath.star(at: starCenter, radius: starRadius)
+        path.rotate(to: 38.0, around: starCenter)
         path.fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

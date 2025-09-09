@@ -6,6 +6,7 @@
 #import "Countries/UIImage+Senegal.h"
 
 #import "Extensions/UIBezierPath+Star.h"
+#import "Extensions/CGSize+Extension.h"
 
 @implementation UIImage (Senegal)
 
@@ -36,9 +37,9 @@
     
     [colorGreen setFill];
     CGFloat radius = size.height * 5.0f / 12.0f / 2.0f;
-    [[UIBezierPath starWithSize:size
-                         radius:radius
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGSizeMidPoint(size)
+                        radius:radius
+                          type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

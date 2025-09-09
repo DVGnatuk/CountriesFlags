@@ -46,7 +46,7 @@ extension UIImage {
 
         colorWhite.setFill()
         // TODO: calc right pos inside triangle
-        UIBezierPath.star(with: CGSize(width: size.width / 30.0 * 9.0, height: size.height),
+        UIBezierPath.star(at: CGPoint(x: size.width / 30.0 * 4.5, y: size.height / 2.0),
                           radius: size.height / 15.0 * 5.0 / 2.0).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

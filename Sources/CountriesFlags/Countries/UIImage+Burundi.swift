@@ -64,19 +64,19 @@ extension UIImage {
                      clockwise: true).fill()
 
         colorGreen.setFill()
-        let topStarSize = CGSize(width: size.width, height: size.height / 150.0 * 106.0)
-        let rightStarSize = CGSize(width: size.width / 250.0 * 288.0, height: size.height / 150.0 * 172.0)
-        let leftStarSize = CGSize(width: size.width / 250.0 * 212.0, height: size.height / 150.0 * 172.0)
+        let topStarSize = CGPoint(x: size.width / 2.0, y: size.height / 150.0 * 53.0)
+        let rightStarSize = CGPoint(x: size.width / 250.0 * 144.0, y: size.height / 150.0 * 86.0)
+        let leftStarSize = CGPoint(x: size.width / 250.0 * 106.0, y: size.height / 150.0 * 86.0)
         var starRadius = size.height / 150.0 * 10.0
-        UIBezierPath.star(with: topStarSize, radius: starRadius, type: .sixPointed).fill()
-        UIBezierPath.star(with: rightStarSize, radius: starRadius, type: .sixPointed).fill()
-        UIBezierPath.star(with: leftStarSize, radius: starRadius, type: .sixPointed).fill()
+        UIBezierPath.star(at: topStarSize, radius: starRadius, type: .sixPointed).fill()
+        UIBezierPath.star(at: rightStarSize, radius: starRadius, type: .sixPointed).fill()
+        UIBezierPath.star(at: leftStarSize, radius: starRadius, type: .sixPointed).fill()
 
         colorRed.setFill()
         starRadius = size.height / 150.0 * 8.0
-        UIBezierPath.star(with: topStarSize, radius: starRadius, type: .sixPointed).fill()
-        UIBezierPath.star(with: rightStarSize, radius: starRadius, type: .sixPointed).fill()
-        UIBezierPath.star(with: leftStarSize, radius: starRadius, type: .sixPointed).fill()
+        UIBezierPath.star(at: topStarSize, radius: starRadius, type: .sixPointed).fill()
+        UIBezierPath.star(at: rightStarSize, radius: starRadius, type: .sixPointed).fill()
+        UIBezierPath.star(at: leftStarSize, radius: starRadius, type: .sixPointed).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

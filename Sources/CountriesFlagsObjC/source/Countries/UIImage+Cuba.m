@@ -36,9 +36,9 @@
     
     [colorWhite setFill];
     // TODO: calc right pos inside triangle
-    [[UIBezierPath starWithSize:CGSizeMake(size.width / 30.0f * 9.0f, size.height)
-                         radius:size.height / 15.0f * 5.0f / 2.0f
-                           type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGPointMake(size.width / 30.0f * 4.5f, size.height / 2.0f)
+                        radius:size.height / 15.0f * 5.0f / 2.0f
+                          type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

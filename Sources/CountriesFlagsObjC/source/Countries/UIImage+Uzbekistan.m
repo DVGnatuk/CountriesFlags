@@ -60,18 +60,18 @@
             case 4:
             case 3:
             case 2: {
-                CGSize starSize = CGSizeMake(size.width / 250.0f * (88.0f + column * 24.0f), size.height / 125.0f * 16.0f);
-                [[UIBezierPath starWithSize:starSize radius:radius type:FlagStarTypeFivePointed] fill];
+                CGPoint starCenter = CGPointMake(size.width / 250.0f * (88.0f + column * 24.0f) / 2.0f, size.height / 125.0f * 8.0f);
+                [[UIBezierPath starAtPoint:starCenter radius:radius type:FlagStarTypeFivePointed] fill];
             }
                 
             case 1: {
-                CGSize starSize = CGSizeMake(size.width / 250.0f * (88.0f + column * 24.0f), size.height / 125.0f * 40.0f);
-                [[UIBezierPath starWithSize:starSize radius:radius type:FlagStarTypeFivePointed] fill];
+                CGPoint starCenter = CGPointMake(size.width / 250.0f * (88.0f + column * 24.0f) / 2.0, size.height / 125.0f * 20.0f);
+                [[UIBezierPath starAtPoint:starCenter radius:radius type:FlagStarTypeFivePointed] fill];
             }
                 
             case 0: {
-                CGSize starSize = CGSizeMake(size.width / 250.0f * (88.0f + column * 24.0f), size.height / 125.0f * 64.0f);
-                [[UIBezierPath starWithSize:starSize radius:radius type:FlagStarTypeFivePointed] fill];
+                CGPoint starCenter = CGPointMake(size.width / 250.0f * (88.0f + column * 24.0f) / 2.0, size.height / 125.0f * 32.0f);
+                [[UIBezierPath starAtPoint:starCenter radius:radius type:FlagStarTypeFivePointed] fill];
             }
                 
             default:

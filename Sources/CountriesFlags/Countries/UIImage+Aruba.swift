@@ -46,12 +46,12 @@ extension UIImage {
                           size: CGSize(width: size.width, height: size.height / 18.0)))
 
         colorWhite.setFill()
-        UIBezierPath.star(with: CGSize(width: size.width / 27.0 * 8.0, height: size.height / 18.0 * 8.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 27.0 * 4.0, y: size.height / 18.0 * 4.0),
                           radius: size.height / 18.0 * 3.0,
                           type: .fourPointed).fill()
 
         colorRed.setFill()
-        UIBezierPath.star(with: CGSize(width: size.width / 27.0 * 8.0, height: size.height / 18.0 * 8.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 27.0 * 4.0, y: size.height / 18.0 * 4.0),
                           radius: size.height / 18.0 * 2.3,
                           type: .fourPointed).fill()
 

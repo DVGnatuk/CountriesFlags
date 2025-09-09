@@ -6,6 +6,7 @@
 #import "Countries/UIImage+Vietnam.h"
 
 #import "Extensions/UIBezierPath+Star.h"
+#import "Extensions/CGSize+Extension.h"
 
 @implementation UIImage (Vietnam)
 
@@ -23,7 +24,7 @@
     
     [colorYellow setFill];
     CGFloat radius = size.height * 12.0 / 20.0 / 2.0;
-    [[UIBezierPath starWithSize:size radius:radius type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGSizeMidPoint(size) radius:radius type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

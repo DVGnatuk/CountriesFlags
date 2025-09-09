@@ -47,21 +47,21 @@ extension UIImage {
         let yOffset = size.height / 1280.0 * 5.0
         let starRadius = size.height / 854.0 * 38.0
         // 1 column
-        var starSize = CGSize(width: size.width / 1280.0 * 900.0, height: size.height + yOffset)
-        UIBezierPath.star(with: starSize, radius: starRadius).fill()
+        var starCenter = CGPoint(x: size.width / 1280.0 * 450.0, y: (size.height + yOffset) / 2.0)
+        UIBezierPath.star(at: starCenter, radius: starRadius).fill()
         // 2 column
-        starSize = CGSize(width: size.width / 1280.0 * 1138.0, height: size.height / 854.0 * 668.0 + yOffset)
-        UIBezierPath.star(with: starSize, radius: starRadius).fill()
-        starSize = CGSize(width: size.width / 1280.0 * 1138.0, height: size.height / 854.0 * 1048.0 + yOffset)
-        UIBezierPath.star(with: starSize, radius: starRadius).fill()
+        starCenter = CGPoint(x: size.width / 1280.0 * 569.0, y: (size.height / 854.0 * 668.0 + yOffset) / 2.0)
+        UIBezierPath.star(at: starCenter, radius: starRadius).fill()
+        starCenter = CGPoint(x: size.width / 1280.0 * 569.0, y: (size.height / 854.0 * 1048.0 + yOffset) / 2.0)
+        UIBezierPath.star(at: starCenter, radius: starRadius).fill()
         // 3 column
-        starSize = CGSize(width: size.width / 1280.0 * 1421.0, height: size.height / 854.0 * 668.0 + yOffset)
-        UIBezierPath.star(with: starSize, radius: starRadius).fill()
-        starSize = CGSize(width: size.width / 1280.0 * 1421.0, height: size.height / 854.0 * 1048.0 + yOffset)
-        UIBezierPath.star(with: starSize, radius: starRadius).fill()
+        starCenter = CGPoint(x: size.width / 1280.0 * 710.5, y: (size.height / 854.0 * 668.0 + yOffset) / 2.0)
+        UIBezierPath.star(at: starCenter, radius: starRadius).fill()
+        starCenter = CGPoint(x: size.width / 1280.0 * 710.5, y: (size.height / 854.0 * 1048.0 + yOffset) / 2.0)
+        UIBezierPath.star(at: starCenter, radius: starRadius).fill()
         // 4 column
-        starSize = CGSize(width: size.width / 1280.0 * 1658.0, height: size.height + yOffset)
-        UIBezierPath.star(with: starSize, radius: starRadius).fill()
+        starCenter = CGPoint(x: size.width / 1280.0 * 829.0, y: (size.height + yOffset) / 2.0)
+        UIBezierPath.star(at: starCenter, radius: starRadius).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

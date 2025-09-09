@@ -36,24 +36,23 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorBlue.setFill()
-        UIRectFill(CGRect(origin: .zero,
-                          size: CGSize(width: size.width / 2.0, height: size.height / 2.0)))
+        UIRectFill(CGRect(origin: .zero, size: size.halfSize))
 
         colorWhite.setFill()
         // left
-        UIBezierPath.star(with: CGSize(width: size.width / 288.0 * 100.0, height: size.height / 144.0 * 59.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 288.0 * 50.0, y: size.height / 144.0 * 29.5),
                           radius: size.height / 144.0 * 17.0 / 2.0).fill()
         // top
-        UIBezierPath.star(with: CGSize(width: size.width / 288.0 * 144.0, height: size.height / 144.0 * 23.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 288.0 * 72.0, y: size.height / 144.0 * 11.5),
                           radius: size.height / 144.0 * 17.0 / 2.0).fill()
         // right
-        UIBezierPath.star(with: CGSize(width: size.width / 288.0 * 189.0, height: size.height / 144.0 * 52.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 288.0 * 94.5, y: size.height / 144.0 * 26.0),
                           radius: size.height / 144.0 * 16.0 / 2.0).fill()
         // bottom
-        UIBezierPath.star(with: CGSize(width: size.width / 288.0 * 144.0, height: size.height / 144.0 * 121.0),
+        UIBezierPath.star(at: CGPoint(x: size.width / 288.0 * 72.0, y: size.height / 144.0 * 60.5),
                           radius: size.height / 144.0 * 21.0 / 2.0).fill()
         // mid-right
-        UIBezierPath.star(with: CGSize(width: size.width / 288.0 * 166.0, height: size.height / 144.0 * 83.5),
+        UIBezierPath.star(at: CGPoint(x: size.width / 288.0 * 83.0, y: size.height / 144.0 * 41.75),
                           radius: size.height / 144.0 * 10.0 / 2.0).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
