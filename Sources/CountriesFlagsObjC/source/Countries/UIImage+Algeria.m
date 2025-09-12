@@ -7,6 +7,7 @@
 
 #import "Extensions/UIBezierPath+Star.h"
 #import "Extensions/UIBezierPath+AffineTransform.h"
+#import "Extensions/CGSize+Extension.h"
 
 @implementation UIImage (Algeria)
 
@@ -30,7 +31,7 @@
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width / 2.0f, size.height));
 
     [colorRed setFill];
-    [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 2.0f, size.height / 2.0f)
+    [[UIBezierPath bezierPathWithArcCenter:CGSizeMidPoint(size)
                                     radius:size.height / 4.0f
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0f

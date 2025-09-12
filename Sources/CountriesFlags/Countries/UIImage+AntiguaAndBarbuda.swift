@@ -67,7 +67,7 @@ extension UIImage {
         let pathSun = UIBezierPath()
         pathSun.move(to: CGPoint(x: size.width / 2.0 + size.width / 69.0 * 15.0, y: size.height / 46.0 * 18.0))
         for index in 1...17 {
-            let theta: CGFloat = (-180.0 / 16.0 * Double(index)) * .pi / 180.0
+            let theta: CGFloat = (-180.0 / 16.0 * CGFloat(index)) * .pi / 180.0
             let xPos: CGFloat = index % 2 == 0 ? size.width / 69.0 * 15.0 * cos(theta)
                                                : size.width / 69.0 * 15.0 / 2.0 * cos(theta)
             let yPos: CGFloat = index % 2 == 0 ? size.width / 69.0 * 15.0 * sin(theta)

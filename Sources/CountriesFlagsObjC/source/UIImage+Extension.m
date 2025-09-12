@@ -30,6 +30,7 @@
 #import "Countries/UIImage+China.h"
 #import "Countries/UIImage+Colombia.h"
 #import "Countries/UIImage+Comoros.h"
+#import "Countries/UIImage+CookIslands.h"
 #import "Countries/UIImage+CostaRica.h"
 #import "Countries/UIImage+CoteDIvoire.h"
 #import "Countries/UIImage+Cuba.h"
@@ -155,6 +156,7 @@
         case CountriesFlagsChina: return [UIImage flagChinaWithSize: size];
         case CountriesFlagsColombia: return [UIImage flagColombiaWithSize: size];
         case CountriesFlagsComoros: return [UIImage flagComorosWithSize: size];
+        case CountriesFlagsCookIslands: return [UIImage flagCookIslandsWithSize: size];
         case CountriesFlagsCostaRica: return [UIImage flagCostaRicaWithSize: size];
         case CountriesFlagsCoteDIvoire: return [UIImage flagCoteDIvoireWithSize: size];
         case CountriesFlagsCuba: return [UIImage flagCubaWithSize: size];

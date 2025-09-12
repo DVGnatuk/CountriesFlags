@@ -42,7 +42,7 @@ extension UIImage {
                           size: CGSize(width: size.width / 2.0, height: size.height)))
 
         colorRed.setFill()
-        UIBezierPath(arcCenter: CGPoint(x: size.width / 2.0, y: size.height / 2.0),
+        UIBezierPath(arcCenter: size.midPoint,
                      radius: size.height / 4.0,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
