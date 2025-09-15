@@ -202,7 +202,7 @@ public enum CountriesFlags {
     case Singapore
 //        case Slovakia
 //        case Slovenia
-//        case SolomonIslands
+    case SolomonIslands
     case Somalia
 //        case SouthAfrica
 //        case SouthGeorgiaAndSouthSandwichIslands

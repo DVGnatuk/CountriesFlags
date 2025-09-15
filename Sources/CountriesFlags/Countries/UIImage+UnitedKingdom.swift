@@ -3,8 +3,6 @@
 //  CountriesFlags
 //
 
-// swiftlint:disable function_body_length
-
 #if canImport(UIKit)
 
 import UIKit
@@ -119,5 +117,3 @@ extension UIImage {
 }
 
 #endif
-
-// swiftlint:enable function_body_length

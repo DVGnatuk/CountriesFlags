@@ -4,7 +4,6 @@
 //
 
 // swiftlint:disable cyclomatic_complexity
-// swiftlint:disable function_body_length
 
 //#if canImport(SwiftUI)
 //
@@ -136,6 +135,7 @@ extension UIImage {
         case .Seychelles: return flagSeychelles(with: size)
         case .SierraLeone: return flagSierraLeone(with: size)
         case .Singapore: return flagSingapore(with: size)
+        case .SolomonIslands: return flagSolomonIslands(with: size)
         case .Somalia: return flagSomalia(with: size)
         case .Sudan: return flagSudan(with: size)
         case .Suriname: return flagSuriname(with: size)
@@ -167,4 +167,3 @@ extension UIImage {
 #endif
 
 // swiftlint:enable cyclomatic_complexity
-// swiftlint:enable function_body_length
