@@ -151,7 +151,7 @@ public enum CountriesFlags {
     case Morocco
 //        case Mozambique
     case Myanmar
-//        case Namibia
+    case Namibia
     case Nauru
 //        case Nepal
     case Netherlands

@@ -13,7 +13,7 @@ extension UIBezierPath {
         case sixPointed
         case sevenPointed
         case eightPointed
-        case twelvePointed
+        case twelvePointed(innerRadius: CGFloat)
         case fourteenPointed
     }
 
@@ -28,7 +28,10 @@ extension UIBezierPath {
         case .sixPointed: sixPointerStar(at: point, with: radius, path: path)
         case .sevenPointed: sevenPointerStar(at: point, with: radius, path: path)
         case .eightPointed: eightPointerStar(at: point, with: radius, path: path)
-        case .twelvePointed: twelvePointedStar(at: point, with: radius, path: path)
+        case .twelvePointed(let innerRadius): twelvePointedStar(at: point,
+                                                                with: radius,
+                                                                innerRadius: innerRadius,
+                                                                path: path)
         case .fourteenPointed: fourteenPointedStar(at: point, with: radius, path: path)
         }
 
@@ -120,9 +123,8 @@ extension UIBezierPath {
 
     static private func twelvePointedStar(at point: CGPoint,
                                           with radius: CGFloat,
+                                          innerRadius: CGFloat,
                                           path: UIBezierPath) {
-        let innerRadius = radius * 0.5
-
         path.move(to: CGPoint(x: point.x + radius * cos(0.0),
                               y: point.y + radius * sin(0.0)))
 

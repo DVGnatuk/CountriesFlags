@@ -7,11 +7,13 @@
 
 @implementation UIBezierPath (Star)
 
-+ (UIBezierPath *)starAtPoint:(CGPoint)point radius:(CGFloat)radius type:(FlagStarTypes)type {
++ (UIBezierPath *)starAtPoint:(CGPoint)point
+                       radius:(CGFloat)radius
+                         type:(FlagStarTypes)type {
     UIBezierPath* path = [UIBezierPath bezierPath];
-
+    
     [path moveToPoint:CGPointMake(point.x, -radius + point.y)];
-
+    
     switch (type) {
         case FlagStarTypeFourPointed: {
             [self fourPointerStarAtPoint:point radius:radius path:path];
@@ -39,7 +41,10 @@
             break;
             
         case FlagStarTypeTwelvePointed: {
-            [self twelvePointerStarAtPoint:point radius:radius path:path];
+            [self twelvePointerStarAtPoint:point
+                                    radius:radius
+                               innerRadius:radius / 2.0f
+                                      path:path];
         }
             break;
             
@@ -51,7 +56,32 @@
         default:
             break;
     }
+    
+    [path closePath];
+    return path;
+}
 
++ (UIBezierPath *)starAtPoint:(CGPoint)point
+                       radius:(CGFloat)radius
+                  innerRadius:(CGFloat)innerRadius
+                         type:(FlagStarTypes)type {
+    UIBezierPath* path = [UIBezierPath bezierPath];
+    
+    [path moveToPoint:CGPointMake(point.x, -radius + point.y)];
+    
+    switch (type) {
+        case FlagStarTypeTwelvePointed: {
+            [self twelvePointerStarAtPoint:point
+                                    radius:radius
+                               innerRadius:innerRadius
+                                      path:path];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
     [path closePath];
     return path;
 }
@@ -139,9 +169,8 @@
 
 + (void)twelvePointerStarAtPoint:(CGPoint)point
                           radius:(CGFloat)radius
+                     innerRadius:(CGFloat)innerRadius
                             path:(UIBezierPath *)path {
-    CGFloat innerRadius = radius * 0.5f;
-
     [path moveToPoint:CGPointMake(point.x + radius * cos(0.0f),
                                   point.y + radius * sin(0.0f))];
 
