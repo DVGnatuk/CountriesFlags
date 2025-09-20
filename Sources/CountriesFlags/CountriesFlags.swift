@@ -181,7 +181,7 @@ public enum CountriesFlags {
     case Qatar
     case Romania
     case RussianFederation
-//        case Rwanda
+    case Rwanda
     case RepublicCongo
     case Reunion
 //        case SaintBarthelemy

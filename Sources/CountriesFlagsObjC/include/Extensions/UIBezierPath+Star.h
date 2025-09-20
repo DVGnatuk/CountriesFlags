@@ -14,7 +14,8 @@ typedef NS_ENUM(NSUInteger, FlagStarTypes) {
     FlagStarTypeSevenPointed,
     FlagStarTypeEightPointed,
     FlagStarTypeTwelvePointed,
-    FlagStarTypeFourteenPointed
+    FlagStarTypeFourteenPointed,
+    FlagStarTypeTwentyFourPointed
 };
 
 @interface UIBezierPath (Star)

@@ -39,7 +39,7 @@
     [colorWhite setFill];
     CGPoint starCenter = CGPointMake(size.height / 1280.0f * 1050.0f, size.height / 2.0f);
     UIBezierPath* path = [UIBezierPath starAtPoint:starCenter
-                                            radius:size.height / 4.0f / 2.0f
+                                            radius:size.height / 8.0f
                                               type:FlagStarTypeFivePointed];
     [path rotateToAngle:-90.0f center:starCenter];
     [path fill];

@@ -53,6 +53,14 @@
         }
             break;
             
+        case FlagStarTypeTwentyFourPointed: {
+            [self twentyFourPointerStarAtPoint:point
+                                        radius:radius
+                                   innerRadius:radius / 2.0f
+                                          path:path];
+        }
+            break;
+            
         default:
             // TODO: throw exception?
             break;
@@ -76,6 +84,14 @@
                                     radius:radius
                                innerRadius:innerRadius
                                       path:path];
+        }
+            break;
+            
+        case FlagStarTypeTwentyFourPointed: {
+            [self twentyFourPointerStarAtPoint:point
+                                        radius:radius
+                                   innerRadius:innerRadius
+                                          path:path];
         }
             break;
             
@@ -200,6 +216,22 @@
         } else {
             [path addLineToPoint:(CGPointMake(point.x + currentRadius * cos(angle), point.y + currentRadius * sin(angle)))];
         }
+    }
+}
+
++ (void)twentyFourPointerStarAtPoint:(CGPoint)point
+                              radius:(CGFloat)radius
+                         innerRadius:(CGFloat)innerRadius
+                                path:(UIBezierPath *)path {
+    [path moveToPoint:CGPointMake(point.x + radius * cos(0.0f),
+                                  point.y + radius * sin(0.0f))];
+
+    for (int index = 1; index < 48; index++) {
+        CGFloat angle = index * M_PI / 24.0f;
+        CGFloat currentRadius = index % 2 == 0 ? radius : innerRadius;
+
+        [path addLineToPoint:CGPointMake(point.x + currentRadius * cos(angle),
+                                         point.y + currentRadius * sin(angle))];
     }
 }
 
