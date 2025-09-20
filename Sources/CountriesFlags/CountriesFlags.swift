@@ -106,7 +106,7 @@ public enum CountriesFlags {
 //        case Iraq
     case Ireland
 //        case IsleOfMan
-//        case Israel
+    case Israel
     case Italy
     case Jamaica
     case Japan

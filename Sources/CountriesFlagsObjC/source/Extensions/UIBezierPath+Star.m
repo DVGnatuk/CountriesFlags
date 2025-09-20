@@ -54,6 +54,7 @@
             break;
             
         default:
+            // TODO: throw exception?
             break;
     }
     
@@ -79,6 +80,7 @@
             break;
             
         default:
+            // TODO: throw exception?
             break;
     }
     

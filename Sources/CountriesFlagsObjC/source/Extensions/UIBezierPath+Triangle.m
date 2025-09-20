@@ -49,4 +49,15 @@
     return path;
 }
 
++ (UIBezierPath *)triangleAtPoint:(CGPoint)point radius:(CGFloat)radius {
+    CGFloat height = radius * sqrt(3) / 2.0f;
+    UIBezierPath* path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(point.x, point.y - height / 2.0f)];
+    [path addLineToPoint:CGPointMake(point.x - radius / 2.0f, point.y + height / 2.0f)];
+    [path addLineToPoint:CGPointMake(point.x + radius / 2.0, point.y + height / 2.0)];
+    [path closePath];
+
+    return path;
+}
+
 @end

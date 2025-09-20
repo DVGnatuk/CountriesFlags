@@ -51,4 +51,15 @@ extension UIBezierPath {
 
         return path
     }
+
+    static func triangle(at point: CGPoint, radius: CGFloat) -> UIBezierPath {
+        let height = radius * sqrt(3) / 2.0
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: point.x, y: point.y - height / 2.0))
+        path.addLine(to: CGPoint(x: point.x - radius / 2.0, y: point.y + height / 2.0))
+        path.addLine(to: CGPoint(x: point.x + radius / 2.0, y: point.y + height / 2.0))
+        path.close()
+
+        return path
+    }
 }

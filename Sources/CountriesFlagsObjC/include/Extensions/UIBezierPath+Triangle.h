@@ -16,6 +16,7 @@ typedef NS_ENUM(NSUInteger, FlagTriangleTypes)  {
 @interface UIBezierPath (Extension)
 
 + (UIBezierPath *)triangleInSize:(CGSize)size type:(FlagTriangleTypes)type;
++ (UIBezierPath *)triangleAtPoint:(CGPoint)point radius:(CGFloat)radius;
 
 @end
 

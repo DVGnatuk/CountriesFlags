@@ -40,7 +40,7 @@ extension UIImage {
         UIBezierPath.triangle(in: size, type: .rightMiddle).fill()
 
         colorWhite.setStroke()
-        let path = UIBezierPath()
+        var path = UIBezierPath()
         path.move(to: .zero)
         path.addLine(to: CGPoint(x: size.width, y: size.height))
         path.close()
@@ -61,20 +61,27 @@ extension UIImage {
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
-        colorGreen.setFill()
+        colorRed.setFill()
+        colorGreen.setStroke()
         let topStarSize = CGPoint(x: size.width / 2.0, y: size.height / 150.0 * 53.0)
         let rightStarSize = CGPoint(x: size.width / 250.0 * 144.0, y: size.height / 150.0 * 86.0)
         let leftStarSize = CGPoint(x: size.width / 250.0 * 106.0, y: size.height / 150.0 * 86.0)
-        var starRadius = size.height / 150.0 * 10.0
-        UIBezierPath.star(at: topStarSize, radius: starRadius, type: .sixPointed).fill()
-        UIBezierPath.star(at: rightStarSize, radius: starRadius, type: .sixPointed).fill()
-        UIBezierPath.star(at: leftStarSize, radius: starRadius, type: .sixPointed).fill()
+        let starRadius = size.height / 150.0 * 9.0
 
-        colorRed.setFill()
-        starRadius = size.height / 150.0 * 8.0
-        UIBezierPath.star(at: topStarSize, radius: starRadius, type: .sixPointed).fill()
-        UIBezierPath.star(at: rightStarSize, radius: starRadius, type: .sixPointed).fill()
-        UIBezierPath.star(at: leftStarSize, radius: starRadius, type: .sixPointed).fill()
+        path = UIBezierPath.star(at: topStarSize, radius: starRadius, type: .sixPointed)
+        path.lineWidth = size.height / 150.0
+        path.fill()
+        path.stroke()
+
+        path = UIBezierPath.star(at: rightStarSize, radius: starRadius, type: .sixPointed)
+        path.lineWidth = size.height / 150.0
+        path.fill()
+        path.stroke()
+
+        path = UIBezierPath.star(at: leftStarSize, radius: starRadius, type: .sixPointed)
+        path.lineWidth = size.height / 150.0
+        path.fill()
+        path.stroke()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

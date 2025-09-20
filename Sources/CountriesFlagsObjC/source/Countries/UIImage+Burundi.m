@@ -52,20 +52,27 @@
                                   endAngle:M_PI * 2.0f
                                  clockwise:YES] fill];
 
-    [colorGreen setFill];
+    [colorGreen setStroke];
+    [colorRed setFill];
     CGPoint topStarSize = CGPointMake(size.width / 2.0f, size.height / 150.0f * 53.0f);
     CGPoint rightStarSize = CGPointMake(size.width / 250.0f * 144.0f, size.height / 150.0f * 86.0f);
     CGPoint leftStarSize = CGPointMake(size.width / 250.0f * 106.0f, size.height / 150.0f * 86.0f);
-    CGFloat starRadius = size.height / 150.0f * 10.0f;
-    [[UIBezierPath starAtPoint:topStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
-    [[UIBezierPath starAtPoint:rightStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
-    [[UIBezierPath starAtPoint:leftStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
+    CGFloat starRadius = size.height / 150.0f * 9.0f;
     
-    [colorRed setFill];
-    starRadius = size.height / 150.0f * 8.0f;
-    [[UIBezierPath starAtPoint:topStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
-    [[UIBezierPath starAtPoint:rightStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
-    [[UIBezierPath starAtPoint:leftStarSize radius:starRadius type:FlagStarTypeSixPointed] fill];
+    path = [UIBezierPath starAtPoint:topStarSize radius:starRadius type:FlagStarTypeSixPointed];
+    path.lineWidth = size.height / 150.0f;
+    [path fill];
+    [path stroke];
+    
+    path = [UIBezierPath starAtPoint:rightStarSize radius:starRadius type:FlagStarTypeSixPointed];
+    path.lineWidth = size.height / 150.0f;
+    [path fill];
+    [path stroke];
+    
+    path = [UIBezierPath starAtPoint:leftStarSize radius:starRadius type:FlagStarTypeSixPointed];
+    path.lineWidth = size.height / 150.0f;
+    [path fill];
+    [path stroke];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

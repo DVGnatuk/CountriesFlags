@@ -9,7 +9,7 @@ Swift: 5+
 UI libraries: UIKit, ~~SwiftUI~~  
 Xcode: 14.2+  
 iOS/iPadOS: 13.0+ (12.0+ if add the library to a project manually)  
-~~macOS:~~  
+macOS (Designed for iPad): 10.15+ (requires Apple Silicone CPU)  
 
 ## Installation
 
@@ -64,7 +64,7 @@ brew list
 To enforce Swift style and conventions the library uses [SwiftLint](https://github.com/realm/SwiftLint).  
 | macOS version | max version |
 | ------------- | ----------- |
-| macOS 13+     |             |
+| macOS 13+     | 0.61.0      |
 | macOS 12.7.6  | 0.46.0      |
 
 SwiftLint should be installed locally on mac:
@@ -82,7 +82,7 @@ swiftlint rules
 
 | macOS version | max version |
 | ------------- | ----------- |
-| macOS 13+     |             |
+| macOS 13+     | 24.01       |
 | macOS 12.7.6  | 22.02       |
 
 OCLint should be installed locally on mac:

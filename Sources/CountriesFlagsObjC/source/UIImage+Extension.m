@@ -56,6 +56,7 @@
 #import "Countries/UIImage+Iceland.h"
 #import "Countries/UIImage+Indonesia.h"
 #import "Countries/UIImage+Ireland.h"
+#import "Countries/UIImage+Israel.h"
 #import "Countries/UIImage+Italy.h"
 #import "Countries/UIImage+Jamaica.h"
 #import "Countries/UIImage+Japan.h"
@@ -190,6 +191,7 @@
         case CountriesFlagsIceland: return [UIImage flagIcelandWithSize: size];
         case CountriesFlagsIndonesia: return [UIImage flagIndonesiaWithSize: size];
         case CountriesFlagsIreland: return [UIImage flagIrelandWithSize: size];
+        case CountriesFlagsIsrael: return [UIImage flagIsraelWithSize: size];
         case CountriesFlagsItaly: return [UIImage flagItalyWithSize: size];
         case CountriesFlagsJamaica: return [UIImage flagJamaicaWithSize: size];
         case CountriesFlagsJapan: return [UIImage flagJapanWithSize: size];
