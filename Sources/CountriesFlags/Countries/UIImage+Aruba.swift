@@ -45,15 +45,14 @@ extension UIImage {
         UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 18.0 * 14.0),
                           size: CGSize(width: size.width, height: size.height / 18.0)))
 
-        colorWhite.setFill()
-        UIBezierPath.star(at: CGPoint(x: size.width / 27.0 * 4.0, y: size.height / 18.0 * 4.0),
-                          radius: size.height / 18.0 * 3.0,
-                          type: .fourPointed).fill()
-
         colorRed.setFill()
-        UIBezierPath.star(at: CGPoint(x: size.width / 27.0 * 4.0, y: size.height / 18.0 * 4.0),
-                          radius: size.height / 18.0 * 2.3,
-                          type: .fourPointed).fill()
+        colorWhite.setStroke()
+        let path = UIBezierPath.star(at: CGPoint(x: size.width / 27.0 * 4.0, y: size.height / 18.0 * 4.0),
+                                     radius: size.height / 18.0 * 2.68,
+                                     type: .fourPointed)
+        path.lineWidth = size.height / 95.0
+        path.fill()
+        path.stroke()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

@@ -35,49 +35,34 @@ extension UIImage {
         colorBlue.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
-        // TODO: rework star() func and use stroke
-        // Top star
-        colorWhite.setFill()
-        var path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 90.0, y: size.height / 60.0 * 12.0),
-                                     radius: size.height / 60.0 * 9.54484132 / 2.0)
-        path.fill()
-
+        colorWhite.setStroke()
         colorRed.setFill()
-        path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 90.0, y: size.height / 60.0 * 12.0),
-                                 radius: size.height / 60.0 * 6.4 / 2.0)
+        // Top star
+        var path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 90.0, y: size.height / 60.0 * 12.0),
+                                     radius: size.height / 60.0 * 9.54484132 / 3.0)
+        path.lineWidth = size.height / 60.0
+        path.stroke()
         path.fill()
 
         // Left star
-        colorWhite.setFill()
         path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 76.15, y: size.height / 60.0 * 26.0),
-                                 radius: size.height / 60.0 * 9.54484132 / 2.0)
-        path.fill()
-
-        colorRed.setFill()
-        path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 76.15, y: size.height / 60.0 * 26.0),
-                                 radius: size.height / 60.0 * 6.4 / 2.0)
+                                 radius: size.height / 60.0 * 9.54484132 / 3.0)
+        path.lineWidth = size.height / 60.0
+        path.stroke()
         path.fill()
 
         // Right star
-        colorWhite.setFill()
         path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 101.85, y: size.height / 60.0 * 22.3),
-                                 radius: size.height / 60.0 * 8.49337910 / 2.0)
-        path.fill()
-
-        colorRed.setFill()
-        path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 101.85, y: size.height / 60.0 * 22.3),
-                                 radius: size.height / 60.0 * 5.2 / 2.0)
+                                 radius: size.height / 60.0 * 8.49337910 / 3.2)
+        path.lineWidth = size.height / 60.0
+        path.stroke()
         path.fill()
 
         // Bottom star
-        colorWhite.setFill()
         path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 90.0, y: size.height / 60.0 * 48.0),
-                                 radius: size.height / 60.0 * 10.59630355 / 2.0)
-        path.fill()
-
-        colorRed.setFill()
-        path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 90.0, y: size.height / 60.0 * 48.0),
-                                 radius: size.height / 60.0 * 7.45 / 2.0)
+                                 radius: size.height / 60.0 * 10.59630355 / 3.0)
+        path.lineWidth = size.height / 60.0
+        path.stroke()
         path.fill()
 
         flagUnitedKingdom(with: size.halfSize)?.draw(at: .zero)

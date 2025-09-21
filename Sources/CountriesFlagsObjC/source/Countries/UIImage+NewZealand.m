@@ -28,57 +28,38 @@
     [colorBlue setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
 
-    // TODO: rework star() func and use stroke
-    // Top star
-    [colorWhite setFill];
-    UIBezierPath* path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 90.0f, size.height / 60.0f * 12.0f)
-                                            radius:size.height / 60.0f * 9.54484132 / 2.0f
-                                              type:FlagStarTypeFivePointed];
-    [path fill];
-
+    [colorWhite setStroke];
     [colorRed setFill];
-    path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 90.0f, size.height / 60.0f * 12.0f)
-                              radius:size.height / 60.0f * 6.4 / 2.0f
-                                type:FlagStarTypeFivePointed];
+    // Top star
+    UIBezierPath* path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 90.0f, size.height / 60.0f * 12.0f)
+                                            radius:size.height / 60.0f * 9.54484132 / 3.0f
+                                              type:FlagStarTypeFivePointed];
+    path.lineWidth = size.height / 60.0f;
+    [path stroke];
     [path fill];
 
     // Left star
-    [colorWhite setFill];
     path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 76.15f, size.height / 60.0f * 26.0f)
-                              radius:size.height / 60.0f * 9.54484132 / 2.0f
+                              radius:size.height / 60.0f * 9.54484132 / 3.0f
                                 type:FlagStarTypeFivePointed];
-    [path fill];
-
-    [colorRed setFill];
-    path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 76.15f, size.height / 60.0f * 26.0f)
-                              radius:size.height / 60.0f * 6.4 / 2.0f
-                                type:FlagStarTypeFivePointed];
+    path.lineWidth = size.height / 60.0f;
+    [path stroke];
     [path fill];
 
     // Right star
-    [colorWhite setFill];
     path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 101.85f, size.height / 60.0f * 22.3f)
-                              radius:size.height / 60.0f * 8.49337910 / 2.0f
+                              radius:size.height / 60.0f * 8.49337910 / 3.2f
                                 type:FlagStarTypeFivePointed];
-    [path fill];
-
-    [colorRed setFill];
-    path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 101.85f, size.height / 60.0f * 22.3f)
-                              radius:size.height / 60.0f * 5.2f / 2.0f
-                                type:FlagStarTypeFivePointed];
+    path.lineWidth = size.height / 60.0f;
+    [path stroke];
     [path fill];
     
     // Bottom star
-    [colorWhite setFill];
     path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 90.0f, size.height / 60.0f * 48.0f)
-                              radius:size.height / 60.0f * 10.59630355 / 2.0f
+                              radius:size.height / 60.0f * 10.59630355 / 3.0f
                                 type:FlagStarTypeFivePointed];
-    [path fill];
-    
-    [colorRed setFill];
-    path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 90.0f, size.height / 60.0f * 48.0f)
-                              radius:size.height / 60.0f * 7.45f / 2.0f
-                                type:FlagStarTypeFivePointed];
+    path.lineWidth = size.height / 60.0f;
+    [path stroke];
     [path fill];
 
     [[UIImage flagUnitedKingdomWithSize:CGSizeHalfSize(size)] drawAtPoint:CGPointZero];

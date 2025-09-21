@@ -218,7 +218,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsSweden,
     CountriesFlagsSwitzerland,
     CountriesFlagsSyrianArabRepublic,
-//        case Taiwan
+    CountriesFlagsTaiwan,
 //        case Tajikistan
     CountriesFlagsTanzania,
     CountriesFlagsThailand,

@@ -33,15 +33,14 @@
     UIRectFill(CGRectMake(0.0f, size.height / 18.0f * 12.0f, size.width, size.height / 18.0f));
     UIRectFill(CGRectMake(0.0f, size.height / 18.0f * 14.0f, size.width, size.height / 18.0f));
     
-    [colorWhite setFill];
-    [[UIBezierPath starAtPoint:CGPointMake(size.width / 27.0f * 4.0f, size.height / 18.0f * 4.0f)
-                        radius:size.height / 18.0f * 3.0f
-                          type:FlagStarTypeFourPointed] fill];
-
     [colorRed setFill];
-    [[UIBezierPath starAtPoint:CGPointMake(size.width / 27.0f * 4.0f, size.height / 18.0f * 4.0f)
-                        radius:size.height / 18.0f * 2.3f
-                          type:FlagStarTypeFourPointed] fill];
+    [colorWhite setStroke];
+    UIBezierPath* path = [UIBezierPath starAtPoint:CGPointMake(size.width / 27.0f * 4.0f, size.height / 18.0f * 4.0f)
+                                            radius:size.height / 18.0f * 2.68f
+                                              type:FlagStarTypeFourPointed];
+    path.lineWidth = size.height / 95.0f;
+    [path fill];
+    [path stroke];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
