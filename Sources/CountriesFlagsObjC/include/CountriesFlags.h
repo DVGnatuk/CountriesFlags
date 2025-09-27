@@ -207,7 +207,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case Slovenia
     CountriesFlagsSolomonIslands,
     CountriesFlagsSomalia,
-//        case SouthAfrica
+    CountriesFlagsSouthAfrica,
 //        case SouthGeorgiaAndSouthSandwichIslands
 //        case Spain
 //        case SriLanka

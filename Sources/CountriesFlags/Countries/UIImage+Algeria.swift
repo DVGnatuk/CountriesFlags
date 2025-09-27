@@ -47,8 +47,10 @@ extension UIImage {
                      clockwise: true).fill()
 
         colorWhite.setFill()
-        UIBezierPath(arcCenter: CGPoint(x: size.width / 2.0 + size.height / 20.0 * 1.207628020, y: size.height / 2.0),
-                     radius: size.height / 20.0 * 4.0,
+        let arcCenter = CGPoint(x: size.width / 2.0 + size.height / 20.0 * 1.207628020, y: size.height / 2.0)
+        let arcRadius = size.height / 20.0 * 4.0
+        UIBezierPath(arcCenter: arcCenter,
+                     radius: arcRadius,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
@@ -56,8 +58,8 @@ extension UIImage {
         colorGreen.setFill()
         let startAngle = Measurement(value: 107.6, unit: UnitAngle.degrees).converted(to: .radians).value
         let endAngle = Measurement(value: -107.6, unit: UnitAngle.degrees).converted(to: .radians).value
-        UIBezierPath(arcCenter: CGPoint(x: size.width / 2.0 + size.height / 20.0 * 1.207628020, y: size.height / 2.0),
-                     radius: size.height / 20.0 * 4.0,
+        UIBezierPath(arcCenter: arcCenter,
+                     radius: arcRadius,
                      startAngle: startAngle,
                      endAngle: endAngle,
                      clockwise: true).fill()

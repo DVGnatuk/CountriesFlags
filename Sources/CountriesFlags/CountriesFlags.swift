@@ -204,7 +204,7 @@ public enum CountriesFlags {
 //        case Slovenia
     case SolomonIslands
     case Somalia
-//        case SouthAfrica
+    case SouthAfrica
 //        case SouthGeorgiaAndSouthSandwichIslands
 //        case Spain
 //        case SriLanka

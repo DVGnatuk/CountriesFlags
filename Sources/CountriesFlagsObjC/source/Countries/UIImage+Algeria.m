@@ -38,8 +38,10 @@
                                  clockwise:YES] fill];
 
     [colorWhite setFill];
-    [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 2.0f + size.height / 20.0f * 1.207628020, size.height / 2.0f)
-                                    radius:size.height / 20.0f * 8.0f / 2.0f
+    CGPoint arcCenter = CGPointMake(size.width / 2.0f + size.height / 20.0f * 1.207628020, size.height / 2.0f);
+    CGFloat arcRadius = size.height / 20.0f * 8.0f / 2.0f;
+    [[UIBezierPath bezierPathWithArcCenter:arcCenter
+                                    radius:arcRadius
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0f
                                  clockwise:YES] fill];
@@ -51,8 +53,8 @@
                                                                 unit:unitDegrees] measurementByConvertingToUnit:unitRadians] doubleValue];
     double endAngle = [[[[NSMeasurement alloc] initWithDoubleValue:-107.6
                                                               unit:unitDegrees] measurementByConvertingToUnit:unitRadians] doubleValue];
-    [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 2.0f + size.height / 20.0f * 1.207628020, size.height / 2.0f)
-                                    radius:size.height / 20.0f * 8.0f / 2.0f
+    [[UIBezierPath bezierPathWithArcCenter:arcCenter
+                                    radius:arcRadius
                                 startAngle:startAngle
                                   endAngle:endAngle
                                  clockwise:YES] fill];

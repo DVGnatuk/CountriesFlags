@@ -24,7 +24,7 @@
     
     [colorWhite setFill];
     [[UIBezierPath starAtPoint:CGSizeMidPoint(size)
-                        radius:size.height / 2.0f / 2.0f
+                        radius:size.height / 4.0f
                           type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();

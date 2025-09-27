@@ -38,30 +38,31 @@ extension UIImage {
         colorWhite.setStroke()
         colorRed.setFill()
         // Top star
+        let lineWidth = size.height / 60.0
         var path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 90.0, y: size.height / 60.0 * 12.0),
                                      radius: size.height / 60.0 * 9.54484132 / 3.0)
-        path.lineWidth = size.height / 60.0
+        path.lineWidth = lineWidth
         path.stroke()
         path.fill()
 
         // Left star
         path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 76.15, y: size.height / 60.0 * 26.0),
                                  radius: size.height / 60.0 * 9.54484132 / 3.0)
-        path.lineWidth = size.height / 60.0
+        path.lineWidth = lineWidth
         path.stroke()
         path.fill()
 
         // Right star
         path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 101.85, y: size.height / 60.0 * 22.3),
                                  radius: size.height / 60.0 * 8.49337910 / 3.2)
-        path.lineWidth = size.height / 60.0
+        path.lineWidth = lineWidth
         path.stroke()
         path.fill()
 
         // Bottom star
         path = UIBezierPath.star(at: CGPoint(x: size.width / 120.0 * 90.0, y: size.height / 60.0 * 48.0),
                                  radius: size.height / 60.0 * 10.59630355 / 3.0)
-        path.lineWidth = size.height / 60.0
+        path.lineWidth = lineWidth
         path.stroke()
         path.fill()
 

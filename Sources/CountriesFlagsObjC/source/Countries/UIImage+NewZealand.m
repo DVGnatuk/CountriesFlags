@@ -31,10 +31,11 @@
     [colorWhite setStroke];
     [colorRed setFill];
     // Top star
+    CGFloat lineWidth = size.height / 60.0f;
     UIBezierPath* path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 90.0f, size.height / 60.0f * 12.0f)
                                             radius:size.height / 60.0f * 9.54484132 / 3.0f
                                               type:FlagStarTypeFivePointed];
-    path.lineWidth = size.height / 60.0f;
+    path.lineWidth = lineWidth;
     [path stroke];
     [path fill];
 
@@ -42,7 +43,7 @@
     path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 76.15f, size.height / 60.0f * 26.0f)
                               radius:size.height / 60.0f * 9.54484132 / 3.0f
                                 type:FlagStarTypeFivePointed];
-    path.lineWidth = size.height / 60.0f;
+    path.lineWidth = lineWidth;
     [path stroke];
     [path fill];
 
@@ -50,7 +51,7 @@
     path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 101.85f, size.height / 60.0f * 22.3f)
                               radius:size.height / 60.0f * 8.49337910 / 3.2f
                                 type:FlagStarTypeFivePointed];
-    path.lineWidth = size.height / 60.0f;
+    path.lineWidth = lineWidth;
     [path stroke];
     [path fill];
     
@@ -58,7 +59,7 @@
     path = [UIBezierPath starAtPoint:CGPointMake(size.width / 120.0f * 90.0f, size.height / 60.0f * 48.0f)
                               radius:size.height / 60.0f * 10.59630355 / 3.0f
                                 type:FlagStarTypeFivePointed];
-    path.lineWidth = size.height / 60.0f;
+    path.lineWidth = lineWidth;
     [path stroke];
     [path fill];
 
