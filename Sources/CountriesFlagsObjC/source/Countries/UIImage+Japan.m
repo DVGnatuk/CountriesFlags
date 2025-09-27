@@ -5,6 +5,8 @@
 
 #import "Countries/UIImage+Japan.h"
 
+#import "Extensions/CGSize+Extension.h"
+
 @implementation UIImage (Japan)
 
 + (UIImage * _Nullable)flagJapanWithSize:(CGSize)size {
@@ -18,14 +20,13 @@
     
     [colorWhite setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
-    
-    CGFloat radius = size.height * 3.0f / 5.0f;
-    UIBezierPath* path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(size.width / 2.0 - radius / 2.0,
-                                                                           size.height / 2.0 - radius / 2.0,
-                                                                           radius,
-                                                                           radius)];
+
     [colorRed setFill];
-    [path fill];
+    [[UIBezierPath bezierPathWithArcCenter:CGSizeMidPoint(size)
+                                    radius:size.height * 3.0f / 5.0f / 2.0f
+                                startAngle:0.0f
+                                  endAngle:M_PI * 2.0f
+                                 clockwise:YES] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

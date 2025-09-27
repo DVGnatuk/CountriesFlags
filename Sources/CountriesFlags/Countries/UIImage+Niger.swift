@@ -43,11 +43,11 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero,
                           size: CGSize(width: size.width, height: size.height / 3.0)))
 
-        let radius = size.height * 3.0 / 5.0 * (2.0 / 5.0)
-        UIBezierPath(ovalIn: CGRect(x: size.width / 2.0 - radius / 2.0,
-                                    y: size.height / 2.0 - radius / 2.0,
-                                    width: radius,
-                                    height: radius)).fill()
+        UIBezierPath(arcCenter: size.midPoint,
+                     radius: size.height * 3.0 / 5.0 * (2.0 / 5.0) / 2.0,
+                     startAngle: 0.0,
+                     endAngle: .pi * 2.0,
+                     clockwise: true).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

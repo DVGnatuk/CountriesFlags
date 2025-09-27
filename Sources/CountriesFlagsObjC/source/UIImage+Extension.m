@@ -65,6 +65,7 @@
 #import "Countries/UIImage+Laos.h"
 #import "Countries/UIImage+Latvia.h"
 #import "Countries/UIImage+Liberia.h"
+#import "Countries/UIImage+Libya.h"
 #import "Countries/UIImage+Lithuania.h"
 #import "Countries/UIImage+Luxembourg.h"
 #import "Countries/UIImage+Madagascar.h"
@@ -203,6 +204,7 @@
         case CountriesFlagsLaos: return [UIImage flagLaosWithSize: size];
         case CountriesFlagsLatvia: return [UIImage flagLatviaWithSize: size];
         case CountriesFlagsLiberia: return [UIImage flagLiberiaWithSize: size];
+        case CountriesFlagsLibya: return [UIImage flagLibyaWithSize: size];
         case CountriesFlagsLithuania: return [UIImage flagLithuaniaWithSize: size];
         case CountriesFlagsLuxembourg: return [UIImage flagLuxembourgWithSize: size];
         case CountriesFlagsMadagascar: return [UIImage flagMadagascarWithSize: size];

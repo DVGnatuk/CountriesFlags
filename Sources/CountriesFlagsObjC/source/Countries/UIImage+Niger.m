@@ -5,6 +5,8 @@
 
 #import "Countries/UIImage+Niger.h"
 
+#import "Extensions/CGSize+Extension.h"
+
 @implementation UIImage (Niger)
 
 + (UIImage * _Nullable)flagNigerWithSize:(CGSize)size {
@@ -29,11 +31,11 @@
     [colorOrange setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height / 3.0f));
     
-    CGFloat radius = size.height * 3.0f / 5.0f * (2.0f / 5.0f);
-    [[UIBezierPath bezierPathWithOvalInRect:CGRectMake(size.width / 2.0f - radius / 2.0f,
-                                                       size.height / 2.0f - radius / 2.0f,
-                                                       radius,
-                                                       radius)] fill];
+    [[UIBezierPath bezierPathWithArcCenter:CGSizeMidPoint(size)
+                                    radius:size.height * 3.0f / 5.0f * (2.0f / 5.0f) / 2.0f
+                                startAngle:0.0f
+                                  endAngle:M_PI * 2.0f
+                                 clockwise:YES] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
