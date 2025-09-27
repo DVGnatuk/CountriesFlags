@@ -21,18 +21,12 @@
     
     [colorRed setFill];
     UIRectFill(CGRectMake(0.0f, size.height / 2.0f, size.width, size.height / 2.0f));
-    [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 18.0f * 7.0f, size.height / 2.0f)
-                                       radius:size.height / 12.0f * 4.0f
-                                   startAngle:0.0f
-                                     endAngle:M_PI * 2.0f
-                                 clockwise:YES] fill];
+    CGFloat radius = size.height / 12.0f * 4.0f;
+    CGPoint center = CGPointMake(size.width / 18.0f * 7.0f, size.height / 2.0f);
+    [[UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:0.0f endAngle:M_PI clockwise:NO] fill];
     
     [colorWhite setFill];
-    [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 18.0f * 7.0f, size.height / 2.0f)
-                                       radius:size.height / 12.0f * 4.0f
-                                   startAngle:0.0f
-                                     endAngle:M_PI
-                                 clockwise:YES] fill];
+    [[UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:0.0f endAngle:M_PI clockwise:YES] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

@@ -129,7 +129,6 @@ public enum CountriesFlags {
     case Lithuania
     case Luxembourg
 //        case Macao
-//        case Macedonia
     case Madagascar
 //        case Malawi
     case Malaysia
@@ -162,6 +161,7 @@ public enum CountriesFlags {
     case Niger
     case Nigeria
     case Niue
+    case NorthMacedonia
 //        case NorfolkIsland
 //        case NorthernMarianaIslands
     case Norway

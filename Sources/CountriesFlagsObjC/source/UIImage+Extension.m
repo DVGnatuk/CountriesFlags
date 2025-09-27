@@ -86,6 +86,7 @@
 #import "Countries/UIImage+Niger.h"
 #import "Countries/UIImage+Nigeria.h"
 #import "Countries/UIImage+Niue.h"
+#import "Countries/UIImage+NorthMacedonia.h"
 #import "Countries/UIImage+Norway.h"
 #import "Countries/UIImage+Pakistan.h"
 #import "Countries/UIImage+Palau.h"
@@ -223,6 +224,7 @@
         case CountriesFlagsNiger: return [UIImage flagNigerWithSize: size];
         case CountriesFlagsNigeria: return [UIImage flagNigeriaWithSize: size];
         case CountriesFlagsNiue: return [UIImage flagNiueWithSize: size];
+        case CountriesFlagsNorthMacedonia: return [UIImage flagNorthMacedoniaWithSize: size];
         case CountriesFlagsNorway: return [UIImage flagNorwayWithSize: size];
         case CountriesFlagsPakistan: return [UIImage flagPakistanWithSize: size];
         case CountriesFlagsPalau: return [UIImage flagPalauWithSize: size];

@@ -49,14 +49,14 @@ extension UIImage {
 
         colorWhite.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 1920.0 * 912.0, y: size.height / 2.0),
-                     radius: size.height / 10.0 * 3.0 / 2.0,
+                     radius: size.height / 10.0 * 1.5,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
         colorRed.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 1920.0 * 912.0 + size.height / 30.0, y: size.height / 2.0),
-                     radius: size.height / 4.0 / 2.0,
+                     radius: size.height / 8.0,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
