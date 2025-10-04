@@ -16,6 +16,7 @@
 #import "Countries/UIImage+Bahamas.h"
 #import "Countries/UIImage+Bahrain.h"
 #import "Countries/UIImage+Bangladesh.h"
+#import "Countries/UIImage+Belarus.h"
 #import "Countries/UIImage+Belgium.h"
 #import "Countries/UIImage+Benin.h"
 #import "Countries/UIImage+BosniaAndHerzegovina.h"
@@ -149,6 +150,7 @@
         case CountriesFlagsBahamas: return [UIImage flagBahamasWithSize: size];
         case CountriesFlagsBahrain: return [UIImage flagBahrainWithSize: size];
         case CountriesFlagsBangladesh: return [UIImage flagBangladeshWithSize: size];
+        case CountriesFlagsBelarus: return [UIImage flagBelarusWithSize: size];
         case CountriesFlagsBelgium: return [UIImage flagBelgiumWithSize: size];
         case CountriesFlagsBenin: return [UIImage flagBeninWithSize: size];
         case CountriesFlagsBosniaAndHerzegovina: return [UIImage flagBosniaAndHerzegovinaWithSize: size];

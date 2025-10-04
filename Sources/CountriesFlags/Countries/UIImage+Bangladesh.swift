@@ -36,7 +36,7 @@ extension UIImage {
 
         colorRed.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width * 2.0 / 5.0, y: size.height / 2.0),
-                     radius: size.height * 4.0 / 5.0 / 2.0,
+                     radius: size.height * 4.0 / 10.0,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()

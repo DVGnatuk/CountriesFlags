@@ -48,7 +48,7 @@ extension UIImage {
                           size: CGSize(width: size.width, height: size.height / 12.0)))
 
         colorYellow.setFill()
-        let radius = CGFloat(size.height / 12.0) / 2.0
+        let radius: CGFloat = size.height / 24.0
         let yOffset = size.height / 12.0 * 0.1
         // 1 column
         UIBezierPath.star(at: CGPoint(x: size.width / 80.0 * 18.75, y: (size.height / 12.0 * 13.0 + yOffset) / 2.0),

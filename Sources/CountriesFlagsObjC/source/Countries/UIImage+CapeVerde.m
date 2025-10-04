@@ -36,7 +36,7 @@
     UIRectFill(CGRectMake(0.0f, size.height / 12.0f * 7.0f, size.width, size.height / 12.0f));
 
     [colorYellow setFill];
-    CGFloat radius = size.height / 12.0f / 2.0f;
+    CGFloat radius = size.height / 24.0f;
     CGFloat yOffset = size.height / 12.0f * 0.1f;
     // 1 column
     [[UIBezierPath starAtPoint:CGPointMake(size.width / 80.0f * 18.75f, (size.height / 12.0f * 13.0f + yOffset) / 2.0f)
