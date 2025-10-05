@@ -23,8 +23,9 @@
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
     [colorYellow setFill];
-    CGFloat radius = size.height * 12.0 / 20.0 / 2.0;
-    [[UIBezierPath starAtPoint:CGSizeMidPoint(size) radius:radius type:FlagStarTypeFivePointed] fill];
+    [[UIBezierPath starAtPoint:CGSizeMidPoint(size)
+                        radius:size.height * 12.0f / 40.0f
+                          type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

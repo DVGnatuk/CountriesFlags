@@ -35,21 +35,22 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: CGSize(width: size.width, height: size.height / 2.0)))
 
         colorWhite.setFill()
+        var starRadius = size.height / 36.0 * 6.625
         UIBezierPath(arcCenter: CGPoint(x: size.width / 54.0 * 11.46, y: size.height / 36.0 * 9.0),
-                     radius: size.height / 36.0 * 13.25 / 2.0,
+                     radius: starRadius,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
         colorRed.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 54.0 * 14.44, y: size.height / 36.0 * 9.0),
-                     radius: size.height / 36.0 * 13.25 / 2.0,
+                     radius: starRadius,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
         colorWhite.setFill()
-        let starRadius = size.height / 36.0 * 3.45 / 2.0
+        starRadius = size.height / 36.0 * 3.45 / 2.0
         // top
         UIBezierPath.star(at: CGPoint(x: size.width / 54.0 * 15.05, y: size.height / 36.0 * 5.2),
                           radius: starRadius).fill()

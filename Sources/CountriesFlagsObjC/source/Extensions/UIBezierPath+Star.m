@@ -16,7 +16,10 @@
     
     switch (type) {
         case FlagStarTypeFourPointed: {
-            [self fourPointerStarAtPoint:point radius:radius path:path];
+            [self fourPointerStarAtPoint:point
+                                  radius:radius
+                             innerRadius:radius * 2.0f / 6.0f
+                                    path:path];
         }
             break;
             
@@ -79,6 +82,14 @@
     [path moveToPoint:CGPointMake(point.x, -radius + point.y)];
     
     switch (type) {
+        case FlagStarTypeFourPointed: {
+            [self fourPointerStarAtPoint:point
+                                  radius:radius
+                             innerRadius:innerRadius
+                                    path:path];
+        }
+            break;
+
         case FlagStarTypeTwelvePointed: {
             [self twelvePointerStarAtPoint:point
                                     radius:radius
@@ -106,8 +117,8 @@
 
 + (void)fourPointerStarAtPoint:(CGPoint)point
                         radius:(CGFloat)radius
+                   innerRadius:(CGFloat)innerRadius
                           path:(UIBezierPath *)path {
-    CGFloat innerRadius = radius * 2.0f / 6.0f;
     for (int index = 1; index < 8; index++) {
         CGFloat r = index % 2 == 0 ? radius : innerRadius;
         double angle = -M_PI / 2.0 + index * M_PI / 4.0;

@@ -25,21 +25,22 @@
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height / 2.0f));
     
     [colorWhite setFill];
+    CGFloat starRadius = size.height / 36.0f * 6.625f;
     [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 54.0f * 11.46f, size.height / 36.0f * 9.0f)
-                                    radius:size.height / 36.0f * 13.25f / 2.0f
+                                    radius:starRadius
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0f
                                  clockwise:YES] fill];
 
     [colorRed setFill];
     [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 54.0f * 14.44f, size.height / 36.0f * 9.0f)
-                                    radius:size.height / 36.0f * 13.25f / 2.0f
+                                    radius:starRadius
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0f
                                  clockwise:YES] fill];
 
     [colorWhite setFill];
-    CGFloat starRadius = size.height / 36.0f * 3.45f / 2.0f;
+    starRadius = size.height / 36.0f * 3.45f / 2.0f;
     // top
     [[UIBezierPath starAtPoint:CGPointMake(size.width / 54.0f * 15.05f, size.height / 36.0f * 5.2f)
                         radius:starRadius

@@ -95,24 +95,28 @@ extension UIImage {
                 var pathOrigin = CGPoint(x: ornamentOffsetX + ornamentCellWidth * CGFloat(columnIndex),
                                          y: ornamentCellHeight * CGFloat(rowIndex))
                 var path = UIBezierPath(rect: CGRect(origin: pathOrigin, size: ornamentCellSize))
+                path.lineWidth = ornamentCellHeight / 30.0
                 path.fill()
                 path.stroke()
                 // top right part
                 pathOrigin = CGPoint(x: ornamentOffsetX + ornamentCellWidth * CGFloat(columnsAmount * 2 - columnIndex - 2),
                                      y: ornamentCellHeight * CGFloat(rowIndex))
                 path = UIBezierPath(rect: CGRect(origin: pathOrigin, size: ornamentCellSize))
+                path.lineWidth = ornamentCellHeight / 30.0
                 path.fill()
                 path.stroke()
                 // bottom left part
                 pathOrigin = CGPoint(x: ornamentOffsetX + ornamentCellWidth * CGFloat(columnIndex),
                                      y: ornamentCellHeight * CGFloat(rowsAmount + rowsAmount - rowIndex - 2))
                 path = UIBezierPath(rect: CGRect(origin: pathOrigin, size: ornamentCellSize))
+                path.lineWidth = ornamentCellHeight / 30.0
                 path.fill()
                 path.stroke()
                 // bottom right part
                 pathOrigin = CGPoint(x: ornamentOffsetX + ornamentCellWidth * CGFloat(columnsAmount * 2 - columnIndex - 2),
                                      y: ornamentCellHeight * CGFloat(rowsAmount + rowsAmount - rowIndex - 2))
                 path = UIBezierPath(rect: CGRect(origin: pathOrigin, size: ornamentCellSize))
+                path.lineWidth = ornamentCellHeight / 30.0
                 path.fill()
                 path.stroke()
             }

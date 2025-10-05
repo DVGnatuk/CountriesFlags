@@ -47,9 +47,10 @@ extension UIImage {
 
         colorRed.setFill()
         colorWhite.setStroke()
+        let radius = size.height / 18.0 * 2.68
         let path = UIBezierPath.star(at: CGPoint(x: size.width / 27.0 * 4.0, y: size.height / 18.0 * 4.0),
-                                     radius: size.height / 18.0 * 2.68,
-                                     type: .fourPointed)
+                                     radius: radius,
+                                     type: .fourPointed(innerRadius: radius * 2.0 / 6.0))
         path.lineWidth = size.height / 95.0
         path.fill()
         path.stroke()

@@ -65,16 +65,17 @@
     
     [colorWhite setFill];
     CGFloat starRadius = size.height / 50.0f * 2.3f;
-    [[UIBezierPath starAtPoint:CGPointMake(size.width / 100.0f * 20.45f, size.height / 100.0f * 34.75f)
+    CGFloat starCenterX = size.width / 100.0f * 20.45f;
+    [[UIBezierPath starAtPoint:CGPointMake(starCenterX, size.height / 100.0f * 34.75f)
                         radius:starRadius
                           type:FlagStarTypeFivePointed] fill];
-    [[UIBezierPath starAtPoint:CGPointMake(size.width / 100.0f * 20.45f, size.height / 100.0f * 45.0f)
+    [[UIBezierPath starAtPoint:CGPointMake(starCenterX, size.height / 100.0f * 45.0f)
                         radius:starRadius
                           type:FlagStarTypeFivePointed] fill];
-    [[UIBezierPath starAtPoint:CGPointMake(size.width / 100.0f * 20.45f, size.height / 100.0f * 55.45f)
+    [[UIBezierPath starAtPoint:CGPointMake(starCenterX, size.height / 100.0f * 55.45f)
                         radius:starRadius
                           type:FlagStarTypeFivePointed] fill];
-    [[UIBezierPath starAtPoint:CGPointMake(size.width / 100.0f * 20.45f, size.height / 100.0f * 65.85f)
+    [[UIBezierPath starAtPoint:CGPointMake(starCenterX, size.height / 100.0f * 65.85f)
                         radius:starRadius
                           type:FlagStarTypeFivePointed] fill];
     

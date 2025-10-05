@@ -81,6 +81,7 @@
                                                                              ornamentCellHeight * rowIndex,
                                                                              ornamentCellWidth,
                                                                              ornamentCellHeight)];
+            path.lineWidth = ornamentCellHeight / 30.0f;
             [path fill];
             [path stroke];
             // top right part
@@ -88,6 +89,7 @@
                                                                ornamentCellHeight * rowIndex,
                                                                ornamentCellWidth,
                                                                ornamentCellHeight)];
+            path.lineWidth = ornamentCellHeight / 30.0f;
             [path fill];
             [path stroke];
             // bottom left part
@@ -95,6 +97,7 @@
                                                                ornamentCellHeight * (rowsAmount + rowsAmount - rowIndex - 2),
                                                                ornamentCellWidth,
                                                                ornamentCellHeight)];
+            path.lineWidth = ornamentCellHeight / 30.0f;
             [path fill];
             [path stroke];
             // bottom right part
@@ -102,6 +105,7 @@
                                                                ornamentCellHeight * (rowsAmount + rowsAmount - rowIndex - 2),
                                                                ornamentCellWidth,
                                                                ornamentCellHeight)];
+            path.lineWidth = ornamentCellHeight / 30.0f;
             [path fill];
             [path stroke];
         }

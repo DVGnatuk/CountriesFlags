@@ -32,13 +32,13 @@
     [colorWhite setFill];
     CGPoint starCenter = CGPointMake(size.width / 4.0, size.height / 4.0);
     [[UIBezierPath starAtPoint:starCenter
-                        radius:size.height / 80.0f * 30.0f / 2.0f
-                   innerRadius:size.height / 80.0f * 15.0f / 2.0f
+                        radius:size.height / 80.0f * 15.0f
+                   innerRadius:size.height / 80.0f * 7.5f
                           type:FlagStarTypeTwelvePointed] fill];
     
     [colorBlue setStroke];
     UIBezierPath* path = [UIBezierPath bezierPathWithArcCenter:starCenter
-                                                        radius:size.height / 80.0f * 16.0f / 2.0f
+                                                        radius:size.height / 80.0f * 8.0f
                                                     startAngle:0.0f
                                                       endAngle:M_PI * 2.0f
                                                      clockwise:YES];

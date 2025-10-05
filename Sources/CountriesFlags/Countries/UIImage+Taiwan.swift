@@ -41,12 +41,12 @@ extension UIImage {
         colorWhite.setFill()
         let starCenter = CGPoint(x: size.width / 4.0, y: size.height / 4.0)
         UIBezierPath.star(at: starCenter,
-                          radius: size.height / 80.0 * 30.0 / 2.0,
-                          type: .twelvePointed(innerRadius: size.height / 80.0 * 15.0 / 2.0)).fill()
+                          radius: size.height / 80.0 * 15.0,
+                          type: .twelvePointed(innerRadius: size.height / 80.0 * 7.5)).fill()
 
         colorBlue.setStroke()
         let path = UIBezierPath(arcCenter: starCenter,
-                                radius: size.height / 80.0 * 16.0 / 2.0,
+                                radius: size.height / 80.0 * 8.0,
                                 startAngle: 0.0,
                                 endAngle: .pi * 2.0,
                                 clockwise: true)

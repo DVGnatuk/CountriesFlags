@@ -8,7 +8,7 @@ import UIKit
 extension UIBezierPath {
 
     enum StarType {
-        case fourPointed
+        case fourPointed(innerRadius: CGFloat)
         case fivePointed
         case sixPointed
         case sevenPointed
@@ -24,7 +24,10 @@ extension UIBezierPath {
         path.move(to: CGPoint(x: point.x, y: -radius + point.y))
 
         switch type {
-        case .fourPointed: fourPointerStar(at: point, with: radius, path: path)
+        case .fourPointed(let innerRadius): fourPointerStar(at: point,
+                                                            with: radius,
+                                                            innerRadius: innerRadius,
+                                                            path: path)
         case .fivePointed: fivePointerStar(at: point, with: radius, path: path)
         case .sixPointed: sixPointerStar(at: point, with: radius, path: path)
         case .sevenPointed: sevenPointerStar(at: point, with: radius, path: path)
@@ -46,8 +49,8 @@ extension UIBezierPath {
 
     static private func fourPointerStar(at point: CGPoint,
                                         with radius: CGFloat,
+                                        innerRadius: CGFloat,
                                         path: UIBezierPath) {
-        let innerRadius = radius * 2.0 / 6.0
         for index in 1..<8 {
             let currentRadius = index % 2 == 0 ? radius : innerRadius
             let angle: CGFloat = -.pi / 2.0 + CGFloat(index) * .pi / 4.0
@@ -162,7 +165,7 @@ extension UIBezierPath {
             }
         }
     }
-    
+
     static private func twentyFourPointed(at point: CGPoint,
                                           with radius: CGFloat,
                                           innerRadius: CGFloat,
