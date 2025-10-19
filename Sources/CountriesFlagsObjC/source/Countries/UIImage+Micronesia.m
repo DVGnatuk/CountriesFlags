@@ -26,7 +26,7 @@
     CGPoint starCenter = CGPointMake(size.width / 2.0f, size.height / 5.0f);
     CGFloat starRadius = size.height / 5.0f / 2.0f;
     CGPoint rotatePoint = CGPointMake(size.width / 2.0f, size.height / 2.0f);
-    for (int angle = 0; angle <= 270; angle += 90) {
+    for (CGFloat angle = 0.0f; angle <= 270.0f; angle += 90.0f) {
         UIBezierPath* path = [UIBezierPath starAtPoint:starCenter
                                                 radius:starRadius
                                                   type:FlagStarTypeFivePointed];

@@ -2,7 +2,6 @@
 //  CountriesFlagsTests.swift
 //
 
-// swiftlint:disable type_body_length
 // swiftlint:disable file_length
 
 import XCTest
@@ -1140,6 +1139,16 @@ final class CountriesFlagsTests: XCTestCase {
         XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagSouthAfrica"))
     }
 
+    func testSovietUnion() throws {
+        guard let image = UIImage.flag(for: .SovietUnion, with: imageSize) else {
+            XCTFail("Generated flag is nil")
+            return
+        }
+
+        XCTAssertTrue(CGSizeEqualToSize(image.size, imageSize))
+        XCTAssertTrue(compareGenerated(flag: image, with: "Flags/flagSovietUnion"))
+    }
+
     func testSudan() throws {
         guard let image = UIImage.flag(for: .Sudan, with: imageSize) else {
             XCTFail("Generated flag is nil")
@@ -1431,5 +1440,4 @@ extension UIImage {
     }
 }
 
-// swiftlint:enable type_body_length
 // swiftlint:enable file_length

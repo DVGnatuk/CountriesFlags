@@ -1,6 +1,6 @@
 # CountriesFlags
 
-CountriesFlags generate flags for ~~every~~ country (in progress now).
+The CountriesFlags generates flags for countries on the fly, without reading data from the disk.
 
 ## Requirements
 
@@ -8,7 +8,7 @@ SwiftPM: 5.7+
 Swift: 5+  
 UI libraries: UIKit, ~~SwiftUI~~  
 Xcode: 14.2+  
-iOS/iPadOS: 13.0+ (12.0+ if add the library to a project manually)  
+iOS/iPadOS: 13.0+ (12.2+ for [Xcode 10.2 and swift 5.0+](https://xcodereleases.com/?scope=release) and 3.2+ for obj-c if add the library to a project manually)  
 macOS (Designed for iPad): 10.15+ (requires Apple Silicone CPU)  
 
 ## Installation

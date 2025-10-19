@@ -18,7 +18,7 @@
         case FlagStarTypeFourPointed: {
             [self fourPointerStarAtPoint:point
                                   radius:radius
-                             innerRadius:radius * 2.0f / 6.0f
+                             innerRadius:radius / 3.0f
                                     path:path];
         }
             break;

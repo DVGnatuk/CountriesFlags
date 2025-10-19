@@ -35,9 +35,9 @@ extension UIImage {
         let starCenter = CGPoint(x: size.width / 2.0, y: size.height / 5.0)
         let starRadius = size.height / 5.0 / 2.0
         let rotatePoint = CGPoint(x: size.width / 2.0, y: size.height / 2.0)
-        for angle in stride(from: 0, through: 270, by: 90) {
+        for angle in stride(from: 0.0, through: 270.0, by: 90.0) {
             let path = UIBezierPath.star(at: starCenter, radius: starRadius)
-            path.rotate(to: CGFloat(angle), around: rotatePoint)
+            path.rotate(to: angle, around: rotatePoint)
             path.fill()
         }
 

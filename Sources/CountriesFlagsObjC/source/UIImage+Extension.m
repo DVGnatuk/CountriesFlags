@@ -113,6 +113,7 @@
 #import "Countries/UIImage+SolomonIslands.h"
 #import "Countries/UIImage+Somalia.h"
 #import "Countries/UIImage+SouthAfrica.h"
+#import "Countries/UIImage+SovietUnion.h"
 #import "Countries/UIImage+Sudan.h"
 #import "Countries/UIImage+Suriname.h"
 #import "Countries/UIImage+Sweden.h"
@@ -257,6 +258,7 @@
         case CountriesFlagsSolomonIslands: return [UIImage flagSolomonIslandsWithSize: size];
         case CountriesFlagsSomalia: return [UIImage flagSomaliaWithSize: size];
         case CountriesFlagsSouthAfrica: return [UIImage flagSouthAfricaWithSize: size];
+        case CountriesFlagsSovietUnion: return [UIImage flagSovietUnionWithSize: size];
         case CountriesFlagsSudan: return [UIImage flagSudanWithSize: size];
         case CountriesFlagsSuriname: return [UIImage flagSurinameWithSize: size];
         case CountriesFlagsSweden: return [UIImage flagSwedenWithSize: size];
