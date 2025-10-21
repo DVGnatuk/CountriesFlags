@@ -135,6 +135,8 @@ extension UIImage {
         case .Rwanda: return flagRwanda(with: size)
         case .SaintKittsAndNevis: return flagSaintKittsAndNevis(with: size)
         case .SaintLucia: return flagSaintLucia(with: size)
+        // The French tricolore is the official national flag used in the Collectivity of Saint Martin.
+        case .SaintMartin: return flagFrance(with: size)
         case .SaintVincentAndTheGrenadines: return flagSaintVincentAndTheGrenadines(with: size)
         case .Samoa: return flagSamoa(with: size)
         case .SaoTomeAndPrincipe: return flagSaoTomeAndPrincipe(with: size)

@@ -39,21 +39,21 @@
 
     [colorYellow setFill];
     [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 28.0 * 5.75, size.height / 14.0 * 4.0)
-                                    radius:size.height / 14.0f * 6.0f / 2.0f
+                                    radius:size.height / 14.0f * 3.0f
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0f
                                  clockwise:YES] fill];
 
     [colorBlue setFill];
     [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 28.0f * 6.4166f, size.height / 14.0f * 4.0f)
-                                    radius:size.height / 14.0f * 5.333f / 2.0f
+                                    radius:size.height / 14.0f * 2.6665f
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0f
                                  clockwise:YES] fill];
 
     [colorYellow setFill];
     [[UIBezierPath starAtPoint:CGPointMake(size.width / 28.0f * 8.75f, size.height / 14.0f * 4.0f)
-                        radius:size.height / 14.0f * 5.0f / 2.0f
+                        radius:size.height / 14.0f * 2.5f
                           type:FlagStarTypeFourteenPointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();

@@ -30,21 +30,21 @@
     
     [colorYellow setFill];
     [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 2.0f, size.height / 1000.0f * 325.0f)
-                                    radius:size.height / 1000.0f * 750.0f / 2.0f
+                                    radius:size.height / 1000.0f * 375.0f
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0f
                                  clockwise:YES] fill];
 
     [colorGreen setFill];
     [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 2.0f, size.height / 1000.0f * 200.0f)
-                                    radius:size.height / 1000.0f * 800.0f / 2.0f
+                                    radius:size.height / 1000.0f * 400.0f
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0f
                                  clockwise:YES] fill];
     
     [colorYellow setFill];
     [[UIBezierPath starAtPoint:CGPointMake(size.width / 2.0f, size.height / 1000.0f * 406.0f)
-                        radius:size.height / 1000.0f * 210.0f / 2.0f
+                        radius:size.height / 1000.0f * 105.0f
                           type:FlagStarTypeFivePointed] fill];
 
     [colorRed setFill];

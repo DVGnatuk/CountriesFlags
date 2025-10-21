@@ -25,6 +25,7 @@ extension UIImage {
                                blue: 0.0,
                                alpha: 1.0)
         let colorWhite = UIColor.white
+        let lineSize = CGSize(width: size.width / 48.0 * 20.0, height: size.height / 2.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
 
@@ -32,12 +33,10 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: 0.0),
-                          size: CGSize(width: size.width / 48.0 * 20.0, height: size.height / 2.0)))
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: 0.0), size: lineSize))
 
         colorRed.setFill()
-        UIBezierPath.plus(in: CGSize(width: size.width / 48.0 * 20.0, height: size.height / 2.0),
-                          with: size.width / 48.0 * 3.0).fill()
+        UIBezierPath.plus(in: lineSize, with: size.width / 48.0 * 3.0).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

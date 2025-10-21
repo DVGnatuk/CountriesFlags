@@ -26,6 +26,7 @@ extension UIImage {
                                 alpha: 1.0)
         let colorBlack = UIColor.black
         let colorWhite = UIColor.white
+        let lineSize = CGSize(width: size.width, height: size.height / 3.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
 
@@ -33,12 +34,10 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorBlack.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 3.0),
-                          size: CGSize(width: size.width, height: size.height / 3.0)))
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 3.0), size: lineSize))
 
         colorWhite.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 3.0 * 2.0),
-                          size: CGSize(width: size.width, height: size.height / 3.0)))
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 3.0 * 2.0), size: lineSize))
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

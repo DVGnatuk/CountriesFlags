@@ -32,6 +32,7 @@ extension UIImage {
                                  green: 96.0 / 255.0,
                                  blue: 61.0 / 255.0,
                                  alpha: 1.0)
+        let lineSize = CGSize(width: size.width, height: size.height / 130.0 * 32.5)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
 
@@ -39,12 +40,11 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorGreen.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 130.0 * 97.5),
-                          size: CGSize(width: size.width, height: size.height / 130.0 * 32.5)))
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 130.0 * 97.5), size: lineSize))
 
         colorYellow.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 130.0 * 65.0),
-                          size: CGSize(width: size.width, height: size.height / 130.0 * 32.5)))
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 130.0 * 65.0), size: lineSize))
+
         let starCenter = CGPoint(x: size.width / 195.0 * 160.0, y: size.height / 130.0 * 34.0)
         UIBezierPath.star(at: starCenter,
                           radius: size.height / 130.0 * 42.0 / 2.0,

@@ -40,21 +40,21 @@ extension UIImage {
 
         colorYellow.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 2.0, y: size.height / 1000.0 * 325.0),
-                     radius: size.height / 1000.0 * 750.0 / 2.0,
+                     radius: size.height / 1000.0 * 375.0,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
         colorGreen.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 2.0, y: size.height / 1000.0 * 200.0),
-                     radius: size.height / 1000.0 * 800.0 / 2.0,
+                     radius: size.height / 1000.0 * 400.0,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
         colorYellow.setFill()
         UIBezierPath.star(at: CGPoint(x: size.width / 2.0, y: size.height / 1000.0 * 406.0),
-                          radius: size.height / 1000.0 * 210.0 / 2.0).fill()
+                          radius: size.height / 1000.0 * 105.0).fill()
 
         colorRed.setFill()
         UIRectFill(CGRect(origin: .zero, size: CGSize(width: size.width, height: size.height / 1000.0 * 200.0)))

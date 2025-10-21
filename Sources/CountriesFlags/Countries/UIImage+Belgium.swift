@@ -29,6 +29,7 @@ extension UIImage {
                                   green: 218.0 / 255.0,
                                   blue: 36.0 / 255.0,
                                   alpha: 1.0)
+        let lineSize = CGSize(width: size.width / 3.0, height: size.height)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
 
@@ -36,12 +37,10 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorYellow.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: size.width / 3.0, y: 0.0),
-                          size: CGSize(width: size.width / 3.0, height: size.height)))
+        UIRectFill(CGRect(origin: CGPoint(x: size.width / 3.0, y: 0.0), size: lineSize))
 
         colorRed.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: size.width / 3.0 * 2.0, y: 0.0),
-                          size: CGSize(width: size.width / 3.0, height: size.height)))
+        UIRectFill(CGRect(origin: CGPoint(x: size.width / 3.0 * 2.0, y: 0.0), size: lineSize))
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

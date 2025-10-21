@@ -25,6 +25,7 @@ extension UIImage {
                                 blue: 184.0 / 255.0,
                                 alpha: 1.0)
         let colorWhite = UIColor.white
+        let lineSize = CGSize(width: size.width, height: size.height / 160.0 * 25.0)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
 
@@ -32,10 +33,8 @@ extension UIImage {
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorBlue.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 160.0 * 15.0),
-                          size: CGSize(width: size.width, height: size.height / 160.0 * 25.0)))
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 160.0 * 120.0),
-                          size: CGSize(width: size.width, height: size.height / 160.0 * 25.0)))
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 160.0 * 15.0), size: lineSize))
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 160.0 * 120.0), size: lineSize))
 
         colorBlue.setStroke()
         let triangleRadius = size.height / 160.0 * 50.5

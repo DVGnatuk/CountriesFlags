@@ -248,6 +248,8 @@
         case CountriesFlagsRwanda: return [UIImage flagRwandaWithSize: size];
         case CountriesFlagsSaintKittsAndNevis: return [UIImage flagSaintKittsAndNevisWithSize: size];
         case CountriesFlagsSaintLucia: return [UIImage flagSaintLuciaWithSize: size];
+        // The French tricolore is the official national flag used in the Collectivity of Saint Martin.
+        case CountriesFlagsSaintMartin: return [UIImage flagFranceWithSize: size];
         case CountriesFlagsSaintVincentAndTheGrenadines: return [UIImage flagSaintVincentAndTheGrenadinesWithSize: size];
         case CountriesFlagsSamoa: return [UIImage flagSamoaWithSize: size];
         case CountriesFlagsSaoTomeAndPrincipe: return [UIImage flagSaoTomeAndPrincipeWithSize: size];

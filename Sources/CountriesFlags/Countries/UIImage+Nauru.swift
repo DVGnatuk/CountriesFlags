@@ -40,7 +40,7 @@ extension UIImage {
                           size: CGSize(width: size.width, height: size.height / 24.0 * 2.0)))
 
         colorWhite.setFill()
-        let starRadius = size.height / 24.0 * 8.0 / 2.0
+        let starRadius = size.height / 24.0 * 4.0
         UIBezierPath.star(at: CGPoint(x: size.width / 48.0 * 12.0, y: size.height / 24.0 * 17.0),
                           radius: starRadius,
                           type: .twelvePointed(innerRadius: starRadius / 2.0)).fill()

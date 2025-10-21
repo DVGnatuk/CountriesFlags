@@ -50,21 +50,21 @@ extension UIImage {
 
         colorYellow.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 28.0 * 5.75, y: size.height / 14.0 * 4.0),
-                     radius: size.height / 14.0 * 6.0 / 2.0,
+                     radius: size.height / 14.0 * 3.0,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
         colorBlue.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 28.0 * 6.4166, y: size.height / 14.0 * 4.0),
-                     radius: size.height / 14.0 * 5.333 / 2.0,
+                     radius: size.height / 14.0 * 2.6665,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
         colorYellow.setFill()
         UIBezierPath.star(at: CGPoint(x: size.width / 28.0 * 8.75, y: size.height / 14.0 * 4.0),
-                          radius: size.height / 14.0 * 5.0 / 2.0,
+                          radius: size.height / 14.0 * 2.5,
                           type: .fourteenPointed).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()

@@ -191,7 +191,7 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
 //        case SaintHelena
     CountriesFlagsSaintKittsAndNevis,
     CountriesFlagsSaintLucia,
-//        case SaintMartin
+    CountriesFlagsSaintMartin,
 //        case SaintPierreAndMiquelon
     CountriesFlagsSaintVincentAndTheGrenadines,
     CountriesFlagsSamoa,
@@ -238,7 +238,6 @@ typedef NS_ENUM(NSUInteger, CountriesFlags)  {
     CountriesFlagsUnitedArabEmirates,
     CountriesFlagsUnitedKingdom,
     CountriesFlagsUnitedStatesOfAmerica,
-//        case UnitedSovietSocialRepublics
 //        case Uruguay
     CountriesFlagsUzbekistan,
 //        case Vanuatu

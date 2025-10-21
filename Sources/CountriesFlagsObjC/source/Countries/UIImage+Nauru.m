@@ -30,7 +30,7 @@
     
     [colorWhite setFill];
     [[UIBezierPath starAtPoint:CGPointMake(size.width / 48.0f * 12.0f, size.height / 24.0f * 17.0f)
-                        radius:size.height / 24.0f * 8.0f / 2.0f
+                        radius:size.height / 24.0f * 4.0f
                           type:FlagStarTypeTwelvePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();

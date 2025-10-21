@@ -47,7 +47,7 @@
 
     [colorWhite setFill];
     [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 2.0f, size.height / 2.0f)
-                                    radius:size.height / 150.0f * 85.0f / 2.0f
+                                    radius:size.height / 150.0f * 42.5f
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0f
                                  clockwise:YES] fill];

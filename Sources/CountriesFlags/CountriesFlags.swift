@@ -188,7 +188,7 @@ public enum CountriesFlags {
 //        case SaintHelena
     case SaintKittsAndNevis
     case SaintLucia
-//        case SaintMartin
+    case SaintMartin
 //        case SaintPierreAndMiquelon
     case SaintVincentAndTheGrenadines
     case Samoa
@@ -235,7 +235,6 @@ public enum CountriesFlags {
     case UnitedArabEmirates
     case UnitedKingdom
     case UnitedStatesOfAmerica
-//        case UnitedSovietSocialRepublics
 //        case Uruguay
     case Uzbekistan
 //        case Vanuatu
