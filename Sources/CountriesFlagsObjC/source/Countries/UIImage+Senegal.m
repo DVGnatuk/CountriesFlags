@@ -24,7 +24,7 @@
                                          blue:35.0f/255.0f
                                         alpha:1.0f];
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0f);
     
     [colorGreen setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
@@ -36,9 +36,8 @@
     UIRectFill(CGRectMake(size.width / 3.0 * 2.0, 0.0f, size.width / 3.0, size.height));
     
     [colorGreen setFill];
-    CGFloat radius = size.height * 5.0f / 12.0f / 2.0f;
     [[UIBezierPath starAtPoint:CGSizeMidPoint(size)
-                        radius:radius
+                        radius:size.height * 5.0f / 24.0f
                           type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();

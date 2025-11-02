@@ -27,7 +27,7 @@ extension UIImage {
         let colorWhite = UIColor.white
         let lineSize = CGSize(width: size.width, height: size.height / 160.0 * 25.0)
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorWhite.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))

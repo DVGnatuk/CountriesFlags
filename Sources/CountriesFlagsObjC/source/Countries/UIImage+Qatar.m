@@ -14,7 +14,7 @@
                                            alpha:1.0f];
     UIColor* colorWhite = [UIColor whiteColor];
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0);
     
     [colorMaroon setFill];
     UIRectFill(CGRectMake(0.0, 0, size.width, size.height));

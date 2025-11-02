@@ -29,14 +29,14 @@ extension UIImage {
                                   blue: 0.0,
                                   alpha: 1.0)
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorBlue.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorYellow.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width * 7.0 / 16.0, y: size.height / 2.0),
-                     radius: size.height * 3.0 / 5.0 / 2.0,
+                     radius: size.height * 3.0 / 10.0,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()

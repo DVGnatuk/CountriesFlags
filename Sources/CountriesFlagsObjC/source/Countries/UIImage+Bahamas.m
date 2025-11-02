@@ -20,7 +20,7 @@
                                            alpha:1.0f];
     UIColor* colorBlack = [UIColor blackColor];
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0f);
     
     [colorAquamarine setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));

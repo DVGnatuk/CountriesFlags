@@ -32,7 +32,7 @@ extension UIImage {
         let colorWhite = UIColor.white
         let lineSize = CGSize(width: size.width, height: size.height / 3.0)
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorRed.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))

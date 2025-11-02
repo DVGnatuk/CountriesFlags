@@ -17,14 +17,14 @@
                                             blue:0.0f
                                            alpha:1.0f];
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0f);
     
     [colorBlue setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
     
     [colorYellow setFill];
     [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width * 7.0f / 16.0f, size.height / 2.0f)
-                                    radius:size.height * 3.0f / 5.0f / 2.0f
+                                    radius:size.height * 3.0f / 10.0f
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0f
                                  clockwise:YES] fill];

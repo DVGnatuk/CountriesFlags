@@ -26,7 +26,7 @@ extension UIImage {
                                alpha: 1.0)
         let colorWhite = UIColor.white
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorRed.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
@@ -40,7 +40,7 @@ extension UIImage {
 
         colorRed.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.height / 2.0 + size.height / 16.0, y: size.height / 2.0),
-                     radius: size.height * 2.0 / 5.0 / 2.0,
+                     radius: size.height * 2.0 / 10.0,
                      startAngle: 0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()

@@ -8,7 +8,7 @@ SwiftPM: 5.7+
 Swift: 5+  
 UI libraries: UIKit, ~~SwiftUI~~  
 Xcode: 14.2+  
-iOS/iPadOS: 13.0+ ([12.2+ for Xcode 10.2 and swift 5.0+](https://xcodereleases.com/?scope=release) and [10.0+ for obj-c](https://xcodereleases.com/?scope=release) if add the library to a project manually)  
+iOS/iPadOS: 13.0+ ([12.2+ for Xcode 10.2 and swift 5.0+](https://xcodereleases.com/?scope=release) and [10.0+ for objective-c](https://xcodereleases.com/?scope=release) if add the library to a project manually)  
 macOS (Designed for iPad): 10.15+ (requires Apple Silicone CPU)  
 
 ## Installation

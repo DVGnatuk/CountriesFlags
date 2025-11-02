@@ -30,7 +30,7 @@ extension UIImage {
                                blue: 29.0 / 255.0,
                                alpha: 1.0)
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorWhite.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))

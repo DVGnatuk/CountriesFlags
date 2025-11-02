@@ -23,7 +23,7 @@
     UIColor* colorBlack = [UIColor blackColor];
     UIColor* colorWhite = [UIColor whiteColor];
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0f);
     
     [colorBlack setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));

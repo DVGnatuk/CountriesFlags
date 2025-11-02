@@ -1035,6 +1035,15 @@
     }
 }
 
+- (void)testSlovakia {
+    UIImage* image = [UIImage flagForCountry:CountriesFlagsSlovakia size:self.imageSize];
+    XCTAssertNotNil(image, @"Generated flag is nil");
+    XCTAssertTrue(CGSizeEqualToSize(image.size, self.imageSize));
+    if (@available(iOS 14, *)) {
+        XCTAssertTrue([self compareGeneratedFlag:image with:@"Flags/flagSlovakia"]);
+    }
+}
+
 - (void)testSolomonIslands {
     UIImage* image = [UIImage flagForCountry:CountriesFlagsSolomonIslands size:self.imageSize];
     XCTAssertNotNil(image, @"Generated flag is nil");

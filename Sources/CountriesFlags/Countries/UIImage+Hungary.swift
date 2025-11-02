@@ -31,7 +31,7 @@ extension UIImage {
                                    alpha: 1.0)
         let lineSize = CGSize(width: size.width, height: size.height / 3.0)
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorTomato.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))

@@ -34,7 +34,7 @@ extension UIImage {
                                alpha: 1.0)
         let lineSize = CGSize(width: size.width / 3.0, height: size.height)
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorGreen.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
@@ -46,8 +46,7 @@ extension UIImage {
         UIRectFill(CGRect(origin: CGPoint(x: size.width / 3.0 * 2.0, y: 0.0), size: lineSize))
 
         colorGreen.setFill()
-        let radius: CGFloat = size.height * 5.0 / 12.0 / 2.0
-        UIBezierPath.star(at: size.midPoint, radius: radius).fill()
+        UIBezierPath.star(at: size.midPoint, radius: size.height * 5.0 / 24.0).fill()
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

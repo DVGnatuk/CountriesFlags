@@ -29,17 +29,16 @@ extension UIImage {
                                green: 13.0 / 255.0,
                                blue: 13.0 / 255.0,
                                alpha: 1.0)
+        let lineSize = CGSize(width: size.width, height: size.height / 15.0 * 3.0)
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorBlue.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorWhite.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 15.0 * 3.0),
-                          size: CGSize(width: size.width, height: size.height / 15.0 * 3.0)))
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 15.0 * 9.0),
-                          size: CGSize(width: size.width, height: size.height / 15.0 * 3.0)))
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 15.0 * 3.0), size: lineSize))
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 15.0 * 9.0), size: lineSize))
 
         colorRed.setFill()
         UIBezierPath.triangle(in: size, type: .leftEquilateral).fill()

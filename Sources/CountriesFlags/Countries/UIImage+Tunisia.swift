@@ -26,7 +26,7 @@ extension UIImage {
                                alpha: 1.0)
         let colorWhite = UIColor.white
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorRed.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
@@ -40,21 +40,21 @@ extension UIImage {
 
         colorRed.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 2.0, y: size.height / 2.0),
-                     radius: size.height / 40.0 * 15.0 / 2.0,
+                     radius: size.height / 40.0 * 7.5,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
         colorWhite.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 60.0 * 32.0, y: size.height / 2.0),
-                     radius: size.height / 40.0 * 12.0 / 2.0,
+                     radius: size.height / 40.0 * 6.0,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
         colorRed.setFill()
         let starCenter = CGPoint(x: size.width / 60.0 * 32.0, y: size.height / 2.0)
-        let path = UIBezierPath.star(at: starCenter, radius: size.height / 40.0 * 9.0 / 2.0)
+        let path = UIBezierPath.star(at: starCenter, radius: size.height / 40.0 * 4.5)
         path.rotate(to: -18.0, around: starCenter)
         path.fill()
 

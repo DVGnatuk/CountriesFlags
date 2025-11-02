@@ -18,7 +18,7 @@
                                           blue:137.0f/255.0f
                                          alpha:1.0f];
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0f);
     
     [colorBlue setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));

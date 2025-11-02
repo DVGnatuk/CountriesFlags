@@ -17,7 +17,7 @@
                                         alpha:1.0f];
     UIColor* colorWhite = [UIColor whiteColor];
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0f);
     
     [colorRed setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
@@ -31,7 +31,7 @@
     
     [colorRed setFill];
     [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.height / 2.0f + size.height / 16.0f, size.height / 2.0f)
-                                    radius:size.height * 2.0 / 5.0 / 2.0
+                                    radius:size.height * 2.0 / 10.0
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0f
                                  clockwise:YES] fill];

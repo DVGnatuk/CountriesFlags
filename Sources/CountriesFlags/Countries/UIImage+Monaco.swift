@@ -26,7 +26,7 @@ extension UIImage {
                                alpha: 1.0)
         let colorWhite = UIColor.white
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorRed.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))

@@ -20,7 +20,7 @@
                                          blue:38.0f/255.0f
                                         alpha:1.0f];
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0f);
     
     [colorRed setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
@@ -31,23 +31,23 @@
     [colorWhite setFill];
     // left
     [[UIBezierPath starAtPoint:CGPointMake(size.width / 288.0f * 50.0f, size.height / 144.0f * 29.5f)
-                        radius:size.height / 144.0f * 17.0f / 2.0f
+                        radius:size.height / 144.0f * 8.5f
                           type:FlagStarTypeFivePointed] fill];
     // top
     [[UIBezierPath starAtPoint:CGPointMake(size.width / 288.0f * 72.0f, size.height / 144.0f * 11.5f)
-                        radius:size.height / 144.0f * 17.0f / 2.0f
+                        radius:size.height / 144.0f * 8.5f
                           type:FlagStarTypeFivePointed] fill];
     // right
     [[UIBezierPath starAtPoint:CGPointMake(size.width / 288.0f * 94.5f, size.height / 144.0f * 26.0f)
-                        radius:size.height / 144.0f * 16.0f / 2.0f
+                        radius:size.height / 144.0f * 8.0f
                           type:FlagStarTypeFivePointed] fill];
     // bottom
     [[UIBezierPath starAtPoint:CGPointMake(size.width / 288.0f * 72.0f, size.height / 144.0f * 60.5f)
-                        radius:size.height / 144.0f * 21.0f / 2.0f
+                        radius:size.height / 144.0f * 10.5f
                           type:FlagStarTypeFivePointed] fill];
     // mid-right
     [[UIBezierPath starAtPoint:CGPointMake(size.width / 288.0f * 83.0f, size.height / 144.0f * 41.75f)
-                        radius:size.height / 144.0f * 10.0f / 2.0f
+                        radius:size.height / 144.0f * 5.0f
                           type:FlagStarTypeFivePointed] fill];
     
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();

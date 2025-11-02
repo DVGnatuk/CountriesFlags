@@ -29,19 +29,18 @@ extension UIImage {
                                green: 0.0,
                                blue: 0.0,
                                alpha: 1.0)
+        let lineSize = CGSize(width: size.width, height: size.height / 3.0)
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorWhite.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
         colorGreen.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 3.0),
-                          size: CGSize(width: size.width, height: size.height / 3.0)))
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 3.0), size: lineSize))
 
         colorRed.setFill()
-        UIRectFill(CGRect(origin: CGPoint(x: 0, y: size.height / 3.0 * 2.0),
-                          size: CGSize(width: size.width, height: size.height / 3.0)))
+        UIRectFill(CGRect(origin: CGPoint(x: 0.0, y: size.height / 3.0 * 2.0), size: lineSize))
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

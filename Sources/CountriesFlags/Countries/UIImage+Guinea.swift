@@ -34,7 +34,7 @@ extension UIImage {
                                alpha: 1.0)
         let lineSize = CGSize(width: size.width / 3.0, height: size.height)
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorRed.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))

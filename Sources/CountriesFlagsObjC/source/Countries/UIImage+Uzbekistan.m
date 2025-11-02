@@ -24,7 +24,7 @@
                                          alpha:1.0f];
     UIColor* colorWhite = [UIColor whiteColor];
 
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0f);
     
     [colorWhite setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));
@@ -40,21 +40,22 @@
     UIRectFill(CGRectMake(0.0f, size.height / 125.0f * 82.5f, size.width, size.height / 125.0f * 2.5f));
 
     [colorWhite setFill];
+    CGFloat radius = size.height / 125.0f * 15.0f;
     [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 250.0f * 35.0f, size.height / 125.0f * 20.0f)
-                                    radius:size.height / 125.0f * 30.0f / 2.0f
+                                    radius:radius
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0
                                  clockwise:YES] fill];
     
     [colorBlue setFill];
     [[UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width / 250.0f * 40.0f, size.height / 125.0f * 20.0f)
-                                    radius:size.height / 125.0f * 30.0f / 2.0f
+                                    radius:radius
                                 startAngle:0.0f
                                   endAngle:M_PI * 2.0
                                  clockwise:YES] fill];
 
     [colorWhite setFill];
-    CGFloat radius = size.height / 125.0f * 6.0f / 2.0f;
+    radius = size.height / 125.0f * 3.0f;
     for (int column = 4; column >= 0; column-=1) {
         switch (column) {
             case 4:

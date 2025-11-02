@@ -24,7 +24,7 @@
                                            alpha:1.0f];
     UIColor* colorWhite = [UIColor whiteColor];
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0f);
     
     [colorYellow setFill];
     UIRectFill(CGRectMake(0.0f, 0.0f, size.width, size.height));

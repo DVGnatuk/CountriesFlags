@@ -34,7 +34,7 @@ extension UIImage {
                                 alpha: 1.0)
         let colorWhite = UIColor.white
 
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 0.0)
 
         colorWhite.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
@@ -53,21 +53,22 @@ extension UIImage {
                           size: CGSize(width: size.width, height: size.height / 125.0 * 2.5)))
 
         colorWhite.setFill()
+        var radius = size.height / 125.0 * 15.0
         UIBezierPath(arcCenter: CGPoint(x: size.width / 250.0 * 35.0, y: size.height / 125.0 * 20.0),
-                     radius: size.height / 125.0 * 30.0 / 2.0,
+                     radius: radius,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
         colorBlue.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 250.0 * 40.0, y: size.height / 125.0 * 20.0),
-                     radius: size.height / 125.0 * 30.0 / 2.0,
+                     radius: radius,
                      startAngle: 0.0,
                      endAngle: .pi * 2.0,
                      clockwise: true).fill()
 
         colorWhite.setFill()
-        let radius: CGFloat = size.height / 125.0 * 6.0 / 2.0
+        radius = size.height / 125.0 * 3.0
         for column in stride(from: 4.0, through: 0.0, by: -1.0) {
             switch column {
             case 2, 3, 4:
