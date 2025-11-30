@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Bangladesh.
  @see https://en.wikipedia.org/wiki/Flag_of_Bangladesh
  */
-+ (UIImage * _Nullable)flagBangladeshWithSize:(CGSize)size;
++ (UIImage *)flagBangladeshWithSize:(CGSize)size;
 
 @end
 

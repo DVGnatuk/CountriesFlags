@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Qatar.
  @see https://en.wikipedia.org/wiki/Flag_of_Qatar
  */
-+ (UIImage * _Nullable)flagQatarWithSize:(CGSize)size;
++ (UIImage *)flagQatarWithSize:(CGSize)size;
 
 @end
 

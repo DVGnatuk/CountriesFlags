@@ -9,7 +9,7 @@
 
 @implementation UIImage (Suriname)
 
-+ (UIImage * _Nullable)flagSurinameWithSize:(CGSize)size {
++ (UIImage *)flagSurinameWithSize:(CGSize)size {
     UIColor* colorGreen = [UIColor colorWithRed:55.0f/255.0f
                                           green:126.0f/255.0f
                                            blue:63.0f/255.0f
@@ -44,7 +44,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

@@ -9,7 +9,7 @@
 
 @implementation UIImage (Niger)
 
-+ (UIImage * _Nullable)flagNigerWithSize:(CGSize)size {
++ (UIImage *)flagNigerWithSize:(CGSize)size {
     UIColor* colorOrange = [UIColor colorWithRed:224.0f/255.0f
                                            green:82.0f/255.0f
                                             blue:6.0f/255.0f
@@ -40,7 +40,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

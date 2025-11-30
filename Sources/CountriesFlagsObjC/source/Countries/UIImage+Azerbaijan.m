@@ -9,7 +9,7 @@
 
 @implementation UIImage (Azerbaijan)
 
-+ (UIImage * _Nullable)flagAzerbaijanWithSize:(CGSize)size {
++ (UIImage *)flagAzerbaijanWithSize:(CGSize)size {
     UIColor* colorWhite = [UIColor whiteColor];
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:181.0f/255.0f
@@ -57,7 +57,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

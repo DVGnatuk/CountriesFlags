@@ -10,7 +10,7 @@
 
 @implementation UIImage (Vietnam)
 
-+ (UIImage * _Nullable)flagVietnamWithSize:(CGSize)size {
++ (UIImage *)flagVietnamWithSize:(CGSize)size {
     UIColor* colorYellow = [UIColor yellowColor];
     UIColor* colorRed = [UIColor colorWithRed:218.0f/255.0f
                                         green:37.0f/255.0f
@@ -30,7 +30,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

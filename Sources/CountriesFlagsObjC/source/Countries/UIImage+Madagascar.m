@@ -7,7 +7,7 @@
 
 @implementation UIImage (Madagascar)
 
-+ (UIImage * _Nullable)flagMadagascarWithSize:(CGSize)size {
++ (UIImage *)flagMadagascarWithSize:(CGSize)size {
     UIColor* colorWhite = [UIColor whiteColor];
     UIColor* colorWarmRed = [UIColor colorWithRed:249.0f/255.0f
                                             green:66.0f/255.0f
@@ -32,7 +32,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

@@ -7,7 +7,7 @@
 
 @implementation UIImage (Monaco)
 
-+ (UIImage * _Nullable)flagMonacoWithSize:(CGSize)size {
++ (UIImage *)flagMonacoWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:206.0f/255.0f
                                         green:17.0f/255.0f
                                          blue:38.0f/255.0f
@@ -25,7 +25,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Saint Kitts and Nevis.
  @see https://en.wikipedia.org/wiki/Flag_of_Saint_Kitts_and_Nevis
  */
-+ (UIImage * _Nullable)flagSaintKittsAndNevisWithSize:(CGSize)size;
++ (UIImage *)flagSaintKittsAndNevisWithSize:(CGSize)size;
 
 @end
 

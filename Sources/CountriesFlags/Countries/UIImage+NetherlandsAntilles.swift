@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of the Netherlands Antilles.
      */
-    internal static func flagNetherlandsAntilles(with size: CGSize) -> UIImage? {
+    internal static func flagNetherlandsAntilles(with size: CGSize) -> UIImage {
         let colorWhite = UIColor.white
         let colorBlue = UIColor(red: 1.0 / 255.0,
                                 green: 45.0 / 255.0,
@@ -66,7 +66,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

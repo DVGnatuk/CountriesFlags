@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of New Zealand.
  @see https://en.wikipedia.org/wiki/Flag_of_New_Zealand
  */
-+ (UIImage * _Nullable)flagNewZealandWithSize:(CGSize)size;
++ (UIImage *)flagNewZealandWithSize:(CGSize)size;
 
 @end
 

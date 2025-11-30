@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of the Czech Republic.
  @see https://en.wikipedia.org/wiki/Flag_of_the_Czech_Republic
  */
-+ (UIImage * _Nullable)flagCzechRepublicWithSize:(CGSize)size;
++ (UIImage *)flagCzechRepublicWithSize:(CGSize)size;
 
 @end
 

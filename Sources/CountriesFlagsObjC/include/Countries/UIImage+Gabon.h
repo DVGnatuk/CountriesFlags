@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Gabon.
  @see https://en.wikipedia.org/wiki/Flag_of_Gabon
  */
-+ (UIImage * _Nullable)flagGabonWithSize:(CGSize)size;
++ (UIImage *)flagGabonWithSize:(CGSize)size;
 
 @end
 

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Senegal.
  @see https://en.wikipedia.org/wiki/Flag_of_Senegal
  */
-+ (UIImage * _Nullable)flagSenegalWithSize:(CGSize)size;
++ (UIImage *)flagSenegalWithSize:(CGSize)size;
 
 @end
 

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of the Republic of Maldives.
  @see https://en.wikipedia.org/wiki/Flag_of_the_Maldives
  */
-+ (UIImage * _Nullable)flagMaldivesWithSize:(CGSize)size;
++ (UIImage *)flagMaldivesWithSize:(CGSize)size;
 
 @end
 

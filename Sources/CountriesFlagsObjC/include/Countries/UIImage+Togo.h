@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Togo.
  @see https://en.wikipedia.org/wiki/Flag_of_Togo
  */
-+ (UIImage * _Nullable)flagTogoWithSize:(CGSize)size;
++ (UIImage *)flagTogoWithSize:(CGSize)size;
 
 @end
 

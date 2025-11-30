@@ -11,7 +11,7 @@
 
 @implementation UIImage (Algeria)
 
-+ (UIImage * _Nullable)flagAlgeriaWithSize:(CGSize)size {
++ (UIImage *)flagAlgeriaWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:217.0f/255.0f
                                         green:0.0f
                                          blue:18.0f/255.0f
@@ -70,7 +70,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Hungary.
      */
-    internal static func flagHungary(with size: CGSize) -> UIImage? {
+    internal static func flagHungary(with size: CGSize) -> UIImage {
         let colorTomato = UIColor(red: 206.0 / 255.0,
                                   green: 41.0 / 255.0,
                                   blue: 57.0 / 255.0,
@@ -45,7 +45,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

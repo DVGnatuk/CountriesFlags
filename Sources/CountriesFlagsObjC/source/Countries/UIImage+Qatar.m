@@ -7,7 +7,7 @@
 
 @implementation UIImage (Qatar)
 
-+ (UIImage * _Nullable)flagQatarWithSize:(CGSize)size {
++ (UIImage *)flagQatarWithSize:(CGSize)size {
     UIColor* colorMaroon = [UIColor colorWithRed:138.0f/255.0f
                                            green:21.0f/255.0f
                                             blue:56.0f/255.0f
@@ -48,7 +48,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

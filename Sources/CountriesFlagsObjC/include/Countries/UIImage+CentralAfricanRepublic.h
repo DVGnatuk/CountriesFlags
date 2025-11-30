@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of the Central African Republic.
  @see https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic
  */
-+ (UIImage * _Nullable)flagCentralAfricanRepublicWithSize:(CGSize)size;
++ (UIImage *)flagCentralAfricanRepublicWithSize:(CGSize)size;
 
 @end
 

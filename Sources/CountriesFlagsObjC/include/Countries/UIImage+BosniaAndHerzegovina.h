@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Bosnia and Herzegovina.
  @see https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina
  */
-+ (UIImage * _Nullable)flagBosniaAndHerzegovinaWithSize:(CGSize)size;
++ (UIImage *)flagBosniaAndHerzegovinaWithSize:(CGSize)size;
 
 @end
 

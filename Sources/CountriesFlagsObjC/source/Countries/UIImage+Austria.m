@@ -7,7 +7,7 @@
 
 @implementation UIImage (Austria)
 
-+ (UIImage * _Nullable)flagAustriaWithSize:(CGSize)size {
++ (UIImage *)flagAustriaWithSize:(CGSize)size {
     UIColor* colorWhite = [UIColor whiteColor];
     // The Austrian law does not specify the colour shades of the flag, but in May 2018,
     // the Ministry of Defence issued a regulation specified the red on the flag is Pantone 186 C.
@@ -27,7 +27,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

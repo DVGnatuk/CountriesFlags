@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Aruba.
      */
-    internal static func flagAruba(with size: CGSize) -> UIImage? {
+    internal static func flagAruba(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 65.0 / 255.0,
                                 green: 143.0 / 255.0,
                                 blue: 222.0 / 255.0,
@@ -57,7 +57,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

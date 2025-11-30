@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Malaysia.
      */
-    internal static func flagMalaysia(with size: CGSize) -> UIImage? {
+    internal static func flagMalaysia(with size: CGSize) -> UIImage {
         let colorWhite = UIColor.white
         let colorRed = UIColor(red: 204.0 / 255.0,
                                green: 0.0,
@@ -70,7 +70,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

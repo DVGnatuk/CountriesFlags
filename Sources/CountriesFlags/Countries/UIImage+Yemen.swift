@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Yemen.
      */
-    internal static func flagYemen(with size: CGSize) -> UIImage? {
+    internal static func flagYemen(with size: CGSize) -> UIImage {
         let colorWhite = UIColor.white
         let colorBlack = UIColor.black
         let colorRed = UIColor(red: 206.0 / 255.0,

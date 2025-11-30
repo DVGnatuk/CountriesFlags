@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of the United States.
  @see https://en.wikipedia.org/wiki/Flag_of_the_United_States
  */
-+ (UIImage * _Nullable)flagUnitedStatesOfAmericaWithSize:(CGSize)size;
++ (UIImage *)flagUnitedStatesOfAmericaWithSize:(CGSize)size;
 
 @end
 

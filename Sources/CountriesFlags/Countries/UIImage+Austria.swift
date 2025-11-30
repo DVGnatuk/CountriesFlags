@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Austria.
      */
-    internal static func flagAustria(with size: CGSize) -> UIImage? {
+    internal static func flagAustria(with size: CGSize) -> UIImage {
         let colorWhite = UIColor.white
         // The Austrian law does not specify the colour shades of the flag, but in May 2018,
         // the Ministry of Defence issued a regulation specified the red on the flag is Pantone 186 C.
@@ -40,7 +40,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

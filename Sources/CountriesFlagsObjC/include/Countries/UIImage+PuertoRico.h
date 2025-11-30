@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Puerto Rico.
  @see https://en.wikipedia.org/wiki/Flag_of_Puerto_Rico
  */
-+ (UIImage * _Nullable)flagPuertoRicoWithSize:(CGSize)size;
++ (UIImage *)flagPuertoRicoWithSize:(CGSize)size;
 
 @end
 

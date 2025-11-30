@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Suriname.
  @see https://en.wikipedia.org/wiki/Flag_of_Suriname
  */
-+ (UIImage * _Nullable)flagSurinameWithSize:(CGSize)size;
++ (UIImage *)flagSurinameWithSize:(CGSize)size;
 
 @end
 

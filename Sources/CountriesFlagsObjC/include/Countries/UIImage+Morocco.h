@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Morocco.
  @see https://en.wikipedia.org/wiki/Flag_of_Morocco
  */
-+ (UIImage * _Nullable)flagMoroccoWithSize:(CGSize)size;
++ (UIImage *)flagMoroccoWithSize:(CGSize)size;
 
 @end
 

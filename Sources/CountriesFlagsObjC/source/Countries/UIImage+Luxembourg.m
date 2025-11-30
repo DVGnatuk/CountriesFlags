@@ -7,7 +7,7 @@
 
 @implementation UIImage (Luxembourg)
 
-+ (UIImage * _Nullable)flagLuxembourgWithSize:(CGSize)size {
++ (UIImage *)flagLuxembourgWithSize:(CGSize)size {
     UIColor* colorWhite = [UIColor whiteColor];
     UIColor* colorCelestialBlue = [UIColor colorWithRed:0.0f
                                                   green:163.0f/255.0f
@@ -32,7 +32,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

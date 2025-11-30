@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Tuvalu.
  @see https://en.wikipedia.org/wiki/Flag_of_Tuvalu
  */
-+ (UIImage * _Nullable)flagTuvaluWithSize:(CGSize)size;
++ (UIImage *)flagTuvaluWithSize:(CGSize)size;
 
 @end
 

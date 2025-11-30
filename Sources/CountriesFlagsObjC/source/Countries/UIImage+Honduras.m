@@ -10,7 +10,7 @@
 
 @implementation UIImage (Honduras)
 
-+ (UIImage * _Nullable)flagHondurasWithSize:(CGSize)size {
++ (UIImage *)flagHondurasWithSize:(CGSize)size {
     UIColor* colorBlueTurquoise = [UIColor colorWithRed:0.0f
                                                   green:188.0f/255.0f
                                                    blue:228.0f/255.0f
@@ -51,7 +51,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

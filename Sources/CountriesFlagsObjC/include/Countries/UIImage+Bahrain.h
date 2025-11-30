@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Bahrain.
  @see https://en.wikipedia.org/wiki/Flag_of_Bahrain
  */
-+ (UIImage * _Nullable)flagBahrainWithSize:(CGSize)size;
++ (UIImage *)flagBahrainWithSize:(CGSize)size;
 
 @end
 

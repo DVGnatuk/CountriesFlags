@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Puerto Rico.
      */
-    internal static func flagPuertoRico(with size: CGSize) -> UIImage? {
+    internal static func flagPuertoRico(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 8.0 / 255.0,
                                 green: 68.0 / 255.0,
                                 blue: 1.0,
@@ -51,7 +51,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

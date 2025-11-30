@@ -11,7 +11,7 @@
 
 @implementation UIImage (Israel)
 
-+ (UIImage * _Nullable)flagIsraelWithSize:(CGSize)size {
++ (UIImage *)flagIsraelWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:56.0f/255.0f
                                           blue:184.0f/255.0f
@@ -40,7 +40,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

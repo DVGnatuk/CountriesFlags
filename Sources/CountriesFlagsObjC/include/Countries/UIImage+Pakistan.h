@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Pakistan.
  @see https://en.wikipedia.org/wiki/Flag_of_Pakistan
  */
-+ (UIImage * _Nullable)flagPakistanWithSize:(CGSize)size;
++ (UIImage *)flagPakistanWithSize:(CGSize)size;
 
 @end
 

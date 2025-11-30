@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Luxembourg.
      */
-    internal static func flagLuxembourg(with size: CGSize) -> UIImage? {
+    internal static func flagLuxembourg(with size: CGSize) -> UIImage {
         let colorWhite = UIColor.white
         let colorCelestialBlue = UIColor(red: 0.0,
                                          green: 163.0 / 255.0,
@@ -45,7 +45,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

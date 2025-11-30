@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of South Africa.
  @see https://en.wikipedia.org/wiki/Flag_of_South_Africa
  */
-+ (UIImage * _Nullable)flagSouthAfricaWithSize:(CGSize)size;
++ (UIImage *)flagSouthAfricaWithSize:(CGSize)size;
 
 @end
 

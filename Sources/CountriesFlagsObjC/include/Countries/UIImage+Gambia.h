@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Gambia.
  @see https://en.wikipedia.org/wiki/Flag_of_Gambia
  */
-+ (UIImage * _Nullable)flagGambiaWithSize:(CGSize)size;
++ (UIImage *)flagGambiaWithSize:(CGSize)size;
 
 @end
 

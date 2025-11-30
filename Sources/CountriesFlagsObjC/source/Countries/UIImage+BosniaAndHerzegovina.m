@@ -9,7 +9,7 @@
 
 @implementation UIImage (BosniaAndHerzegovina)
 
-+ (UIImage * _Nullable)flagBosniaAndHerzegovinaWithSize:(CGSize)size {
++ (UIImage *)flagBosniaAndHerzegovinaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:20.0f/255.0f
                                           blue:137.0f/255.0f
@@ -47,7 +47,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

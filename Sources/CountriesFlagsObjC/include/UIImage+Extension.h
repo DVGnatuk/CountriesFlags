@@ -9,7 +9,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (CountriesFlags)
 
-+ (UIImage * _Nullable)flagForCountry:(CountriesFlags)country size:(CGSize)size;
++ (UIImage *)flagForCountry:(CountriesFlags)country size:(CGSize)size;
 
 @end
 

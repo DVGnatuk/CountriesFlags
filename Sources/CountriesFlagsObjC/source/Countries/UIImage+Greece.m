@@ -7,7 +7,7 @@
 
 @implementation UIImage (Greece)
 
-+ (UIImage * _Nullable)flagGreeceWithSize:(CGSize)size {
++ (UIImage *)flagGreeceWithSize:(CGSize)size {
     UIColor* colorWhite = [UIColor whiteColor];
     UIColor* colorBlue = [UIColor colorWithRed:13.0f/255.0f
                                          green:94.0f/255.0f
@@ -36,7 +36,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

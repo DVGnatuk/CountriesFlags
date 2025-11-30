@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Myanmar.
  @see https://en.wikipedia.org/wiki/Flag_of_Myanmar
  */
-+ (UIImage * _Nullable)flagMyanmarWithSize:(CGSize)size;
++ (UIImage *)flagMyanmarWithSize:(CGSize)size;
 
 @end
 

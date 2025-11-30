@@ -16,6 +16,7 @@
 #import "Countries/UIImage+Bahamas.h"
 #import "Countries/UIImage+Bahrain.h"
 #import "Countries/UIImage+Bangladesh.h"
+#import "Countries/UIImage+Barbados.h"
 #import "Countries/UIImage+Belarus.h"
 #import "Countries/UIImage+Belgium.h"
 #import "Countries/UIImage+Benin.h"
@@ -140,7 +141,7 @@
 
 @implementation UIImage (CountriesFlags)
 
-+ (UIImage * _Nullable)flagForCountry:(CountriesFlags)country size:(CGSize)size {
++ (UIImage *)flagForCountry:(CountriesFlags)country size:(CGSize)size {
     switch (country) {
         case CountriesFlagsAlandIslands: return [UIImage flagAlandIslandsWithSize: size];
         case CountriesFlagsAlgeria: return [UIImage flagAlgeriaWithSize: size];
@@ -153,6 +154,7 @@
         case CountriesFlagsBahamas: return [UIImage flagBahamasWithSize: size];
         case CountriesFlagsBahrain: return [UIImage flagBahrainWithSize: size];
         case CountriesFlagsBangladesh: return [UIImage flagBangladeshWithSize: size];
+        case CountriesFlagsBarbados: return [UIImage flagBarbadosWithSize: size];
         case CountriesFlagsBelarus: return [UIImage flagBelarusWithSize: size];
         case CountriesFlagsBelgium: return [UIImage flagBelgiumWithSize: size];
         case CountriesFlagsBenin: return [UIImage flagBeninWithSize: size];

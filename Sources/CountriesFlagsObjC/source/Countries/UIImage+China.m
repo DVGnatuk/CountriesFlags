@@ -10,7 +10,7 @@
 
 @implementation UIImage (China)
 
-+ (UIImage * _Nullable)flagChinaWithSize:(CGSize)size {
++ (UIImage *)flagChinaWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:238.0f/255.0f
                                         green:28.0f/255.0f
                                          blue:37.0f/255.0f
@@ -52,7 +52,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

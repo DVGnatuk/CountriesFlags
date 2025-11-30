@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of South Africa.
      */
-    internal static func flagSouthAfrica(with size: CGSize) -> UIImage? {
+    internal static func flagSouthAfrica(with size: CGSize) -> UIImage {
         let colorGreen = UIColor(red: 0.0,
                                  green: 122.0 / 255.0,
                                  blue: 77.0 / 255.0,
@@ -98,7 +98,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

@@ -11,7 +11,7 @@
 
 @implementation UIImage (Australia)
 
-+ (UIImage * _Nullable)flagAustraliaWithSize:(CGSize)size {
++ (UIImage *)flagAustraliaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:1.0f/255.0f
                                          green:33.0f/255.0f
                                           blue:105.0f/255.0f
@@ -54,7 +54,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

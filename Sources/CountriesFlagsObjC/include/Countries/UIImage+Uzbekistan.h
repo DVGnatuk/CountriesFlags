@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Uzbekistan.
  @see https://en.wikipedia.org/wiki/Flag_of_Uzbekistan
  */
-+ (UIImage * _Nullable)flagUzbekistanWithSize:(CGSize)size;
++ (UIImage *)flagUzbekistanWithSize:(CGSize)size;
 
 @end
 

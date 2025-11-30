@@ -12,7 +12,7 @@
 
 @implementation UIImage (Niue)
 
-+ (UIImage * _Nullable)flagNiueWithSize:(CGSize)size {
++ (UIImage *)flagNiueWithSize:(CGSize)size {
     UIColor* colorYellow = [UIColor colorWithRed:254.0f/255.0f
                                            green:221.0f/255.0f
                                             blue:0.0f
@@ -56,7 +56,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

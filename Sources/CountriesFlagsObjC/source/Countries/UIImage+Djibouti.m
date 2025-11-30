@@ -10,7 +10,7 @@
 
 @implementation UIImage (Djibouti)
 
-+ (UIImage * _Nullable)flagDjiboutiWithSize:(CGSize)size {
++ (UIImage *)flagDjiboutiWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:106.0f/255.0f
                                          green:178.0f/255.0f
                                           blue:231.0f/255.0f
@@ -45,7 +45,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

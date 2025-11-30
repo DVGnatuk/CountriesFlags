@@ -7,7 +7,7 @@
 
 @implementation UIImage (FaroeIslands)
 
-+ (UIImage * _Nullable)flagFaroeIslandsWithSize:(CGSize)size {
++ (UIImage *)flagFaroeIslandsWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:94.0f/255.0f
                                           blue:185.0f/255.0f
@@ -38,7 +38,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

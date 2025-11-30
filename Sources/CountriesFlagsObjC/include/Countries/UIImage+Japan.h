@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Japan.
  @see https://en.wikipedia.org/wiki/Flag_of_Japan
  */
-+ (UIImage * _Nullable)flagJapanWithSize:(CGSize)size;
++ (UIImage *)flagJapanWithSize:(CGSize)size;
 
 @end
 

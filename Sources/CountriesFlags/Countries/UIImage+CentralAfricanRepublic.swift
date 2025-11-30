@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of the Central African Republic.
      */
-    internal static func flagCentralAfricanRepublic(with size: CGSize) -> UIImage? {
+    internal static func flagCentralAfricanRepublic(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 0.0,
                                 green: 48.0 / 255.0,
                                 blue: 130.0 / 255.0,
@@ -67,7 +67,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

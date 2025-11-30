@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Honduras.
  @see https://en.wikipedia.org/wiki/Flag_of_Honduras
  */
-+ (UIImage * _Nullable)flagHondurasWithSize:(CGSize)size;
++ (UIImage *)flagHondurasWithSize:(CGSize)size;
 
 @end
 

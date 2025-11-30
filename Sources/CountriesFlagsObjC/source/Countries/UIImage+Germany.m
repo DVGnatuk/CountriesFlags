@@ -7,7 +7,7 @@
 
 @implementation UIImage (Germany)
 
-+ (UIImage * _Nullable)flagGermanyWithSize:(CGSize)size {
++ (UIImage *)flagGermanyWithSize:(CGSize)size {
     UIColor* colorBlack = [UIColor blackColor];
     UIColor* colorRed = [UIColor redColor];
     UIColor* colorGold = [UIColor colorWithRed:1.0f
@@ -29,7 +29,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation UIImage (Tunisia)
 
-+ (UIImage * _Nullable)flagTunisiaWithSize:(CGSize)size {
++ (UIImage *)flagTunisiaWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:231.0f/255.0f
                                         green:0.0f
                                          blue:19.0f/255.0f
@@ -54,7 +54,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

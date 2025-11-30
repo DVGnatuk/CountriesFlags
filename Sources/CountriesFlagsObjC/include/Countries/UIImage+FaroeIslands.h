@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of the Faroe Islands.
  @see https://en.wikipedia.org/wiki/Flag_of_the_Faroe_Islands
  */
-+ (UIImage * _Nullable)flagFaroeIslandsWithSize:(CGSize)size;
++ (UIImage *)flagFaroeIslandsWithSize:(CGSize)size;
 
 @end
 

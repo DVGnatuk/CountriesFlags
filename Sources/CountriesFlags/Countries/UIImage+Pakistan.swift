@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Pakistan.
      */
-    internal static func flagPakistan(with size: CGSize) -> UIImage? {
+    internal static func flagPakistan(with size: CGSize) -> UIImage {
         let colorGreen = UIColor(red: 1.0 / 255.0,
                                  green: 65.0 / 255.0,
                                  blue: 28.0 / 255.0,
@@ -56,7 +56,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

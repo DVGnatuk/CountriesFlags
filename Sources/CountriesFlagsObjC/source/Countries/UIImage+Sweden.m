@@ -7,7 +7,7 @@
 
 @implementation UIImage (Sweden)
 
-+ (UIImage * _Nullable)flagSwedenWithSize:(CGSize)size {
++ (UIImage *)flagSwedenWithSize:(CGSize)size {
     UIColor* colorYellow = [UIColor colorWithRed:254.0f/255.0f
                                            green:204.0f/255.0f
                                             blue:2.0f/255.0f
@@ -31,7 +31,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

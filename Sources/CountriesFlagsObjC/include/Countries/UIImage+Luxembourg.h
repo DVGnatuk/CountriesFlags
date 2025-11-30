@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Luxembourg.
  @see https://en.wikipedia.org/wiki/Flag_of_Luxembourg
  */
-+ (UIImage * _Nullable)flagLuxembourgWithSize:(CGSize)size;
++ (UIImage *)flagLuxembourgWithSize:(CGSize)size;
 
 @end
 

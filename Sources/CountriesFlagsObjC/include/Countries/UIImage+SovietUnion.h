@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of the Union of Soviet Socialist Republics.
  @see https://en.wikipedia.org/wiki/Flag_of_the_Soviet_Union
  */
-+ (UIImage * _Nullable)flagSovietUnionWithSize:(CGSize)size;
++ (UIImage *)flagSovietUnionWithSize:(CGSize)size;
 
 @end
 

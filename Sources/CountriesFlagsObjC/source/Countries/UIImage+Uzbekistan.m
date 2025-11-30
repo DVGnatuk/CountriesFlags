@@ -9,7 +9,7 @@
 
 @implementation UIImage (Uzbekistan)
 
-+ (UIImage * _Nullable)flagUzbekistanWithSize:(CGSize)size {
++ (UIImage *)flagUzbekistanWithSize:(CGSize)size {
     UIColor* colorGreen = [UIColor colorWithRed:48.0f/255.0f
                                           green:135.0f/255.0f
                                            blue:56.0f/255.0f
@@ -83,7 +83,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

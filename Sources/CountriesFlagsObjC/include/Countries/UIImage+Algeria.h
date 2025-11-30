@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Algeria.
  @see https://en.wikipedia.org/wiki/Flag_of_Algeria
  */
-+ (UIImage * _Nullable)flagAlgeriaWithSize:(CGSize)size;
++ (UIImage *)flagAlgeriaWithSize:(CGSize)size;
 
 @end
 

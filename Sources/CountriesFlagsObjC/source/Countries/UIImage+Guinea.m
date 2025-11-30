@@ -7,7 +7,7 @@
 
 @implementation UIImage (Guinea)
 
-+ (UIImage * _Nullable)flagGuineaWithSize:(CGSize)size {
++ (UIImage *)flagGuineaWithSize:(CGSize)size {
     UIColor* colorGreen = [UIColor colorWithRed:0.0f
                                           green:148.0f/255.0f
                                            blue:96.0f/255.0f
@@ -35,7 +35,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

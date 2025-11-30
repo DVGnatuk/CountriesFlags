@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Bulgaria.
  @see https://en.wikipedia.org/wiki/Flag_of_Bulgaria
  */
-+ (UIImage * _Nullable)flagBulgariaWithSize:(CGSize)size;
++ (UIImage *)flagBulgariaWithSize:(CGSize)size;
 
 @end
 

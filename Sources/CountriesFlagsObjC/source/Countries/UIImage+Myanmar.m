@@ -9,7 +9,7 @@
 
 @implementation UIImage (Myanmar)
 
-+ (UIImage * _Nullable)flagMyanmarWithSize:(CGSize)size {
++ (UIImage *)flagMyanmarWithSize:(CGSize)size {
     UIColor* colorGreen = [UIColor colorWithRed:52.0f/255.0f
                                           green:178.0f/255.0f
                                            blue:51.0f/255.0f
@@ -43,7 +43,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

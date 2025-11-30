@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of China.
  @see https://en.wikipedia.org/wiki/Flag_of_China
  */
-+ (UIImage * _Nullable)flagChinaWithSize:(CGSize)size;
++ (UIImage *)flagChinaWithSize:(CGSize)size;
 
 @end
 

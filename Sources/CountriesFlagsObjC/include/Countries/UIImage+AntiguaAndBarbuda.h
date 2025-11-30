@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Antigua and Barbuda.
  @see https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda
  */
-+ (UIImage * _Nullable)flagAntiguaAndBarbudaWithSize:(CGSize)size;
++ (UIImage *)flagAntiguaAndBarbudaWithSize:(CGSize)size;
 
 @end
 

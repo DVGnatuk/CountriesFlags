@@ -9,7 +9,7 @@
 
 @implementation UIImage (Japan)
 
-+ (UIImage * _Nullable)flagJapanWithSize:(CGSize)size {
++ (UIImage *)flagJapanWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:188.0f/255.0f
                                         green:0.0f
                                          blue:45.0f/255.0f
@@ -31,7 +31,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

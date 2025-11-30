@@ -9,7 +9,7 @@
 
 @implementation UIImage (Chile)
 
-+ (UIImage * _Nullable)flagChileWithSize:(CGSize)size {
++ (UIImage *)flagChileWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:213.0f/255.0f
                                         green:43.0f/255.0f
                                          blue:30.0f/255.0f
@@ -39,7 +39,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of the Slovak Republic.
      */
-    internal static func flagSlovakia(with size: CGSize) -> UIImage? {
+    internal static func flagSlovakia(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 37.0 / 255.0,
                                 green: 74.0 / 255.0,
                                 blue: 165.0 / 255.0,
@@ -157,7 +157,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

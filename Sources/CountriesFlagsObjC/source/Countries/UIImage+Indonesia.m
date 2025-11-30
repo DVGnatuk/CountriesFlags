@@ -7,7 +7,7 @@
 
 @implementation UIImage (Indonesia)
 
-+ (UIImage * _Nullable)flagIndonesiaWithSize:(CGSize)size {
++ (UIImage *)flagIndonesiaWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor redColor];
     UIColor* colorWhite = [UIColor whiteColor];
     
@@ -22,7 +22,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

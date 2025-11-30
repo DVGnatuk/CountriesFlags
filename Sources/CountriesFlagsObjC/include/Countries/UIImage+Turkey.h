@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Turkey.
  @see https://en.wikipedia.org/wiki/Flag_of_Turkey
  */
-+ (UIImage * _Nullable)flagTurkeyWithSize:(CGSize)size;
++ (UIImage *)flagTurkeyWithSize:(CGSize)size;
 
 @end
 

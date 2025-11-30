@@ -10,7 +10,7 @@
 
 @implementation UIImage (UnitedStatesOfAmerica)
 
-+ (UIImage * _Nullable)flagUnitedStatesOfAmericaWithSize:(CGSize)size {
++ (UIImage *)flagUnitedStatesOfAmericaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:10.0f/255.0f
                                          green:49.0f/255.0f
                                           blue:97.0f/255.0f
@@ -58,7 +58,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Tuvalu.
      */
-    internal static func flagTuvalu(with size: CGSize) -> UIImage? {
+    internal static func flagTuvalu(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 0.0,
                                 green: 156.0 / 255.0,
                                 blue: 222.0 / 255.0,
@@ -75,12 +75,12 @@ extension UIImage {
         path.rotate(to: 36.0, around: starCenter)
         path.fill()
 
-        flagUnitedKingdom(with: size.halfSize)?.draw(at: .zero)
+        flagUnitedKingdom(with: size.halfSize).draw(at: .zero)
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

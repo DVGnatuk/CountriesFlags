@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Syria.
      */
-    internal static func flagSyrianArabRepublic(with size: CGSize) -> UIImage? {
+    internal static func flagSyrianArabRepublic(with size: CGSize) -> UIImage {
         let colorRed = UIColor(red: 206.0 / 255.0,
                                green: 17.0 / 255.0,
                                blue: 38.0 / 255.0,
@@ -56,7 +56,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Mauritius.
  @see https://en.wikipedia.org/wiki/Flag_of_Mauritius
  */
-+ (UIImage * _Nullable)flagMauritiusWithSize:(CGSize)size;
++ (UIImage *)flagMauritiusWithSize:(CGSize)size;
 
 @end
 

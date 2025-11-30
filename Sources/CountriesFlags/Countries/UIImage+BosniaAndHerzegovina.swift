@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Bosnia and Herzegovina.
      */
-    internal static func flagBosniaAndHerzegovina(with size: CGSize) -> UIImage? {
+    internal static func flagBosniaAndHerzegovina(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 0.0,
                                 green: 20.0 / 255.0,
                                 blue: 137.0 / 255.0,
@@ -56,7 +56,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

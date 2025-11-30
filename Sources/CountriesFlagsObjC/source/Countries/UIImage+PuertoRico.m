@@ -10,7 +10,7 @@
 
 @implementation UIImage (PuertoRico)
 
-+ (UIImage * _Nullable)flagPuertoRicoWithSize:(CGSize)size {
++ (UIImage *)flagPuertoRicoWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:8.0f/255.0f
                                          green:68.0f/255.0f
                                           blue:1.0f
@@ -41,7 +41,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

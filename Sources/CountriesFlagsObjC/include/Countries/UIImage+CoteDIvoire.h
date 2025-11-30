@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Côte d'Ivoire.
  @see https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast
  */
-+ (UIImage * _Nullable)flagCoteDIvoireWithSize:(CGSize)size;
++ (UIImage *)flagCoteDIvoireWithSize:(CGSize)size;
 
 @end
 

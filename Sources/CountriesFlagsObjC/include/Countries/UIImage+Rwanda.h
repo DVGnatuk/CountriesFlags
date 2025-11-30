@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Rwanda.
  @see https://en.wikipedia.org/wiki/Flag_of_Rwanda
  */
-+ (UIImage * _Nullable)flagRwandaWithSize:(CGSize)size;
++ (UIImage *)flagRwandaWithSize:(CGSize)size;
 
 @end
 

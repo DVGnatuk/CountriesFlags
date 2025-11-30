@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Bahamas.
      */
-    internal static func flagBahamas(with size: CGSize) -> UIImage? {
+    internal static func flagBahamas(with size: CGSize) -> UIImage {
         let colorAquamarine = UIColor(red: 0.0,
                                       green: 169.0 / 255.0,
                                       blue: 206.0 / 255.0,
@@ -45,7 +45,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

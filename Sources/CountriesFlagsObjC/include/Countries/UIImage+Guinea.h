@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Guinea.
  @see https://en.wikipedia.org/wiki/Flag_of_Guinea
  */
-+ (UIImage * _Nullable)flagGuineaWithSize:(CGSize)size;
++ (UIImage *)flagGuineaWithSize:(CGSize)size;
 
 @end
 

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of France.
  @see https://en.wikipedia.org/wiki/Flag_of_France
  */
-+ (UIImage * _Nullable)flagFranceWithSize:(CGSize)size;
++ (UIImage *)flagFranceWithSize:(CGSize)size;
 
 @end
 

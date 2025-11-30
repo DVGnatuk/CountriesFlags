@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of the Union of Soviet Socialist Republics.
      */
-    internal static func flagSovietUnion(with size: CGSize) -> UIImage? {
+    internal static func flagSovietUnion(with size: CGSize) -> UIImage {
         let colorRed = UIColor(red: 203.0 / 255.0,
                                green: 0.0,
                                blue: 0.0,
@@ -94,7 +94,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

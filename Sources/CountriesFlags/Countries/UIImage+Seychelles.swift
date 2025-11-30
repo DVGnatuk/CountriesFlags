@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Seychelles.
      */
-    internal static func flagSeychelles(with size: CGSize) -> UIImage? {
+    internal static func flagSeychelles(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 0.0,
                                 green: 61.0 / 255.0,
                                 blue: 136.0 / 255.0,
@@ -79,7 +79,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

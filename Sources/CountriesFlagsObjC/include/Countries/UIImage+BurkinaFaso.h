@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Burkina Faso.
  @see https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso
  */
-+ (UIImage * _Nullable)flagBurkinaFasoWithSize:(CGSize)size;
++ (UIImage *)flagBurkinaFasoWithSize:(CGSize)size;
 
 @end
 

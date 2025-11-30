@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Palau.
  @see https://en.wikipedia.org/wiki/Flag_of_Palau
  */
-+ (UIImage * _Nullable)flagPalauWithSize:(CGSize)size;
++ (UIImage *)flagPalauWithSize:(CGSize)size;
 
 @end
 

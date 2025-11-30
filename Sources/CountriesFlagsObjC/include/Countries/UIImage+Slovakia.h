@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of the Slovak Republic.
  @see https://en.wikipedia.org/wiki/Flag_of_Slovakia
  */
-+ (UIImage * _Nullable)flagSlovakiaWithSize:(CGSize)size;
++ (UIImage *)flagSlovakiaWithSize:(CGSize)size;
 
 @end
 

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Hungary.
  @see https://en.wikipedia.org/wiki/Flag_of_Hungary
  */
-+ (UIImage * _Nullable)flagHungaryWithSize:(CGSize)size;
++ (UIImage *)flagHungaryWithSize:(CGSize)size;
 
 @end
 

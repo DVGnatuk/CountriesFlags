@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Jordan.
  @see https://en.wikipedia.org/wiki/Flag_of_Jordan
  */
-+ (UIImage * _Nullable)flagJordanWithSize:(CGSize)size;
++ (UIImage *)flagJordanWithSize:(CGSize)size;
 
 @end
 

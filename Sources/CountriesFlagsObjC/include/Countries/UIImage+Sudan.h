@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Sudan.
  @see https://en.wikipedia.org/wiki/Flag_of_Sudan
  */
-+ (UIImage * _Nullable)flagSudanWithSize:(CGSize)size;
++ (UIImage *)flagSudanWithSize:(CGSize)size;
 
 @end
 

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Nigeria.
  @see https://en.wikipedia.org/wiki/Flag_of_Nigeria
  */
-+ (UIImage * _Nullable)flagNigeriaWithSize:(CGSize)size;
++ (UIImage *)flagNigeriaWithSize:(CGSize)size;
 
 @end
 

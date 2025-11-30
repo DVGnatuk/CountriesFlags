@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Iceland.
  @see https://en.wikipedia.org/wiki/Flag_of_Iceland
  */
-+ (UIImage * _Nullable)flagIcelandWithSize:(CGSize)size;
++ (UIImage *)flagIcelandWithSize:(CGSize)size;
 
 @end
 

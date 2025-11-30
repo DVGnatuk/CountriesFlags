@@ -9,7 +9,7 @@
 
 @implementation UIImage (Singapore)
 
-+ (UIImage * _Nullable)flagSingaporeWithSize:(CGSize)size {
++ (UIImage *)flagSingaporeWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:238.0f/255.0f
                                         green:37.0f/255.0f
                                          blue:54.0f/255.0f
@@ -65,7 +65,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

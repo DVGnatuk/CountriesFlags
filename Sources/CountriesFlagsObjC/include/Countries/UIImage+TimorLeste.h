@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Timor-Leste.
  @see https://en.wikipedia.org/wiki/Flag_of_Timor-Leste
  */
-+ (UIImage * _Nullable)flagTimorLesteWithSize:(CGSize)size;
++ (UIImage *)flagTimorLesteWithSize:(CGSize)size;
 
 @end
 

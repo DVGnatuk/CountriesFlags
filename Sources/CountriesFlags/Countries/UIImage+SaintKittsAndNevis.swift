@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Saint Kitts and Nevis.
      */
-    internal static func flagSaintKittsAndNevis(with size: CGSize) -> UIImage? {
+    internal static func flagSaintKittsAndNevis(with size: CGSize) -> UIImage {
         let colorGreen = UIColor(red: 0.0,
                                  green: 151.0 / 255.0,
                                  blue: 57.0 / 255.0,
@@ -85,7 +85,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

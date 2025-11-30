@@ -7,7 +7,7 @@
 
 @implementation UIImage (Latvia)
 
-+ (UIImage * _Nullable)flagLatviaWithSize:(CGSize)size {
++ (UIImage *)flagLatviaWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:157.0f/255.0f
                                         green:34.0f/255.0f
                                          blue:53.0f/255.0f
@@ -25,7 +25,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

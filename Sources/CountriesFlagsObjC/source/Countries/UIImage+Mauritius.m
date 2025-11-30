@@ -7,7 +7,7 @@
 
 @implementation UIImage (Mauritius)
 
-+ (UIImage * _Nullable)flagMauritiusWithSize:(CGSize)size {
++ (UIImage *)flagMauritiusWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:235.0f/255.0f
                                         green:36.0f/255.0f
                                          blue:54.0f/255.0f
@@ -42,7 +42,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

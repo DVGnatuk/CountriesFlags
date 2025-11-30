@@ -9,7 +9,7 @@
 
 @implementation UIImage (Togo)
 
-+ (UIImage * _Nullable)flagTogoWithSize:(CGSize)size {
++ (UIImage *)flagTogoWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:210.0f/255.0f
                                         green:16.0f/255.0f
                                          blue:52.0f/255.0f
@@ -44,7 +44,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

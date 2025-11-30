@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Norway.
  @see https://en.wikipedia.org/wiki/Flag_of_Norway
  */
-+ (UIImage * _Nullable)flagNorwayWithSize:(CGSize)size;
++ (UIImage *)flagNorwayWithSize:(CGSize)size;
 
 @end
 

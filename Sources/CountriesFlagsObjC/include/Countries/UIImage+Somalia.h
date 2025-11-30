@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Somalia.
  @see https://en.wikipedia.org/wiki/Flag_of_Somalia
  */
-+ (UIImage * _Nullable)flagSomaliaWithSize:(CGSize)size;
++ (UIImage *)flagSomaliaWithSize:(CGSize)size;
 
 @end
 

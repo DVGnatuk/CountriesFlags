@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Sierra Leone.
  @see https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone
  */
-+ (UIImage * _Nullable)flagSierraLeoneWithSize:(CGSize)size;
++ (UIImage *)flagSierraLeoneWithSize:(CGSize)size;
 
 @end
 

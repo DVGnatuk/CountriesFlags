@@ -10,7 +10,7 @@
 
 @implementation UIImage (Burundi)
 
-+ (UIImage * _Nullable)flagBurundiWithSize:(CGSize)size {
++ (UIImage *)flagBurundiWithSize:(CGSize)size {
     UIColor* colorWhite = [UIColor whiteColor];
     UIColor* colorRed = [UIColor colorWithRed:200.0f/255.0f
                                         green:16.0f/255.0f
@@ -77,7 +77,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

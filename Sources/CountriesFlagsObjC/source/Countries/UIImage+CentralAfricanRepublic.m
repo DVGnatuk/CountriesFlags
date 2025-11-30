@@ -9,7 +9,7 @@
 
 @implementation UIImage (CentralAfricanRepublic)
 
-+ (UIImage * _Nullable)flagCentralAfricanRepublicWithSize:(CGSize)size {
++ (UIImage *)flagCentralAfricanRepublicWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:48.0f/255.0f
                                           blue:130.0f/255.0f
@@ -54,7 +54,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

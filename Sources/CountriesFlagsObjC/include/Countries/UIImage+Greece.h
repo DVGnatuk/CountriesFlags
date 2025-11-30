@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Greece.
  @see https://en.wikipedia.org/wiki/Flag_of_Greece
  */
-+ (UIImage * _Nullable)flagGreeceWithSize:(CGSize)size;
++ (UIImage *)flagGreeceWithSize:(CGSize)size;
 
 @end
 

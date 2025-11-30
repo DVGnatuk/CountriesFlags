@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of the United States.
      */
-    internal static func flagUnitedStatesOfAmerica(with size: CGSize) -> UIImage? {
+    internal static func flagUnitedStatesOfAmerica(with size: CGSize) -> UIImage {
         // Federal Specification DDD-F-416F cloth color specifications
         let colorBlue = UIColor(red: 10.0 / 255.0,
                                 green: 49.0 / 255.0,
@@ -68,7 +68,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

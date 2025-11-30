@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Honduras.
      */
-    internal static func flagHonduras(with size: CGSize) -> UIImage? {
+    internal static func flagHonduras(with size: CGSize) -> UIImage {
         let colorBlueTurquoise = UIColor(red: 0.0,
                                          green: 188.0 / 255.0,
                                          blue: 228.0 / 255.0,
@@ -55,7 +55,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

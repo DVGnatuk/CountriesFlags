@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Indonesia.
  @see https://en.wikipedia.org/wiki/Flag_of_Indonesia
  */
-+ (UIImage * _Nullable)flagIndonesiaWithSize:(CGSize)size;
++ (UIImage *)flagIndonesiaWithSize:(CGSize)size;
 
 @end
 

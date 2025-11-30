@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Russian federation.
      */
-    internal static func flagRussianFederation(with size: CGSize) -> UIImage? {
+    internal static func flagRussianFederation(with size: CGSize) -> UIImage {
         let colorWhite = UIColor.white
         let colorBlue = UIColor(red: 0.0,
                                 green: 50.0 / 255.0,
@@ -45,7 +45,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

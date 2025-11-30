@@ -9,7 +9,7 @@
 
 @implementation UIImage (NetherlandsAntilles)
 
-+ (UIImage * _Nullable)flagNetherlandsAntillesWithSize:(CGSize)size {
++ (UIImage *)flagNetherlandsAntillesWithSize:(CGSize)size {
     UIColor* colorWhite = [UIColor whiteColor];
     UIColor* colorBlue = [UIColor colorWithRed:1.0f/255.0f
                                          green:45.0f/255.0f
@@ -54,7 +54,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

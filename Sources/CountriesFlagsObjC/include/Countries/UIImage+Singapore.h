@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Singapore.
  @see https://en.wikipedia.org/wiki/Flag_of_Singapore
  */
-+ (UIImage * _Nullable)flagSingaporeWithSize:(CGSize)size;
++ (UIImage *)flagSingaporeWithSize:(CGSize)size;
 
 @end
 

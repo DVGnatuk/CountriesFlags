@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Greenland.
  @see https://en.wikipedia.org/wiki/Flag_of_Greenland
  */
-+ (UIImage * _Nullable)flagGreenlandWithSize:(CGSize)size;
++ (UIImage *)flagGreenlandWithSize:(CGSize)size;
 
 @end
 

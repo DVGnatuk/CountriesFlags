@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Liberia.
      */
-    internal static func flagLiberia(with size: CGSize) -> UIImage? {
+    internal static func flagLiberia(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 0.0,
                                 green: 40.0 / 255.0,
                                 blue: 104.0 / 255.0,
@@ -52,7 +52,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

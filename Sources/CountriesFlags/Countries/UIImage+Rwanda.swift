@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Rwanda.
      */
-    internal static func flagRwanda(with size: CGSize) -> UIImage? {
+    internal static func flagRwanda(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 0.0,
                                 green: 163.0 / 255.0,
                                 blue: 224.0 / 255.0,
@@ -62,7 +62,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

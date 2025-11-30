@@ -9,7 +9,7 @@
 
 @implementation UIImage (Liberia)
 
-+ (UIImage * _Nullable)flagLiberiaWithSize:(CGSize)size {
++ (UIImage *)flagLiberiaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:40.0f/255.0f
                                           blue:104.0f/255.0f
@@ -41,7 +41,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

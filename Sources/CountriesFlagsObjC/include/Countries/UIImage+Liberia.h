@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Liberia.
  @see https://en.wikipedia.org/wiki/Flag_of_Liberia
  */
-+ (UIImage * _Nullable)flagLiberiaWithSize:(CGSize)size;
++ (UIImage *)flagLiberiaWithSize:(CGSize)size;
 
 @end
 

@@ -10,7 +10,7 @@
 
 @implementation UIImage (Cuba)
 
-+ (UIImage * _Nullable)flagCubaWithSize:(CGSize)size {
++ (UIImage *)flagCubaWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:204.0f/255.0f
                                         green:13.0f/255.0f
                                          blue:13.0f/255.0f
@@ -43,7 +43,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

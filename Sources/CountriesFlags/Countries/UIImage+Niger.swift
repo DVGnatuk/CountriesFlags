@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Niger.
      */
-    internal static func flagNiger(with size: CGSize) -> UIImage? {
+    internal static func flagNiger(with size: CGSize) -> UIImage {
         let colorOrange = UIColor(red: 224.0 / 255.0,
                                   green: 82.0 / 255.0,
                                   blue: 6.0 / 255.0,
@@ -51,7 +51,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

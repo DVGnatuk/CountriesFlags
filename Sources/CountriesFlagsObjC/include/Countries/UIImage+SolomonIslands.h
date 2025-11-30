@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Solomon Islands.
  @see https://en.wikipedia.org/wiki/Flag_of_Solomon_Islands
  */
-+ (UIImage * _Nullable)flagSolomonIslandsWithSize:(CGSize)size;
++ (UIImage *)flagSolomonIslandsWithSize:(CGSize)size;
 
 @end
 

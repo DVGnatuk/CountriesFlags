@@ -9,7 +9,7 @@
 
 @implementation UIImage (Aruba)
 
-+ (UIImage * _Nullable)flagArubaWithSize:(CGSize)size {
++ (UIImage *)flagArubaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:65.0f/255.0f
                                          green:143.0f/255.0f
                                           blue:222.0f/255.0f
@@ -45,7 +45,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

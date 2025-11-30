@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Russian federation.
  @see https://en.wikipedia.org/wiki/Flag_of_Russia
  */
-+ (UIImage * _Nullable)flagRussianFederationWithSize:(CGSize)size;
++ (UIImage *)flagRussianFederationWithSize:(CGSize)size;
 
 @end
 

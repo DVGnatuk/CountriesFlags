@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Libya.
  @see https://simple.wikipedia.org/wiki/Flag_of_Libya
  */
-+ (UIImage * _Nullable)flagLibyaWithSize:(CGSize)size;
++ (UIImage *)flagLibyaWithSize:(CGSize)size;
 
 @end
 

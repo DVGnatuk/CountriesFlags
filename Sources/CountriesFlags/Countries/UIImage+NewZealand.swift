@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of New Zealand.
      */
-    internal static func flagNewZealand(with size: CGSize) -> UIImage? {
+    internal static func flagNewZealand(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 1.0 / 255.0,
                                 green: 33.0 / 255.0,
                                 blue: 105.0 / 255.0,
@@ -66,12 +66,12 @@ extension UIImage {
         path.stroke()
         path.fill()
 
-        flagUnitedKingdom(with: size.halfSize)?.draw(at: .zero)
+        flagUnitedKingdom(with: size.halfSize).draw(at: .zero)
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

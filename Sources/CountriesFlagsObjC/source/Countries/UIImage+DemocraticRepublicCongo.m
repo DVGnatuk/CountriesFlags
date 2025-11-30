@@ -9,7 +9,7 @@
 
 @implementation UIImage (DemocraticRepublicCongo)
 
-+ (UIImage * _Nullable)flagDemocraticRepublicCongoWithSize:(CGSize)size {
++ (UIImage *)flagDemocraticRepublicCongoWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:127.0f/255.0f
                                           blue:1.0f
@@ -56,7 +56,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Namibia.
  @see https://en.wikipedia.org/wiki/Flag_of_Namibia
  */
-+ (UIImage * _Nullable)flagNamibiaWithSize:(CGSize)size;
++ (UIImage *)flagNamibiaWithSize:(CGSize)size;
 
 @end
 

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of North Macedonia.
  @see https://en.wikipedia.org/wiki/Flag_of_North_Macedonia
  */
-+ (UIImage * _Nullable)flagNorthMacedoniaWithSize:(CGSize)size;
++ (UIImage *)flagNorthMacedoniaWithSize:(CGSize)size;
 
 @end
 

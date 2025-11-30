@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Tanzania.
  @see https://en.wikipedia.org/wiki/Flag_of_Tanzania
  */
-+ (UIImage * _Nullable)flagTanzaniaWithSize:(CGSize)size;
++ (UIImage *)flagTanzaniaWithSize:(CGSize)size;
 
 @end
 

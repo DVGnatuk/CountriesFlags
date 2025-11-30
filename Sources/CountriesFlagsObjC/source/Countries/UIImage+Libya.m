@@ -11,7 +11,7 @@
 
 @implementation UIImage (Libya)
 
-+ (UIImage * _Nullable)flagLibyaWithSize:(CGSize)size {
++ (UIImage *)flagLibyaWithSize:(CGSize)size {
     UIColor* colorGreen = [UIColor colorWithRed:35.0f/255.0f
                                           green:158.0f/255.0f
                                            blue:70.0f/255.0f
@@ -59,7 +59,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

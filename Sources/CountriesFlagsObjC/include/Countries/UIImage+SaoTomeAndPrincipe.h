@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of São Tomé and Príncipe.
  @see https://en.wikipedia.org/wiki/Flag_of_São_Tomé_and_Príncipe
  */
-+ (UIImage * _Nullable)flagSaoTomeAndPrincipeWithSize:(CGSize)size;
++ (UIImage *)flagSaoTomeAndPrincipeWithSize:(CGSize)size;
 
 @end
 

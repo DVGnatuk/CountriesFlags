@@ -7,7 +7,7 @@
 
 @implementation UIImage (Mali)
 
-+ (UIImage * _Nullable)flagMaliWithSize:(CGSize)size {
++ (UIImage *)flagMaliWithSize:(CGSize)size {
     UIColor* colorGreen = [UIColor colorWithRed:20.0f/255.0f
                                           green:181.0f/255.0f
                                            blue:58.0f/255.0f
@@ -35,7 +35,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

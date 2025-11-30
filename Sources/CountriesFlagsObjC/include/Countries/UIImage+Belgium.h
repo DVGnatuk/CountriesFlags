@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Belgium.
  @see https://en.wikipedia.org/wiki/Flag_of_Belgium
  */
-+ (UIImage * _Nullable)flagBelgiumWithSize:(CGSize)size;
++ (UIImage *)flagBelgiumWithSize:(CGSize)size;
 
 @end
 

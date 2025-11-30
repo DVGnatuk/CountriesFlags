@@ -10,7 +10,7 @@
 
 @implementation UIImage (Micronesia)
 
-+ (UIImage * _Nullable)flagMicronesiaWithSize:(CGSize)size {
++ (UIImage *)flagMicronesiaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:117.0f/255.0f
                                          green:178.0f/255.0f
                                           blue:221.0f/255.0f
@@ -37,7 +37,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

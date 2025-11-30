@@ -9,7 +9,7 @@
 
 @implementation UIImage (Malaysia)
 
-+ (UIImage * _Nullable)flagMalaysiaWithSize:(CGSize)size {
++ (UIImage *)flagMalaysiaWithSize:(CGSize)size {
     UIColor* colorWhite = [UIColor whiteColor];
     UIColor* colorRed = [UIColor colorWithRed:204.0f/255.0f
                                         green:0.0f
@@ -59,7 +59,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Taiwan.
  @see https://en.wikipedia.org/wiki/Flag_of_Taiwan
  */
-+ (UIImage * _Nullable)flagTaiwanWithSize:(CGSize)size;
++ (UIImage *)flagTaiwanWithSize:(CGSize)size;
 
 @end
 

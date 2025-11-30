@@ -9,7 +9,7 @@
 
 @implementation UIImage (SolomonIslands)
 
-+ (UIImage * _Nullable)flagSolomonIslandsWithSize:(CGSize)size {
++ (UIImage *)flagSolomonIslandsWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:81.0f/255.0f
                                           blue:186.0f/255.0f
@@ -71,7 +71,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

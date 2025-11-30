@@ -7,7 +7,7 @@
 
 @implementation UIImage (AntiguaAndBarbuda)
 
-+ (UIImage * _Nullable)flagAntiguaAndBarbudaWithSize:(CGSize)size {
++ (UIImage *)flagAntiguaAndBarbudaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:94.0f/255.0f
                                           blue:184.0f/255.0f
@@ -65,7 +65,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

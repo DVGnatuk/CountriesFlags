@@ -10,7 +10,7 @@
 
 @implementation UIImage (BurkinaFaso)
 
-+ (UIImage * _Nullable)flagBurkinaFasoWithSize:(CGSize)size {
++ (UIImage *)flagBurkinaFasoWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:239.0f/255.0f
                                         green:43.0f/255.0f
                                          blue:45.0f/255.0f
@@ -41,7 +41,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

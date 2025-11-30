@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Austria.
  @see https://en.wikipedia.org/wiki/Flag_of_Austria
  */
-+ (UIImage * _Nullable)flagAustriaWithSize:(CGSize)size;
++ (UIImage *)flagAustriaWithSize:(CGSize)size;
 
 @end
 

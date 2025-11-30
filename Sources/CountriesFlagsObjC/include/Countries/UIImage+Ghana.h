@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Ghana.
  @see https://en.wikipedia.org/wiki/Flag_of_Ghana
  */
-+ (UIImage * _Nullable)flagGhanaWithSize:(CGSize)size;
++ (UIImage *)flagGhanaWithSize:(CGSize)size;
 
 @end
 

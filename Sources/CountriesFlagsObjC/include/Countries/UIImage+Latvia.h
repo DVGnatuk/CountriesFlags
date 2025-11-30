@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Latvia.
  @see https://en.wikipedia.org/wiki/Flag_of_Latvia
  */
-+ (UIImage * _Nullable)flagLatviaWithSize:(CGSize)size;
++ (UIImage *)flagLatviaWithSize:(CGSize)size;
 
 @end
 

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Madagascar.
  @see https://en.wikipedia.org/wiki/Flag_of_Madagascar
  */
-+ (UIImage * _Nullable)flagMadagascarWithSize:(CGSize)size;
++ (UIImage *)flagMadagascarWithSize:(CGSize)size;
 
 @end
 

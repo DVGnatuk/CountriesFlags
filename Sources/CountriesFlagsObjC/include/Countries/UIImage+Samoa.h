@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Samoa.
  @see https://en.wikipedia.org/wiki/Flag_of_Samoa
  */
-+ (UIImage * _Nullable)flagSamoaWithSize:(CGSize)size;
++ (UIImage *)flagSamoaWithSize:(CGSize)size;
 
 @end
 

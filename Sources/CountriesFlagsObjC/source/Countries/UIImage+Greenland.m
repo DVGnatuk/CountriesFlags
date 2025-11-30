@@ -7,7 +7,7 @@
 
 @implementation UIImage (Greenland)
 
-+ (UIImage * _Nullable)flagGreenlandWithSize:(CGSize)size {
++ (UIImage *)flagGreenlandWithSize:(CGSize)size {
     UIColor* colorWhite = [UIColor whiteColor];
     UIColor* colorRed = [UIColor colorWithRed:208.0f/255.0f
                                         green:12.0f/255.0f
@@ -31,7 +31,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

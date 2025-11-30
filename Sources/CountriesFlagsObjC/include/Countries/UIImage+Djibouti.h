@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Djibouti.
  @see https://en.wikipedia.org/wiki/Flag_of_Djibouti
  */
-+ (UIImage * _Nullable)flagDjiboutiWithSize:(CGSize)size;
++ (UIImage *)flagDjiboutiWithSize:(CGSize)size;
 
 @end
 

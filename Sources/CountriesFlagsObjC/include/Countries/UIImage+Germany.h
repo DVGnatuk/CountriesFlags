@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Germany.
  @see https://en.wikipedia.org/wiki/Flag_of_Germany
  */
-+ (UIImage * _Nullable)flagGermanyWithSize:(CGSize)size;
++ (UIImage *)flagGermanyWithSize:(CGSize)size;
 
 @end
 

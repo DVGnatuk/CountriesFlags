@@ -9,7 +9,7 @@
 
 @implementation UIImage (Martinique)
 
-+ (UIImage * _Nullable)flagMartiniqueWithSize:(CGSize)size {
++ (UIImage *)flagMartiniqueWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:239.0f/255.0f
                                         green:25.0f/255.0f
                                          blue:35.0f/255.0f
@@ -37,7 +37,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

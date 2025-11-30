@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Guyana.
  @see https://en.wikipedia.org/wiki/Flag_of_Guyana
  */
-+ (UIImage * _Nullable)flagGuyanaWithSize:(CGSize)size;
++ (UIImage *)flagGuyanaWithSize:(CGSize)size;
 
 @end
 

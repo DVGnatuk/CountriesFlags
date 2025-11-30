@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Saint Lucia.
  @see https://en.wikipedia.org/wiki/Flag_of_Saint_Lucia
  */
-+ (UIImage * _Nullable)flagSaintLuciaWithSize:(CGSize)size;
++ (UIImage *)flagSaintLuciaWithSize:(CGSize)size;
 
 @end
 

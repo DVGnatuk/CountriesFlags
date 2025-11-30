@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Saint Vincent and the Grenadines.
      */
-    internal static func flagSaintVincentAndTheGrenadines(with size: CGSize) -> UIImage? {
+    internal static func flagSaintVincentAndTheGrenadines(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 0.0,
                                 green: 38.0 / 255.0,
                                 blue: 116.0 / 255.0,
@@ -72,7 +72,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

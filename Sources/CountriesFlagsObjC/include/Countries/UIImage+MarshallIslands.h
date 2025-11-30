@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of the Marshall Islands.
  @see https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands
  */
-+ (UIImage * _Nullable)flagMarshallIslandsWithSize:(CGSize)size;
++ (UIImage *)flagMarshallIslandsWithSize:(CGSize)size;
 
 @end
 

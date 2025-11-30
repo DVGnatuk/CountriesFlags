@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Myanmar.
      */
-    internal static func flagMyanmar(with size: CGSize) -> UIImage? {
+    internal static func flagMyanmar(with size: CGSize) -> UIImage {
         let colorGreen = UIColor(red: 52.0 / 255.0,
                                  green: 178.0 / 255.0,
                                  blue: 51.0 / 255.0,
@@ -54,7 +54,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

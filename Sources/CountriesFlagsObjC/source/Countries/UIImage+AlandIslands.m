@@ -7,7 +7,7 @@
 
 @implementation UIImage (AlandIslands)
 
-+ (UIImage * _Nullable)flagAlandIslandsWithSize:(CGSize)size {
++ (UIImage *)flagAlandIslandsWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:100.0f/255.0f
                                           blue:174.0f/255.0f
@@ -41,7 +41,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

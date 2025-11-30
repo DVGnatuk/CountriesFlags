@@ -9,7 +9,7 @@
 
 @implementation UIImage (Rwanda)
 
-+ (UIImage * _Nullable)flagRwandaWithSize:(CGSize)size {
++ (UIImage *)flagRwandaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:163.0f/255.0f
                                           blue:224.0f/255.0f
@@ -51,7 +51,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

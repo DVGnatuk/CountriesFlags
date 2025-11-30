@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Madagascar.
      */
-    internal static func flagMadagascar(with size: CGSize) -> UIImage? {
+    internal static func flagMadagascar(with size: CGSize) -> UIImage {
         let colorWhite = UIColor.white
         let colorWarmRed = UIColor(red: 249.0 / 255.0,
                                    green: 66.0 / 255.0,
@@ -46,7 +46,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

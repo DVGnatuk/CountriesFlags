@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Poland.
  @see https://en.wikipedia.org/wiki/Flag_of_Poland
  */
-+ (UIImage * _Nullable)flagPolandWithSize:(CGSize)size;
++ (UIImage *)flagPolandWithSize:(CGSize)size;
 
 @end
 

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Estonia.
  @see https://en.wikipedia.org/wiki/Flag_of_Estonia
  */
-+ (UIImage * _Nullable)flagEstoniaWithSize:(CGSize)size;
++ (UIImage *)flagEstoniaWithSize:(CGSize)size;
 
 @end
 

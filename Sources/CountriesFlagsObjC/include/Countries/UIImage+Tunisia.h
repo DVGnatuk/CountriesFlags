@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Tunisia.
  @see https://en.wikipedia.org/wiki/Flag_of_Tunisia
  */
-+ (UIImage * _Nullable)flagTunisiaWithSize:(CGSize)size;
++ (UIImage *)flagTunisiaWithSize:(CGSize)size;
 
 @end
 

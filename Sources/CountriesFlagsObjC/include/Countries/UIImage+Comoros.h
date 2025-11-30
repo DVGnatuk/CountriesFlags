@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Comoros.
  @see https://en.wikipedia.org/wiki/Flag_of_the_Comoros
  */
-+ (UIImage * _Nullable)flagComorosWithSize:(CGSize)size;
++ (UIImage *)flagComorosWithSize:(CGSize)size;
 
 @end
 

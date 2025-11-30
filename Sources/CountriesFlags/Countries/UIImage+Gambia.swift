@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Gambia.
      */
-    internal static func flagGambia(with size: CGSize) -> UIImage? {
+    internal static func flagGambia(with size: CGSize) -> UIImage {
         let colorGreen = UIColor(red: 28.0 / 255.0,
                                  green: 119.0 / 255.0,
                                  blue: 40.0 / 255.0,
@@ -54,7 +54,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

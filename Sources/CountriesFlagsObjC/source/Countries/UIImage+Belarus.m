@@ -7,7 +7,7 @@
 
 @implementation UIImage (Belarus)
 
-+ (UIImage * _Nullable)flagBelarusWithSize:(CGSize)size {
++ (UIImage *)flagBelarusWithSize:(CGSize)size {
     UIColor* colorWhite = [UIColor whiteColor];
     UIColor* colorRed = [UIColor colorWithRed:206.0f/255.0f
                                         green:23.0f/255.0f
@@ -114,7 +114,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

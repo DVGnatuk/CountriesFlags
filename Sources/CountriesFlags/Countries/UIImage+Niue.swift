@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Niue.
      */
-    internal static func flagNiue(with size: CGSize) -> UIImage? {
+    internal static func flagNiue(with size: CGSize) -> UIImage {
         let colorYellow = UIColor(red: 254.0 / 255.0,
                                   green: 221.0 / 255.0,
                                   blue: 0.0,
@@ -34,7 +34,7 @@ extension UIImage {
         colorYellow.setFill()
         UIRectFill(CGRect(origin: .zero, size: size))
 
-        flagUnitedKingdom(with: size.halfSize)?.draw(at: .zero)
+        flagUnitedKingdom(with: size.halfSize).draw(at: .zero)
 
         colorBlue.setFill()
         UIBezierPath(arcCenter: CGPoint(x: size.width / 4.0, y: size.height / 4.0),
@@ -58,7 +58,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

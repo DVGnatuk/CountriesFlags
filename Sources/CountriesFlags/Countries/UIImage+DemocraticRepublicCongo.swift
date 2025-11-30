@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of the Flag of the Democratic Republic of the Congo.
      */
-    internal static func flagDemocraticRepublicCongo(with size: CGSize) -> UIImage? {
+    internal static func flagDemocraticRepublicCongo(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 0.0,
                                 green: 127.0 / 255.0,
                                 blue: 1.0,
@@ -65,7 +65,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

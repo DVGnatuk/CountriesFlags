@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Vietnam.
  @see https://en.wikipedia.org/wiki/Flag_of_Vietnam
  */
-+ (UIImage * _Nullable)flagVietnamWithSize:(CGSize)size;
++ (UIImage *)flagVietnamWithSize:(CGSize)size;
 
 @end
 

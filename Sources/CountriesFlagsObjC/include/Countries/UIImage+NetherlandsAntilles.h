@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of the Netherlands Antilles.
  @see https://en.wikipedia.org/wiki/Flag_of_the_Netherlands_Antilles
  */
-+ (UIImage * _Nullable)flagNetherlandsAntillesWithSize:(CGSize)size;
++ (UIImage *)flagNetherlandsAntillesWithSize:(CGSize)size;
 
 @end
 

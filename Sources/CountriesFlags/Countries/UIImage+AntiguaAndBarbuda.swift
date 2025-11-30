@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Antigua and Barbuda.
      */
-    internal static func flagAntiguaAndBarbuda(with size: CGSize) -> UIImage? {
+    internal static func flagAntiguaAndBarbuda(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 0.0,
                                 green: 94.0 / 255.0,
                                 blue: 184.0 / 255.0,
@@ -79,7 +79,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Israel.
  @see https://en.wikipedia.org/wiki/Flag_of_Israel
  */
-+ (UIImage * _Nullable)flagIsraelWithSize:(CGSize)size;
++ (UIImage *)flagIsraelWithSize:(CGSize)size;
 
 @end
 

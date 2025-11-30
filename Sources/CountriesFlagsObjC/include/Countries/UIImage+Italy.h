@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Italy.
  @see https://en.wikipedia.org/wiki/Flag_of_Italy
  */
-+ (UIImage * _Nullable)flagItalyWithSize:(CGSize)size;
++ (UIImage *)flagItalyWithSize:(CGSize)size;
 
 @end
 

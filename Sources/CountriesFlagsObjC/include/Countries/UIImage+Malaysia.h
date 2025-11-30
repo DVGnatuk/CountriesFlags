@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Malaysia.
  @see https://en.wikipedia.org/wiki/Flag_of_Malaysia
  */
-+ (UIImage * _Nullable)flagMalaysiaWithSize:(CGSize)size;
++ (UIImage *)flagMalaysiaWithSize:(CGSize)size;
 
 @end
 

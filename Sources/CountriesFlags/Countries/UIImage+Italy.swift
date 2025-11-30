@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Italy.
      */
-    internal static func flagItaly(with size: CGSize) -> UIImage? {
+    internal static func flagItaly(with size: CGSize) -> UIImage {
         let colorGreen = UIColor(red: 0.0,
                                  green: 140.0 / 255.0,
                                  blue: 69.0 / 255.0,
@@ -48,7 +48,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

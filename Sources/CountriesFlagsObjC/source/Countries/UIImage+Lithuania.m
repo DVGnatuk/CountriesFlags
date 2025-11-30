@@ -7,7 +7,7 @@
 
 @implementation UIImage (Lithuania)
 
-+ (UIImage * _Nullable)flagLithuaniaWithSize:(CGSize)size {
++ (UIImage *)flagLithuaniaWithSize:(CGSize)size {
     UIColor* colorYellow = [UIColor colorWithRed:253.0f/255.0f
                                            green:185.0f/255.0f
                                             blue:19.0f/255.0f
@@ -35,7 +35,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

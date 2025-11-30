@@ -7,7 +7,7 @@
 
 @implementation UIImage (Hungary)
 
-+ (UIImage * _Nullable)flagHungaryWithSize:(CGSize)size {
++ (UIImage *)flagHungaryWithSize:(CGSize)size {
     UIColor* colorTomato = [UIColor colorWithRed:206.0f/255.0f
                                            green:41.0f/255.0f
                                             blue:57.0f/255.0f
@@ -32,7 +32,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

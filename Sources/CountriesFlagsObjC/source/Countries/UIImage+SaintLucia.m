@@ -7,7 +7,7 @@
 
 @implementation UIImage (SaintLucia)
 
-+ (UIImage * _Nullable)flagSaintLuciaWithSize:(CGSize)size {
++ (UIImage *)flagSaintLuciaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:102.0f/255.0f
                                          green:204.0f/255.0f
                                           blue:1.0f
@@ -51,7 +51,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

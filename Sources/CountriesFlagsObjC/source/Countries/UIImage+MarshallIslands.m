@@ -9,7 +9,7 @@
 
 @implementation UIImage (MarshallIslands)
 
-+ (UIImage * _Nullable)flagMarshallIslandsWithSize:(CGSize)size {
++ (UIImage *)flagMarshallIslandsWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:56.0f/255.0f
                                           blue:147.0f/255.0f
@@ -57,7 +57,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

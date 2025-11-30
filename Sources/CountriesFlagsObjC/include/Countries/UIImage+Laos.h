@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Laos.
  @see https://en.wikipedia.org/wiki/Flag_of_Laos
  */
-+ (UIImage * _Nullable)flagLaosWithSize:(CGSize)size;
++ (UIImage *)flagLaosWithSize:(CGSize)size;
 
 @end
 

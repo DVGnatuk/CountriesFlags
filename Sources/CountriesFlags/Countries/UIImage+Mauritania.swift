@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Mauritania.
      */
-    internal static func flagMauritania(with size: CGSize) -> UIImage? {
+    internal static func flagMauritania(with size: CGSize) -> UIImage {
         let colorRed = UIColor(red: 208.0 / 255.0,
                                green: 28.0 / 255.0,
                                blue: 31.0 / 255.0,
@@ -64,7 +64,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Comoros.
      */
-    internal static func flagComoros(with size: CGSize) -> UIImage? {
+    internal static func flagComoros(with size: CGSize) -> UIImage {
         let colorGreen = UIColor(red: 0.0,
                                  green: 150.0 / 255.0,
                                  blue: 57.0 / 255.0,
@@ -90,7 +90,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

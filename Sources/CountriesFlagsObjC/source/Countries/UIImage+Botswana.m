@@ -7,7 +7,7 @@
 
 @implementation UIImage (Botswana)
 
-+ (UIImage * _Nullable)flagBotswanaWithSize:(CGSize)size {
++ (UIImage *)flagBotswanaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:171.0f/255.0f
                                          green:202.0f/255.0f
                                           blue:233.0f/255.0f
@@ -29,7 +29,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

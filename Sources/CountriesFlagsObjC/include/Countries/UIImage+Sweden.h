@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Sweden.
  @see https://en.wikipedia.org/wiki/Flag_of_Sweden
  */
-+ (UIImage * _Nullable)flagSwedenWithSize:(CGSize)size;
++ (UIImage *)flagSwedenWithSize:(CGSize)size;
 
 @end
 

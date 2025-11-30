@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Trinidad and Tobago.
  @see https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago
  */
-+ (UIImage * _Nullable)flagTrinidadAndTobagoWithSize:(CGSize)size;
++ (UIImage *)flagTrinidadAndTobagoWithSize:(CGSize)size;
 
 @end
 

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of the Federated States of Micronesia.
  @see https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia
  */
-+ (UIImage * _Nullable)flagMicronesiaWithSize:(CGSize)size;
++ (UIImage *)flagMicronesiaWithSize:(CGSize)size;
 
 @end
 

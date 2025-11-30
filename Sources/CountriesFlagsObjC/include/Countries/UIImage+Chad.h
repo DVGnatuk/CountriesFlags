@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Chad.
  @see https://en.wikipedia.org/wiki/Flag_of_Chad
  */
-+ (UIImage * _Nullable)flagChadWithSize:(CGSize)size;
++ (UIImage *)flagChadWithSize:(CGSize)size;
 
 @end
 

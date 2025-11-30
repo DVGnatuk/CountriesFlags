@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Martinique.
  @see https://en.wikipedia.org/wiki/Flag_of_Martinique
  */
-+ (UIImage * _Nullable)flagMartiniqueWithSize:(CGSize)size;
++ (UIImage *)flagMartiniqueWithSize:(CGSize)size;
 
 @end
 

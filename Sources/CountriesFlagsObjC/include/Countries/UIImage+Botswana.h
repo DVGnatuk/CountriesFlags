@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Botswana.
  @see https://en.wikipedia.org/wiki/Flag_of_Botswana
  */
-+ (UIImage * _Nullable)flagBotswanaWithSize:(CGSize)size;
++ (UIImage *)flagBotswanaWithSize:(CGSize)size;
 
 @end
 

@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Vietnam.
      */
-    internal static func flagVietnam(with size: CGSize) -> UIImage? {
+    internal static func flagVietnam(with size: CGSize) -> UIImage {
         let colorYellow = UIColor.yellow
         let colorRed = UIColor(red: 218.0 / 255.0,
                                green: 37.0 / 255.0,
@@ -37,7 +37,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

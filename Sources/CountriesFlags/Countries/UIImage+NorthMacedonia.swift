@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of North Macedonia.
      */
-    internal static func flagNorthMacedonia(with size: CGSize) -> UIImage? {
+    internal static func flagNorthMacedonia(with size: CGSize) -> UIImage {
         let colorYellow = UIColor(red: 249.0 / 255.0,
                                   green: 214.0 / 255.0,
                                   blue: 22.0 / 255.0,
@@ -112,7 +112,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

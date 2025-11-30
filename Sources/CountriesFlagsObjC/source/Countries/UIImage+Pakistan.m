@@ -10,7 +10,7 @@
 
 @implementation UIImage (Pakistan)
 
-+ (UIImage * _Nullable)flagPakistanWithSize:(CGSize)size {
++ (UIImage *)flagPakistanWithSize:(CGSize)size {
     UIColor* colorGreen = [UIColor colorWithRed:1.0f/255.0f
                                           green:65.0f/255.0f
                                            blue:28.0f/255.0f
@@ -50,7 +50,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

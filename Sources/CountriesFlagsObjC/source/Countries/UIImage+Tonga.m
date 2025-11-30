@@ -9,7 +9,7 @@
 
 @implementation UIImage (Tonga)
 
-+ (UIImage * _Nullable)flagTongaWithSize:(CGSize)size {
++ (UIImage *)flagTongaWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:193.0f/255.0f
                                         green:0.0f
                                          blue:0.0f
@@ -31,7 +31,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Syria.
  @see https://en.wikipedia.org/wiki/Flag_of_Syria
  */
-+ (UIImage * _Nullable)flagSyrianArabRepublicWithSize:(CGSize)size;
++ (UIImage *)flagSyrianArabRepublicWithSize:(CGSize)size;
 
 @end
 

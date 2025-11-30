@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Niue.
  @see https://en.wikipedia.org/wiki/Flag_of_Niue
  */
-+ (UIImage * _Nullable)flagNiueWithSize:(CGSize)size;
++ (UIImage *)flagNiueWithSize:(CGSize)size;
 
 @end
 

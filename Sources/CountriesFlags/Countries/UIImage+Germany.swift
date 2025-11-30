@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Germany.
      */
-    internal static func flagGermany(with size: CGSize) -> UIImage? {
+    internal static func flagGermany(with size: CGSize) -> UIImage {
         let colorBlack = UIColor.black
         let colorRed = UIColor.red
         let colorGold = UIColor(red: 1.0,
@@ -42,7 +42,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Azerbaijan.
      */
-    internal static func flagAzerbaijan(with size: CGSize) -> UIImage? {
+    internal static func flagAzerbaijan(with size: CGSize) -> UIImage {
         let colorWhite = UIColor.white
         let colorBlue = UIColor(red: 0.0,
                                 green: 181.0 / 255.0,
@@ -68,7 +68,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

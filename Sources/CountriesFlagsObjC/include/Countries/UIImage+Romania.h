@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Romania.
  @see https://en.wikipedia.org/wiki/Flag_of_Romania
  */
-+ (UIImage * _Nullable)flagRomaniaWithSize:(CGSize)size;
++ (UIImage *)flagRomaniaWithSize:(CGSize)size;
 
 @end
 

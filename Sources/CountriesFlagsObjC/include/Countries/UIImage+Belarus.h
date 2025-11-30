@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Belarus.
  @see https://en.wikipedia.org/wiki/Flag_of_Belarus
  */
-+ (UIImage * _Nullable)flagBelarusWithSize:(CGSize)size;
++ (UIImage *)flagBelarusWithSize:(CGSize)size;
 
 @end
 

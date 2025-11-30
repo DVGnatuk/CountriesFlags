@@ -9,7 +9,7 @@
 
 @implementation UIImage (CzechRepublic)
 
-+ (UIImage * _Nullable)flagCzechRepublicWithSize:(CGSize)size {
++ (UIImage *)flagCzechRepublicWithSize:(CGSize)size {
     UIColor* colorRed = [UIColor colorWithRed:215.0f/255.0f
                                         green:20.0f/255.0f
                                          blue:26.0f/255.0f
@@ -34,7 +34,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

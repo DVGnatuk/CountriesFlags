@@ -9,7 +9,7 @@
 
 @implementation UIImage (Laos)
 
-+ (UIImage * _Nullable)flagLaosWithSize:(CGSize)size {
++ (UIImage *)flagLaosWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:40.0f/255.0f
                                           blue:104.0f/255.0f
@@ -38,7 +38,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end

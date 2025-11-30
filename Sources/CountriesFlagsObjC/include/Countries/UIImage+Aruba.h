@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Aruba.
  @see https://en.wikipedia.org/wiki/Flag_of_Aruba
  */
-+ (UIImage * _Nullable)flagArubaWithSize:(CGSize)size;
++ (UIImage *)flagArubaWithSize:(CGSize)size;
 
 @end
 

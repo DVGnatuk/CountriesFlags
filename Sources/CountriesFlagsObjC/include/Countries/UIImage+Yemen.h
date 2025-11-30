@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @returns Returns the flag of Yemen.
  @see https://en.wikipedia.org/wiki/Flag_of_Yemen
  */
-+ (UIImage * _Nullable)flagYemenWithSize:(CGSize)size;
++ (UIImage *)flagYemenWithSize:(CGSize)size;
 
 @end
 

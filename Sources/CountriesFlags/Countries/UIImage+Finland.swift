@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Finland.
      */
-    internal static func flagFinland(with size: CGSize) -> UIImage? {
+    internal static func flagFinland(with size: CGSize) -> UIImage {
         let colorBlue = UIColor(red: 0.0,
                                 green: 47.0 / 255.0,
                                 blue: 108.0 / 255.0,
@@ -42,7 +42,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

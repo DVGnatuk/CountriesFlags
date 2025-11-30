@@ -19,7 +19,7 @@ extension UIImage {
      
      - Returns: Returns the flag of Greenland.
      */
-    internal static func flagGreenland(with size: CGSize) -> UIImage? {
+    internal static func flagGreenland(with size: CGSize) -> UIImage {
         let colorRed = UIColor(red: 208.0 / 255.0,
                                green: 12.0 / 255.0,
                                blue: 51.0 / 255.0,
@@ -44,7 +44,7 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        return image
+        return image ?? UIImage()
     }
 }
 

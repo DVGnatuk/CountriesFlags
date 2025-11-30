@@ -7,7 +7,7 @@
 
 @implementation UIImage (Armenia)
 
-+ (UIImage * _Nullable)flagArmeniaWithSize:(CGSize)size {
++ (UIImage *)flagArmeniaWithSize:(CGSize)size {
     UIColor* colorBlue = [UIColor colorWithRed:0.0f
                                          green:51.0f/255.0f
                                           blue:160.0f/255.0f
@@ -35,7 +35,7 @@
     UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    return image != nil ? image : [UIImage new];
 }
 
 @end
